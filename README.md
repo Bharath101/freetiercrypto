@@ -2,7 +2,7 @@
 
 A static site that tracks what crypto tools give away for free and what their cheapest paid plan costs.
 It covers charting, screeners, trading bots, tax software, wallets and hardware, on-chain analytics,
-portfolio trackers, alerts, DEX tools, and multi-chain and bridge tools.
+portfolio trackers, alerts, DEX tools, multi-chain and bridge tools, and token safety.
 
 Each price comes from the vendor's own pricing page and links to it with the date it was checked.
 Any field that could not be read there is marked `unverified`.

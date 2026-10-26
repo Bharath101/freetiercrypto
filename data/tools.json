@@ -168,8 +168,8 @@
     "has_free_tier": "yes",
     "free_tier_limits": "Free account: market data plus 1-hour and 24-hour social sentiment on Discover",
     "cheapest_paid": {
-      "text": "unverified (Light price not shown; Medium is $240/mo billed annually)",
-      "usd_per_month": null,
+      "text": "$90/mo Light billed monthly ($72/mo billed yearly)",
+      "usd_per_month": 90,
       "plan": "Light"
     },
     "price_source_url": "https://lunarcrush.com/pricing",
@@ -177,8 +177,8 @@
     "best_free_alternative": "santiment",
     "affiliate_program": "unverified",
     "affiliate_url": null,
-    "verification": "partial",
-    "notes": "Medium: 20,000 requests/day, 100/min. No free trial on paid plans; daily plan $15/day."
+    "verification": "verified",
+    "notes": "API access starts at Light: 10 requests/min, 2,000/day (25 of 37 endpoints). Medium $300/mo ($240/mo yearly), 100/min, 20,000/day; Heavy $900/mo ($720/mo yearly), 500/min, 100,000/day. Daily passes from $5/day. No free trial on paid plans. The older lunarcrush.com/about/api page still describes a free Hobby API tier (4 requests/min, 100/day) that the pricing page does not show."
   },
   {
     "id": "threecommas",
@@ -585,7 +585,7 @@
     "name": "MetaMask",
     "url": "https://metamask.io/",
     "category": "wallets-hardware",
-    "chains": "unverified",
+    "chains": "700+ networks (per homepage)",
     "has_free_tier": "yes",
     "free_tier_limits": "Wallet free on iOS, Android and web",
     "cheapest_paid": {
@@ -606,7 +606,7 @@
     "name": "Rabby Wallet",
     "url": "https://rabby.io/",
     "category": "wallets-hardware",
-    "chains": "unverified",
+    "chains": "EVM chains (per homepage)",
     "has_free_tier": "unverified",
     "free_tier_limits": "unverified",
     "cheapest_paid": "unverified",
@@ -741,12 +741,12 @@
     "name": "Dune",
     "url": "https://dune.com/",
     "category": "onchain-analytics",
-    "chains": "unverified",
+    "chains": "100+ chains (per homepage)",
     "has_free_tier": "yes",
     "free_tier_limits": "Free: view-only access, view and copy any dashboard or query",
     "cheapest_paid": {
-      "text": "$65/mo Analyst (15% off yearly)",
-      "usd_per_month": 65,
+      "text": "$75/mo Analyst billed monthly ($65/mo billed yearly, 15% off)",
+      "usd_per_month": 75,
       "plan": "Analyst"
     },
     "price_source_url": "https://dune.com/pricing",
@@ -755,7 +755,7 @@
     "affiliate_program": "unverified",
     "affiliate_url": null,
     "verification": "verified",
-    "notes": "Analyst: 3 seats, 4,000 credits, run and schedule queries."
+    "notes": "Analyst: 3 seats, 4,000 credits, 40 API calls/min. API access needs an active trial or a paid plan; free access after a trial is view-only with no API exports (per docs.dune.com billing page)."
   },
   {
     "id": "arkham",
@@ -768,11 +768,11 @@
     "cheapest_paid": "unverified",
     "price_source_url": "https://info.arkm.com/",
     "date_checked": "2026-10-26",
-    "best_free_alternative": "debank",
+    "best_free_alternative": "bubblemaps",
     "affiliate_program": "unverified",
     "affiliate_url": null,
     "verification": "unverified",
-    "notes": null
+    "notes": "Alternative changed from DeBank to Bubblemaps: Bubblemaps' web app shows wallet clusters and fund flows without sign-in and covers Solana, Tron and TON as well as EVM chains (per its docs), so it fits Arkham's wallet-tracing use better than an EVM-only portfolio tracker. Arkham's own pricing could not be read (its API pricing page returned 404)."
   },
   {
     "id": "messari",
@@ -825,8 +825,8 @@
     "has_free_tier": "yes",
     "free_tier_limits": "Free ($0): open dashboards; LlamaAI 1 free question/day plus 1 research report every 14 days",
     "cheapest_paid": {
-      "text": "$40.83/mo Pro as displayed (yearly gets 2 months free)",
-      "usd_per_month": 40.83,
+      "text": "$49/mo Pro billed monthly ($490/yr billed yearly, shown as $40.83/mo)",
+      "usd_per_month": 49,
       "plan": "Pro"
     },
     "price_source_url": "https://defillama.com/subscription",
@@ -835,24 +835,28 @@
     "affiliate_program": "unverified",
     "affiliate_url": null,
     "verification": "verified",
-    "notes": "Pro API: 1,000 requests/min, 1M calls/month; 7-day free trial."
+    "notes": "Pro does not include API access. The API plan gives 1,000 requests/min and 1M calls/month with $0.60 per 1,000 extra calls. The 7-day free trial converts to $49/month."
   },
   {
     "id": "bubblemaps",
     "name": "Bubblemaps",
     "url": "https://bubblemaps.io/",
     "category": "onchain-analytics",
-    "chains": "unverified",
-    "has_free_tier": "unverified",
-    "free_tier_limits": "unverified",
-    "cheapest_paid": "unverified",
-    "price_source_url": "https://bubblemaps.io/pricing",
+    "chains": "14 chains incl. Solana, Ethereum, Base, BSC, Tron, TON (per API docs)",
+    "has_free_tier": "yes",
+    "free_tier_limits": "Web app maps token holders without sign-in; free usage limits not published",
+    "cheapest_paid": {
+      "text": "$170/mo API Starter (100,000 credits/mo; $136/mo billed yearly)",
+      "usd_per_month": 170,
+      "plan": "API Starter"
+    },
+    "price_source_url": "https://pro.bubblemaps.io/api/plans",
     "date_checked": "2026-10-26",
-    "best_free_alternative": "arkham",
+    "best_free_alternative": "rugcheck",
     "affiliate_program": "unverified",
     "affiliate_url": null,
-    "verification": "unverified",
-    "notes": null
+    "verification": "partial",
+    "notes": "API Standard is $850/mo ($680/mo yearly) with 750,000 credits; Enterprise is custom. Basic iframe embeds need no subscription; platforms contact sales. Free alternative is RugCheck, which shows Solana insider and holder networks for free."
   },
   {
     "id": "coinstats",
@@ -985,7 +989,7 @@
     "name": "DEX Screener",
     "url": "https://dexscreener.com/",
     "category": "dex-tools",
-    "chains": "unverified",
+    "chains": "64 chains listed on its site incl. Solana, Ethereum, BSC, Base (per homepage)",
     "has_free_tier": "yes",
     "free_tier_limits": "Free public API: 60 req/min on profile/boost endpoints, 300 req/min on pair endpoints",
     "cheapest_paid": "unverified",
@@ -1019,9 +1023,9 @@
     "name": "GeckoTerminal",
     "url": "https://www.geckoterminal.com/",
     "category": "dex-tools",
-    "chains": "unverified",
-    "has_free_tier": "unverified",
-    "free_tier_limits": "unverified",
+    "chains": "225 networks (per its public API networks list)",
+    "has_free_tier": "yes",
+    "free_tier_limits": "Public API with no key: 10 calls/min",
     "cheapest_paid": {
       "text": "$35/mo via CoinGecko API Basic",
       "usd_per_month": 35,
@@ -1032,23 +1036,23 @@
     "best_free_alternative": "dexscreener",
     "affiliate_program": "unverified",
     "affiliate_url": null,
-    "verification": "partial",
-    "notes": "Paid data access is through CoinGecko's API plans."
+    "verification": "verified",
+    "notes": "Free limit from geckoterminal.com/dex-api; the keyless /api/v2/networks endpoint returned HTTP 200 on 2026-10-26. Paid access is through CoinGecko API plans, which raise the limit to 250 calls/min."
   },
   {
     "id": "birdeye",
     "name": "Birdeye Data Services",
     "url": "https://birdeye.so/",
     "category": "dex-tools",
-    "chains": "unverified",
+    "chains": "17 networks incl. Solana, Ethereum, BNB Smart Chain, Base, Sui (per supported-networks docs)",
     "has_free_tier": "yes",
-    "free_tier_limits": "Standard (Free) API tier",
+    "free_tier_limits": "Standard (Free) API: 30,000 compute units/month, 1 request/sec, no extra CUs (no overage)",
     "cheapest_paid": {
-      "text": "$39/mo (2.5M compute units/mo)",
+      "text": "$39/mo Lite (2.5M compute units/mo, 15 requests/sec)",
       "usd_per_month": 39,
-      "plan": null
+      "plan": "Lite"
     },
-    "price_source_url": "https://bds.birdeye.so/pricing",
+    "price_source_url": "https://data.birdeye.so/docs/guides/payment/pricing",
     "date_checked": "2026-10-26",
     "best_free_alternative": "dexscreener",
     "affiliate_program": "yes",
@@ -1061,24 +1065,28 @@
     "name": "Jupiter (Developer Platform)",
     "url": "https://jup.ag/",
     "category": "dex-tools",
-    "chains": "unverified",
+    "chains": "Solana (per developer docs)",
     "has_free_tier": "yes",
-    "free_tier_limits": "Start free, no upfront payments (API)",
-    "cheapest_paid": "unverified",
-    "price_source_url": "https://dev.jup.ag/docs/",
+    "free_tier_limits": "Keyless: 0.5 requests/sec with no sign-up; Free plan ($0) with API key: 1 request/sec",
+    "cheapest_paid": {
+      "text": "$25/mo Developer (25M credits, 10 requests/sec)",
+      "usd_per_month": 25,
+      "plan": "Developer"
+    },
+    "price_source_url": "https://portal.jup.ag/pricing",
     "date_checked": "2026-10-26",
     "best_free_alternative": "oneinch",
     "affiliate_program": "unverified",
     "affiliate_url": null,
-    "verification": "partial",
-    "notes": null
+    "verification": "verified",
+    "notes": "Launch $100/mo, Pro $500/mo; overage $1 per 1M credits; yearly billing gives 2 months free."
   },
   {
     "id": "oneinch",
     "name": "1inch Business (API)",
     "url": "https://1inch.com/",
     "category": "multi-chain",
-    "chains": "unverified",
+    "chains": "18+ networks (per homepage)",
     "has_free_tier": "yes",
     "free_tier_limits": "Dev plan: Free",
     "cheapest_paid": {
@@ -1099,7 +1107,7 @@
     "name": "Jumper / LI.FI",
     "url": "https://jumper.exchange/",
     "category": "multi-chain",
-    "chains": "unverified",
+    "chains": "35 chains (per homepage)",
     "has_free_tier": "unverified",
     "free_tier_limits": "unverified",
     "cheapest_paid": "unverified",
@@ -1116,7 +1124,7 @@
     "name": "Rango Exchange",
     "url": "https://rango.exchange/",
     "category": "multi-chain",
-    "chains": "unverified",
+    "chains": "80+ blockchains (per homepage)",
     "has_free_tier": "unverified",
     "free_tier_limits": "unverified",
     "cheapest_paid": "unverified",
@@ -1144,5 +1152,182 @@
     "affiliate_url": null,
     "verification": "unverified",
     "notes": null
+  },
+  {
+    "id": "rugcheck",
+    "name": "RugCheck",
+    "url": "https://rugcheck.xyz/",
+    "category": "token-safety",
+    "chains": "Solana, Fogo (per homepage)",
+    "has_free_tier": "yes",
+    "free_tier_limits": "Public API endpoints return data without an API key (tested 2026-10-26); limits not published",
+    "cheapest_paid": "unverified",
+    "price_source_url": "https://api.rugcheck.xyz/swagger/index.html",
+    "date_checked": "2026-10-26",
+    "best_free_alternative": "goplus",
+    "affiliate_program": "unverified",
+    "affiliate_url": null,
+    "verification": "partial",
+    "notes": "API covers token reports, insider networks, lockers and new-token feeds. A keyless call returned an x-rate-limit-limit of 15, but the time window is not documented."
+  },
+  {
+    "id": "goplus",
+    "name": "GoPlus Security API",
+    "url": "https://gopluslabs.io/",
+    "category": "token-safety",
+    "chains": "45 mainnets plus 1 testnet incl. Ethereum, BSC, Solana, Base, Tron (per its supported_chains API)",
+    "has_free_tier": "yes",
+    "free_tier_limits": "Free API: 150K compute units/month, 30K CU/day, 150 CU/min, no batch calls",
+    "cheapest_paid": {
+      "text": "$199/mo Test Package (6M CU/month)",
+      "usd_per_month": 199,
+      "plan": "Test Package"
+    },
+    "price_source_url": "https://gopluslabs.io/en/security-api",
+    "date_checked": "2026-10-26",
+    "best_free_alternative": "rugcheck",
+    "affiliate_program": "unverified",
+    "affiliate_url": null,
+    "verification": "verified",
+    "notes": "Beginner $399/mo (16M CU), Growth $799/mo (37.5M CU). The docs support page still says the open API is free at 30 calls/min, which conflicts with the pricing table. Solana token security is marked Beta in the docs."
+  },
+  {
+    "id": "jupitertokens",
+    "name": "Jupiter Tokens API",
+    "url": "https://developers.jup.ag/docs/tokens",
+    "category": "token-safety",
+    "chains": "Solana (per developer docs)",
+    "has_free_tier": "yes",
+    "free_tier_limits": "Keyless: 0.5 requests/sec with no sign-up; Free plan ($0) with API key: 1 request/sec",
+    "cheapest_paid": {
+      "text": "$25/mo Developer (25M credits, 10 requests/sec)",
+      "usd_per_month": 25,
+      "plan": "Developer"
+    },
+    "price_source_url": "https://portal.jup.ag/pricing",
+    "date_checked": "2026-10-26",
+    "best_free_alternative": "rugcheck",
+    "affiliate_program": "unverified",
+    "affiliate_url": null,
+    "verification": "verified",
+    "notes": "Tokens v2 returns verification status, Organic Score and audit flags such as mint/freeze authority and top-holder share. The same Jupiter plans cover all its APIs."
+  },
+  {
+    "id": "solsniffer",
+    "name": "Solsniffer",
+    "url": "https://solsniffer.com/",
+    "category": "token-safety",
+    "chains": "Solana (per homepage)",
+    "has_free_tier": "yes",
+    "free_tier_limits": "Free API: 100 calls/month",
+    "cheapest_paid": {
+      "text": "$47/mo (5,000 API calls/month; $525/yr billed yearly)",
+      "usd_per_month": 47,
+      "plan": null
+    },
+    "price_source_url": "https://solsniffer.com/api-service",
+    "date_checked": "2026-10-26",
+    "best_free_alternative": "rugcheck",
+    "affiliate_program": "unverified",
+    "affiliate_url": null,
+    "verification": "verified",
+    "notes": "Each scan covers liquidity, top-50 holder distribution, deployer info and audit risks. Plan names were not shown on the pricing page."
+  },
+  {
+    "id": "tokensniffer",
+    "name": "Token Sniffer",
+    "url": "https://tokensniffer.com/",
+    "category": "token-safety",
+    "chains": "unverified",
+    "has_free_tier": "unverified",
+    "free_tier_limits": "unverified",
+    "cheapest_paid": "unverified",
+    "price_source_url": "https://tokensniffer.readme.io/reference/introduction",
+    "date_checked": "2026-10-26",
+    "best_free_alternative": "goplus",
+    "affiliate_program": "unverified",
+    "affiliate_url": null,
+    "verification": "unverified",
+    "notes": "API docs say API features are available only on Pro and Enterprise subscription plans; plan prices and free limits could not be read (the main site blocked automated checks)."
+  },
+  {
+    "id": "solscan",
+    "name": "Solscan",
+    "url": "https://solscan.io/",
+    "category": "onchain-analytics",
+    "chains": "Solana (per API docs)",
+    "has_free_tier": "yes",
+    "free_tier_limits": "Block explorer is free on solscan.io; Pro API needs a paid plan (a public API endpoint returned 401 without a key on 2026-10-26)",
+    "cheapest_paid": {
+      "text": "$49/mo Lite (20M compute units, 1,000 requests/60s)",
+      "usd_per_month": 49,
+      "plan": "Lite"
+    },
+    "price_source_url": "https://pro-api.solscan.io/pro-api-docs/v2.0/docs/packages_endpoint_allocation",
+    "date_checked": "2026-10-26",
+    "best_free_alternative": "birdeye",
+    "affiliate_program": "unverified",
+    "affiliate_url": null,
+    "verification": "partial",
+    "notes": "Higher API levels: $199, $399 and $1,099 per month."
+  },
+  {
+    "id": "gmgn",
+    "name": "GMGN",
+    "url": "https://gmgn.ai/",
+    "category": "dex-tools",
+    "chains": "Solana, BSC, Base, Ethereum (per homepage)",
+    "has_free_tier": "yes",
+    "free_tier_limits": "No subscription; GMGN says it only charges a 1% fee per trade",
+    "cheapest_paid": {
+      "text": "No subscription; 1% fee per trade",
+      "usd_per_month": null,
+      "plan": null
+    },
+    "price_source_url": "https://docs.gmgn.ai/index/gmgn-fees-settings",
+    "date_checked": "2026-10-26",
+    "best_free_alternative": "dexscreener",
+    "affiliate_program": "unverified",
+    "affiliate_url": null,
+    "verification": "partial",
+    "notes": "Network gas and priority fees are extra. Token security data is sourced from third-party providers, per its docs."
+  },
+  {
+    "id": "axiom",
+    "name": "Axiom",
+    "url": "https://axiom.trade/",
+    "category": "dex-tools",
+    "chains": "Solana; perps via Hyperliquid (per homepage)",
+    "has_free_tier": "unverified",
+    "free_tier_limits": "unverified",
+    "cheapest_paid": {
+      "text": "No subscription found; 0.95% net fee per trade at the base tier",
+      "usd_per_month": null,
+      "plan": null
+    },
+    "price_source_url": "https://docs.axiom.trade/getting-started/fees/axiom-fees",
+    "date_checked": "2026-10-26",
+    "best_free_alternative": "dexscreener",
+    "affiliate_program": "unverified",
+    "affiliate_url": null,
+    "verification": "partial",
+    "notes": "Net fee falls with trading volume to 0.75% at the top tier (cashback of 0.05% to 0.25%)."
+  },
+  {
+    "id": "photon",
+    "name": "Photon",
+    "url": "https://photon-sol.tinyastro.io/",
+    "category": "dex-tools",
+    "chains": "Solana (per homepage)",
+    "has_free_tier": "unverified",
+    "free_tier_limits": "unverified",
+    "cheapest_paid": "unverified",
+    "price_source_url": "https://photon-sol.tinyastro.io/",
+    "date_checked": "2026-10-26",
+    "best_free_alternative": "dexscreener",
+    "affiliate_program": "unverified",
+    "affiliate_url": null,
+    "verification": "unverified",
+    "notes": "Fees were not shown on its public pages."
   }
 ]

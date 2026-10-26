@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "date": "2026-10-26",
+    "title": "LunarCrush cheapest plan corrected",
+    "summary": "Cheapest paid plan is Light at $90/mo billed monthly ($72/mo yearly), with API access at 10 requests/min and 2,000/day. The $240 we showed was Medium billed yearly.",
+    "source_url": "https://lunarcrush.com/pricing"
+  },
+  {
+    "date": "2026-10-26",
+    "title": "DefiLlama Pro billing clarified",
+    "summary": "Pro is $49/mo billed monthly; the $40.83/mo figure is the $490/yr yearly price.",
+    "source_url": "https://defillama.com/subscription"
+  },
+  {
+    "date": "2026-10-26",
+    "title": "Dune Analyst monthly price",
+    "summary": "Analyst is $75/mo billed monthly or $65/mo billed yearly (4,000 credits). The free plan cannot use the API.",
+    "source_url": "https://dune.com/pricing"
+  },
+  {
+    "date": "2026-10-26",
+    "title": "Birdeye free API limits",
+    "summary": "Free Standard tier: 30,000 compute units/month at 1 request/sec, with no overage.",
+    "source_url": "https://data.birdeye.so/docs/guides/payment/pricing"
+  },
+  {
+    "date": "2026-10-26",
+    "title": "GeckoTerminal free API confirmed",
+    "summary": "The public API works without a key at 10 calls/min.",
+    "source_url": "https://www.geckoterminal.com/dex-api"
+  },
+  {
+    "date": "2026-10-26",
+    "title": "Bubblemaps API pricing added",
+    "summary": "API Starter is $170/mo ($136/mo billed yearly) for 100,000 credits.",
+    "source_url": "https://pro.bubblemaps.io/api/plans"
+  },
+  {
+    "date": "2026-10-26",
+    "title": "New Token safety category",
+    "summary": "Added RugCheck, GoPlus, Jupiter Tokens API, Solsniffer and Token Sniffer, plus Solscan, GMGN, Axiom and Photon. Arkham's free alternative is now Bubblemaps.",
+    "source_url": "https://gopluslabs.io/en/security-api"
+  }
+]

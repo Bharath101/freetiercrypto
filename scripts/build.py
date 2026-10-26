@@ -19,6 +19,7 @@ CATS = {
     "alerts": ("Alerts", "Price, whale and on-chain alert services."),
     "dex-tools": ("DEX tools", "DEX pair screeners, terminals and DEX data APIs."),
     "multi-chain": ("Multi-chain & bridges", "Cross-chain swap aggregators, bridges and multi-chain APIs."),
+    "token-safety": ("Token safety", "Token scanners and security APIs that flag rug-pull, honeypot and holder risks."),
 }
 STATUS_LABEL = {"verified": "Verified", "partial": "Partly verified", "unverified": "Unverified"}
 STATUS_HELP = {
@@ -84,7 +85,7 @@ def main():
 
     render("index.html", "/", lastmod=last, tools=tools,
            title=f"{site['name']}: free vs paid tiers of {len(tools)} crypto tools, compared",
-           description=f"What {len(tools)} crypto charting, bot, tax, wallet, on-chain and DEX tools give you for free, the cheapest paid plan in USD, and the best free alternative. Every price links to its source and date checked.")
+           description=f"What {len(tools)} crypto charting, bot, tax, wallet, on-chain, DEX and token-safety tools give you for free, the cheapest paid plan in USD, and the best free alternative. Every price links to its source and date checked.")
     for c in cats:
         render("category.html", f"/category/{c['slug']}/", lastmod=last, cat=c, tools=c["tools"],
                title=f"{c['name']}: free tiers vs paid plans | {site['name']}",
