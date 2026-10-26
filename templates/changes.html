@@ -14,6 +14,6 @@
   {% else %}
   <div class="note"><strong>No changes logged yet.</strong> Tracking started on {{ stats.last|nicedate }}, when the first snapshot of every pricing page was taken. Confirmed changes will appear here, newest first.</div>
   {% endif %}
-  <p class="small muted">Want these by email? <a href="/newsletter/">Join the newsletter</a>.</p>
+  {% if nl.enabled %}  <p class="small muted">Want these by email? <a href="/newsletter/">Join the newsletter</a>.</p>{% endif %}
 </section>
 {% endblock %}

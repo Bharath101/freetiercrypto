@@ -94,7 +94,7 @@ def main():
            description="A dated log of changes to crypto tools' free tiers and entry-level paid plans, flagged by an automated pricing-page check and confirmed by hand.")
     render("about.html", "/about/", lastmod=last, title=f"About, affiliate disclosure & disclaimer | {site['name']}",
            description="How FreeTierCrypto collects pricing, what 'verified' means, our affiliate disclosure, and why nothing here is financial advice.")
-    render("newsletter.html", "/newsletter/", lastmod=last, title=f"Newsletter: free tier change alerts | {site['name']}",
+    if site.get("newsletter", {}).get("enabled"): render("newsletter.html", "/newsletter/", lastmod=last, title=f"Newsletter: free tier change alerts | {site['name']}",
            description="Get an email when a crypto tool cuts or expands its free tier, or changes its cheapest paid plan.")
     render("404.html", "404.html", sitemap_on=False, title=f"Page not found | {site['name']}", description="Page not found")
     shutil.copytree(ROOT / "static", out / "static")

@@ -33,7 +33,7 @@
     <p class="small">An automated check re-reads every pricing page and flags differences. A person confirms each change before it is logged here.</p>
     <a href="/changes/">See the changes log →</a>
   </div>
-  {{ signup(nl, compact=True) }}
+  {% if nl.enabled %}{{ signup(nl, compact=True) }}{% endif %}
 </section>
 {% endblock %}
 {% block scripts %}{{ filter_script() }}{% endblock %}
