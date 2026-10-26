@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="article">
+  <h1>About FreeTierCrypto</h1>
+  <p class="lead">FreeTierCrypto answers two questions for each crypto tool: what can you do for free, and what is the cheapest way to pay for more?</p>
+  <h2>How we collect prices</h2>
+  <ul>
+    <li>Each figure is read from the vendor's own pricing page (or official docs where there is no pricing page). The source link and the date checked sit next to every price.</li>
+    <li>If we could not read a field there, because the page was blocked, broken, did not render, or simply did not say, the field is marked <em>unverified</em>. We do not fill gaps from memory, reviews or third-party sites.</li>
+    <li>Prices are in USD unless the page only showed another currency, in which case we say so and mark the USD price unverified.</li>
+    <li>"Best free alternative" is an editorial pick of another tool in the dataset that covers a similar job and has a free option. It is not a ranking.</li>
+  </ul>
+  <h2>What the labels mean</h2>
+  <ul>
+    <li><span class="tag tag-verified">Verified</span>: the free tier and the cheapest paid price were both read from the vendor's pricing page.</li>
+    <li><span class="tag tag-partial">Partly verified</span>: some fields were read there; the rest are marked unverified.</li>
+    <li><span class="tag tag-unverified">Unverified</span>: we could not read the pricing page.</li>
+  </ul>
+  <p>Currently {{ stats.verified }} of {{ stats.tools }} tools are fully verified, {{ stats.partial }} partly and {{ stats.unverified }} unverified. Spotted a wrong price? Check the source link and tell us; we fix it and log it on the <a href="/changes/">changes page</a>.</p>
+  <h2 id="affiliate-disclosure">Affiliate disclosure</h2>
+  <p>The "Affiliate" column says whether a vendor runs an affiliate or referral program, as stated on the vendor's own site. It is shown for transparency.</p>
+  <p>Right now, no link on this site is an affiliate link and we earn nothing from any vendor. In future some outbound links may become affiliate links, which means we could earn a commission if you buy through them, at no extra cost to you. If that happens, those links will be labelled, this page will be updated, and affiliate status will never change a price, a label or a "best free alternative" pick.</p>
+  <h2 id="not-financial-advice">Not financial advice</h2>
+  <p class="risk"><strong>Nothing on this site is financial, investment, tax or legal advice.</strong> FreeTierCrypto lists software tools and their published prices. It does not recommend any coin, token, exchange or trade. Crypto assets are volatile and you can lose all the money you put in. Trading bots can lose money quickly. Tax rules differ by country, so check with a qualified professional. Prices change often; always confirm on the vendor's site before you pay.</p>
+  <h2>Data</h2>
+  <p>The full dataset is public: <a href="/data/tools.json">tools.json</a> and <a href="/data/changelog.json">changelog.json</a>.</p>
+</section>
+{% endblock %}

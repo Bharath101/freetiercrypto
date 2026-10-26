@@ -1,0 +1,52 @@
+name: pricing-check
+on:
+  schedule:
+    - cron: "30 2 * * *"   # 02:30 UTC daily = 08:00 IST
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: pricing-check
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Re-fetch pricing pages and diff against snapshots
+        id: check
+        env:
+          CHROME_BIN: google-chrome
+        run: python scripts/check_pricing.py
+      - name: Commit snapshots and diff report
+        run: |
+          git config user.name "freetiercrypto-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/snapshots data/pricing_diffs.json
+          if git diff --cached --quiet; then echo "no snapshot changes"; else
+            git commit -m "data: pricing snapshot $(date -u +%F)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Open an issue when pricing pages changed
+        if: steps.check.outputs.changed != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY' > body.md
+          import json
+          r = json.load(open("data/pricing_diffs.json"))
+          print(f"Pricing check {r['checked_at']}: {len(r['changed'])} page(s) changed. Confirm by hand before editing data/tools.json and data/changelog.json.\n")
+          for d in r["changed"]:
+              print(f"### {d['name']}\n{d['url']}\n")
+              print("Added:\n" + "\n".join(f"- `{l}`" for l in d["added"][:15]) + "\n")
+              print("Removed:\n" + "\n".join(f"- `{l}`" for l in d["removed"][:15]) + "\n")
+          PY
+          gh issue create --title "Pricing pages changed ($(date -u +%F))" --body-file body.md

@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% from "_macros.html" import table, filters, filter_script %}
+{% block content %}
+<p class="crumbs small"><a href="/">Home</a> › {{ cat.name }}</p>
+<section class="hero">
+  <h1>{{ cat.name }}: free tiers vs paid plans</h1>
+  <p class="lead">{{ cat.blurb }} {{ tools|length }} tools, checked {{ stats.last|nicedate }}. Prices link to each vendor's pricing page.</p>
+</section>
+<section id="tools">
+  {{ filters(cats, with_cats=False) }}
+  {{ table(tools, show_cat=False) }}
+</section>
+<section>
+  <h2>Other categories</h2>
+  <ul class="links cols">{% for c in cats if c.slug != cat.slug %}<li><a href="/category/{{ c.slug }}/">{{ c.name }}</a> <span class="small muted">({{ c.tools|length }})</span></li>{% endfor %}</ul>
+</section>
+{% endblock %}
+{% block scripts %}{{ filter_script() }}{% endblock %}

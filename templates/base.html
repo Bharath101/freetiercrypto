@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ site.base_url }}{{ path if not path.endswith('.html') else '/' + path }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.base_url }}{{ path }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:image" content="{{ site.base_url }}/static/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ site.base_url }}/static/og.png">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+{% block head %}{% endblock %}
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="/"><span class="logo-mark">◆</span> FreeTier<span class="muted">Crypto</span></a>
+    <nav>
+      <a href="/#tools">Tools</a>
+      <a href="/changes/">Free tier changes</a>
+      <a href="/newsletter/">Newsletter</a>
+      <a class="btn btn-sm" href="/about/">About</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="logo" href="/"><span class="logo-mark">◆</span> FreeTier<span class="muted">Crypto</span></a>
+      <p class="muted small">{{ site.tagline }}. Prices are copied from each vendor's own pricing page with the source link and date checked. Anything we could not read there is marked <em>unverified</em>.</p>
+      <p class="foot-risk"><strong>Not financial advice. Crypto is high risk.</strong> This site lists software tools and their prices. It does not recommend any coin, token or trade. Always check the vendor's own site before you pay for anything.</p>
+    </div>
+    <div>
+      <h4>Categories</h4>
+      {% for c in cats %}<a href="/category/{{ c.slug }}/">{{ c.name }}</a>{% endfor %}
+    </div>
+    <div>
+      <h4>Site</h4>
+      <a href="/changes/">Free tier changes</a><a href="/newsletter/">Newsletter</a><a href="/about/">About &amp; affiliate disclosure</a><a href="/data/tools.json">Dataset (JSON)</a>
+    </div>
+  </div>
+  <div class="wrap small muted copy">© {{ year }} {{ site.name }}. Not affiliated with any vendor listed. Some outbound links may become affiliate links in future; see the <a href="/about/#affiliate-disclosure">affiliate disclosure</a>. Trademarks belong to their owners.</div>
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

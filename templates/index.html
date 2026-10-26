@@ -1,0 +1,39 @@
+{% extends "base.html" %}{% from "_macros.html" import table, filters, filter_script, signup %}
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Checked {{ stats.last|nicedate }} · {{ stats.tools }} tools · {{ stats.cats }} categories</p>
+  <h1>Crypto tools: <em>what you get free, and what the first paid plan costs</em>.</h1>
+  <p class="lead">Free tier limits, the cheapest paid plan in USD and the best free alternative for {{ stats.tools }} charting, screener, bot, tax, wallet, on-chain, portfolio, alert, DEX and multi-chain tools. Every price was read from the vendor's own pricing page and links to it with the date checked. Anything we could not read there says <em>unverified</em>.</p>
+  <p class="risk"><strong>Not financial advice.</strong> This is a price list for software. It never tells you what to buy or trade.</p>
+  <div class="stats">
+    <div><strong>{{ stats.tools }}</strong><span>tools</span></div>
+    <div><strong>{{ stats.verified }}</strong><span>fully verified</span></div>
+    <div><strong>{{ stats.partial }}</strong><span>partly verified</span></div>
+    <div><strong>{{ stats.unverified }}</strong><span>unverified</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Categories</h2>
+  <div class="grid">
+  {% for c in cats %}<div class="card"><h3><a href="/category/{{ c.slug }}/">{{ c.name }}</a></h3><p class="small">{{ c.blurb }}</p><p class="small muted">{{ c.tools|length }} tools: {% for t in c.tools %}{{ t.name }}{% if not loop.last %}, {% endif %}{% endfor %}</p></div>{% endfor %}
+  </div>
+</section>
+
+<section id="tools">
+  <h2>All tools</h2>
+  {{ filters(cats) }}
+  {{ table(tools) }}
+  <p class="small muted">"Cheapest paid plan" is the lowest entry price shown on the pricing page when checked; annual-billing discounts are noted where the page showed them. Hardware wallets are one-time purchases. <a href="/data/tools.json">Download the dataset (JSON)</a>.</p>
+</section>
+
+<section class="split">
+  <div class="card">
+    <h2>Free tier changes</h2>
+    <p class="small">An automated check re-reads every pricing page and flags differences. A person confirms each change before it is logged here.</p>
+    <a href="/changes/">See the changes log →</a>
+  </div>
+  {{ signup(nl, compact=True) }}
+</section>
+{% endblock %}
+{% block scripts %}{{ filter_script() }}{% endblock %}

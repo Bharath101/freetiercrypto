@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% from "_macros.html" import signup %}
+{% block content %}
+<section class="article">
+  <h1>Newsletter</h1>
+  <p class="lead">Free tiers shrink, trials get shorter, and entry plans get repriced. Get one short email when a tool we track changes what it gives away or what it charges.</p>
+  {{ signup(nl) }}
+  <p class="small muted">We only use your email to send this newsletter. Not financial advice.</p>
+</section>
+{% endblock %}

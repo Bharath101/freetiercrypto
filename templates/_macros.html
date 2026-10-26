@@ -1,0 +1,73 @@
+{% macro table(tools, show_cat=True) %}
+<div class="table-wrap">
+<table class="ptable ftable" id="tbl">
+<thead><tr><th>Tool</th>{% if show_cat %}<th>Category</th>{% endif %}<th>Free tier</th><th>Cheapest paid plan</th><th>Best free alternative</th><th>Chains</th><th>Affiliate</th><th>Status</th></tr></thead>
+<tbody>
+{% for t in tools %}
+<tr id="{{ t.id }}" data-cat="{{ t.category }}" data-status="{{ t.verification }}" data-free="{{ t.has_free_tier }}" data-aff="{{ t.affiliate_program }}" data-name="{{ (t.name ~ ' ' ~ t.cat_name ~ ' ' ~ t.free_tier_limits ~ ' ' ~ t.price_text ~ ' ' ~ (t.notes or ''))|lower }}">
+<td><a href="{{ t.url }}" rel="nofollow noopener" target="_blank"><strong>{{ t.name }}</strong></a>{% if t.notes %}<div class="small muted">{{ t.notes }}</div>{% endif %}</td>
+{% if show_cat %}<td><a href="/category/{{ t.category }}/">{{ t.cat_name }}</a></td>{% endif %}
+<td>{% if t.free_tier_limits == 'unverified' %}<span class="tag tag-unverified">unverified</span>{% else %}{{ t.free_tier_limits }}{% endif %}</td>
+<td>{% if t.price_text == 'unverified' %}<span class="tag tag-unverified">unverified</span>{% else %}{{ t.price_text }}{% if t.cheapest_paid.plan %} <span class="small muted">({{ t.cheapest_paid.plan }})</span>{% endif %}{% endif %}
+<div class="small"><a href="{{ t.price_source_url }}" rel="nofollow noopener" target="_blank">source</a> · checked {{ t.date_checked|nicedate }}</div></td>
+<td><a href="#{{ t.alt.id }}">{{ t.alt.name }}</a></td>
+<td>{% if t.chains == 'unverified' %}<span class="tag tag-unverified">unverified</span>{% else %}{{ t.chains }}{% endif %}</td>
+<td>{% if t.affiliate_program == 'yes' %}<span class="tag tag-verified">yes</span>{% elif t.affiliate_program == 'no' %}<span class="tag">no</span>{% else %}<span class="tag tag-unverified">unverified</span>{% endif %}</td>
+<td><span class="tag tag-{{ t.verification }}" title="{{ t.status_help }}">{{ t.status_label }}</span></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+<p id="empty" class="muted" hidden>No tools match those filters.</p>
+{% endmacro %}
+
+{% macro filters(cats, with_cats=True) %}
+<div class="filters" role="search">
+  <input id="q" type="search" placeholder="Search tools, plans or limits (e.g. tax, API, alerts)…" aria-label="Search tools">
+  {% if with_cats %}<div class="chips" id="cat-chips">
+    <button class="chip on" data-cat="">All</button>
+    {% for c in cats %}<button class="chip" data-cat="{{ c.slug }}">{{ c.name }}</button>{% endfor %}
+  </div>{% endif %}
+  <div class="row">
+    <label class="small">Free tier <select id="free"><option value="">Any</option><option value="yes">Has a free tier</option><option value="no">No free tier</option><option value="trial only">Trial only</option><option value="unverified">Unverified</option></select></label>
+    <label class="small">Status <select id="status"><option value="">Any</option><option value="verified">Verified</option><option value="partial">Partly verified</option><option value="unverified">Unverified</option></select></label>
+    <label class="small">Affiliate <select id="aff"><option value="">Any</option><option value="yes">Yes</option><option value="unverified">Unverified</option></select></label>
+    <span class="small muted" id="count"></span>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro filter_script() %}
+<script>
+(function(){
+  var q=document.getElementById('q'),st=document.getElementById('status'),fr=document.getElementById('free'),af=document.getElementById('aff'),cat='';
+  var rows=[].slice.call(document.querySelectorAll('#tbl tbody tr'));
+  function apply(){
+    var s=q.value.trim().toLowerCase(),n=0;
+    rows.forEach(function(r){var ok=(!cat||r.dataset.cat===cat)&&(!s||r.dataset.name.indexOf(s)>-1)&&(!st.value||r.dataset.status===st.value)&&(!fr.value||r.dataset.free===fr.value)&&(!af.value||r.dataset.aff===af.value);r.hidden=!ok;if(ok)n++;});
+    document.getElementById('count').textContent=n+' tools';document.getElementById('empty').hidden=n>0;
+  }
+  document.querySelectorAll('#cat-chips .chip').forEach(function(ch){ch.addEventListener('click',function(){
+    document.querySelectorAll('#cat-chips .chip').forEach(function(x){x.classList.remove('on');});ch.classList.add('on');cat=ch.dataset.cat;apply();});});
+  [q,st,fr,af].forEach(function(el){el.addEventListener(el===q?'input':'change',apply);});apply();
+})();
+</script>
+{% endmacro %}
+
+{% macro signup(nl, compact=False) %}
+<div class="card accent newsletter" id="newsletter">
+  <h2>{% if compact %}Get free-tier change alerts{% else %}Subscribe{% endif %}</h2>
+  <p class="small">One short email when a tool cuts or expands its free tier, or changes its cheapest paid plan. No spam, unsubscribe any time.</p>
+  {% if nl.form_id %}
+  <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="{{ nl.form_id }}"></script>
+  {% else %}
+  <form class="nl-form" onsubmit="event.preventDefault();this.querySelector('.nl-msg').hidden=false;">
+    <label class="sr" for="nl-email">Email address</label>
+    <input id="nl-email" type="email" placeholder="you@example.com" required disabled>
+    <button class="btn" type="submit" disabled>Subscribe</button>
+    <p class="small muted nl-msg">Signup opens soon. The newsletter provider is not connected yet, so this form does not collect anything.</p>
+  </form>
+  {% endif %}
+</div>
+{% endmacro %}

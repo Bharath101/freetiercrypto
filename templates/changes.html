@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="article">
+  <h1>Free tier changes</h1>
+  <p class="lead">A dated record of changes to the free tiers and cheapest paid plans of the tools we track.</p>
+  <h2>How this log works</h2>
+  <ul>
+    <li>Every day a scheduled job (<code>scripts/check_pricing.py</code>) re-reads each tool's pricing page, pulls out the lines that mention prices, plans and limits, and compares them with the last saved snapshot.</li>
+    <li>When something differs, the job writes it to a diff file for review. It does not edit this page by itself, because pricing pages also change for harmless reasons (sale banners, layout, currency by visitor location).</li>
+    <li>A person opens the pricing page, confirms the change, updates the dataset, and adds a dated entry here with the before, the after and the source link.</li>
+  </ul>
+  {% if log %}
+  {% for c in log %}<div class="log-entry"><span class="date">{{ c.date|nicedate }}</span> <strong>{{ c.title }}</strong><p>{{ c.summary }}</p>{% if c.source_url %}<p class="small"><a href="{{ c.source_url }}" rel="nofollow noopener">source</a></p>{% endif %}</div>{% endfor %}
+  {% else %}
+  <div class="note"><strong>No changes logged yet.</strong> Tracking started on {{ stats.last|nicedate }}, when the first snapshot of every pricing page was taken. Confirmed changes will appear here, newest first.</div>
+  {% endif %}
+  <p class="small muted">Want these by email? <a href="/newsletter/">Join the newsletter</a>.</p>
+</section>
+{% endblock %}

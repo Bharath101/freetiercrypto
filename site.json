@@ -1,0 +1,11 @@
+{
+  "name": "FreeTierCrypto",
+  "tagline": "What crypto tools give you for free, and what the first paid plan costs",
+  "base_url": "https://OWNER.github.io/freetiercrypto",
+  "newsletter": {
+    "provider": "beehiiv",
+    "publication_url": "",
+    "subscribe_url": "",
+    "form_id": ""
+  }
+}
