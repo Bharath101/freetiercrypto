@@ -80,3 +80,7 @@ h2.day{font-size:1.05rem;margin:1.4em 0 .2em}
 .nl-form{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.nl-form input{flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font:inherit}
 .nl-msg{flex-basis:100%;margin:.3em 0 0}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+/* Strategies guide */
+.strat{border-top:1px solid var(--line);margin-top:28px}.strat h3{margin-top:1em}
+.examples{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}.card.ex{padding:12px 14px}.card.ex p{margin:.2em 0}
+.strat .glance dd{font-weight:400;font-size:.9rem}.log-entry ul{margin:.3em 0;padding-left:1.1em}h3.step{font-size:1rem;margin-top:1.2em}

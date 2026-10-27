@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="article">
+  <p class="crumbs small"><a href="/">Home</a> / Strategies</p>
+  <span class="eyebrow">Education, not advice</span>
+  <h1>Trading strategies by chain</h1>
+  <p class="lead">How people trade different kinds of coins: real example coins, the strategies commonly used on each type, written entry, stop, exit and sizing rules, the free tools that help, and the red flags.</p>
+  <p class="risk"><strong>Not financial advice. No strategy wins every trade, and you can lose everything in memecoins.</strong> These guides are built around keeping losses small and taking only trades with positive expected value. They do not promise profits.</p>
+  <div class="grid">
+    {% for g in guides %}
+    <div class="card">
+      <h3><a href="/strategies/{{ g.slug }}/">{{ g.chain }}</a></h3>
+      <p class="small">{{ g.summary }}</p>
+      <p class="small muted">{{ g.categories|length }} coin types · updated {{ g.updated|nicedate }}</p>
+      <p><a class="btn btn-sm" href="/strategies/{{ g.slug }}/">Read the {{ g.chain }} guide</a></p>
+    </div>
+    {% endfor %}
+    <div class="card"><h3>More chains</h3><p class="small muted">Guides for other chains will be added here using the same structure.</p></div>
+  </div>
+</section>
+{% endblock %}

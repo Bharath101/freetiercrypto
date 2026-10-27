@@ -1,0 +1,802 @@
+{
+ "chain": "Solana",
+ "slug": "solana",
+ "updated": "2026-10-27",
+ "title": "Solana trading strategies: coin types, example coins and how each is traded",
+ "summary": "A field guide to how people trade on Solana: nine kinds of coins, a real example of each, the strategies commonly used on them, written entry, stop, exit and sizing rules, the free tools that help, and the red flags.",
+ "intro": [
+  "Different kinds of Solana coins behave differently. SOL itself trends with the wider market, liquid staking tokens barely move against SOL, DeFi and infrastructure tokens move on usage and token unlocks, and memecoins move on attention. A strategy that suits one kind can wreck you on another, so this guide is organised by coin type.",
+  "For each type you get a profile (volatility, liquidity, typical risks), one or two real example coins, the strategies people commonly use on that type, written rules for entry, stop, exit and size, the FreeTierCrypto tools that help, and the red flags.",
+  "Example coins show what a category looks like. They are not picks, and we do not quote their prices here because prices change by the minute. Check a live screener."
+ ],
+ "honesty": "No strategy wins every trade, and nobody can promise you will end up in profit. What you can control is the shape of your results: small, pre-planned losses, winners that are allowed to be bigger than the losers, and only taking setups where the maths works out over many trades (positive expected value). That is what every rule on this page is built around.",
+ "universal": {
+  "title": "Rules that apply to every coin type",
+  "inspired": "Inspired by the risk rules of Paul Tudor Jones, Jesse Livermore, the Turtle Traders and Ed Seykota.",
+  "rules": [
+   [
+    "Risk a small, fixed slice per trade",
+    "Risk 0.5% to 1% of your trading account on any single trade, and never more than 2%. On memecoins and fresh launches, use half of that or less."
+   ],
+   [
+    "Size from the stop, not from a hunch",
+    "Position size = amount you are willing to lose ÷ distance to your stop. Example: a $1,000 account risking 1% can lose $10. If the stop is 10% below entry, the position is $100. If the stop is 25% below entry, the position is $40."
+   ],
+   [
+    "Write the plan before you click buy",
+    "Entry trigger, stop level, first take-profit and what you do with the rest. If you cannot write it in one line, skip the trade."
+   ],
+   [
+    "Only take trades worth at least 2R",
+    "R is what you lose if the stop is hit. Take a setup only if your realistic target is at least twice that distance away."
+   ],
+   [
+    "Cut losers, let winners run, never average down",
+    "Move a stop up behind price, never further away. Do not buy more of a losing position to lower your average."
+   ],
+   [
+    "Scale out",
+    "Taking part of the position off at the first target (for example half at 2R or at 2x on a memecoin) pays for the trade and lets the rest run on a trailing stop."
+   ],
+   [
+    "Stop for the day after a set number of losses",
+    "For example, three losing trades or a 3% account drawdown ends the session. It stops revenge trading. See the daily loss brake."
+   ],
+   [
+    "Judge yourself by expectancy, not win rate",
+    "Expectancy per trade = (win rate × average win in R) − (loss rate × average loss in R). A trader who wins only 35% of trades, makes 2.5R on winners and loses 1R on losers averages about +0.23R per trade before costs. A trader who wins 70% but makes 0.3R and loses 1R averages about −0.09R."
+   ],
+   [
+    "Count costs",
+    "Swap fees, priority fees, slippage and bot fees come off every trade. On small memecoin trades they can be several percent per round trip, which can turn a positive-expectancy plan negative."
+   ],
+   [
+    "Keep a journal",
+    "Log every trade: coin, type, setup, entry, stop, exit, R result, fees and why you took it. Review weekly. Your journal is the only honest source of your own win rate and average R."
+   ],
+   [
+    "Never full-port a memecoin",
+    "No single memecoin or fresh launch should ever be a large share of your account, however sure you feel. Money in fresh launches should be money you can lose in full."
+   ],
+   [
+    "Paper-trade new rules first",
+    "Run a new rule on paper for a few dozen trades before real money. CryptoStack Tracker's paper scoreboard shows how quickly a plausible rule can lose once costs are included."
+   ]
+  ],
+  "expectancy_note": "Illustrative numbers only, not results from real trades."
+ },
+ "checklist": {
+  "title": "Pre-trade checklist for any Solana token",
+  "items": [
+   [
+    "Contract address, not ticker",
+    "Tickers are copied all the time. Get the mint address from the project's official X account or site and check it matches the one in your swap screen."
+   ],
+   [
+    "Mint authority revoked",
+    "If someone can still mint, they can print new supply and dump it on you."
+   ],
+   [
+    "Freeze authority revoked",
+    "If freeze authority is live, your tokens can be frozen so you cannot sell. On Token-2022 tokens also check for a transfer fee or other extensions that can be changed later."
+   ],
+   [
+    "Liquidity burned or locked",
+    "For coins on a DEX pool, the LP tokens should be burned or locked and not controlled by one wallet. Coins still on a pump.fun bonding curve have no LP yet; the curve holds the liquidity."
+   ],
+   [
+    "Top-holder concentration",
+    "Top 10 holders (excluding the pool and burn addresses) above roughly 30-35% is a risk flag. If those wallets are linked to each other, treat it as serious."
+   ],
+   [
+    "Bundles and snipers",
+    "Wallets that bought in the launch block together (a bundle) and still hold a big share can dump on the pool. Check what share they bought and whether they still hold."
+   ],
+   [
+    "Shared funding",
+    "Ten wallets funded from one source are one person. Wallets funded from an exchange can look independent but still be one actor. Bubblemaps shows these links."
+   ],
+   [
+    "Dev behaviour",
+    "Did the creator sell in the first minutes? Have their earlier launches rugged? Has the dev wallet pulled out more SOL than it put in?"
+   ],
+   [
+    "Real demand",
+    "Volume, unique buyers and holder count should rise together. Volume alone can be wash trading."
+   ],
+   [
+    "Liquidity vs your size",
+    "Your position should be a small fraction of pool liquidity (well under 1% on thin coins) so you can get out."
+   ],
+   [
+    "Your exit plan",
+    "Stop, first target and daily loss limit written down before you buy."
+   ]
+  ]
+ },
+ "categories": [
+  {
+   "slug": "blue-chip",
+   "name": "Blue chip / layer 1: SOL",
+   "examples": [
+    {
+     "ticker": "SOL",
+     "name": "Solana",
+     "what": "The native coin of the Solana blockchain. It pays transaction fees, is staked to validators to secure the network, and is the main trading pair for almost every Solana token.",
+     "source": "https://www.coingecko.com/en/coins/solana"
+    }
+   ],
+   "profile": {
+    "volatility": "High compared with stocks, lower than almost any other Solana token.",
+    "liquidity": "Deepest on the chain, plus centralised exchanges and perps.",
+    "risks": "Moves with Bitcoin and overall crypto risk appetite; deep drawdowns happen in bear markets; network outages have happened in the past."
+   },
+   "inspired": "Trend and macro ideas from Jesse Livermore, Stanley Druckenmiller and Arthur Hayes: trade with the higher-timeframe trend, and treat liquidity, Bitcoin's direction and the US dollar as more important than headlines.",
+   "strategies": [
+    {
+     "name": "Dollar-cost averaging (DCA)",
+     "how": "Buy a fixed amount on a fixed schedule (weekly or monthly) regardless of price, for a long-term holding. Jupiter's recurring orders can automate this on-chain.",
+     "rules": [
+      "Entry: the schedule, not the chart.",
+      "Exit: a written plan, for example trim a slice after big run-ups or rebalance back to a target allocation.",
+      "Size: only an amount you can keep buying through a long drawdown."
+     ]
+    },
+    {
+     "name": "Trend following",
+     "how": "Hold or add only while price is above a rising 50-day and 200-day moving average on the daily chart; step aside when the trend breaks.",
+     "rules": [
+      "Entry: breakout of a multi-week range, or a pullback to rising support that holds.",
+      "Stop: below the range or the last swing low, typically 8-15% away.",
+      "Exit: trail the stop under each higher low, or exit on a daily close below the trend average.",
+      "Size: 1% account risk; little or no leverage."
+     ]
+    },
+    {
+     "name": "Profits denominated in SOL",
+     "how": "Some on-chain traders treat SOL as their base: trade smaller tokens, then move profits back into SOL instead of into stablecoins during an uptrend.",
+     "rules": [
+      "Works in a SOL uptrend; doubles the damage in a SOL downtrend.",
+      "Decide in advance what share of profits goes to SOL, to stablecoins and to fiat."
+     ]
+    }
+   ],
+   "tools": [
+    "tradingview",
+    "coinglass",
+    "coingecko",
+    "jupiter",
+    "phantom"
+   ],
+   "red_flags": [
+    "Overtrading in sideways chop",
+    "Leverage on a trend trade",
+    "Mistaking a bounce in a bear market for a new uptrend",
+    "Trading headlines instead of levels"
+   ]
+  },
+  {
+   "slug": "liquid-staking",
+   "name": "Liquid staking tokens (LSTs)",
+   "examples": [
+    {
+     "ticker": "JitoSOL",
+     "name": "Jito Staked SOL",
+     "what": "A liquid staking token from Jito: you deposit SOL, it is staked, and JitoSOL accrues staking and MEV rewards, so it slowly gains value against SOL.",
+     "source": "https://www.coingecko.com/en/coins/jito-staked-sol"
+    },
+    {
+     "ticker": "mSOL",
+     "name": "Marinade Staked SOL",
+     "what": "Marinade Finance's liquid staking token, one of the first on Solana. Like JitoSOL it represents staked SOL plus accumulated rewards.",
+     "source": "https://www.coingecko.com/en/coins/msol"
+    }
+   ],
+   "profile": {
+    "volatility": "Same as SOL in dollar terms; very low against SOL.",
+    "liquidity": "Good for the large LSTs, thin for small ones.",
+    "risks": "Smart-contract bugs, de-pegs against SOL in market stress, thin exit liquidity on small LSTs, and liquidation if you borrow against them."
+   },
+   "inspired": "Margin-of-safety thinking from Benjamin Graham and Warren Buffett: these are positions, not trades, and the only trading edge is buying below fair value.",
+   "strategies": [
+    {
+     "name": "Stake and hold",
+     "how": "Hold an LST instead of plain SOL so the SOL you already want to hold earns staking yield and stays usable in DeFi.",
+     "rules": [
+      "Entry: convert SOL you plan to hold anyway.",
+      "Exit: when your view on SOL changes, not on daily noise.",
+      "Size: spread across more than one large LST if the amount is big."
+     ]
+    },
+    {
+     "name": "Buy the discount",
+     "how": "In stressed markets an LST can trade below the SOL it can be redeemed for. Buying at a discount and redeeming, or waiting for the gap to close, is the trade.",
+     "rules": [
+      "Entry: only when the market price is clearly below the redemption value after fees.",
+      "Exit: when the discount closes, or redeem through the protocol (which can take an epoch, about two days).",
+      "Size: limited by how long you can wait for redemption."
+     ]
+    },
+    {
+     "name": "Looping (advanced, risky)",
+     "how": "Deposit an LST, borrow SOL against it, stake that SOL, repeat. It multiplies yield and multiplies liquidation risk.",
+     "rules": [
+      "Keep the loan-to-value well below the liquidation threshold.",
+      "A short de-peg can liquidate a loop that looked safe."
+     ]
+    }
+   ],
+   "tools": [
+    "defillama",
+    "jupiter",
+    "solscan",
+    "phantom"
+   ],
+   "red_flags": [
+    "Treating an LST as a short-term trade",
+    "Chasing the highest APY on a tiny LST",
+    "Stacking leverage on leverage",
+    "Not knowing how redemption works before you need it"
+   ]
+  },
+  {
+   "slug": "defi",
+   "name": "DeFi and DEX tokens",
+   "examples": [
+    {
+     "ticker": "JUP",
+     "name": "Jupiter",
+     "what": "Governance token of Jupiter, Solana's main swap aggregator, which also runs limit orders, DCA and perps.",
+     "source": "https://www.coingecko.com/en/coins/jupiter-exchange-solana"
+    },
+    {
+     "ticker": "RAY",
+     "name": "Raydium",
+     "what": "Token of Raydium, an automated market maker (AMM) and liquidity hub on Solana.",
+     "source": "https://www.coingecko.com/en/coins/raydium"
+    },
+    {
+     "ticker": "ORCA",
+     "name": "Orca",
+     "what": "Token of Orca, one of the first general-purpose AMMs on Solana.",
+     "source": "https://www.coingecko.com/en/coins/orca"
+    }
+   ],
+   "profile": {
+    "volatility": "Higher than SOL; often moves 1.5-3x SOL's percentage moves.",
+    "liquidity": "Good for the large ones, thinner below the top names.",
+    "risks": "Token unlocks and emissions add supply; fee and volume trends drive sentiment; protocol exploits."
+   },
+   "inspired": "Mark Minervini's trend template combined with fundamentals: only trade the ones in a clean uptrend that are also growing usage.",
+   "strategies": [
+    {
+     "name": "Trend-template breakout",
+     "how": "Look for tokens above a rising 50- and 200-day average, near their highs, stronger than SOL, with growing fees, volume or revenue. Buy the breakout from a tightening base (a volatility contraction pattern) on rising volume.",
+     "rules": [
+      "Entry: break above the tight base on volume above average.",
+      "Stop: below the last contraction low, typically 7-12% away.",
+      "Exit: take a partial at 2-3R, trail the rest; exit before large unlocks if the chart is weakening.",
+      "Size: 1% risk, and small relative to pool and exchange liquidity."
+     ]
+    },
+    {
+     "name": "Relative-strength rotation",
+     "how": "Compare each DeFi token to SOL (for example JUP/SOL). Hold the ones making higher highs against SOL; rotate out of the ones lagging.",
+     "rules": [
+      "Check the pair chart weekly.",
+      "Rotate on a broken relative trend, not on a single red day."
+     ]
+    }
+   ],
+   "tools": [
+    "defillama",
+    "tokenterminal",
+    "tradingview",
+    "birdeye",
+    "coingecko"
+   ],
+   "red_flags": [
+    "Ignoring the unlock calendar",
+    "Buying airdrop hype after the jump",
+    "Holding a broken trend because you like the story",
+    "Fees or volume falling while price rises"
+   ]
+  },
+  {
+   "slug": "infrastructure",
+   "name": "Infrastructure and oracle tokens",
+   "examples": [
+    {
+     "ticker": "PYTH",
+     "name": "Pyth Network",
+     "what": "A decentralised oracle network that supplies real-time market prices to applications on Solana and many other chains.",
+     "source": "https://www.coingecko.com/en/coins/pyth-network"
+    },
+    {
+     "ticker": "JTO",
+     "name": "Jito",
+     "what": "Governance token of the Jito Network, which runs the JitoSOL staking pool and MEV infrastructure used by many Solana validators.",
+     "source": "https://www.coingecko.com/en/coins/jito-governance-token"
+    }
+   ],
+   "profile": {
+    "volatility": "Medium to high.",
+    "liquidity": "Good on major venues.",
+    "risks": "Large scheduled unlocks; value capture for the token can be unclear even when the product is widely used; long sideways ranges."
+   },
+   "inspired": "Range and swing trading in the style of classic support and resistance traders.",
+   "strategies": [
+    {
+     "name": "Range (swing) trading",
+     "how": "Infrastructure tokens often spend months in ranges. Buy near well-tested support, sell near resistance, and stand aside when the range breaks.",
+     "rules": [
+      "Entry: a reaction off support that has held at least twice.",
+      "Stop: a daily close below the range, usually 8-12% under entry.",
+      "Exit: scale out near the top of the range.",
+      "Size: 1% risk; only if the range is wide enough for 2R."
+     ]
+    },
+    {
+     "name": "Unlock-aware positioning",
+     "how": "Check the token's unlock schedule. Large unlocks add sellers. Some traders avoid new longs just before big unlocks and wait to see how the market absorbs them.",
+     "rules": [
+      "Mark unlock dates on your chart.",
+      "Do not fight a breakdown after an unlock."
+     ]
+    }
+   ],
+   "tools": [
+    "tradingview",
+    "coingecko",
+    "messari",
+    "tokenterminal"
+   ],
+   "red_flags": [
+    "Assuming product adoption means the token must go up",
+    "Buying the middle of a range",
+    "Ignoring unlocks"
+   ]
+  },
+  {
+   "slug": "established-memes",
+   "name": "Established memecoins",
+   "examples": [
+    {
+     "ticker": "BONK",
+     "name": "Bonk",
+     "what": "A dog-themed memecoin launched on Solana on Christmas Day 2022, after the FTX collapse, and airdropped widely to the community.",
+     "source": "https://www.coingecko.com/en/coins/bonk"
+    },
+    {
+     "ticker": "WIF",
+     "name": "dogwifhat",
+     "what": "A Solana memecoin built around the image of a Shiba Inu wearing a pink knitted hat.",
+     "source": "https://www.coingecko.com/en/coins/dogwifcoin"
+    }
+   ],
+   "profile": {
+    "volatility": "Very high; 70-90% drawdowns from peaks are common in this category.",
+    "liquidity": "Deep for the top few, falls off fast below them.",
+    "risks": "Price is driven by attention, which fades; no cash flows to anchor value; sharp moves on whale selling and exchange listings or delistings."
+   },
+   "inspired": "Nicolas Darvas's box breakouts and George Soros's reflexivity: attention drives price, price drives attention, so trade the cycle, not the story.",
+   "strategies": [
+    {
+     "name": "Box breakout in a risk-on market",
+     "how": "Wait for a clear trading range (a box) to form, then buy a break above it on rising volume while SOL and the wider market are strong.",
+     "rules": [
+      "Entry: break of the box top on volume.",
+      "Stop: below the box, usually 15-25% away, so the position must be smaller.",
+      "Exit: sell into strength in pieces (for example a third after a big move), trail the rest, exit fully when volume and social attention fade.",
+      "Size: half your normal risk."
+     ]
+    },
+    {
+     "name": "Take initials, ride the rest",
+     "how": "Common on crypto X: once a position is up enough, sell the amount you put in and let the remainder run with no cost basis left at risk.",
+     "rules": [
+      "Decide the level in advance (for example at 2x).",
+      "Keep a stop on the remainder; a free position can still go to zero."
+     ]
+    }
+   ],
+   "tools": [
+    "dexscreener",
+    "birdeye",
+    "bubblemaps",
+    "lunarcrush",
+    "tradingview"
+   ],
+   "red_flags": [
+    "Holding through a 70-90% drop because it came back before",
+    "Buying after a vertical candle",
+    "Treating a memecoin as a long-term investment",
+    "One coin taking over your account"
+   ]
+  },
+  {
+   "slug": "new-launches",
+   "name": "New pump.fun launches and fresh pairs",
+   "examples": [
+    {
+     "ticker": "(none)",
+     "name": "No example coin on purpose",
+     "what": "Most fresh launches go to zero within hours or days, so naming one would only date this page or advertise a coin. Read CryptoStack Tracker's php case study for a worked example of a launch that died in minutes.",
+     "source": "https://ajaynallavelli.github.io/cryptostack-tracker/case-studies/php-dead-in-minutes/"
+    }
+   ],
+   "profile": {
+    "volatility": "Extreme: moves of ±50% in minutes are normal.",
+    "liquidity": "Very thin; often only the bonding curve or a small pool.",
+    "risks": "Rugs, bundled supply, dev dumps, copycat tokens, bots front-running you, high fees and slippage. You will lose most trades; the only way to come out ahead is losses that stay small and rare winners that are large."
+   },
+   "inspired": "The strict-rules approach of the FreeTierCrypto research desk, described below as a research process, not a trading signal.",
+   "strategies": [
+    {
+     "name": "Wait for structure, do not chase the first spike",
+     "how": "Ignore the first spike. Wait for a pullback that holds a higher low, then enter only on a reclaim of the pullback high while buys outnumber sells.",
+     "rules": [
+      "Entry: reclaim of the pullback high with buyers > sellers.",
+      "Stop: below the structure low, or about 30% from entry, whichever is closer; plus a time stop (if it is not above entry within 10-15 minutes or buying dries up, exit).",
+      "Exit: take about half at 2x to recover your cost, trail the rest.",
+      "Size: tiny, money you can lose entirely, and well under 1% of the coin's liquidity. Strict daily loss limit."
+     ]
+    },
+    {
+     "name": "Early-launch sniping (only with strict rules)",
+     "how": "Buying in the first seconds is mostly a bot-speed game; speed-only snipers win on volume and fees, not on judgement. If you do it, every kill check below must pass first and the position must be tiny.",
+     "rules": [
+      "Never chase a launch you cannot check.",
+      "Pre-set the stop and take-profit in the terminal before buying.",
+      "Expect large slippage; size for it."
+     ]
+    }
+   ],
+   "tools": [
+    "rugcheck",
+    "bubblemaps",
+    "solscan",
+    "dexscreener",
+    "geckoterminal",
+    "gmgn",
+    "axiom",
+    "photon",
+    "solsniffer",
+    "jupitertokens"
+   ],
+   "red_flags": [
+    "Chasing the first spike",
+    "Copying speed-only snipers",
+    "Revenge trading after a loss",
+    "Boredom trades",
+    "Social hype with no on-chain demand behind it"
+   ],
+   "desk": true
+  },
+  {
+   "slug": "ai-agents",
+   "name": "AI agent tokens",
+   "extra_sources": [
+    {
+     "label": "elizaOS: the ai16z to elizaOS migration",
+     "url": "https://paragraph.com/@elizaos/the-breakdown-ai16z-elizaos"
+    }
+   ],
+   "examples": [
+    {
+     "ticker": "GOAT",
+     "name": "Goatseus Maximus",
+     "what": "A Solana memecoin tied to the AI-agent narrative; CoinGecko lists it under Solana Meme and AI Meme.",
+     "source": "https://www.coingecko.com/en/coins/goatseus-maximus"
+    },
+    {
+     "ticker": "AI16Z → ELIZAOS",
+     "name": "ai16z / elizaOS (cautionary example)",
+     "what": "AI16Z, a Solana AI-agent token, peaked at about a $2.39 billion market cap on January 2, 2025 (CoinDesk). It migrated to ELIZAOS starting November 6, 2025, at 1 AI16Z for 6 ELIZAOS (elizaOS blog). On August 5, 2026 CoinDesk reported that the founder had declared the token dead, with the price about 97% below its peak.",
+     "source": "https://www.coindesk.com/markets/2026/08/05/ai-agent-token-once-worth-usd2-4-billion-ends-with-founder-calling-it-dead"
+    }
+   ],
+   "profile": {
+    "volatility": "Very high, like memecoins.",
+    "liquidity": "Deep for a few leaders during a hot narrative, then dries up.",
+    "risks": "Narrative-driven; the agent or product may not do what is claimed; supply changes, migrations and team decisions can wipe out holders."
+   },
+   "inspired": "Narrative rotation in the style of George Soros and William O'Neil: trade the leaders while the theme is hot, and demand proof.",
+   "strategies": [
+    {
+     "name": "Trade the narrative leader",
+     "how": "When a theme is hot, the strongest token breaking out of a base tends to keep leading. Cheap laggards usually stay laggards.",
+     "rules": [
+      "Entry: the leader breaking out of a base, not a laggard catching up.",
+      "Stop: below the base, typically 10-20%.",
+      "Exit: scale out as the story peaks (everyone talking about it, huge volume), exit when the leader breaks down.",
+      "Size: 1% risk at most, less on thin tokens."
+     ]
+    }
+   ],
+   "tools": [
+    "dexscreener",
+    "birdeye",
+    "bubblemaps",
+    "lunarcrush",
+    "coingecko"
+   ],
+   "red_flags": [
+    "Buying late laggards",
+    "Holding after the rotation ends",
+    "Ignoring unlocks, migrations and low float",
+    "Trusting claims about what the agent does without proof"
+   ]
+  },
+  {
+   "slug": "depin",
+   "name": "DePIN (decentralised physical infrastructure)",
+   "examples": [
+    {
+     "ticker": "HNT",
+     "name": "Helium",
+     "what": "Token of the Helium wireless network (IoT and mobile hotspots). Helium migrated from its own chain to Solana on April 18, 2023.",
+     "source": "https://blog.helium.com/its-here-the-helium-network-migrates-to-solana-today-6b24d05ba57d"
+    },
+    {
+     "ticker": "RENDER",
+     "name": "Render",
+     "what": "Token of the Render Network, a decentralised GPU compute network for 3D rendering and AI. It moved from Ethereum to Solana in 2023; the RENDER SPL token went live on November 2, 2023.",
+     "source": "https://renderfoundation.com/new-pages/upgrade-new"
+    }
+   ],
+   "profile": {
+    "volatility": "High.",
+    "liquidity": "Good for the leaders, also traded on major exchanges.",
+    "risks": "Emissions to network operators add steady supply; usage numbers can be slow to show up; the theme rotates in and out of fashion."
+   },
+   "inspired": "Narrative rotation (Soros, O'Neil) with a usage check.",
+   "strategies": [
+    {
+     "name": "Narrative breakout with proof",
+     "how": "Trade the strongest DePIN token breaking out of a base while the theme is in favour, and only when network usage or growth is visible (for example burns, paid usage or node growth published by the project).",
+     "rules": [
+      "Entry: breakout of a base on volume.",
+      "Stop: below the base, typically 10-20%.",
+      "Exit: scale out into heavy buzz; exit on a breakdown of the leader.",
+      "Size: 1% risk."
+     ]
+    },
+    {
+     "name": "Slow accumulation",
+     "how": "Some holders DCA into a DePIN token they believe in for the long term, with a fixed budget and an exit rule if the usage thesis fails.",
+     "rules": [
+      "Write down the usage metric that would prove you wrong.",
+      "Keep it a small part of the portfolio."
+     ]
+    }
+   ],
+   "tools": [
+    "tradingview",
+    "coingecko",
+    "dune",
+    "messari"
+   ],
+   "red_flags": [
+    "Buying on partnership headlines alone",
+    "Ignoring emissions",
+    "Holding after the theme rotates away"
+   ]
+  },
+  {
+   "slug": "stablecoins",
+   "name": "Stablecoins and yield",
+   "examples": [
+    {
+     "ticker": "USDC",
+     "name": "USD Coin",
+     "what": "A dollar stablecoin issued by Circle and natively issued on Solana; the main quote currency for Solana trading after SOL.",
+     "source": "https://www.coingecko.com/en/coins/usd-coin"
+    }
+   ],
+   "profile": {
+    "volatility": "Should be near zero against the dollar.",
+    "liquidity": "Very deep.",
+    "risks": "Issuer or de-peg risk, smart-contract risk in lending or LP protocols, and funding flipping against you in basis trades."
+   },
+   "inspired": "Cash as a position: a trader who keeps dry powder can act when others are forced sellers.",
+   "strategies": [
+    {
+     "name": "Dry powder",
+     "how": "Park profits and idle capital in USDC between trades so a losing streak in volatile coins does not touch it.",
+     "rules": [
+      "Move a set share of every profitable trade to stablecoins.",
+      "Keep some off-chain or on an exchange you trust as well."
+     ]
+    },
+    {
+     "name": "Lending yield",
+     "how": "Lend USDC in a Solana lending market for a variable rate. The yield is pay for smart-contract and borrower risk.",
+     "rules": [
+      "Prefer large, long-running protocols; check TVL and history on DefiLlama.",
+      "Split across protocols; never chase a rate far above the rest."
+     ]
+    },
+    {
+     "name": "Delta-neutral basis (advanced)",
+     "how": "Hold spot SOL or an LST and short the same amount of SOL perps. Price exposure roughly cancels out, and you earn staking yield plus funding when funding is positive. Described on X by @crypto8bit, among others.",
+     "rules": [
+      "Use little or no leverage on the short so a spike cannot liquidate it.",
+      "Funding changes and can turn negative: reduce or close when it does.",
+      "Count exchange, smart-contract and de-peg risk."
+     ]
+    }
+   ],
+   "tools": [
+    "defillama",
+    "coinglass",
+    "jupiter",
+    "phantom"
+   ],
+   "red_flags": [
+    "Yield far above the rest of the market",
+    "Stablecoins you cannot redeem",
+    "Leverage on the short leg of a basis trade"
+   ]
+  }
+ ],
+ "desk": {
+  "title": "The new-launch research process",
+  "credit": "From the FreeTierCrypto research desk. This is how we study new launches; it is a research process, not advice and not a signal.",
+  "steps": [
+   [
+    "1. Discovery",
+    "Watch fresh pump.fun launches and new DEX pairs. Only look closer when volume, unique buyers and holder count all rise together. Volume alone means nothing."
+   ],
+   [
+    "2. Kill checks",
+    "Any of these ends the look: mint authority live; freeze authority live or a changeable transfer fee; LP not burned or locked, or held by one wallet (coins still on the bonding curve have no LP yet); a dev who sold in the first minute, has earlier rugs, or has pulled more SOL out than they put in; bundles or snipers holding enough to dump the pool. Top-10 holders above about 30-35% (excluding pool and burn) is a risk tag, and linked top holders are serious. Ten wallets funded from one source are one person, and exchange-funded wallets can look independent. Copycats and re-mints are common: the contract address is the identity, not the ticker."
+   ],
+   [
+    "3. Demand",
+    "Ignore the first one to two minutes, which are mostly bots. After the safety checks pass, watch for about five minutes: the price should hold at least about 60% of its high, buyers should outnumber sellers, and the holder count at minute 5 should be higher than at minute 3. The wash-trading tell is high volume with flat unique buyers and the same wallets trading back and forth."
+   ],
+   [
+    "4. Smart money, checked",
+    "One green trade is not smart money. Check a wallet's track record, entry timing, size, whether it still holds, and whether it is independent. A cluster of linked wallets is one actor."
+   ],
+   [
+    "5. Timing label",
+    "Label every coin: too early, early, confirmed, late, extended or distribution. Skip vertical pumps, influencer-pushed coins and crowded narratives."
+   ],
+   [
+    "6. Risk plan before entry",
+    "Invalidation first: for example a 30% stop from entry, or any sell by the dev or a dev-funded wallet. Take half at 2x and ride the rest on the stop. Keep size small. Paper-trade the rules first."
+   ]
+  ],
+  "note": "Social hype is not demand. Check that the project's official X account posts the exact contract address you are about to buy.",
+  "free_tools": [
+   {
+    "name": "Solscan",
+    "id": "solscan"
+   },
+   {
+    "name": "DEX Screener",
+    "id": "dexscreener"
+   },
+   {
+    "name": "GeckoTerminal",
+    "id": "geckoterminal"
+   },
+   {
+    "name": "RugCheck",
+    "id": "rugcheck"
+   },
+   {
+    "name": "Bubblemaps",
+    "id": "bubblemaps"
+   },
+   {
+    "name": "pump.fun coin pages",
+    "url": "https://pump.fun",
+    "detail": "bonding curve progress, trades and holders per coin"
+   },
+   {
+    "name": "Helius free plan",
+    "url": "https://www.helius.dev/pricing",
+    "detail": "Solana RPC: $0/month, 1M credits, 10 requests/sec (pricing page, checked Oct 27, 2026)"
+   },
+   {
+    "name": "Solana Tracker free tier",
+    "url": "https://www.solanatracker.io/data-api",
+    "detail": "data API: 2,500 requests/month, 3 requests/sec (pricing page, checked Oct 27, 2026)"
+   },
+   {
+    "name": "X search",
+    "url": "https://x.com/search",
+    "detail": "confirm the official account posted the exact contract address"
+   }
+  ]
+ },
+ "costs": {
+  "title": "Costs on fresh launches add up",
+  "text": "pump.fun lists a 1.25% total fee on every bonding-curve buy and every sell, so a round trip starts about 2.5% down. From Oct 17, 2026, trades placed in the pump.fun web or mobile app also carry a 0.45% platform fee (0.40% with a referral code). Many trading bots and terminals add their own fee, commonly 1% per buy and per sell, plus priority fees and slippage. A small round trip can cost several percent before the price moves at all.",
+  "source": "https://pump.fun/docs/fees",
+  "checked": "2026-10-27",
+  "more": "https://ajaynallavelli.github.io/cryptostack-tracker/guides/solana-memecoin-trading-costs-small-size/"
+ },
+ "x_research": {
+  "title": "What traders on X say about their playbooks",
+  "intro": "Recurring ideas from public posts by Solana traders, summarised in our own words. These are opinions from public accounts, not verified track records.",
+  "items": [
+   {
+    "handle": "blknoiz06",
+    "url": "https://x.com/blknoiz06/status/2109258057075351629",
+    "date": "2026-10-11",
+    "summary": "Finding the right rotation early matters less than you think if you give the gains back; knowing when to take profit is as important a skill as finding the trade."
+   },
+   {
+    "handle": "notthreadguy",
+    "url": "https://x.com/notthreadguy/status/2106833418336038978",
+    "date": "2026-10-04",
+    "summary": "Attention rotates between coins, but the strongest coins tend to get the rotation back. Holding spot through chop often beat high-leverage trading, which kept getting stopped out. Last cycle, traders who kept denominating profits back into the leading coin (SOL in 2024) did best."
+   },
+   {
+    "handle": "100xgemfinder",
+    "url": "https://x.com/100xgemfinder/status/2052014837064950076",
+    "date": "2026-05-06",
+    "summary": "A memecoin playbook: only organic, non-bundled coins with real volume; a very tight stop (5-15%); sell the initial stake once up 20-50%; let the rest ride and sell it at 5-10x or let it go to zero. It depends on catching occasional big runners."
+   },
+   {
+    "handle": "crypto8bit",
+    "url": "https://x.com/crypto8bit/status/1921235792736759860",
+    "date": "2025-05-10",
+    "summary": "A delta-neutral SOL yield setup: hold staked SOL and short an equal amount of SOL perps to collect staking yield plus funding, with the warnings that funding can flip, leverage can liquidate the short, and LSTs can de-peg."
+   },
+   {
+    "handle": "RZalutynski",
+    "url": "https://x.com/RZalutynski/status/2066937821806657853",
+    "date": "2026-06-16",
+    "summary": "Rules over picks: small fixed risk per trade, a fixed stop 30-40% below entry on memecoins, selling most of the position at 2x, stopping for the day after three losses, and logging every trade for review. Notably, the same post says the low-cap memecoin experiment was down about 5 SOL over six months, a useful reminder that rules limit losses but do not guarantee profit."
+   }
+  ]
+ },
+ "mistakes": [
+  "Trading without a written stop, or moving the stop further away when price gets close.",
+  "Averaging down on a falling memecoin.",
+  "Putting most of the account into one memecoin or fresh launch.",
+  "Chasing a vertical candle or a coin an influencer just posted.",
+  "Buying a ticker instead of checking the contract address.",
+  "Using leverage on trades that need room to breathe.",
+  "Ignoring fees and slippage on small, frequent trades.",
+  "Revenge trading after a loss, or trading out of boredom.",
+  "Judging a strategy by its win rate instead of its average R.",
+  "Not keeping a journal, so you never learn your real results."
+ ],
+ "further": [
+  {
+   "label": "Exit lines: deciding your exits before you enter",
+   "url": "https://ajaynallavelli.github.io/cryptostack-tracker/strategies/exit-lines/"
+  },
+  {
+   "label": "The daily loss brake",
+   "url": "https://ajaynallavelli.github.io/cryptostack-tracker/strategies/daily-loss-brake/"
+  },
+  {
+   "label": "The 5-minute survival hold",
+   "url": "https://ajaynallavelli.github.io/cryptostack-tracker/strategies/five-minute-survival-hold/"
+  },
+  {
+   "label": "How bundles work",
+   "url": "https://ajaynallavelli.github.io/cryptostack-tracker/guides/how-bundles-work/"
+  },
+  {
+   "label": "The pump.fun bonding curve",
+   "url": "https://ajaynallavelli.github.io/cryptostack-tracker/guides/pump-fun-bonding-curve/"
+  },
+  {
+   "label": "Rug patterns: what to check and with which free tool",
+   "url": "https://ajaynallavelli.github.io/cryptostack-tracker/guides/rug-patterns/"
+  },
+  {
+   "label": "Paper scoreboard (wins, losses and costs of logged paper calls)",
+   "url": "https://ajaynallavelli.github.io/cryptostack-tracker/scoreboard/"
+  }
+ ],
+ "closing": "Trading is mostly discipline: wait for your setup, keep every loss small and pre-planned, let the few good trades pay for the many small losses, and keep a journal so you know whether your edge is real."
+}

@@ -48,6 +48,22 @@ def load():
     return site, tools, log
 
 
+def load_strategies(tools):
+    """Load data/strategies/<chain>.json guides and resolve tool ids to dataset rows (fails on unknown ids)."""
+    by_id = {t["id"]: t for t in tools}
+    guides = []
+    for f in sorted((DATA / "strategies").glob("*.json")):
+        g = json.loads(f.read_text())
+        assert g["slug"] == f.stem, f
+        for c in g["categories"]:
+            c["tool_rows"] = [by_id[i] for i in c["tools"]]
+        for t in g.get("desk", {}).get("free_tools", []):
+            if "id" in t:
+                t["row"] = by_id[t["id"]]
+        guides.append(g)
+    return guides
+
+
 ROOT_REL = re.compile(r'((?:href|src|action)=")/(?!/)')
 
 
@@ -97,11 +113,23 @@ def main():
            description="How FreeTierCrypto collects pricing, what 'verified' means, our affiliate disclosure, and why nothing here is financial advice.")
     if site.get("newsletter", {}).get("enabled"): render("newsletter.html", "/newsletter/", lastmod=last, title=f"Newsletter: free tier change alerts | {site['name']}",
            description="Get an email when a crypto tool cuts or expands its free tier, or changes its cheapest paid plan.")
+    strategies = load_strategies(tools)
+    if strategies:
+        render("strategies_index.html", "/strategies/", lastmod=max(g["updated"] for g in strategies), guides=strategies,
+               title=f"Crypto trading strategies by chain | {site['name']}",
+               description="Educational guides to how people trade different kinds of coins, with example coins, written entry, stop, exit and sizing rules, free tools and red flags. Not financial advice.")
+        for g in strategies:
+            render("strategy_chain.html", f"/strategies/{g['slug']}/", lastmod=g["updated"], g=g,
+                   title=f"{g['title']} | {site['name']}", description=g["summary"])
     render("404.html", "404.html", sitemap_on=False, title=f"Page not found | {site['name']}", description="Page not found")
     shutil.copytree(ROOT / "static", out / "static")
     (out / "data").mkdir()
     for name in ("tools.json", "changelog.json"):
         shutil.copy(DATA / name, out / "data" / name)
+    if strategies:
+        (out / "data" / "strategies").mkdir()
+        for g in strategies:
+            shutil.copy(DATA / "strategies" / f"{g['slug']}.json", out / "data" / "strategies" / f"{g['slug']}.json")
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p, lm in sitemap:
         sm.append(f"  <url><loc>{html.escape(site['base_url'] + p)}</loc>" + (f"<lastmod>{lm}</lastmod>" if lm else "") + "</url>")

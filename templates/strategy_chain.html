@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% macro toollinks(rows) %}{% for t in rows %}<a href="/category/{{ t.category }}/#{{ t.id }}">{{ t.name }}</a>{% if t.has_free_tier == "yes" %} <span class="tag tag-verified">free tier</span>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% endmacro %}
+{% block content %}
+<section class="article">
+  <p class="crumbs small"><a href="/">Home</a> / <a href="/strategies/">Strategies</a> / {{ g.chain }}</p>
+  <span class="eyebrow">{{ g.chain }} · updated {{ g.updated|nicedate }}</span>
+  <h1>{{ g.title }}</h1>
+  {% for p in g.intro %}<p{% if loop.first %} class="lead"{% endif %}>{{ p }}</p>{% endfor %}
+  <p class="risk"><strong>Not financial advice; you can lose everything in memecoins. No strategy wins every trade.</strong> {{ g.honesty }}</p>
+
+  <h2>Contents</h2>
+  <ol class="links">
+    <li><a href="#rules">{{ g.universal.title }}</a></li>
+    <li><a href="#checklist">{{ g.checklist.title }}</a></li>
+    <li>Coin types:
+      <ul>{% for c in g.categories %}<li><a href="#{{ c.slug }}">{{ c.name }}</a> <span class="muted small">({% for e in c.examples %}{{ e.ticker }}{% if not loop.last %}, {% endif %}{% endfor %})</span></li>{% endfor %}</ul></li>
+    <li><a href="#research-process">{{ g.desk.title }}</a></li>
+    <li><a href="#costs">{{ g.costs.title }}</a></li>
+    <li><a href="#from-x">{{ g.x_research.title }}</a></li>
+    <li><a href="#mistakes">Common mistakes</a></li>
+    <li><a href="#sources">Further reading and sources</a></li>
+  </ol>
+
+  <h2 id="rules">{{ g.universal.title }}</h2>
+  <p class="small muted">{{ g.universal.inspired }}</p>
+  <ul>{% for r in g.universal.rules %}<li><strong>{{ r[0] }}.</strong> {{ r[1] }}</li>{% endfor %}</ul>
+  <p class="small muted">{{ g.universal.expectancy_note }}</p>
+
+  <h2 id="checklist">{{ g.checklist.title }}</h2>
+  <ol>{% for r in g.checklist["items"] %}<li><strong>{{ r[0] }}.</strong> {{ r[1] }}</li>{% endfor %}</ol>
+  <p class="small">Free tools for these checks: {{ toollinks(g.categories[5].tool_rows) }}.</p>
+</section>
+
+{% for c in g.categories %}
+<section class="article strat" id="{{ c.slug }}">
+  <h2>{{ loop.index }}. {{ c.name }}</h2>
+  <div class="examples">
+  {% for e in c.examples %}<div class="card ex"><p><span class="tag">{{ e.ticker }}</span> <strong>{{ e.name }}</strong></p><p class="small">{{ e.what }} <a href="{{ e.source }}" rel="nofollow noopener">source</a></p></div>{% endfor %}
+  </div>
+  {% for s in c.extra_sources or [] %}<p class="small muted">Also: <a href="{{ s.url }}" rel="nofollow noopener">{{ s.label }}</a></p>{% endfor %}
+  <dl class="glance">
+    <div><dt>Volatility</dt><dd>{{ c.profile.volatility }}</dd></div>
+    <div><dt>Liquidity</dt><dd>{{ c.profile.liquidity }}</dd></div>
+    <div><dt>Main risks</dt><dd>{{ c.profile.risks }}</dd></div>
+  </dl>
+  <p class="small muted">{{ c.inspired }}</p>
+  <h3>Common strategies</h3>
+  {% for s in c.strategies %}
+  <div class="log-entry"><strong>{{ s.name }}</strong><p>{{ s.how }}</p><ul class="small">{% for r in s.rules %}<li>{{ r }}</li>{% endfor %}</ul></div>
+  {% endfor %}
+  {% if c.desk %}<p class="small">The full new-launch checks are in <a href="#research-process">the research process below</a>.</p>{% endif %}
+  <p class="small"><strong>Tools that help:</strong> {{ toollinks(c.tool_rows) }}.</p>
+  <p class="small"><strong>Red flags:</strong> {{ c.red_flags|join("; ") }}.</p>
+</section>
+{% endfor %}
+
+<section class="article">
+  <h2 id="research-process">{{ g.desk.title }}</h2>
+  <p class="note small">{{ g.desk.credit }}</p>
+  {% for s in g.desk.steps %}<h3 class="step">{{ s[0] }}</h3><p>{{ s[1] }}</p>{% endfor %}
+  <p><strong>{{ g.desk.note }}</strong></p>
+  <h3 class="step">Free tools for this process</h3>
+  <ul>{% for t in g.desk.free_tools %}<li>{% if t.row %}<a href="/category/{{ t.row.category }}/#{{ t.row.id }}">{{ t.name }}</a> <span class="muted small">({{ t.row.cat_name }}; free tier and paid price in our dataset)</span>{% else %}<a href="{{ t.url }}" rel="nofollow noopener">{{ t.name }}</a>: {{ t.detail }}{% endif %}</li>{% endfor %}</ul>
+
+  <h2 id="costs">{{ g.costs.title }}</h2>
+  <p>{{ g.costs.text }} <a href="{{ g.costs.source }}" rel="nofollow noopener">pump.fun fee docs</a>, checked {{ g.costs.checked|nicedate }}. A per-app breakdown is in <a href="{{ g.costs.more }}" rel="noopener">CryptoStack Tracker's trading-costs guide</a>.</p>
+
+  <h2 id="from-x">{{ g.x_research.title }}</h2>
+  <p>{{ g.x_research.intro }}</p>
+  <ul>{% for x in g.x_research["items"] %}<li><a href="{{ x.url }}" rel="nofollow noopener">@{{ x.handle }}</a> <span class="date">{{ x.date|nicedate }}</span>: {{ x.summary }}</li>{% endfor %}</ul>
+
+  <h2 id="mistakes">Common mistakes</h2>
+  <ul>{% for m in g.mistakes %}<li>{{ m }}</li>{% endfor %}</ul>
+  <blockquote>{{ g.closing }}</blockquote>
+
+  <h2 id="sources">Further reading and sources</h2>
+  <ul>{% for f in g.further %}<li><a href="{{ f.url }}" rel="noopener">{{ f.label }}</a> <span class="muted small">(CryptoStack Tracker)</span></li>{% endfor %}</ul>
+  <p class="sources">Coin descriptions link to their source next to each coin. Fees and free-tier numbers were read from the linked pages on {{ g.updated|nicedate }} and can change. No prices, market caps or returns are quoted except where a dated source is linked.</p>
+  <p class="risk"><strong>Not financial advice; you can lose everything in memecoins.</strong> Coins named here are examples of a category, not recommendations. Do your own research and never trade money you cannot afford to lose.</p>
+</section>
+{% endblock %}
