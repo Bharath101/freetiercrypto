@@ -1,0 +1,398 @@
+{
+ "updated": "2026-10-27",
+ "title": "KOL strategies: what well-known Solana memecoin traders say about how they trade",
+ "summary": "Public trading habits of well-known Solana memecoin traders (KOLs), summarised in plain words from their own dated posts: style, entries, exits, sizing, what you can learn, and what not to copy.",
+ "label": "Public opinions, not verified track records, not advice.",
+ "intro": [
+  "KOL means key opinion leader: a trader with a big public following. This page collects what a few of them have said in public about how they trade, written in our own words, with links to the dated posts we read.",
+  "We do not verify anyone's profits. Wallets can be split, borrowed, or shown selectively, and leaderboards can be gamed. Treat every entry as one person's public opinion about their own process."
+ ],
+ "how_chosen": [
+  "Four featured traders were chosen by us: cupsey, frankdegods, unipcs and pointfarmcap. Every handle was checked against X's user lookup on Oct 27, 2026. The unipcs X handle is @theunipcs.",
+  "The other five are FOMO traders. FOMO (fomo.family) is a social trading app with public PnL leaderboards for 24 hours, 7 days, 30 days and all time. Those rankings change every day and there is no single official list we could verify, so we used three filters: (1) the trader appeared on a public FOMO ranking snapshot (FomoRadar's 30-day Solana list or Provadata's 7-day leaderboard, both read Oct 26-27, 2026) or in FOMO's own trader-spotlight posts on X (September-October 2026); (2) not already one of the four names above; (3) a public, unprotected X account with posts about how they trade. Accounts that were protected, suspended or could not be matched to an X handle were dropped.",
+  "Leaderboards can be gamed. One FOMO trader warned in public that scam tokens (honeypots or tokens with freeze authority) can inflate a wallet's paper PnL, which is one more reason not to treat rank as skill."
+ ],
+ "rank_sources": [
+  {
+   "label": "FOMO: leaderboard timeframes (24h, 7d, 30d, all time)",
+   "url": "https://fomo.family/blog/learn/leveraging-fomos-social-features"
+  },
+  {
+   "label": "FomoRadar: FOMO traders by chain (30-day Solana list)",
+   "url": "https://fomoradar.io/guides/fomo-family-traders-by-chain"
+  },
+  {
+   "label": "Provadata: FOMO 7-day leaderboard",
+   "url": "https://provadata.com/leaderboard/7d"
+  },
+  {
+   "label": "@sty_defi quoting a warning that FOMO leaderboards can be gamed with scam tokens (Aug 31, 2026)",
+   "url": "https://x.com/sty_defi/status/2094379715754635557"
+  }
+ ],
+ "traders": [
+  {
+   "id": "cupsey",
+   "name": "Cupsey",
+   "handle": "Cupseyy",
+   "group": "Featured trader",
+   "who": "A full-time Solana 'trenches' trader known for fast trading of fresh launches.",
+   "style": "High-volume, short-hold trading of new coins, with long screen sessions.",
+   "habits": {
+    "entry": "Has said quality beats quantity: spend more time on a few coins rather than buying lots of them.",
+    "exit": "Known for quick trades on new coins, but has also said that sitting on your hands with a coin you believe in is how the biggest gains come.",
+    "size": "No public sizing rule found in the posts we read."
+   },
+   "learn": [
+    "Fewer, better-researched trades beat spraying buys across many coins.",
+    "Review your trades. He has talked about running a trading-journal group to reflect on trades, with no calls posted.",
+    "Wallet security is part of trading: he said in Sept 2025 that a wallet connected to several trading apps was drained for about $500,000 overnight. Use a separate hot wallet that holds only what you trade with."
+   ],
+   "dont_copy": [
+    "16-hour 'trench shifts'. That speed and screen time is his job, not a plan for a normal trader.",
+    "Connecting a large wallet to many apps."
+   ],
+   "sources": [
+    {
+     "url": "https://x.com/Cupseyy/status/1829231748791841071",
+     "date": "2024-08-29",
+     "label": "quality over quantity"
+    },
+    {
+     "url": "https://x.com/Cupseyy/status/1923434570852012340",
+     "date": "2025-05-16",
+     "label": "trading-journal group"
+    },
+    {
+     "url": "https://x.com/Cupseyy/status/1967955259512574345",
+     "date": "2025-09-16",
+     "label": "wallet drained"
+    }
+   ]
+  },
+  {
+   "id": "frankdegods",
+   "name": "Frank (frankdegods)",
+   "handle": "frankdegods",
+   "group": "Featured trader",
+   "who": "A well-known onchain and perps trader with one of the largest followings in Solana trading.",
+   "style": "Short, event-driven trades: each buy has a specific reason, and he cuts it quickly when the reason does not play out.",
+   "habits": {
+    "entry": "In an Aug 2026 reply he listed a run of trades, each with a one-line reason: news about to spread, a launch on a new launchpad, a livestream that might bring an announcement.",
+    "exit": "The same list shows the exit rule: if the expected event does not happen, or he realises he is late and it is priced in, he cuts. Some were held for a week, some for 30 seconds.",
+    "size": "Has said most trading problems come from being a forced seller: if you have to sell one coin to buy another, your size is the problem."
+   },
+   "learn": [
+    "Write the reason for every trade and the condition that ends it.",
+    "Size so you never have to sell a good position just to free up cash.",
+    "Coins that need paid promoters tend to have lower ceilings, because the promoters sell and move on.",
+    "Be honest about results. He posted on Oct 24, 2026 that he is not up overall on his main perps wallet and most of his money has come from onchain trading."
+   ],
+   "dont_copy": [
+    "30-second flips on brand-new launchpads. That needs speed and tools most people do not have.",
+    "Trading off news flow you only see after it has spread."
+   ],
+   "stat": "An OnchainLens post on Oct 24, 2026 said FOMO's all-time PnL leaderboard showed frankdegods at about +$3.13M, second behind Unipcs. That is a third-party snapshot, not a verified record.",
+   "stat_url": "https://x.com/OnchainLens/status/2114104178989777216",
+   "sources": [
+    {
+     "url": "https://x.com/frankdegods/status/1975152105506967962",
+     "date": "2025-10-06",
+     "label": "forced sellers and sizing"
+    },
+    {
+     "url": "https://x.com/frankdegods/status/2088107288317788401",
+     "date": "2026-08-14",
+     "label": "his trade list with reasons and cuts"
+    },
+    {
+     "url": "https://x.com/frankdegods/status/2114066584725803491",
+     "date": "2026-10-24",
+     "label": "'not the best trader'"
+    }
+   ]
+  },
+  {
+   "id": "unipcs",
+   "name": "Unipcs ('Bonk Guy')",
+   "handle": "theunipcs",
+   "group": "Featured trader",
+   "who": "A Solana memecoin trader best known for holding BONK early and for big conviction holds.",
+   "style": "Conviction holding. He says his edge is not being early but holding winners for a long time.",
+   "habits": {
+    "entry": "Says he often finds winners late, is usually not among the first buyers, and has bought coins above a $5M market cap.",
+    "exit": "Holds with conviction. He has also said he round-tripped more than $20M on BONK out of loyalty, so holding has a cost.",
+    "size": "In Oct 2026 he wrote about losing about $100K on a rug after overtrading new pairs and oversizing on what he called borrowed conviction."
+   },
+   "learn": [
+    "You do not need to be first. A strong coin can still be bought after it has proven itself.",
+    "Sometimes the best trade is no trade, especially after a loss.",
+    "Do not blindly copytrade anyone: he says about 90% of tokens sent to his FOMO wallet are airdrops meant to bait copytraders, and he sells them.",
+    "Decide in advance how much of a big gain you are willing to give back."
+   ],
+   "dont_copy": [
+    "Holding through very deep drawdowns. He has posted about a large drop from a portfolio peak; that only works with money and nerves most people do not have.",
+    "Copytrading his wallet. In his words, copytrade him at your own risk."
+   ],
+   "stat": "An OnchainLens post on Oct 24, 2026 said he was #1 on FOMO's all-time PnL leaderboard at about +$3.20M. Third-party snapshot, not verified.",
+   "stat_url": "https://x.com/OnchainLens/status/2114104178989777216",
+   "sources": [
+    {
+     "url": "https://x.com/theunipcs/status/2110675458396205478",
+     "date": "2026-10-15",
+     "label": "his edge is holding"
+    },
+    {
+     "url": "https://x.com/theunipcs/status/2108216523907006964",
+     "date": "2026-10-08",
+     "label": "the $100K rug lesson"
+    },
+    {
+     "url": "https://x.com/theunipcs/status/2107123654836506953",
+     "date": "2026-10-05",
+     "label": "airdrops that bait copytraders"
+    }
+   ]
+  },
+  {
+   "id": "pointfarmcap",
+   "name": "Point Farm Capital",
+   "handle": "pointfarmcap",
+   "group": "Featured trader",
+   "who": "A trader known for Hyperliquid, points farming and perps, now also active trading memecoins on FOMO.",
+   "style": "Opinionated on narratives: favours simple memes and under-watched coins and ecosystems.",
+   "habits": {
+    "entry": "Looks for coins and ecosystems that lack attention yet. Has said that if you have to explain the meme, you have already lost.",
+    "exit": "Has said borrowed conviction does not last: if you hold only because someone else is bullish, you will sell at the worst time.",
+    "size": "No public sizing rule found in the posts we read."
+   },
+   "learn": [
+    "If you cannot explain why a meme is funny or viral in one sentence, skip it.",
+    "Open positions on your own conviction, not someone else's.",
+    "Read people's reasons, not just their buys: he has said FOMO's thesis section (traders' written reasons) is useful."
+   ],
+   "dont_copy": [
+    "His perps and points background gives him tools and context a beginner lacks.",
+    "Ranking spikes. A 7-day leaderboard rank can change by the next week."
+   ],
+   "stat": "He was #1 on Provadata's FOMO 7-day leaderboard when we read it on Oct 27, 2026 (00:38 IST). Weekly ranks change constantly.",
+   "stat_url": "https://provadata.com/leaderboard/7d",
+   "sources": [
+    {
+     "url": "https://x.com/pointfarmcap/status/2112606788952662470",
+     "date": "2026-10-20",
+     "label": "explaining the meme"
+    },
+    {
+     "url": "https://x.com/pointfarmcap/status/2109810744649003204",
+     "date": "2026-10-13",
+     "label": "borrowed conviction"
+    },
+    {
+     "url": "https://x.com/pointfarmcap/status/2109387586175140067",
+     "date": "2026-10-11",
+     "label": "trade your own conviction"
+    }
+   ]
+  },
+  {
+   "id": "bystevenr",
+   "name": "Steven (bystevenr)",
+   "handle": "bystevenr",
+   "group": "FOMO top trader",
+   "fomo_basis": "#2 on FomoRadar's 30-day Solana list; FOMO posted an interview with him on Oct 12, 2026.",
+   "who": "A swing trader who trades across assets, including Solana memecoins.",
+   "style": "Patient swing longs he calls 'delayed gratification' setups.",
+   "habits": {
+    "entry": "Buys swing setups and waits; has described watching money flow off pump.fun to other launchpads and then rotate back.",
+    "exit": "Sets a wide invalidation level in advance (he mentioned 40% on a swing long) and holds until it is hit or the idea plays out.",
+    "size": "Has described a barbell: a defensive position elsewhere and memecoin trades with limited downside."
+   },
+   "learn": [
+    "Decide where you are wrong before you buy, and size so that level is affordable.",
+    "Watch where liquidity is moving between launchpads.",
+    "Take your own trades. He has told followers exactly that."
+   ],
+   "dont_copy": [
+    "A 40% invalidation with large size. A wide stop only works with a small position.",
+    "Cross-asset hedging, unless you understand the other side of the barbell."
+   ],
+   "sources": [
+    {
+     "url": "https://x.com/bystevenr/status/2110453969025999349",
+     "date": "2026-10-14",
+     "label": "delayed-gratification setups"
+    },
+    {
+     "url": "https://x.com/bystevenr/status/2112356132618715450",
+     "date": "2026-10-20",
+     "label": "the barbell"
+    },
+    {
+     "url": "https://x.com/fomo/status/2109661293481435340",
+     "date": "2026-10-12",
+     "label": "FOMO's interview with him"
+    }
+   ]
+  },
+  {
+   "id": "quanterty",
+   "name": "Q (Quanterty)",
+   "handle": "Quanterty",
+   "group": "FOMO top trader",
+   "fomo_basis": "Featured in FOMO's trader spotlight on X on Oct 18, 2026.",
+   "who": "A high-risk-appetite Solana memecoin trader.",
+   "style": "Large, aggressive positions, and unusually open about his own mistakes.",
+   "habits": {
+    "entry": "Has talked about keeping cash ready to buy a pullback instead of being fully invested.",
+    "exit": "Has said his biggest problem is not selling when he is up big, then round-tripping. He also wrote about cancelling a take-profit order and regretting it.",
+    "size": "Has blamed 'stupid sizing' for giving back gains."
+   },
+   "learn": [
+    "Triple-check every order before you send it: he said one mistyped sell order cost him about $100K.",
+    "Put take-profits in and leave them alone.",
+    "Keep some cash for pullbacks.",
+    "Take breaks. He has stepped back for his mental health."
+   ],
+   "dont_copy": [
+    "His position sizes and risk appetite.",
+    "Cancelling planned exits when a coin is running."
+   ],
+   "sources": [
+    {
+     "url": "https://x.com/Quanterty/status/2105333424563327358",
+     "date": "2026-09-30",
+     "label": "the $100K order mistake"
+    },
+    {
+     "url": "https://x.com/Quanterty/status/2110018925102592453",
+     "date": "2026-10-13",
+     "label": "round trips and sizing"
+    },
+    {
+     "url": "https://x.com/fomo/status/2111871946493501582",
+     "date": "2026-10-18",
+     "label": "FOMO trader spotlight"
+    }
+   ]
+  },
+  {
+   "id": "pedrigavifrenki",
+   "name": "kanye south (pedrigavifrenki)",
+   "handle": "pedrigavifrenki",
+   "group": "FOMO top trader",
+   "fomo_basis": "Featured in FOMO's trader spotlight on X on Oct 6, 2026 ('on-chain narratives, held with conviction').",
+   "who": "A trader of onchain narratives who holds positions with conviction.",
+   "style": "Narrative trades, checked onchain, held while the story keeps growing.",
+   "habits": {
+    "entry": "Tracks large wallets to see where money is going, and checks slippage and whether a token can actually be sold (honeypot check) before buying.",
+    "exit": "Holds while the narrative is alive.",
+    "size": "Says he will never go all in again after a past position fell from about $1.3M unrealized to about $300K in May 2022."
+   },
+   "learn": [
+    "Never go all in on one coin.",
+    "Check you can sell before you buy.",
+    "Use wallet tracking as research, not as a copy button."
+   ],
+   "dont_copy": [
+    "Conviction holds without a plan for how much you will give back."
+   ],
+   "sources": [
+    {
+     "url": "https://x.com/pedrigavifrenki/status/1960722872306962839",
+     "date": "2025-08-27",
+     "label": "the all-in lesson"
+    },
+    {
+     "url": "https://x.com/pedrigavifrenki/status/2047524147341689163",
+     "date": "2026-04-24",
+     "label": "tracking whale wallets"
+    },
+    {
+     "url": "https://x.com/fomo/status/2107517252236951657",
+     "date": "2026-10-06",
+     "label": "FOMO trader spotlight"
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "name": "heat",
+   "handle": "heat",
+   "group": "FOMO top trader",
+   "fomo_basis": "#5 on FomoRadar's 30-day Solana list. He posted on Oct 26, 2026 that he was #1 over 24 hours and #3 over 30 days. We matched the FOMO name to this X account from his bio and posts; that match is likely, but not confirmed. His bio warns about impersonators.",
+   "who": "A Solana memecoin trader active on FOMO.",
+   "style": "High-conviction bets that he openly calls a gamble, judged on risk/reward.",
+   "habits": {
+    "entry": "His recent posts describe buying a healthy pullback after a pump, on the main runner of a launchpad, rather than the first spike.",
+    "exit": "No public exit rule found in the posts we read.",
+    "size": "No public sizing rule found in the posts we read."
+   },
+   "learn": [
+    "Buy the pullback on the strongest coin, not the first green candle.",
+    "Call a gamble a gamble and size it like one."
+   ],
+   "dont_copy": [
+    "Any coin he names. Several of his posts include contract addresses; copying a KOL's coin after they post it often means buying their exit."
+   ],
+   "sources": [
+    {
+     "url": "https://x.com/heat/status/2114815246716096917",
+     "date": "2026-10-26",
+     "label": "his 24h and 30d ranks"
+    }
+   ]
+  },
+  {
+   "id": "kv4rl",
+   "name": "k4rl (kv4rl)",
+   "handle": "kv4rl",
+   "group": "FOMO top trader",
+   "fomo_basis": "#3 on Provadata's FOMO 7-day leaderboard when read on Oct 27, 2026.",
+   "who": "A Solana memecoin trader whose bio is about 'increasing luck surface area'.",
+   "style": "Contrarian: buys when the outcome is uncertain and sells when everyone is sure.",
+   "habits": {
+    "entry": "'Buy uncertainty, sell certainty.'",
+    "exit": "Sells into certainty, when the story is obvious to everyone.",
+    "size": "No public sizing rule found in the posts we read."
+   },
+   "learn": [
+    "The crowd being sure is often the time to sell, not buy.",
+    "Scrolling crypto X is the fastest way to get shaken out of good positions. Decide your plan off-screen.",
+    "If you do not believe in a coin, do not hold it."
+   ],
+   "dont_copy": [
+    "Contrarian bets without a stop. Uncertainty means many of them go to zero."
+   ],
+   "sources": [
+    {
+     "url": "https://x.com/kv4rl/status/2114040755132235935",
+     "date": "2026-10-24",
+     "label": "buy uncertainty, sell certainty"
+    },
+    {
+     "url": "https://x.com/kv4rl/status/2113302963410042967",
+     "date": "2026-10-22",
+     "label": "scrolling shakes you out"
+    },
+    {
+     "url": "https://x.com/kv4rl/status/2108496640029991313",
+     "date": "2026-10-09",
+     "label": "believe in your coins"
+    }
+   ]
+  }
+ ],
+ "common": {
+  "title": "What these traders agree on",
+  "items": [
+   "Your own conviction beats borrowed conviction. Holding a coin only because a KOL holds it ends with you selling at the bottom.",
+   "Copytrading a public wallet is risky: wallets get baited with airdrops, and you are always later than the trader.",
+   "Size is the most common cause of big losses they describe: oversizing, going all in, or being forced to sell.",
+   "Giving back gains (round-tripping) is the most common regret. Plan your take-profits and keep them.",
+   "Taking breaks, journaling and sometimes not trading at all are part of the job."
+  ]
+ },
+ "add_more": "This section is data-driven. More traders will be added over time, in the same format.",
+ "closing": "Not financial advice. No strategy wins every trade, and you can lose everything in memecoins. Nothing here is a call to buy any coin or to copy any wallet."
+}

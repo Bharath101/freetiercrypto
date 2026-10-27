@@ -116,16 +116,22 @@ def main():
     strategies = load_strategies(tools)
     if strategies:
         render("strategies_index.html", "/strategies/", lastmod=max(g["updated"] for g in strategies), guides=strategies,
+               kols=json.loads((DATA / "kols.json").read_text()) if (DATA / "kols.json").exists() else None,
                title=f"Crypto trading strategies by chain | {site['name']}",
                description="Educational guides to how people trade different kinds of coins, with example coins, written entry, stop, exit and sizing rules, free tools and red flags. Not financial advice.")
         for g in strategies:
             render("strategy_chain.html", f"/strategies/{g['slug']}/", lastmod=g["updated"], g=g,
                    title=f"{g['title']} | {site['name']}", description=g["summary"])
+    kols = json.loads((DATA / "kols.json").read_text()) if (DATA / "kols.json").exists() else None
+    if kols:
+        render("strategies_kols.html", "/strategies/kols/", lastmod=kols["updated"], k=kols,
+               title=f"KOL strategies: how well-known Solana traders say they trade | {site['name']}", description=kols["summary"])
     render("404.html", "404.html", sitemap_on=False, title=f"Page not found | {site['name']}", description="Page not found")
     shutil.copytree(ROOT / "static", out / "static")
     (out / "data").mkdir()
-    for name in ("tools.json", "changelog.json"):
-        shutil.copy(DATA / name, out / "data" / name)
+    for name in ("tools.json", "changelog.json", "kols.json"):
+        if (DATA / name).exists():
+            shutil.copy(DATA / name, out / "data" / name)
     if strategies:
         (out / "data" / "strategies").mkdir()
         for g in strategies:

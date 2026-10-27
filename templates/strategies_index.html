@@ -15,6 +15,12 @@
       <p><a class="btn btn-sm" href="/strategies/{{ g.slug }}/">Read the {{ g.chain }} guide</a></p>
     </div>
     {% endfor %}
+    {% if kols %}<div class="card">
+      <h3><a href="/strategies/kols/">KOL strategies</a></h3>
+      <p class="small">{{ kols.summary }}</p>
+      <p class="small muted">{{ kols.traders|length }} traders · {{ kols.label }} · updated {{ kols.updated|nicedate }}</p>
+      <p><a class="btn btn-sm" href="/strategies/kols/">Read KOL strategies</a></p>
+    </div>{% endif %}
     <div class="card"><h3>More chains</h3><p class="small muted">Guides for other chains will be added here using the same structure.</p></div>
   </div>
 </section>

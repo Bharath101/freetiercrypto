@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="article">
+  <p class="crumbs small"><a href="/">Home</a> / <a href="/strategies/">Strategies</a> / KOL strategies</p>
+  <span class="eyebrow">KOL strategies · updated {{ k.updated|nicedate }}</span>
+  <h1>{{ k.title }}</h1>
+  <p class="risk"><strong>{{ k.label }}</strong> {{ k.closing }}</p>
+  {% for p in k.intro %}<p{% if loop.first %} class="lead"{% endif %}>{{ p }}</p>{% endfor %}
+
+  <h2>Traders on this page</h2>
+  <ol class="links">{% for t in k.traders %}<li><a href="#{{ t.id }}">{{ t.name }}</a> <span class="muted small">(@{{ t.handle }} · {{ t.group }})</span></li>{% endfor %}
+    <li><a href="#common">{{ k.common.title }}</a></li><li><a href="#how-chosen">How we chose these traders</a></li></ol>
+  <p class="small">For the rules these habits plug into, see the <a href="/strategies/solana/">Solana trading strategies guide</a>, including <a href="/strategies/solana/#creators">what top traders and creators teach</a>.</p>
+</section>
+
+{% for t in k.traders %}
+<section class="article strat" id="{{ t.id }}">
+  <h2>{{ loop.index }}. {{ t.name }} <span class="tag">{{ t.group }}</span></h2>
+  <p><a href="https://x.com/{{ t.handle }}" rel="nofollow noopener">@{{ t.handle }} on X</a> · {{ t.who }}</p>
+  {% if t.fomo_basis %}<p class="small muted">Why included: {{ t.fomo_basis }}</p>{% endif %}
+  <p><strong>Public style:</strong> {{ t.style }}</p>
+  <dl class="glance">
+    <div><dt>Entries</dt><dd>{{ t.habits.entry }}</dd></div>
+    <div><dt>Exits</dt><dd>{{ t.habits.exit }}</dd></div>
+    <div><dt>Size</dt><dd>{{ t.habits.size }}</dd></div>
+  </dl>
+  <h3>What a regular trader can learn</h3>
+  <ul>{% for l in t.learn %}<li>{{ l }}</li>{% endfor %}</ul>
+  <h3>What not to copy</h3>
+  <ul>{% for l in t.dont_copy %}<li>{{ l }}</li>{% endfor %}</ul>
+  {% if t.stat %}<p class="small note">{{ t.stat }} <a href="{{ t.stat_url }}" rel="nofollow noopener">source</a></p>{% endif %}
+  <p class="small sources">Sources (their public posts): {% for s in t.sources %}<a href="{{ s.url }}" rel="nofollow noopener">{{ s.label }}</a> <span class="date">{{ s.date|nicedate }}</span>{% if not loop.last %}; {% endif %}{% endfor %}</p>
+</section>
+{% endfor %}
+
+<section class="article">
+  <h2 id="common">{{ k.common.title }}</h2>
+  <ul>{% for i in k.common["items"] %}<li>{{ i }}</li>{% endfor %}</ul>
+  <h2 id="how-chosen">How we chose these traders</h2>
+  {% for p in k.how_chosen %}<p>{{ p }}</p>{% endfor %}
+  <ul class="small">{% for s in k.rank_sources %}<li><a href="{{ s.url }}" rel="nofollow noopener">{{ s.label }}</a></li>{% endfor %}</ul>
+  <p class="small muted">{{ k.add_more }} Summaries are in our own words from posts read on {{ k.updated|nicedate }}. No wallet addresses are listed on purpose.</p>
+  <p class="risk"><strong>{{ k.label }}</strong> {{ k.closing }}</p>
+</section>
+{% endblock %}

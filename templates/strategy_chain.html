@@ -16,6 +16,7 @@
       <ul>{% for c in g.categories %}<li><a href="#{{ c.slug }}">{{ c.name }}</a> <span class="muted small">({% for e in c.examples %}{{ e.ticker }}{% if not loop.last %}, {% endif %}{% endfor %})</span></li>{% endfor %}</ul></li>
     <li><a href="#research-process">{{ g.desk.title }}</a></li>
     <li><a href="#costs">{{ g.costs.title }}</a></li>
+    <li><a href="#creators">{{ g.creators.title }}</a></li>
     <li><a href="#from-x">{{ g.x_research.title }}</a></li>
     <li><a href="#mistakes">Common mistakes</a></li>
     <li><a href="#sources">Further reading and sources</a></li>
@@ -64,6 +65,19 @@
 
   <h2 id="costs">{{ g.costs.title }}</h2>
   <p>{{ g.costs.text }} <a href="{{ g.costs.source }}" rel="nofollow noopener">pump.fun fee docs</a>, checked {{ g.costs.checked|nicedate }}. A per-app breakdown is in <a href="{{ g.costs.more }}" rel="noopener">CryptoStack Tracker's trading-costs guide</a>.</p>
+
+  <h2 id="creators">{{ g.creators.title }}</h2>
+  {% for p in g.creators.intro %}<p>{{ p }}</p>{% endfor %}
+  <p class="note small">{{ g.creators.label }} Individual trader write-ups are on the <a href="/strategies/kols/">KOL strategies page</a>.</p>
+  {% for s in g.creators.lessons %}
+  <div class="log-entry"><strong>{{ loop.index }}. {{ s.name }}</strong><p>{{ s.how }}</p>
+    {% if s.rules %}<ul class="small">{% for r in s.rules %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
+    <p class="small muted">Taught by: {% for c in s.credit %}<a href="{{ c.url }}" rel="nofollow noopener">{{ c.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p></div>
+  {% endfor %}
+  <h3 class="step">The five YouTube channels we read</h3>
+  <p class="small">{{ g.creators.yt_method }}</p>
+  <ul>{% for y in g.creators.youtube %}<li><a href="{{ y.url }}" rel="nofollow noopener">{{ y.name }}</a> <span class="muted small">({{ y.subs }} subscribers on {{ g.creators.yt_checked|nicedate }})</span>: {% for v in y.videos %}<a href="{{ v.url }}" rel="nofollow noopener">{{ v.title }}</a> <span class="date">{{ v.date|nicedate }}</span>{% if not loop.last %}; {% endif %}{% endfor %}. <span class="small">{{ y.note }}</span></li>{% endfor %}</ul>
+  <p class="small muted">{{ g.creators.yt_caveat }}</p>
 
   <h2 id="from-x">{{ g.x_research.title }}</h2>
   <p>{{ g.x_research.intro }}</p>
