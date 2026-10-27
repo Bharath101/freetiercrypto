@@ -67,6 +67,30 @@ def load_strategies(tools):
 ROOT_REL = re.compile(r'((?:href|src|action)=")/(?!/)')
 
 
+GUIDE_ORDER = ["meme-trading-playbook", "coin-types", "scams", "wallets", "earn", "glossary"]
+
+
+def load_guide(tools):
+    """Load data/guide/<slug>.json pages; fail on unknown tool ids or missing pages."""
+    by_id = {t["id"]: t for t in tools}
+    pages = {}
+    for f in sorted((DATA / "guide").glob("*.json")):
+        g = json.loads(f.read_text())
+        assert g["slug"] == f.stem, f
+        def walk(o):
+            if isinstance(o, dict):
+                for k in ("ids", "tools"):
+                    if k in o and isinstance(o[k], list):
+                        for i in o[k]:
+                            assert i in by_id, f"{f.name}: unknown tool id {i}"
+                for v in o.values(): walk(v)
+            elif isinstance(o, list):
+                for v in o: walk(v)
+        walk(g)
+        pages[g["slug"]] = g
+    return pages
+
+
 def prefix_links(text, base_path):
     """Rewrite root-relative URLs (href="/x") to live under the GitHub Pages sub-path."""
     return ROOT_REL.sub(lambda m: m.group(1) + base_path + "/", text) if base_path else text
@@ -100,8 +124,8 @@ def main():
             sitemap.append((path, lastmod))
 
     render("index.html", "/", lastmod=last, tools=tools,
-           title=f"{site['name']}: free vs paid tiers of {len(tools)} crypto tools, compared",
-           description=f"What {len(tools)} crypto charting, bot, tax, wallet, on-chain, DEX and token-safety tools give you for free, the cheapest paid plan in USD, and the best free alternative. Every price links to its source and date checked.")
+           title=f"{site['name']}: memecoin trading playbook, crypto guides and free vs paid crypto tools",
+           description=f"A free, plain-English memecoin trading playbook and crypto guides, plus what {len(tools)} crypto charting, bot, tax, wallet, on-chain, DEX and token-safety tools give you for free, the cheapest paid plan in USD, and the best free alternative. Every price links to its source and date checked.")
     for c in cats:
         render("category.html", f"/category/{c['slug']}/", lastmod=last, cat=c, tools=c["tools"],
                title=f"{c['name']}: free tiers vs paid plans | {site['name']}",
@@ -126,6 +150,17 @@ def main():
     if kols:
         render("strategies_kols.html", "/strategies/kols/", lastmod=kols["updated"], k=kols,
                title=f"KOL strategies: how well-known Solana traders say they trade | {site['name']}", description=kols["summary"])
+    guide = load_guide(tools) if (DATA / "guide").exists() else {}
+    if guide:
+        tool_by_id = {t["id"]: t for t in tools}
+        order = [guide[s] for s in GUIDE_ORDER if s in guide]
+        render("guide_index.html", "/guide/", lastmod=max(g["updated"] for g in guide.values()), pages=order,
+               title=f"Crypto guide: memecoin playbook, coin types, scams, wallets, earning | {site['name']}",
+               description="Plain-English crypto guides: the memecoin trading playbook, every coin type, scams and risks, wallets compared, and realistic ways to earn.")
+        for g in guide.values():
+            path = "/start-here/" if g["slug"] == "start-here" else f"/guide/{g['slug']}/"
+            render("guide_page.html", path, lastmod=g["updated"], g=g, tool_by_id=tool_by_id,
+                   title=f"{g['seo_title']} | {site['name']}", description=g["description"])
     render("404.html", "404.html", sitemap_on=False, title=f"Page not found | {site['name']}", description="Page not found")
     shutil.copytree(ROOT / "static", out / "static")
     (out / "data").mkdir()
@@ -136,6 +171,10 @@ def main():
         (out / "data" / "strategies").mkdir()
         for g in strategies:
             shutil.copy(DATA / "strategies" / f"{g['slug']}.json", out / "data" / "strategies" / f"{g['slug']}.json")
+    if guide:
+        (out / "data" / "guide").mkdir()
+        for slug in guide:
+            shutil.copy(DATA / "guide" / f"{slug}.json", out / "data" / "guide" / f"{slug}.json")
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p, lm in sitemap:
         sm.append(f"  <url><loc>{html.escape(site['base_url'] + p)}</loc>" + (f"<lastmod>{lm}</lastmod>" if lm else "") + "</url>")

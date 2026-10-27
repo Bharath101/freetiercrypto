@@ -1,0 +1,219 @@
+{
+ "title": "Start here: crypto for beginners",
+ "h1": "Start here: crypto for complete beginners",
+ "eyebrow": "Start here",
+ "seo_title": "Start here: crypto for complete beginners",
+ "description": "A plain-English beginner path: what crypto is, how to buy safely, how to set up a wallet, your first trades, the 10 biggest mistakes, and how to avoid losses.",
+ "summary": "Six short steps from zero to your first safe trade.",
+ "plain": [
+  "New to crypto? Read these six steps in order. Each one takes a few minutes and links to a deeper guide when you're ready. Unfamiliar words are explained in the glossary."
+ ],
+ "dont_lose": [
+  "Never share your seed phrase.",
+  "Only invest what you can afford to lose.",
+  "Start with tiny amounts.",
+  "Ignore DMs and 'guaranteed' returns."
+ ],
+ "risk": "Not financial advice; no strategy wins every trade.",
+ "sections": [
+  {
+   "id": "what",
+   "title": "Step 1: What crypto is, in two minutes",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "A cryptocurrency is digital money recorded on a blockchain, a public ledger that thousands of computers keep in sync. Nobody can change it alone. Bitcoin was the first. Ethereum and Solana let people build apps and new tokens on top.",
+      "There are thousands of coins. Most are speculative and many go to zero. Start by learning, not by buying."
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Every coin type explained",
+       "url": "/guide/coin-types/"
+      },
+      {
+       "label": "Glossary",
+       "url": "/guide/glossary/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "buy",
+   "title": "Step 2: How to buy safely",
+   "blocks": [
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "Use a large, regulated exchange in your country",
+       "Type its address yourself, or use the official app store. Never use an ad or a link from a message."
+      ],
+      [
+       "Lock the account",
+       "Turn on an authenticator app or a security key, not SMS, and use a unique password."
+      ],
+      [
+       "Start tiny",
+       "Make a small first purchase and a small test withdrawal before moving real money."
+      ],
+      [
+       "Keep records",
+       "Save each purchase for taxes. A tax tool can import them later."
+      ]
+     ]
+    },
+    {
+     "type": "tools",
+     "ids": [
+      "koinly",
+      "cointracker"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wallet",
+   "title": "Step 3: Set up a wallet",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "Install a well-known wallet app from its official site, write the seed phrase on paper, and store it somewhere safe and offline. Once you hold amounts you'd hate to lose, get a hardware wallet direct from the maker."
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Wallets compared, plus a 10-step setup",
+       "url": "/guide/wallets/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "first-trades",
+   "title": "Step 4: Your first trades",
+   "blocks": [
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "Swap a tiny amount first",
+       "Try a $5-10 swap to learn how fees, slippage and confirmations work."
+      ],
+      [
+       "Decide your exit before you buy",
+       "Write down where you'll take profit and where you'll cut the loss."
+      ],
+      [
+       "Risk 1-2% per trade",
+       "That way one bad trade can't hurt you much."
+      ],
+      [
+       "Check the coin first",
+       "Run token-safety checks before buying anything new."
+      ]
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Meme trading playbook",
+       "url": "/guide/meme-trading-playbook/"
+      },
+      {
+       "label": "Solana memecoin guide",
+       "url": "/strategies/solana/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mistakes",
+   "title": "Step 5: The 10 biggest beginner mistakes",
+   "blocks": [
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "1. Sharing your seed phrase",
+       "No real exchange, wallet or support agent will ever ask for it. Anyone who does is a scammer."
+      ],
+      [
+       "2. Investing money you need",
+       "Crypto can fall 50-90%. Only use money you could lose without it changing your life."
+      ],
+      [
+       "3. Chasing green candles",
+       "Buying after a huge jump usually means buying from people who are taking profit."
+      ],
+      [
+       "4. Trusting DMs and 'support'",
+       "Unsolicited messages offering help, jobs or investments are almost always scams."
+      ],
+      [
+       "5. Clicking airdrop and claim links",
+       "Fake claim pages drain wallets. Use only links from the project's official site."
+      ],
+      [
+       "6. Using leverage early",
+       "Leverage multiplies losses, and liquidation can take everything in minutes."
+      ],
+      [
+       "7. Keeping everything on one exchange or one hot wallet",
+       "Exchanges fail and hot wallets get drained. Split your money, and keep savings in cold storage."
+      ],
+      [
+       "8. Ignoring fees",
+       "Fees, slippage and spreads quietly eat small accounts, especially when you trade often."
+      ],
+      [
+       "9. Believing guaranteed returns",
+       "Fixed high 'daily returns' are the classic sign of a Ponzi scheme."
+      ],
+      [
+       "10. Not writing anything down",
+       "Without notes on your trades and taxes, you can't learn from your mistakes or file correctly."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "avoid-losses",
+   "title": "Step 6: How to avoid losses",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "Read the scam guide once. Most losses come from a handful of repeated tricks. Use a burner wallet for anything new, and revoke old approvals every month. If something feels urgent, stop: urgency is the scammer's main tool."
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Scams and risks guide",
+       "url": "/guide/scams/"
+      },
+      {
+       "label": "How to earn without gambling",
+       "url": "/guide/earn/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "slug": "start-here",
+ "updated": "2026-10-27"
+}

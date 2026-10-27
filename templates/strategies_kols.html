@@ -5,6 +5,7 @@
   <span class="eyebrow">KOL strategies · updated {{ k.updated|nicedate }}</span>
   <h1>{{ k.title }}</h1>
   <p class="risk"><strong>{{ k.label }}</strong> {{ k.closing }}</p>
+  <p class="answer small">Before trading, read the <a href="/guide/meme-trading-playbook/">meme trading playbook</a> (when to buy and sell, and why, plus sizing and a checklist) and the <a href="/guide/scams/">scam guide</a>. New words? See the <a href="/guide/glossary/">glossary</a>.</p>
   {% for p in k.intro %}<p{% if loop.first %} class="lead"{% endif %}>{{ p }}</p>{% endfor %}
 
   <h2>Traders on this page</h2>

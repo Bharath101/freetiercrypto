@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="article">
+  <p class="crumbs small"><a href="/">Home</a> / Guide</p>
+  <h1>The FreeTierCrypto guide</h1>
+  <p class="lead">Plain-English guides to trading memecoins without blowing up, every type of coin, scams, wallets and earning. Every figure links to its source and date.</p>
+  <p class="risk"><strong>Not financial advice; no strategy wins every trade.</strong> Crypto is risky and you can lose everything you put in.</p>
+  <div class="card accent"><span class="eyebrow">New to crypto?</span><h2 style="margin-top:.4em"><a href="/start-here/">Start here</a></h2><p>Six short steps: what crypto is, buying safely, setting up a wallet, first trades, the 10 biggest mistakes, and how to avoid losses.</p></div>
+  <h2>Guides</h2>
+  <div class="grid">{% for p in pages %}<div class="card{% if loop.first %} accent{% endif %}"><h3><a href="/guide/{{ p.slug }}/">{{ p.title }}</a></h3><p class="small">{{ p.summary }}</p></div>{% endfor %}</div>
+  <h2>Chain and trader guides</h2>
+  <ul class="links"><li><a href="/strategies/solana/">Solana memecoin guide</a></li><li><a href="/strategies/kols/">How well-known Solana traders say they trade</a></li><li><a href="/strategies/">All strategies</a></li></ul>
+</section>
+{% endblock %}

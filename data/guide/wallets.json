@@ -1,0 +1,911 @@
+{
+ "title": "Crypto wallets: the best and most secure options",
+ "h1": "Crypto wallets: which to use, and how to set them up safely",
+ "eyebrow": "Wallets",
+ "seo_title": "Best and most secure crypto wallets compared: hardware, software, multisig and MPC",
+ "description": "Hardware, software, multisig and seedless wallets compared on chains, open source, security features, incidents and cost, plus a 10-step security setup.",
+ "summary": "Hardware, hot, multisig and seedless wallets compared, with sourced incidents and a 10-step safe setup.",
+ "plain": [
+  "A crypto wallet doesn't hold coins. It holds the keys that prove the coins are yours. Whoever has your seed phrase (the 12 or 24 backup words) owns your crypto.",
+  "A hardware wallet keeps the keys on a small device, offline. A software or 'hot' wallet keeps them on your phone or computer, which is handy but easier to attack. Most people should use both: hardware for savings, hot for spending."
+ ],
+ "dont_lose": [
+  "Never share your seed phrase. No real support team will ever ask for it.",
+  "Buy hardware wallets only from the maker's own store.",
+  "Keep savings in a wallet that never connects to new sites.",
+  "Check the address and amount on the device screen before you approve.",
+  "Use a small burner wallet for memecoins and new sites."
+ ],
+ "risk": "Wallet facts were checked Oct 26-27, 2026 and can change. No wallet protects you if you sign a malicious transaction or give away your seed. Not financial advice; no strategy wins every trade.",
+ "sections": [
+  {
+   "id": "types",
+   "title": "The four kinds of wallet",
+   "blocks": [
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "Hardware (cold)",
+       "A device that keeps keys offline and signs on its own screen. Best for savings."
+      ],
+      [
+       "Software (hot)",
+       "A phone app or browser extension. Fast and free, but exposed to malware and phishing. Best for trading money."
+      ],
+      [
+       "Multisig",
+       "Needs several keys to approve a transaction. Best for large sums or shared funds."
+      ],
+      [
+       "MPC and smart wallets",
+       "No single seed phrase. The key is split up, or you sign in with a passkey. Easier for beginners, but you rely on the provider's recovery."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "compare",
+   "title": "Comparison",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Wallets compared (checked Oct 26-27, 2026)",
+     "head": [
+      "Wallet",
+      "Type",
+      "Chains",
+      "Open source",
+      "Security features",
+      "Incidents (sourced below)",
+      "Cost",
+      "Best for"
+     ],
+     "rows": [
+      [
+       "Ledger",
+       "Hardware",
+       "Very wide",
+       "App yes, SE OS no",
+       "EAL5+ secure element",
+       "2020 data leak; 2023 Connect Kit; 2026 reseller implant",
+       "From $69",
+       "Wide coin support"
+      ],
+      [
+       "Trezor",
+       "Hardware",
+       "Wide",
+       "Yes",
+       "Safe 5/7: EAL6+ secure element",
+       "2024 support-portal leak",
+       "From $59",
+       "Verifiable code, Bitcoin"
+      ],
+      [
+       "Tangem",
+       "Hardware card",
+       "Wide",
+       "App yes",
+       "EAL6+ chip; seedless backup cards",
+       "None listed here",
+       "From $54.90",
+       "Phone-first beginners"
+      ],
+      [
+       "Keystone 3 Pro",
+       "Hardware, air-gapped",
+       "Wide",
+       "Mostly",
+       "QR only; 3 secure elements",
+       "None listed here",
+       "Check site",
+       "Air-gapped signing"
+      ],
+      [
+       "Phantom",
+       "Hot wallet",
+       "Solana + some EVM + BTC",
+       "No",
+       "Warnings, simulation",
+       "None listed here",
+       "Free",
+       "Solana trading"
+      ],
+      [
+       "MetaMask",
+       "Hot wallet",
+       "EVM + Solana + BTC",
+       "Source-available",
+       "Hardware pairing",
+       "2026 Portfolio phishing flaw (fixed)",
+       "Free",
+       "EVM dapps"
+      ],
+      [
+       "Rabby",
+       "Hot wallet",
+       "100+ EVM",
+       "Yes",
+       "Simulation, approvals manager",
+       "None listed here",
+       "Free",
+       "DeFi safety"
+      ],
+      [
+       "Solflare",
+       "Hot wallet",
+       "Solana",
+       "Check site",
+       "Simulation, hardware support",
+       "None listed here",
+       "Free",
+       "Solana with hardware"
+      ],
+      [
+       "Base App",
+       "Smart wallet",
+       "Base + EVM",
+       "Check site",
+       "Passkeys",
+       "None listed here",
+       "Free",
+       "Seedless on Base"
+      ],
+      [
+       "Safe",
+       "Multisig",
+       "28+ networks",
+       "Yes",
+       "M-of-N approval",
+       "2025 Bybit UI attack",
+       "Gas only",
+       "Large holdings, teams"
+      ],
+      [
+       "Squads",
+       "Multisig",
+       "Solana",
+       "Yes",
+       "Audited, formally verified",
+       "None listed here",
+       "Check site",
+       "Solana treasuries"
+      ],
+      [
+       "Zengo",
+       "MPC",
+       "14+ chains",
+       "Check site",
+       "No seed phrase",
+       "None listed here",
+       "Check site",
+       "Seedless beginners"
+      ]
+     ],
+     "note": "'None listed here' means we did not find a major sourced incident to cite. It does not mean the wallet has never had a problem. Prices change, so check the maker's site."
+    }
+   ]
+  },
+  {
+   "id": "wallets",
+   "title": "Wallet by wallet",
+   "blocks": [
+    {
+     "type": "entries",
+     "items": [
+      {
+       "id": "ledger",
+       "name": "Ledger",
+       "tag": "Hardware",
+       "summary": "The best-known hardware wallet maker. Keys sit in a certified secure-element chip.",
+       "glance": [
+        [
+         "Price",
+         "From $69 (Nano S Plus); other models $99-$399. Checked Oct 26, 2026"
+        ],
+        [
+         "Chains",
+         "Thousands of coins and tokens across major chains"
+        ],
+        [
+         "Open source",
+         "Ledger Wallet app yes (MIT); the secure-element OS is closed"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Beginners who want a widely supported device",
+          "Holding across many chains"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "Buy only from ledger.com",
+          "The closed secure-element code, and the optional Ledger Recover service, are a matter of trust"
+         ]
+        ]
+       ],
+       "tools": [
+        "ledger"
+       ],
+       "facts": [
+        {
+         "text": "July 2020: Ledger's e-commerce database leaked. About 1M emails and about 272,000 full names, addresses and phone numbers were later dumped, which led to years of phishing mail aimed at owners. Seeds were not exposed.",
+         "src": {
+          "label": "Ledger, July 2020 e-commerce data breach",
+          "url": "https://www.ledger.com/addressing-the-july-2020-e-commerce-and-marketing-data-breach",
+          "date": "2026-10-27",
+          "read": true
+         }
+        },
+        {
+         "text": "Dec 14, 2023: a malicious version of Ledger's Connect Kit code library was pushed to apps that used it, and drained about $600K from users who signed on affected dapps. The devices themselves were not breached.",
+         "src": {
+          "label": "Ledger, Connect Kit security incident report",
+          "url": "https://www.ledger.com/blog/security-incident-report",
+          "date": "2023-12-14"
+         }
+        },
+        {
+         "text": "Oct 2026: Ledger confirmed that devices sold by a Southeast Asian reseller carried a hidden implant that captured the recovery phrase during setup and sent it out over mobile data. Ledger says its chip, OS and servers were not compromised. It asked resellers in the region to suspend sales and tightened handling rules.",
+         "src": {
+          "label": "BleepingComputer, Ledger confirms spy chip implant behind wallet crypto thefts",
+          "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+          "date": "2026-10-12"
+         }
+        },
+        {
+         "text": "Ledger called it a 'localized distribution attack' and said spot checks of stock elsewhere found no tampered units.",
+         "src": {
+          "label": "Ledger, response to the hardware implant attack",
+          "url": "https://www.ledger.com/blog-response-hardware-implant-attack",
+          "date": "2026-10-15"
+         }
+        }
+       ]
+      },
+      {
+       "id": "trezor",
+       "name": "Trezor",
+       "tag": "Hardware",
+       "summary": "The original hardware wallet, with fully open-source firmware. Newer Safe models add a secure element.",
+       "glance": [
+        [
+         "Price",
+         "From $59 (Safe 3). Checked Oct 26, 2026"
+        ],
+        [
+         "Chains",
+         "Bitcoin, Ethereum, Solana and many others"
+        ],
+        [
+         "Open source",
+         "Yes, firmware and app"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Users who want to verify the code",
+          "Bitcoin-heavy holders"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "Buy direct: Trezor is ending reseller authorisations on Jan 1, 2027",
+          "Never use a device that arrives with a seed already written down"
+         ]
+        ]
+       ],
+       "tools": [
+        "trezor"
+       ],
+       "facts": [
+        {
+         "text": "Safe 5 uses an EAL6+ certified secure element (Infineon OPTIGA Trust M). Safe 7 adds an auditable TROPIC01 chip and is marketed as quantum-ready.",
+         "src": {
+          "label": "Trezor, secure elements in Trezor Safe devices",
+          "url": "https://trezor.io/learn/security-privacy/how-trezor-keeps-you-safe/secure-elements-in-trezor-safe-devices",
+          "date": "2026-10-27",
+          "read": true
+         }
+        },
+        {
+         "text": "Jan 2024: an attacker got into a third-party support ticketing portal, exposing contact details of up to 66,000 users. Trezor said no seeds or devices were affected and warned about follow-up phishing.",
+         "src": {
+          "label": "Trezor blog, security alert on phishing",
+          "url": "https://blog.trezor.io/trezor-security-update-stay-vigilant-against-potential-phishing-attack-bb05015a21f8",
+          "date": "2024-01-24"
+         }
+        },
+        {
+         "text": "Oct 13, 2026: Trezor told resellers their authorisation ends on Jan 1, 2027, calling it a precaution after the Ledger implant case. It said there was no evidence its own devices were compromised.",
+         "src": {
+          "label": "Decrypt, Trezor cuts its resellers after Ledger finds spy implant",
+          "url": "https://decrypt.co/380848/trezor-cuts-resellers-ledger-finds-spy-implant-crypto-wallets",
+          "date": "2026-10-13"
+         }
+        }
+       ]
+      },
+      {
+       "id": "tangem",
+       "name": "Tangem",
+       "tag": "Hardware (card)",
+       "summary": "NFC cards that tap against your phone. It can work without a written seed phrase, using 2-3 backup cards instead.",
+       "glance": [
+        [
+         "Price",
+         "From $54.90 (cheapest pack). Checked Oct 26, 2026"
+        ],
+        [
+         "Chains",
+         "Many chains through the app"
+        ],
+        [
+         "Open source",
+         "App yes; card firmware audited but not updatable"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Beginners who fear losing a paper seed",
+          "Simple phone-first use"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "Losing every card means losing access, so store backups in separate places",
+          "Firmware cannot be updated"
+         ]
+        ]
+       ],
+       "tools": [
+        "tangem"
+       ],
+       "facts": [
+        {
+         "text": "Tangem uses an EAL6+ Samsung chip. Its card code was audited by Kudelski Security in 2018.",
+         "src": {
+          "label": "Tangem help centre, Tangem and security",
+          "url": "https://tangem.com/en/help-center/introduction-to-tangem-wallet/tangem-and-security/",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "keystone",
+       "name": "Keystone 3 Pro",
+       "tag": "Hardware (air-gapped)",
+       "summary": "Never connects by USB or Bluetooth. It talks to your phone or computer only through QR codes.",
+       "glance": [
+        [
+         "Chains",
+         "Bitcoin, Ethereum, Solana and more, via MetaMask, Rabby, Solflare and others"
+        ],
+        [
+         "Open source",
+         "Firmware on GitHub; some libraries are precompiled"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Air-gapped signing",
+          "Pairing with a software wallet you already use"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "QR signing is slower, so it's not for fast memecoin trading"
+         ]
+        ]
+       ],
+       "tools": [
+        "keystone"
+       ],
+       "facts": [
+        {
+         "text": "Keystone 3 Pro uses three secure elements, and its firmware is published on GitHub.",
+         "src": {
+          "label": "Keystone, open source and transparency",
+          "url": "https://keyst.one/open-source",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "phantom",
+       "name": "Phantom",
+       "tag": "Software (Solana first)",
+       "summary": "The most popular Solana wallet, now multichain. It has built-in swaps and transaction warnings.",
+       "glance": [
+        [
+         "Chains",
+         "Solana, Ethereum, Base, Polygon, Bitcoin, BNB Chain, HyperEVM and others (no Arbitrum or Optimism)"
+        ],
+        [
+         "Open source",
+         "No"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Solana trading and memecoins",
+          "Beginners"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "It's a hot wallet, so keep savings elsewhere",
+          "Not open source"
+         ]
+        ]
+       ],
+       "tools": [
+        "phantom"
+       ],
+       "facts": [
+        {
+         "text": "Phantom's supported networks are listed in its help centre; Arbitrum, Optimism and Avalanche are not among them.",
+         "src": {
+          "label": "Phantom help, supported networks",
+          "url": "https://help.phantom.com/articles/supported-networks-chains-in-phantom-41372840389651",
+          "date": "2026-10-27",
+          "read": true
+         }
+        },
+        {
+         "text": "Walletbeat lists Phantom's source code as not openly licensed.",
+         "src": {
+          "label": "Walletbeat, Phantom profile",
+          "url": "https://beta.walletbeat.eth.link/phantom/",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "metamask",
+       "name": "MetaMask",
+       "tag": "Software (EVM, plus Solana and Bitcoin)",
+       "summary": "The default Ethereum wallet. It added Solana in May 2025 and Bitcoin in Dec 2025.",
+       "glance": [
+        [
+         "Price",
+         "Free; optional Transaction Shield $9.99/mo. Checked Oct 26, 2026"
+        ],
+        [
+         "Open source",
+         "Source-available under a proprietary licence"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "EVM chains and dapps",
+          "Pairing with Ledger, Trezor or Keystone"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "Fake MetaMask extensions are common, so install only from metamask.io"
+         ]
+        ]
+       ],
+       "tools": [
+        "metamask"
+       ],
+       "facts": [
+        {
+         "text": "MetaMask's licence is source-available but not open source in the usual sense.",
+         "src": {
+          "label": "MetaMask extension licence on GitHub",
+          "url": "https://raw.githubusercontent.com/MetaMask/metamask-extension/main/LICENSE",
+          "date": "2026-10-27",
+          "read": true
+         }
+        },
+        {
+         "text": "Oct 2026: researchers found a phishing campaign that abused a flaw on MetaMask's real Portfolio site to show a fake 'verify your wallet' notice asking for the seed phrase. MetaMask fixed it by Oct 19. Nothing legitimate ever asks for your seed.",
+         "src": {
+          "label": "Kauz Security, content injection on portfolio.metamask.io",
+          "url": "https://kauz.gmbh/research/metamask-portfolio-phishing/",
+          "date": "2026-10-20"
+         }
+        }
+       ]
+      },
+      {
+       "id": "rabby",
+       "name": "Rabby",
+       "tag": "Software (EVM)",
+       "summary": "An open-source EVM wallet that simulates every transaction before you sign and shows its risks.",
+       "glance": [
+        [
+         "Chains",
+         "100+ EVM chains"
+        ],
+        [
+         "Open source",
+         "Yes"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "DeFi users",
+          "Anyone worried about drainers and approvals"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "EVM only"
+         ]
+        ]
+       ],
+       "tools": [
+        "rabby"
+       ],
+       "facts": [
+        {
+         "text": "Rabby offers pre-sign transaction simulation and a built-in approvals manager.",
+         "src": {
+          "label": "Rabby, security",
+          "url": "https://rabby.is/en/security.html",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "solflare",
+       "name": "Solflare",
+       "tag": "Software (Solana)",
+       "summary": "A Solana-only wallet with transaction simulation and support for Ledger and Keystone.",
+       "glance": [
+        [
+         "Chains",
+         "Solana"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Solana staking and holding",
+          "Using a hardware wallet on Solana"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "Solana only"
+         ]
+        ]
+       ],
+       "tools": [],
+       "facts": []
+      },
+      {
+       "id": "backpack",
+       "name": "Backpack",
+       "tag": "Software (multichain)",
+       "summary": "A wallet from the team behind the Backpack exchange. It covers Solana, Ethereum and others, and supports Ledger, Trezor and Keystone.",
+       "glance": [
+        [
+         "Chains",
+         "Solana, Ethereum and many others"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Solana plus EVM in one wallet"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "Linked to an exchange brand, so check you have the real download"
+         ]
+        ]
+       ],
+       "tools": [],
+       "facts": []
+      },
+      {
+       "id": "base-app",
+       "name": "Base App (formerly Coinbase Wallet)",
+       "tag": "Smart wallet",
+       "summary": "Coinbase Wallet became the Base App in July 2025. Base Account uses passkeys (your phone's face or fingerprint login) instead of a seed phrase.",
+       "glance": [
+        [
+         "Chains",
+         "Base and other EVM chains"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Beginners on Base",
+          "Seedless sign-in"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "Recovery depends on your passkey and cloud account, so secure those well"
+         ]
+        ]
+       ],
+       "tools": [],
+       "facts": [
+        {
+         "text": "Coinbase describes the move from Coinbase Wallet to the Base App.",
+         "src": {
+          "label": "Base blog, A new day one (Coinbase Wallet becomes the Base App)",
+          "url": "https://blog.base.org/a-new-day-one",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "safe",
+       "name": "Safe",
+       "tag": "Multisig (EVM)",
+       "summary": "A multisig needs M of N keys (for example 2 of 3) to approve a transaction, so one stolen key is not enough.",
+       "glance": [
+        [
+         "Chains",
+         "28+ networks"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Teams, treasuries and large personal holdings"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "Every signer must check what they sign on their own device"
+         ]
+        ]
+       ],
+       "tools": [],
+       "facts": [
+        {
+         "text": "Feb 21, 2025: about $1.5B was stolen from Bybit. The FBI attributed it to North Korea. Investigators found malicious JavaScript in Safe's web interface that showed signers a harmless-looking transaction. Lesson: check the transaction on the hardware device screen, not just the website.",
+         "src": {
+          "label": "FBI PSA: North Korea responsible for $1.5 billion Bybit hack",
+          "url": "https://www.fbi.gov/investigate/cyber/alerts/2025/north-korea-responsible-for-1-5-billion-bybit-hack",
+          "date": "2025-02-26"
+         }
+        }
+       ]
+      },
+      {
+       "id": "squads",
+       "name": "Squads",
+       "tag": "Multisig (Solana)",
+       "summary": "The main multisig on Solana.",
+       "glance": [
+        [
+         "Chains",
+         "Solana"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Solana teams and large holdings"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "The same 'verify what you sign' rule as Safe"
+         ]
+        ]
+       ],
+       "tools": [],
+       "facts": [
+        {
+         "text": "Squads Protocol v4 was audited by OtterSec, Neodyme, Certora and Trail of Bits, and formally verified.",
+         "src": {
+          "label": "Squads docs, Protocol v4 security audits",
+          "url": "https://docs.squads.so/main/security/security-audits/squads-protocol-v4",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "zengo",
+       "name": "Zengo",
+       "tag": "MPC (seedless)",
+       "summary": "MPC splits your key into parts held on your phone and on Zengo's servers, so there is no seed phrase to steal.",
+       "glance": [
+        [
+         "Chains",
+         "14+ chains"
+        ]
+       ],
+       "lists": [
+        [
+         "Good for",
+         [
+          "Beginners who don't want a seed phrase"
+         ]
+        ],
+        [
+         "Watch out for",
+         [
+          "You depend on the company's servers and recovery process"
+         ]
+        ]
+       ],
+       "tools": [],
+       "facts": [
+        {
+         "text": "Zengo describes its MPC, seedless security model.",
+         "src": {
+          "label": "Zengo, security model",
+          "url": "https://zengo.com/security/",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "title": "Security setup: 10 steps",
+   "blocks": [
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "1. Split hot and cold",
+       "Cold wallet (hardware): your savings. It never connects to new sites. Hot wallet (Phantom, Rabby and similar): only what you are trading this week."
+      ],
+      [
+       "2. Add a burner",
+       "A third wallet with a small balance for new sites, mints, claims and memecoins. If it gets drained, you lose only that small balance."
+      ],
+      [
+       "3. Buy hardware direct",
+       "Order only from the maker's official store. Never buy second-hand, from marketplaces, or a 'cheap' unit. Tampered devices look and work normally."
+      ],
+      [
+       "4. Make your own seed",
+       "Generate the seed phrase on the device yourself. Reject any device that comes with a seed card already filled in or a scratch-off PIN."
+      ],
+      [
+       "5. Store the seed offline",
+       "Write it on paper or metal and keep it in two safe places. Never photograph it, type it, store it in the cloud or a password manager, or send it to anyone."
+      ],
+      [
+       "6. Check the screen",
+       "Always confirm the address and amount on the hardware wallet's own screen before approving."
+      ],
+      [
+       "7. Simulate before you sign",
+       "Use a wallet that previews what will leave your wallet. If the preview is unclear or shows an unlimited approval, reject it."
+      ],
+      [
+       "8. Revoke monthly",
+       "Review and revoke old token approvals with revoke.cash or your wallet's approvals tool."
+      ],
+      [
+       "9. Lock down the rest",
+       "Use an authenticator app or a security key rather than SMS, set a SIM/port-out PIN with your carrier, and use a separate email for crypto."
+      ],
+      [
+       "10. Save addresses",
+       "Keep an address book of your own and trusted addresses. Never copy an address from your transaction history."
+      ]
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Revoke.cash",
+       "url": "https://revoke.cash"
+      },
+      {
+       "label": "Scam guide: fake apps and tampered hardware",
+       "url": "/guide/scams/#fake-apps"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "past",
+   "title": "Lessons from past wallet hacks",
+   "blocks": [
+    {
+     "type": "facts",
+     "items": [
+      {
+       "text": "Aug 2022: Slope wallet's error-logging service recorded users' seed phrases. About $4.1M was drained from 9,231 Solana wallets. Lesson: one leaked seed can empty every chain that seed controls.",
+       "src": {
+        "label": "Solana Foundation, Aug 2, 2022 application wallet incident",
+        "url": "https://solana.com/news/8-2-2022-application-wallet-incident",
+        "date": "2022-08-02"
+       }
+      },
+      {
+       "text": "June 2023: at least $35M was stolen from Atomic Wallet users. Elliptic attributed it to North Korea's Lazarus Group.",
+       "src": {
+        "label": "Elliptic, Lazarus likely behind $35 million Atomic Wallet theft",
+        "url": "https://www.elliptic.co/insights/north-korea-s-lazarus-group-likely-responsible-for-35-million-atomic-crypto-theft/",
+        "date": "2026-10-27",
+        "read": true
+       }
+      },
+      {
+       "text": "Dec 24, 2025: Trust Wallet's browser extension v2.68 was compromised. About 2,520 wallets were hit, the fix was v2.69, and Trust Wallet began reimbursing.",
+       "src": {
+        "label": "Trust Wallet, browser extension v2.68 incident update",
+        "url": "https://trustwallet.com/blog/company/trust-wallet-browser-extension-v268-incident-community-update",
+        "date": "2026-10-27",
+        "read": true
+       }
+      },
+      {
+       "text": "Oct 17, 2026: attackers hijacked a notification provider used by NGRAVE's LIQUID app and sent a fake security alert linking to a copycat site that asked for the recovery phrase. NGRAVE traced about $2.56M stolen. The ZERO device itself was not breached.",
+       "src": {
+        "label": "NGRAVE, incident report: the fake LIQUID security alert",
+        "url": "https://www.ngrave.io/en/blog/incident-report-fake-liquid-security-alert-17-october",
+        "date": "2026-10-19"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "slug": "wallets",
+ "updated": "2026-10-27"
+}

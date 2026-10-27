@@ -8,6 +8,7 @@
   <p class="risk"><strong>Not financial advice. No strategy wins every trade, and you can lose everything in memecoins.</strong> These guides are built around keeping losses small and taking only trades with positive expected value. They do not promise profits.</p>
   <div class="grid">
     {% for g in guides %}
+    <div class="card accent"><span class="eyebrow">Start with this</span><h3><a href="/guide/meme-trading-playbook/">Meme trading playbook</a></h3><p class="small">Tools at each step, mistakes, when to buy and sell and why, maths, sizing, journaling, and a printable checklist.</p></div>
     <div class="card">
       <h3><a href="/strategies/{{ g.slug }}/">{{ g.chain }}</a></h3>
       <p class="small">{{ g.summary }}</p>

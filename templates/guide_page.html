@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% macro src(s) %}<a href="{{ s.url }}" rel="nofollow noopener">{{ s.label }}</a> <span class="date">{% if s.read %}read {% endif %}{{ s.date|nicedate }}</span>{% endmacro %}
+{% macro toollinks(ids) %}{% for i in ids %}{% set t = tool_by_id[i] %}<a href="/category/{{ t.category }}/#{{ t.id }}">{{ t.name }}</a>{% if t.has_free_tier == "yes" %} <span class="tag tag-verified">free tier</span>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% endmacro %}
+{% macro factlist(items) %}<ul class="facts">{% for f in items %}<li>{{ f.text }} <span class="src">({{ src(f.src) }})</span></li>{% endfor %}</ul>{% endmacro %}
+{% macro block(b) %}
+{% if b.title %}<h3 class="step">{{ b.title }}</h3>{% endif %}
+{% if b.type == "text" %}{% for p in b.paras %}<p>{{ p }}</p>{% endfor %}
+{% elif b.type == "note" %}<p class="note">{{ b.text }}</p>
+{% elif b.type == "list" %}{% if b.ordered %}<ol>{% else %}<ul>{% endif %}{% for i in b["items"] %}<li>{{ i }}</li>{% endfor %}{% if b.ordered %}</ol>{% else %}</ul>{% endif %}
+{% elif b.type == "pairs" %}<dl class="pairs">{% for k, v in b["items"] %}<dt>{{ k }}</dt><dd>{{ v }}</dd>{% endfor %}</dl>
+{% elif b.type == "why" %}<div class="why">{% for t, what, why in b["items"] %}<div class="why-item"><strong>{{ t }}</strong><p>{{ what }}</p><p class="small"><span class="why-label">Why:</span> {{ why }}</p></div>{% endfor %}</div>
+{% elif b.type == "facts" %}{{ factlist(b["items"]) }}
+{% elif b.type == "incidents" %}<ul class="facts">{% for f in b["items"] %}<li><span class="date">{{ f.date|nicedate }}</span> {{ f.text }} <span class="src">({{ src(f.src) }})</span></li>{% endfor %}</ul>
+{% elif b.type == "sources" %}<p class="sources">Sources: {% for s in b["items"] %}{{ src(s) }}{% if not loop.last %}; {% endif %}{% endfor %}</p>
+{% elif b.type == "links" %}<p class="small">See also: {% for l in b["items"] %}<a href="{{ l.url }}"{% if l.url.startswith('http') %} rel="nofollow noopener"{% endif %}>{{ l.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+{% elif b.type == "tools" %}<p class="small">Tools: {{ toollinks(b.ids) }}</p>
+{% elif b.type == "table" %}{% if b.caption %}<p class="small muted">{{ b.caption }}</p>{% endif %}<div class="table-wrap"><table class="ptable ftable"><thead><tr>{% for h in b.head %}<th>{{ h }}</th>{% endfor %}</tr></thead><tbody>{% for r in b.rows %}<tr>{% for c in r %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div>{% if b.note %}<p class="small muted">{{ b.note }}</p>{% endif %}
+{% elif b.type == "toolsteps" %}<div class="table-wrap"><table class="ptable ftable"><thead><tr><th>Step</th><th>What you need</th><th>Tools</th><th>Why</th></tr></thead><tbody>{% for r in b.rows %}<tr><td>{{ r.step }}</td><td>{{ r.need }}</td><td>{{ toollinks(r.ids) }}</td><td>{{ r.why }}</td></tr>{% endfor %}</tbody></table></div>
+{% elif b.type == "checklist" %}<p class="noprint"><button class="btn btn-sm" type="button" onclick="window.print()">Print this checklist</button></p><ul class="checklist">{% for k, v in b["items"] %}<li><label><input type="checkbox"> <strong>{{ k }}:</strong> {{ v }}</label></li>{% endfor %}</ul>
+{% elif b.type == "terms" %}<dl class="terms">{% for t in b["items"] %}<dt id="{{ t.id }}">{{ t.term }}</dt><dd>{{ t.def }}{% if t.link %} <a href="{{ t.link }}">More</a>{% endif %}</dd>{% endfor %}</dl>
+{% elif b.type == "entries" %}{% for e in b["items"] %}<div class="strat entry" id="{{ e.id }}">
+  <h3>{{ e.name }} {% if e.tag %}<span class="tag">{{ e.tag }}</span>{% endif %}</h3>
+  <p>{{ e.summary }}</p>
+  {% if e.glance %}<dl class="glance">{% for k, v in e.glance %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl>{% endif %}
+  {% if e.examples %}<p class="small"><strong>Examples:</strong> {{ e.examples|join(", ") }}</p>{% endif %}
+  {% for title, items in e.lists %}<h4>{{ title }}</h4><ul>{% for i in items %}<li>{{ i }}</li>{% endfor %}</ul>{% endfor %}
+  {% if e.incidents %}<h4>Real incidents</h4><ul class="facts">{% for f in e.incidents %}<li><span class="date">{{ f.date|nicedate }}</span> {{ f.text }} <span class="src">({{ src(f.src) }})</span></li>{% endfor %}</ul>{% endif %}
+  {% if e.facts %}<h4>Sourced facts</h4>{{ factlist(e.facts) }}{% endif %}
+  {% if e.tools %}<p class="small">Tools: {{ toollinks(e.tools) }}</p>{% endif %}
+  {% if e.links %}<p class="small">See also: {% for l in e.links %}<a href="{{ l.url }}"{% if l.url.startswith('http') %} rel="nofollow noopener"{% endif %}>{{ l.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+</div>{% endfor %}
+{% endif %}
+{% endmacro %}
+{% block content %}
+<section class="article guide">
+  <p class="crumbs small"><a href="/">Home</a> / {% if path != "/start-here/" %}<a href="/guide/">Guide</a> / {% endif %}{{ g.eyebrow }}</p>
+  <span class="eyebrow">{{ g.eyebrow }} · updated {{ g.updated|nicedate }}</span>
+  <h1>{{ g.h1 }}</h1>
+  <p class="lead">{{ g.description }}</p>
+  {% if g.plain %}<div class="plain"><h2>In plain English</h2>{% for p in g.plain %}<p>{{ p }}</p>{% endfor %}<p class="small">New words? See the <a href="/guide/glossary/">glossary</a>.</p></div>{% endif %}
+  {% if g.dont_lose %}<div class="dontlose"><h2>How not to lose money here</h2><ul>{% for i in g.dont_lose %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
+  {% if g.risk %}<p class="risk"><strong>Not financial advice; no strategy wins every trade.</strong> {{ g.risk }}</p>{% endif %}
+  {% if g.sections|length > 1 %}<nav class="toc noprint"><h2>Contents</h2><ol class="links">{% for s in g.sections %}<li><a href="#{{ s.id }}">{{ s.title }}</a></li>{% endfor %}</ol></nav>{% endif %}
+  {% for s in g.sections %}<section id="{{ s.id }}" class="gsec{% if s.id == 'checklist' %} print-me{% endif %}"><h2>{{ s.title }}</h2>
+  {% for b in s.blocks %}{{ block(b) }}{% endfor %}</section>{% endfor %}
+  <p class="small muted">Rules of thumb and risk signals on this page are not accusations against any named person. Figures are as reported by the linked sources on the dates shown.</p>
+</section>
+{% endblock %}

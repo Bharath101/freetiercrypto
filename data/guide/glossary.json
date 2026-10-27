@@ -1,0 +1,311 @@
+{
+ "title": "Crypto glossary",
+ "h1": "Crypto glossary: plain-English definitions",
+ "eyebrow": "Glossary",
+ "seo_title": "Crypto glossary: plain-English definitions",
+ "description": "Plain-English definitions of the crypto and memecoin trading terms used across this guide.",
+ "summary": "48 terms in plain English, each linked to where it matters.",
+ "sections": [
+  {
+   "id": "terms",
+   "title": "Terms A-Z",
+   "blocks": [
+    {
+     "type": "terms",
+     "items": [
+      {
+       "id": "address-poisoning",
+       "term": "Address poisoning",
+       "def": "Scammers send tiny transfers from look-alike addresses, hoping you'll copy the wrong one from your history.",
+       "link": "/guide/scams/#address-poisoning"
+      },
+      {
+       "id": "airdrop",
+       "term": "Airdrop",
+       "def": "Free tokens a project sends to early users. Claim only through the project's official links.",
+       "link": "/guide/earn/#airdrops"
+      },
+      {
+       "id": "ape",
+       "term": "Ape in",
+       "def": "To buy fast, without research. It usually ends badly.",
+       "link": null
+      },
+      {
+       "id": "apy",
+       "term": "APY",
+       "def": "Annual percentage yield, including compounding. In crypto it's usually variable.",
+       "link": "/guide/earn/#yields"
+      },
+      {
+       "id": "ath",
+       "term": "ATH",
+       "def": "All-time high: the highest price a coin has ever reached.",
+       "link": null
+      },
+      {
+       "id": "bonding-curve",
+       "term": "Bonding curve",
+       "def": "A pricing formula that raises the price as more people buy. Launchpads like pump.fun use one before a coin 'graduates' to a normal market.",
+       "link": "/guide/meme-trading-playbook/#find"
+      },
+      {
+       "id": "bundle",
+       "term": "Bundled launch",
+       "def": "When the creator buys a big share of a new coin, often across many wallets, in the very first block, so they can dump on later buyers.",
+       "link": "/guide/scams/#bundled-launch"
+      },
+      {
+       "id": "burner",
+       "term": "Burner wallet",
+       "def": "A separate wallet holding only a small amount, used for risky sites and trades.",
+       "link": "/guide/wallets/#setup"
+      },
+      {
+       "id": "cex",
+       "term": "CEX",
+       "def": "Centralized exchange, such as Coinbase or Binance. A company holds your coins for you.",
+       "link": "/guide/scams/#cex-collapse"
+      },
+      {
+       "id": "cold-wallet",
+       "term": "Cold wallet",
+       "def": "A wallet whose keys stay offline, usually a hardware device. Best for savings.",
+       "link": "/guide/wallets/#types"
+      },
+      {
+       "id": "dev",
+       "term": "Dev",
+       "def": "The person or team who created a token. 'Dev sold' means the creator dumped their coins.",
+       "link": null
+      },
+      {
+       "id": "dex",
+       "term": "DEX",
+       "def": "Decentralized exchange. You swap directly from your own wallet through smart contracts.",
+       "link": null
+      },
+      {
+       "id": "drainer",
+       "term": "Drainer",
+       "def": "A malicious site or script that tricks you into signing a transaction that empties your wallet.",
+       "link": "/guide/scams/#drainers"
+      },
+      {
+       "id": "dyor",
+       "term": "DYOR",
+       "def": "Do your own research.",
+       "link": null
+      },
+      {
+       "id": "expectancy",
+       "term": "Expectancy",
+       "def": "Your average profit or loss per trade over many trades: (win rate x average win) minus (loss rate x average loss), after costs.",
+       "link": "/guide/meme-trading-playbook/#maths"
+      },
+      {
+       "id": "fdv",
+       "term": "FDV",
+       "def": "Fully diluted valuation: the price multiplied by every token that will ever exist, not just the ones trading today.",
+       "link": null
+      },
+      {
+       "id": "gas",
+       "term": "Gas / network fee",
+       "def": "The fee you pay the blockchain to process your transaction.",
+       "link": null
+      },
+      {
+       "id": "graduation",
+       "term": "Graduation",
+       "def": "When a launchpad coin fills its bonding curve and moves to a regular DEX pool.",
+       "link": "/guide/meme-trading-playbook/#find"
+      },
+      {
+       "id": "hardware-wallet",
+       "term": "Hardware wallet",
+       "def": "A small device that stores your keys offline and signs transactions on its own screen. Buy only from the maker.",
+       "link": "/guide/wallets/"
+      },
+      {
+       "id": "honeypot",
+       "term": "Honeypot",
+       "def": "A token you can buy but cannot sell.",
+       "link": "/guide/scams/#honeypot"
+      },
+      {
+       "id": "hot-wallet",
+       "term": "Hot wallet",
+       "def": "A wallet app on an internet-connected phone or computer. Convenient, but more exposed.",
+       "link": "/guide/wallets/#types"
+      },
+      {
+       "id": "kol",
+       "term": "KOL",
+       "def": "Key opinion leader: an influencer whose posts move prices. Some are paid to promote.",
+       "link": "/strategies/kols/"
+      },
+      {
+       "id": "lst",
+       "term": "Liquid staking token",
+       "def": "A token, like stETH or JitoSOL, that represents staked coins and keeps earning while you hold it.",
+       "link": "/guide/earn/#staking"
+      },
+      {
+       "id": "liquidity",
+       "term": "Liquidity",
+       "def": "How much money sits in a trading pool. Low liquidity means big price moves and hard exits.",
+       "link": null
+      },
+      {
+       "id": "lp",
+       "term": "LP (liquidity pool)",
+       "def": "A pool of two tokens that traders swap against. 'LP burned' means the creator can't pull the pool's money out.",
+       "link": "/guide/scams/#rug-pull"
+      },
+      {
+       "id": "market-cap",
+       "term": "Market cap",
+       "def": "Price x circulating supply. It's a better guide than price alone to how 'big' a coin already is.",
+       "link": null
+      },
+      {
+       "id": "memecoin",
+       "term": "Memecoin",
+       "def": "A token driven by jokes, culture and attention rather than a product. Extremely volatile.",
+       "link": "/guide/coin-types/"
+      },
+      {
+       "id": "mev",
+       "term": "MEV / sandwich",
+       "def": "When bots see your trade coming and trade just before and after it, profiting from your slippage.",
+       "link": "/guide/meme-trading-playbook/#costs"
+      },
+      {
+       "id": "mint-authority",
+       "term": "Mint authority",
+       "def": "The power to create new tokens. If it isn't revoked, the creator can print supply and dump it.",
+       "link": "/guide/scams/#launch-forensics"
+      },
+      {
+       "id": "mpc",
+       "term": "MPC wallet",
+       "def": "A wallet whose key is split into pieces held in different places, so there is no single seed phrase.",
+       "link": "/guide/wallets/#zengo"
+      },
+      {
+       "id": "multisig",
+       "term": "Multisig",
+       "def": "A wallet that needs several keys (for example 2 of 3) to approve a transaction.",
+       "link": "/guide/wallets/#safe"
+      },
+      {
+       "id": "nfa",
+       "term": "NFA",
+       "def": "Not financial advice.",
+       "link": null
+      },
+      {
+       "id": "perp",
+       "term": "Perp (perpetual future)",
+       "def": "A leveraged contract that tracks a coin's price with no expiry date. Leverage can wipe you out fast.",
+       "link": null
+      },
+      {
+       "id": "priority-fee",
+       "term": "Priority fee",
+       "def": "An extra tip paid to get your transaction processed faster. It adds up quickly in memecoin trading.",
+       "link": "/guide/meme-trading-playbook/#costs"
+      },
+      {
+       "id": "r-multiple",
+       "term": "R (risk unit)",
+       "def": "The amount you're willing to lose on one trade. A 3R win is three times that amount.",
+       "link": "/guide/meme-trading-playbook/#maths"
+      },
+      {
+       "id": "revoke",
+       "term": "Revoke",
+       "def": "Cancel a token approval, for example with revoke.cash.",
+       "link": "/guide/wallets/#setup"
+      },
+      {
+       "id": "rug-pull",
+       "term": "Rug pull",
+       "def": "When a creator pulls the liquidity or dumps their supply, leaving holders with worthless tokens.",
+       "link": "/guide/scams/#rug-pull"
+      },
+      {
+       "id": "seed-phrase",
+       "term": "Seed phrase",
+       "def": "The 12 or 24 backup words that control your wallet. Anyone who has them owns your crypto. Never share them.",
+       "link": "/guide/wallets/"
+      },
+      {
+       "id": "self-custody",
+       "term": "Self-custody",
+       "def": "Holding your own keys rather than leaving coins on an exchange.",
+       "link": "/guide/wallets/"
+      },
+      {
+       "id": "slippage",
+       "term": "Slippage",
+       "def": "The difference between the price you expected and the price you got. It's large on small coins.",
+       "link": "/guide/meme-trading-playbook/#costs"
+      },
+      {
+       "id": "stablecoin",
+       "term": "Stablecoin",
+       "def": "A token designed to stay at $1, like USDC or USDT.",
+       "link": "/guide/coin-types/"
+      },
+      {
+       "id": "staking",
+       "term": "Staking",
+       "def": "Locking coins to help run a proof-of-stake network in return for rewards.",
+       "link": "/guide/earn/#staking"
+      },
+      {
+       "id": "stop-loss",
+       "term": "Stop-loss",
+       "def": "A price at which you sell to cap your loss.",
+       "link": "/guide/meme-trading-playbook/#exits"
+      },
+      {
+       "id": "tge",
+       "term": "TGE",
+       "def": "Token generation event: when a token launches and starts trading.",
+       "link": null
+      },
+      {
+       "id": "time-stop",
+       "term": "Time stop",
+       "def": "Exiting a trade because it hasn't worked within a set time, whatever the price.",
+       "link": "/guide/meme-trading-playbook/#time-stops"
+      },
+      {
+       "id": "approval",
+       "term": "Token approval",
+       "def": "Permission you give a smart contract to move your tokens. Unlimited approvals are a major drainer risk, so revoke old ones.",
+       "link": "/guide/scams/#approval-phishing"
+      },
+      {
+       "id": "tvl",
+       "term": "TVL",
+       "def": "Total value locked: how much money is deposited in a protocol.",
+       "link": "/guide/earn/#yields"
+      },
+      {
+       "id": "whale",
+       "term": "Whale",
+       "def": "A wallet holding a very large amount of a coin.",
+       "link": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "slug": "glossary",
+ "updated": "2026-10-27"
+}

@@ -1,0 +1,1209 @@
+{
+ "title": "The memecoin trading playbook",
+ "h1": "The memecoin trading playbook: find, check, enter, exit, size and stay net positive",
+ "eyebrow": "Flagship guide",
+ "seo_title": "Memecoin trading playbook: safety checks, entries, exits, sizing and the maths",
+ "description": "A step-by-step memecoin playbook: finding coins, safety checks, entries, exits, position sizing, time stops, journaling, the maths of staying net positive, and a printable checklist. Not financial advice.",
+ "summary": "The whole process end to end: finding coins, safety checks, entries, exits, sizing, time stops and journaling, plus the maths of staying net positive after fees and a printable checklist.",
+ "plain": [
+  "Memecoins are tokens with no business behind them. Their price moves on attention, and most new ones go to zero within hours.",
+  "Nobody wins every memecoin trade. The traders who come out ahead lose small and often, and a few bigger winners pay for those losses. This page shows you how to set that up: check a coin before you buy, decide your exit before you enter, keep every position small, and count your fees.",
+  "If you are new, read Start here first and paper-trade (write trades down without real money) for a few weeks before you use real money."
+ ],
+ "dont_lose": [
+  "Only trade money you can lose completely. Treat every fresh launch as if it can go to zero in one candle, because many do.",
+  "Never buy a token because one account posted it, even a famous or 'official' one. Hacked accounts are used for exactly this.",
+  "Use a separate burner wallet with a small balance for memecoins. Never use your main wallet.",
+  "Run the safety checks before every buy. If any check fails, skip the coin.",
+  "Write down your exit (stop) and your size before you click buy.",
+  "Count fees. On small trades, fees alone can turn a winning strategy into a losing one.",
+  "Stop for the day after a set number of losses. Do not revenge-trade."
+ ],
+ "risk": "Not financial advice; no strategy wins every trade. A study by Solidus Labs (May 2025) reported that 98.6% of pump.fun tokens it looked at ended with almost no liquidity; pump.fun disputed the framing. Most new memecoins fail. The aim of this playbook is positive expected value through risk control, not a promise of profit.",
+ "sections": [
+  {
+   "id": "truth",
+   "title": "The honest starting point",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "No strategy wins every trade, and no tool, bot or influencer changes that. What you can control is how your results are shaped: losses that are small and planned, winners that are bigger than your losers, and only taking trades where the maths works out over many tries. In trading this is called positive expected value (positive EV).",
+      "The numbers on new launches are harsh. Solidus Labs looked at pump.fun tokens created from January 2024 to March 2025. It reported that 98.6% fell below $1,000 of liquidity, which in practice means they became worthless (pump.fun pushed back on calling them all fraud). Out of more than 7 million tokens, about 97,000 kept $1,000 or more of liquidity. You are picking from a pool where nearly everything fails, so your filters and your exits matter more than your picks."
+     ]
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "text": "On a single day (Oct 25, 2026, UTC), 40,315 coins launched on pump.fun and only 911 (2.26%) graduated, meaning they filled the bonding curve and moved to a DEX pool. 91.8% of launches had no trade at all in their second hour, and 72.2% of that day's graduates closed the day below the market cap they graduated at.",
+       "src": {
+        "label": "pumpdata.fun, pump.fun stats for Oct 25, 2026",
+        "url": "https://pumpdata.fun/stats/2026-10-25",
+        "date": "2026-10-26"
+       }
+      }
+     ]
+    },
+    {
+     "type": "sources",
+     "items": [
+      {
+       "label": "Solidus Labs, Solana rug pulls and pump-and-dumps report",
+       "url": "https://www.soliduslabs.com/reports/solana-rug-pulls-pump-dumps-crypto-compliance",
+       "date": "2026-10-27",
+       "read": true
+      },
+      {
+       "label": "CoinDesk, Pump.fun hits back at report that 98% of its tokens are fraudulent",
+       "url": "https://www.coindesk.com/business/2025/05/07/98-of-tokens-on-pump-fun-have-been-rug-pulls-or-an-act-of-fraud-new-report-says",
+       "date": "2025-05-07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "maths",
+   "title": "The maths of staying net positive",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "Measure every trade in R. One R is the amount you planned to lose if your stop is hit. If you risk $10 and make $30, that trade made +3R. If you hit your stop, it was -1R.",
+      "Expectancy is the average R you make per trade. In plain terms: (how often you win × your average win) minus (how often you lose × your average loss), after costs. If expectancy is above zero, the strategy makes money over many trades even though you lose a lot of single trades. If it is below zero, trading more only loses you money faster.",
+      "Win rate on its own tells you nothing. A 25% win rate makes money if the winners are big enough, and a 70% win rate loses money if the losers are bigger than the winners. The table shows the win rate you need just to break even at each reward-to-risk ratio, with round-trip costs counted in R."
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Break-even win rate by reward-to-risk ratio and costs (our arithmetic)",
+     "head": [
+      "Average win",
+      "No costs",
+      "Costs 0.1R",
+      "Costs 0.25R",
+      "Costs 0.5R"
+     ],
+     "rows": [
+      [
+       "1R",
+       "50%",
+       "55%",
+       "62%",
+       "75%"
+      ],
+      [
+       "2R",
+       "33%",
+       "37%",
+       "42%",
+       "50%"
+      ],
+      [
+       "3R",
+       "25%",
+       "28%",
+       "31%",
+       "38%"
+      ],
+      [
+       "5R",
+       "17%",
+       "18%",
+       "21%",
+       "25%"
+      ],
+      [
+       "10R",
+       "9%",
+       "10%",
+       "11%",
+       "14%"
+      ]
+     ],
+     "note": "Formula: break-even win rate = (1 + cost) ÷ (average win + 1), with costs counted in R and charged on wins and losses alike. For example, at a 3R average win and 0.25R costs you need to win 31% of trades just to break even."
+    },
+    {
+     "type": "pairs",
+     "title": "Three worked examples",
+     "items": [
+      [
+       "35% win rate, 3R average win, 0.2R costs",
+       "Expectancy = 0.35 × (3 − 0.2) − 0.65 × (1 + 0.2) = +0.20R per trade. Over 100 trades risking $10 each, that averages out to about $200, before luck."
+      ],
+      [
+       "25% win rate, 3R average win, 0.2R costs",
+       "Expectancy = 0.25 × 2.8 − 0.75 × 1.2 = -0.20R per trade. That is the same strategy with a slightly lower hit rate, and it loses money."
+      ],
+      [
+       "60% win rate, but you cut winners at 0.8R",
+       "Expectancy = 0.60 × (0.8 − 0.2) − 0.40 × 1.2 = -0.12R. A high win rate does not help if you take profits too early and pay fees on every trade."
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "paras": [
+      "Losing streaks are normal. With a 35% win rate, the longest run of losses you should expect in 100 trades is about 11 in a row (our estimate from the odds). Your position size has to survive that streak without breaking you, either financially or mentally."
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "What 10 losses in a row does to an account (our arithmetic)",
+     "head": [
+      "Risk per trade",
+      "Drawdown after 10 straight losses",
+      "What is left"
+     ],
+     "rows": [
+      [
+       "0.5%",
+       "5%",
+       "95% of the account"
+      ],
+      [
+       "1%",
+       "10%",
+       "90% of the account"
+      ],
+      [
+       "2%",
+       "18%",
+       "82% of the account"
+      ],
+      [
+       "5%",
+       "40%",
+       "60% of the account"
+      ],
+      [
+       "10%",
+       "65%",
+       "35% of the account"
+      ],
+      [
+       "25%",
+       "94%",
+       "6% of the account"
+      ]
+     ],
+     "note": "Drawdown means how far the account has fallen from its peak. At 1% risk per trade, a bad streak costs about 10%. At 25% risk per trade, the same streak leaves you with about 6% of the account."
+    }
+   ]
+  },
+  {
+   "id": "mistakes",
+   "title": "The mistakes that lose money, and why each one does",
+   "blocks": [
+    {
+     "type": "why",
+     "items": [
+      [
+       "Buying off one post",
+       "A coin goes up because one account posted it.",
+       "The post may be paid, the account may be hacked, or insiders bought before posting. You are the planned buyer of their bags."
+      ],
+      [
+       "Skipping safety checks",
+       "Aping in because it is 'moving fast'.",
+       "One rug or honeypot can wipe out weeks of small wins. Checks cost minutes; skipping them can cost the whole position."
+      ],
+      [
+       "Chasing vertical candles",
+       "Buying after a 5x in ten minutes.",
+       "Your entry is far from any sensible stop, so either the stop is huge or your size is wrong. Insiders are selling to you."
+      ],
+      [
+       "No written stop",
+       "Deciding to 'see what happens'.",
+       "Without a stop, your losses have no limit. A few unplanned -80% trades destroy positive expectancy."
+      ],
+      [
+       "Averaging down",
+       "Buying more as the price falls.",
+       "Most falling memecoins keep falling to zero. Adding makes a small loss a big one."
+      ],
+      [
+       "Oversizing",
+       "Putting 20-50% of the account in one coin because it 'can't fail'.",
+       "With 10 losses in a row (normal at a 35% win rate), a 25% risk per trade leaves you with about 6% of your account."
+      ],
+      [
+       "Ignoring fees",
+       "Many tiny trades with high slippage and priority fees.",
+       "Costs come out on every trade. At a tight stop they can be 0.5R or more, which flips a winning system into a losing one."
+      ],
+      [
+       "Selling winners too early, holding losers too long",
+       "Taking +20% fast but riding -60% hoping to get back to even.",
+       "This gives you small wins and big losses, the exact opposite of what makes money. Even a high win rate then loses money."
+      ],
+      [
+       "Using leverage on memecoins",
+       "Opening 10x perps on a meme.",
+       "A normal 10% wick liquidates you. You lose the trade even if your idea was right."
+      ],
+      [
+       "Connecting your main wallet",
+       "Using your savings wallet on new sites and claim pages.",
+       "One malicious signature can drain everything. Use a burner wallet with only trading money in it."
+      ],
+      [
+       "Revenge and boredom trading",
+       "Trading to win back a loss, or because nothing is happening.",
+       "These trades skip your rules, so they have negative expectancy by design."
+      ],
+      [
+       "Not journaling",
+       "Trading from memory.",
+       "You cannot tell luck from edge. Without data, you keep repeating your most expensive mistake."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "costs",
+   "title": "Fees, slippage and priority fees: the hidden losing trade",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "Every buy and every sell costs you something, whether you win or lose. On fresh launches the costs stack up quickly:"
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      "pump.fun lists a 1.25% total fee on every bonding-curve buy and every sell. From Oct 17, 2026, trades placed through the pump.fun web or mobile app also carry a 0.45% platform fee (0.40% with a referral code). (pump.fun fee docs, read Oct 27, 2026)",
+      "Trading terminals add their own fee. GMGN says it charges 1% per trade, and Axiom lists 0.95% per trade at its base tier (their fee docs, checked Oct 26, 2026).",
+      "Priority fees and tips are a fixed amount of SOL per transaction. That makes them a bigger percentage on small positions. Work them out as a % of your position size.",
+      "Slippage is the gap between the price you see and the price you get. On a thin pool it can be bigger than all your fees combined, so set a maximum slippage and don't go above it.",
+      "Failed transactions can still cost you fees, and a buy that lands late can fill at a much worse price."
+     ]
+    },
+    {
+     "type": "text",
+     "paras": [
+      "Turn costs into R by dividing your round-trip cost % by your stop distance %. A tight stop makes the same fee much more expensive in R:"
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Round-trip cost in R for different stop distances (our arithmetic)",
+     "head": [
+      "Stop distance",
+      "2% round trip",
+      "5% round trip",
+      "8% round trip"
+     ],
+     "rows": [
+      [
+       "10%",
+       "0.20R",
+       "0.50R",
+       "0.80R"
+      ],
+      [
+       "20%",
+       "0.10R",
+       "0.25R",
+       "0.40R"
+      ],
+      [
+       "30%",
+       "0.07R",
+       "0.17R",
+       "0.27R"
+      ],
+      [
+       "50%",
+       "0.04R",
+       "0.10R",
+       "0.16R"
+      ]
+     ],
+     "note": "Example: a pump.fun round trip of 2.5% plus a 1% terminal fee each way is about 4.5% before priority fees and slippage. With a 20% stop, that is roughly 0.2R gone on every trade."
+    },
+    {
+     "type": "pairs",
+     "title": "How to cut cost drag",
+     "items": [
+      [
+       "Trade less",
+       "Take only your A-setups. Ten average trades usually cost more than they make."
+      ],
+      [
+       "Do not use tiny positions",
+       "Fixed priority fees can eat a big share of a very small trade. If the fees are a large % of your position, skip the trade or size it properly."
+      ],
+      [
+       "Set slippage on purpose",
+       "Use the lowest slippage that still fills. Do not chase a candle with high slippage."
+      ],
+      [
+       "Aim for bigger winners",
+       "Costs hurt far less when your average winner is several R than when you scalp for 0.5R."
+      ],
+      [
+       "Track costs in your journal",
+       "Write down the fees on every trade so you can see your real expectancy, not just how the chart moved."
+      ]
+     ]
+    },
+    {
+     "type": "facts",
+     "title": "A real example: costs flip the answer",
+     "items": [
+      {
+       "text": "Launch Tape backtested one simple rule: buy 15 seconds after a pump.fun graduation, sell after 3 minutes or at -20%, 0.1 SOL per trade, on 67 coins. The naive test (filled at the signal price, no fees, no price impact) showed +2.3% per trade. Filling one block late, charging fees on both sides and letting the trade size move the pool turned it into -0.9% per trade. Same coins, same rules, opposite answer. It was only two hours of data, but the lesson holds: test with real costs or don't trust the result.",
+       "src": {
+        "label": "Launch Tape, Your backtest is lying",
+        "url": "https://launchtape.io/blog/your-backtest-is-lying",
+        "date": "2026-10-14"
+       }
+      }
+     ]
+    },
+    {
+     "type": "sources",
+     "items": [
+      {
+       "label": "pump.fun fee docs",
+       "url": "https://pump.fun/docs/fees",
+       "date": "2026-10-27",
+       "read": true
+      },
+      {
+       "label": "GMGN fee docs",
+       "url": "https://docs.gmgn.ai/index/gmgn-fees-settings",
+       "date": "2026-10-26",
+       "read": true
+      },
+      {
+       "label": "Axiom fee docs",
+       "url": "https://docs.axiom.trade/getting-started/fees/axiom-fees",
+       "date": "2026-10-26",
+       "read": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "find",
+   "title": "Step 1: Finding coins",
+   "blocks": [
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "Where people look",
+       "New-pair and trending lists on DEX screeners, pump.fun's new and about-to-graduate lists, trading terminals that show live launches, and X searches for a ticker or contract address."
+      ],
+      [
+       "What counts as a signal",
+       "Volume, unique buyers and holder count all rising together. Volume on its own means nothing, because bots and wash traders can fake it."
+      ],
+      [
+       "Attention is the fuel",
+       "Memecoins move on attention. Ask why people would still care in an hour: a fresh meme, a real community, or a narrative that is just starting. A coin everyone is already shouting about is usually late."
+      ],
+      [
+       "Established memecoins are a different game",
+       "Older, larger memecoins trade more like volatile altcoins. They follow the market and attention cycles, so the usual tools still work: levels, trend and volume."
+      ],
+      [
+       "Build a short list, not a feed",
+       "Watching every launch leads to overtrading. Filter hard, then study the two or three coins that pass."
+      ]
+     ]
+    },
+    {
+     "type": "tools",
+     "ids": [
+      "dexscreener",
+      "birdeye",
+      "geckoterminal",
+      "gmgn",
+      "axiom",
+      "photon",
+      "lunarcrush"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "safety",
+   "title": "Step 2: Safety checks (the kill list)",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "Any failed check means you skip the coin. No single check proves a coin is safe, so stack them. The full detail of each check is on the scams page under new-launch forensics."
+     ]
+    },
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "Right contract",
+       "Get the contract address from the project's official X account or site, and make sure it matches the one in your swap screen. Tickers get copied all the time."
+      ],
+      [
+       "Mint and freeze authority off",
+       "If someone can still mint, they can print new supply and dump it on you. If freeze authority is on, they can freeze your tokens so you cannot sell. On Token-2022 tokens, also check for a transfer fee or hook."
+      ],
+      [
+       "Liquidity locked or burned",
+       "If the liquidity pool (LP) can be pulled, the price can go to zero instantly. Liquidity below about 20% of market cap is thin (rule of thumb)."
+      ],
+      [
+       "Holder concentration",
+       "If the top 10 holders own more than about 30-35% (not counting the pool and burn address), treat that as a risk. Linked top wallets count as one holder."
+      ],
+      [
+       "Bundles and snipers",
+       "Bundles are many wallets buying in the same block or within seconds of launch. If they still hold more than about 15-20% of supply, they can dump on you."
+      ],
+      [
+       "Shared funders",
+       "Trace where the top holders got their first SOL. Several wallets funded by the same unlabelled wallet are probably one person."
+      ],
+      [
+       "Dev history",
+       "A serial launcher whose past coins died, or a dev who bought and sold fast, is a red flag. A first-time dev is not safe either; they simply have no history to check."
+      ],
+      [
+       "Paid-shill tells",
+       "Watch for callers who bought minutes before posting, several accounts posting the same coin within minutes in similar words, and big follower counts with little real engagement."
+      ],
+      [
+       "Test sell",
+       "Do a tiny test buy and then a tiny test sell before you size up. If you cannot sell, it is a honeypot."
+      ]
+     ]
+    },
+    {
+     "type": "tools",
+     "ids": [
+      "rugcheck",
+      "bubblemaps",
+      "solscan",
+      "jupitertokens",
+      "solsniffer",
+      "goplus",
+      "tokensniffer"
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "New-launch forensics on the scams page",
+       "url": "/guide/scams/#launch-forensics"
+      },
+      {
+       "label": "WhoBought (who bought a token early)",
+       "url": "https://whobought.xyz"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "official-accounts",
+   "title": "'Official account' launches: hacked, deleted and fake posts",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "One of the most expensive traps in memecoins is a token that appears to come from a famous person, a big brand or a crypto project's own account. A post goes up with a contract address. Thousands of followers rush in, the price goes vertical, and within minutes the people behind it sell. Then the post disappears.",
+      "How it usually works, as described in news coverage of these cases:"
+     ]
+    },
+    {
+     "type": "list",
+     "ordered": true,
+     "items": [
+      "Someone gets control of a big account, through a hack, a SIM swap, a social-engineered support request, or a paid deal with the account owner.",
+      "Before the post, insiders create the token and quietly buy a large share of the supply, often spread across many wallets (a bundle).",
+      "The account posts the contract address, often dressed up as 'official', with a reward or 'experiment' story.",
+      "Followers and bots buy. The price can go up 100x or more in minutes.",
+      "The insiders sell into that buying. The price collapses, often by 90-99%.",
+      "The post gets deleted, the account owner says they were hacked, and copycat tokens with the same ticker appear."
+     ]
+    },
+    {
+     "type": "incidents",
+     "title": "Reported cases",
+     "items": [
+      {
+       "date": "2024-08-21",
+       "text": "McDonald's Instagram: posts on the brand's account promoted a 'GRIMACE' token launched on pump.fun. Bubblemaps reported the attacker bought about 75% of supply across many wallets. The token reached about $20-25M market cap and then collapsed, and the hackers claimed about $700,000 in profit. McDonald's said its accounts were affected in an 'isolated incident' and removed the posts.",
+       "src": {
+        "label": "Cointelegraph, McDonald's Instagram hackers make $700K",
+        "url": "https://cointelegraph.com/news/mcdonalds-instagram-hacked-shill-solana-memecoin",
+        "date": "2024-08-22"
+       }
+      },
+      {
+       "date": "2024-08-29",
+       "text": "Kylian Mbappé's X account: an apparently hacked account posted a 'MBAPPE' token. It briefly hit a reported market cap of about $460M and fell 99% within about a minute. One buyer reportedly put in about $1M, which was soon worth around $10,000. The posts were deleted.",
+       "src": {
+        "label": "The Block, Mbappé's X account apparently hacked to promote token",
+        "url": "https://www.theblock.co/news/regulation/2024-08-29-real-madrid-star-kylian-mbappes-x-account-apparently-hacked-to-promote-token-launched-via-pump-fun-313760",
+        "date": "2024-08-29"
+       }
+      },
+      {
+       "date": "2024-12-08",
+       "text": "Cardano Foundation X account: hackers posted a fake 'ADASOL' token and a false SEC-lawsuit notice. The token traded about $500,000 in volume and crashed about 99%. The posts were removed, and the Foundation confirmed the account had been compromised.",
+       "src": {
+        "label": "The Block, Hacked Cardano Foundation X account posts fake token",
+        "url": "https://www.theblock.co/post/329879/hacked-cardano-foundation-x-account-posts-fake-token-false-sec-lawsuit-notice",
+        "date": "2024-12-08"
+       }
+      },
+      {
+       "date": "2025-01-25",
+       "text": "Actor Dean Norris's X account: a hacked account promoted a 'DEAN' token, backed by an edited photo and a short video. It reached a reported market cap of about $8.4M before collapsing. Norris later said the account had been hacked.",
+       "src": {
+        "label": "crypto.news, Dean Norris' X account hacked to promote $8m crypto scam",
+        "url": "https://crypto.news/breaking-bads-dean-norris-x-account-hacked-to-promote-8m-crypto-scam/",
+        "date": "2026-10-27",
+        "read": true
+       }
+      },
+      {
+       "date": "2025-02-14",
+       "text": "LIBRA, Argentina: the country's president posted about the token with its contract address, then deleted the post hours later, saying he had not known the project's details. Reports said insiders took out about $87M-$107M and the price fell about 94%. In October 2026 an Argentine court dismissed the LIBRA case against him and 10 others (reported by CoinLab).",
+       "src": {
+        "label": "The Block, Milei retracts LIBRA endorsement after insiders cash out",
+        "url": "https://www.theblock.co/news/markets/2025-02-15-argentinian-president-javier-milei-retracts-libra-endorsement-after-insiders-cash-out-107-million-341206",
+        "date": "2025-02-15"
+       }
+      },
+      {
+       "date": "2025-02-26",
+       "text": "pump.fun's own X account: hackers posted a fake 'official governance token' PUMP and other tokens. Bubblemaps flagged it as heavily bundled, and it passed $5M market cap before crashing. pump.fun said its brand and staff would not post contract addresses this way. The posts were deleted.",
+       "src": {
+        "label": "Decrypt, Pump.fun X account hacked to promote fraudulent PUMP token",
+        "url": "https://decrypt.co/307857/pump-fun-x-account-hacked-solana-meme-coin",
+        "date": "2025-02-26"
+       }
+      },
+      {
+       "date": "2025-02-11",
+       "text": "The pattern is common. A Merkle Science report covered by CoinDesk said more than $500M was lost to memecoin rug pulls and scams in 2024, much of it through social engineering and hacked high-profile accounts, and that 75% of the attacks it tracked were on X.",
+       "src": {
+        "label": "CoinDesk, Over half a billion lost in memecoin rug pulls and scams in 2024",
+        "url": "https://www.coindesk.com/business/2025/02/11/crypto-investors-lost-over-usd500m-in-memecoin-rug-pulls-and-scams-in-2024",
+        "date": "2025-02-11"
+       }
+      }
+     ]
+    },
+    {
+     "type": "why",
+     "title": "How to spot it",
+     "items": [
+      [
+       "Out of character",
+       "A brand, athlete or serious project suddenly posts a memecoin contract address, often with odd wording or a burst of strange posts.",
+       "Hackers have minutes before the account is recovered, so they post fast and loud. Real launches are planned and announced across several channels."
+      ],
+      [
+       "Not on the official website",
+       "The contract address is not on the project's or brand's own website, blog or docs.",
+       "Hackers control one account, not every channel. A real token is listed everywhere the owner controls."
+      ],
+      [
+       "Insiders bought before the post",
+       "Bubblemaps or Solscan show a cluster of wallets buying a large share of supply before the post went live.",
+       "That is the pre-buy that gets dumped on you. The bigger it is, the bigger the crash."
+      ],
+      [
+       "Bundled supply",
+       "Many fresh wallets with near-identical buys in the first seconds.",
+       "One person spread across many wallets can sell all at once."
+      ],
+      [
+       "Post deleted, or replies off",
+       "The post vanishes, or replies are turned off so people cannot warn each other.",
+       "Treat a deleted post as a confirmed rug signal. Account owners delete when they find out, and scammers delete once they are out."
+      ],
+      [
+       "Account changes",
+       "A new handle, a changed bio, or a sudden switch to crypto content.",
+       "Taken-over accounts are often renamed or reused for scams."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Rules",
+     "items": [
+      [
+       "Never buy off a single post",
+       "No matter how big or official the account is."
+      ],
+      [
+       "Wait for confirmation from several official channels",
+       "The website, the blog, a second official account, or a press release. If it is real, it will still be real in an hour."
+      ],
+      [
+       "Deleted means rug",
+       "If the post that started the move gets deleted, assume it is over and get out, or never get in."
+      ],
+      [
+       "Check who bought before the post",
+       "Run Bubblemaps and Solscan on the earliest buyers."
+      ],
+      [
+       "Expect copycats",
+       "After a big post, many tokens with the same ticker appear. Only the contract address matters."
+      ]
+     ]
+    },
+    {
+     "type": "tools",
+     "ids": [
+      "bubblemaps",
+      "solscan",
+      "rugcheck",
+      "dexscreener"
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Impersonation tokens on the scams page",
+       "url": "/guide/scams/#impersonation-tokens"
+      },
+      {
+       "label": "SIM swaps",
+       "url": "/guide/scams/#sim-swap"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "regime",
+   "title": "Market regime and narrative: read the room before you trade",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "Opinion, summarised in our own words from a video post by @shaams (Oct 27, 2026). These are his views and examples, not verified data.",
+      "His argument: thousands of coins launch every day, and 'slop' and bundled launches are a permanent part of any permissionless system. They are not the main reason traders lose. In his view, most losses come from trading as if it were still 2023 and expecting a launchpad to guarantee profits. Moving to a different launchpad with tweaks, such as a higher starting market cap or no block-zero tax, has not fixed that.",
+      "He argues that a strong, genuinely new narrative can overcome bundles and poor distribution. His examples, as he tells it, are Effective Accelerationism reaching about $20M market cap within hours and The Index reaching about $70M. In his view the real problem now is recycled, extractive narratives with nothing culturally new, plus the macro backdrop. With BTC around $80k rather than $120k, ceilings are lower. In strong markets, he says, the ceilings expand, and coins that would top out at $100k can run to $1-2M."
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "What to take from it",
+     "items": [
+      [
+       "Judge the regime first",
+       "Size up only in high-volume, risk-on periods when fresh narratives are working. In choppy, low-volume markets, size down or stay out. The same setup pays very differently in each."
+      ],
+      [
+       "Prefer genuinely new narratives",
+       "A recycled ticker or a copy of last month's theme has a lower ceiling and more people waiting to sell into you."
+      ],
+      [
+       "Adapt, don't blame the platform",
+       "Switching launchpads does not change the odds. Your selection, sizing and exits do."
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Counterpoint: a strong narrative does not make a bundled or dev-dumped coin safe for you. Insiders can still sell into the excitement. Every safety check in this playbook still applies. Not financial advice; no strategy wins every trade."
+    },
+    {
+     "type": "sources",
+     "items": [
+      {
+       "label": "@shaams on X, 'What is actually wrong with onchain and memecoins?' (video)",
+       "url": "https://x.com/shaams/status/2114914083900178751",
+       "date": "2026-10-27"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "entries",
+   "title": "Step 3: When to buy, and why",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "Buy only when every condition below is true. Each one is there for a reason. If you cannot tick all of them, the right move is no trade."
+     ]
+    },
+    {
+     "type": "why",
+     "items": [
+      [
+       "All safety checks passed",
+       "Mint and freeze are off, LP is locked or burned, holders are spread out, no big bundle, no serial-rug dev, and a test sell worked.",
+       "Most of the money lost on memecoins is lost to rugs, honeypots and insider dumps, not to ordinary price moves. A trade that skips these checks has the worst possible odds before it even starts."
+      ],
+      [
+       "The first 1-2 minutes are over",
+       "You let the bots and snipers finish their first buying and selling.",
+       "The first minutes are when snipers sell into late buyers. If you buy then, you are usually buying their bags at the top."
+      ],
+      [
+       "It survived about five minutes",
+       "Price holds at least about 60% of its high, buyers outnumber sellers, and holder count keeps rising.",
+       "A coin that holds up after the early sellers have hit it has real buyers. One that cannot hold is usually being dumped by insiders."
+      ],
+      [
+       "Demand is real, not wash",
+       "Volume, unique buyers and holders rise together, and the same few wallets are not trading back and forth.",
+       "Fake volume makes a coin look popular so that you buy. Unique buyers and holder growth are much harder to fake."
+      ],
+      [
+       "You are early or confirmed, not late",
+       "Your timing label is 'early' or 'confirmed'. It is not 'extended' after a vertical move.",
+       "Buying after a vertical candle means you need yet another leg up just to break even, and you are the most likely person to become exit liquidity."
+      ],
+      [
+       "There is a clear place to be wrong",
+       "A level or event that, if broken, proves the idea wrong, close enough that your size makes sense.",
+       "Without an invalidation point you cannot size the trade or exit calmly, so small losses turn into big ones."
+      ],
+      [
+       "The reward is several times the risk",
+       "There is room to at least 2-3R before obvious selling, after costs.",
+       "From the maths section: at 3R winners you only need to win about 28% of trades with 0.1R costs. At 1R you need to win more than half."
+      ],
+      [
+       "You are not on tilt",
+       "You are inside your daily loss limit and not chasing a missed move.",
+       "Revenge trades skip the checks above. They are the single fastest way to turn a red day into a blown account."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Entry types that fit these conditions",
+     "items": [
+      [
+       "First higher low",
+       "After the first pullback, the price makes a higher low and buyers step back in. Your stop goes under that low."
+      ],
+      [
+       "Range break with rising holders",
+       "The price breaks out of a tight range while holder count and unique buyers are rising. Your stop goes back inside the range."
+      ],
+      [
+       "Established memecoins",
+       "A pullback to a level in an uptrend, or a reclaim of a broken level on volume. Your stop goes under the level. No leverage."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "exits",
+   "title": "Step 4: When to exit, and why",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "Write your exits down before you buy. There are four kinds, and you need all four."
+     ]
+    },
+    {
+     "type": "why",
+     "title": "1. Stops (price says you are wrong)",
+     "items": [
+      [
+       "Hard stop at your invalidation level",
+       "For example, under the higher low you bought, or about 30% under entry on a fresh launch.",
+       "It caps the loss at about -1R, which is what keeps your expectancy positive. Every widened stop turns a planned -1R into an unplanned -3R or worse."
+      ],
+      [
+       "Never widen, only tighten",
+       "Once you are in profit, move the stop up. Never move it down.",
+       "Losses you planned for are survivable. Losses you renegotiate with yourself are not."
+      ]
+     ]
+    },
+    {
+     "type": "why",
+     "title": "2. Invalidation signals (the story changed)",
+     "items": [
+      [
+       "Dev or linked wallets sell",
+       "The dev wallet, a dev-funded wallet or a ring of linked wallets starts selling.",
+       "The people with the most information are leaving. You are now their exit liquidity."
+      ],
+      [
+       "Buyers dry up",
+       "Unique buyers fall and holder count drops while the price goes sideways.",
+       "Memecoins need new buyers to go up. Without them, the next big move is down."
+      ],
+      [
+       "Coordinated shill wave or a deleted post",
+       "Many accounts post the same coin in similar words, or the 'official' post that started the move gets deleted.",
+       "Paid promotion usually means the promoters are selling into the buying. A deleted post often means the people behind it are already out."
+      ],
+      [
+       "Liquidity falls",
+       "LP is pulled or liquidity drops sharply against market cap.",
+       "Thin liquidity means your sell will crash the price. Leave while you still can."
+      ]
+     ]
+    },
+    {
+     "type": "why",
+     "title": "3. Profit-taking (lock in wins)",
+     "items": [
+      [
+       "Sell half at about 2x",
+       "Take out roughly your starting stake.",
+       "The rest of the trade becomes a 'free' position, and one sharp reversal can no longer turn a winner into a loser."
+      ],
+      [
+       "Scale out into strength",
+       "Sell more into big green candles, hype spikes and influencer posts.",
+       "Liquidity is best when everyone is buying. Selling into strength gets better fills than selling into panic."
+      ],
+      [
+       "Trail the rest",
+       "Move your stop under each new higher low, or use a fixed % trail.",
+       "This lets the few big winners run, and those few winners pay for all your small losses."
+      ]
+     ]
+    },
+    {
+     "type": "why",
+     "title": "4. Time stops (it did not work in time)",
+     "items": [
+      [
+       "Leave if nothing happens",
+       "On a fresh launch, about 5-15 minutes; on an established memecoin swing, a few days (rules of thumb).",
+       "A memecoin that is not moving is usually losing attention. Your money is better used on the next good setup."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sizing",
+   "title": "Step 5: Position sizing",
+   "blocks": [
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "Risk a small fixed slice",
+       "Risk 0.5% to 1% of your trading account per trade, and never more than 2%. On fresh launches, use half that or less."
+      ],
+      [
+       "Size from the stop",
+       "Position size = money you are willing to lose ÷ stop distance. With a $1,000 account risking 1% ($10) and a 25% stop, the position is $40."
+      ],
+      [
+       "Assume zero on fresh launches",
+       "Because rugs skip stops, plan for the whole position going to zero. Size it so that a total loss is still only a small hit."
+      ],
+      [
+       "Cap exposure",
+       "Limit how much of the account sits in memecoins at once, and how much is in any one coin. Ten positions in the same narrative are really one big bet."
+      ],
+      [
+       "Daily loss brake",
+       "Stop for the day after a set loss, for example three losing trades or -3% on the account. Tired, tilted trading is where accounts die."
+      ],
+      [
+       "No leverage on memecoins",
+       "Leverage on something that can move 50% in a minute is how accounts get wiped out."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "time-stops",
+   "title": "Step 6: Time stops",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "A time stop means leaving a trade that has not done what you expected within a set time, even if your price stop was never hit. Your money and your attention are limited, and a coin going sideways is usually losing its buyers.",
+      "Rules of thumb: on a fresh launch, if it has not moved your way within about 5-15 minutes, get out. On an established memecoin swing trade, give it a few days. Write the window down when you enter, and stick to it."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "journal",
+   "title": "Step 7: Journaling and review",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "The journal is how you find out whether your edge is real. Keep it private. The fields that matter:"
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      "Date and time, the coin and its contract (in your own private notes), and the setup label.",
+      "Why you took the trade, in one sentence. If the reason is \"saw it on X\", write that down honestly.",
+      "Entry, stop, size, planned R and time stop.",
+      "Exit, the result in R, and fees paid (trading fee, priority fee, slippage).",
+      "Did you follow your rules? What was the mistake, if any? Add a screenshot of the chart."
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Weekly review",
+     "items": [
+      [
+       "Measure",
+       "Win rate, average win in R, average loss in R, expectancy after costs, broken down by setup label."
+      ],
+      [
+       "Cut",
+       "After about 30 or more trades of a setup, drop the setups with negative expectancy, and stop trading the times of day where you lose."
+      ],
+      [
+       "Fix one thing",
+       "Pick the single most expensive mistake of the week and write a rule against it."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stack",
+   "title": "Which tools to use at each step, and why",
+   "blocks": [
+    {
+     "type": "toolsteps",
+     "rows": [
+      {
+       "step": "Find coins",
+       "need": "Live new pairs, volume, buyers and holders",
+       "ids": [
+        "dexscreener",
+        "birdeye",
+        "geckoterminal",
+        "gmgn"
+       ],
+       "why": "You need live data on new pairs to see volume, buyers and holders together. Screeners show what is moving before X does."
+      },
+      {
+       "step": "Safety checks",
+       "need": "Authorities, LP, holders, insiders, bundles",
+       "ids": [
+        "rugcheck",
+        "bubblemaps",
+        "solscan",
+        "jupitertokens",
+        "solsniffer"
+       ],
+       "why": "Scanners read the token's settings and holder map in seconds. That catches most rugs and honeypots before you buy."
+      },
+      {
+       "step": "Wallet and dev history",
+       "need": "Who funded whom, past launches, entity labels",
+       "ids": [
+        "solscan",
+        "arkham",
+        "bubblemaps"
+       ],
+       "why": "An explorer and an entity view show who funded the top wallets and what the dev launched before, which reveals insider rings."
+      },
+      {
+       "step": "Execute",
+       "need": "Fast swaps with slippage and priority control",
+       "ids": [
+        "jupiter",
+        "axiom",
+        "photon",
+        "gmgn"
+       ],
+       "why": "Fast routing with slippage and priority settings gets fills without overpaying. Use one you trust and know the fee of."
+      },
+      {
+       "step": "Wallet",
+       "need": "A burner hot wallet, separate from savings",
+       "ids": [
+        "phantom",
+        "rabby",
+        "ledger",
+        "trezor"
+       ],
+       "why": "A hot burner wallet for trading and a hardware wallet for savings, so one bad signature cannot touch your savings."
+      },
+      {
+       "step": "Alerts",
+       "need": "Price and whale alerts so you do not watch charts all day",
+       "ids": [
+        "cryptocurrencyalerting",
+        "whalealert"
+       ],
+       "why": "Alerts let you act on levels and whale moves without staring at charts, which cuts down on boredom trades."
+      },
+      {
+       "step": "Charts for established coins",
+       "need": "Levels, trend, volume",
+       "ids": [
+        "tradingview",
+        "dexscreener"
+       ],
+       "why": "Levels, trend and volume set your entries, stops and targets on bigger memecoins."
+      },
+      {
+       "step": "Track and tax",
+       "need": "Portfolio view and tax records",
+       "ids": [
+        "coinstats",
+        "koinly",
+        "cointracker"
+       ],
+       "why": "A tracker shows your real P&L across wallets. Tax tools keep records you will need later."
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "paras": [
+      "Each link goes to our free-tier-vs-paid entry for that tool, with the source and the date we checked it."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "checklist",
+   "title": "Printable checklist",
+   "blocks": [
+    {
+     "type": "checklist",
+     "items": [
+      [
+       "Burner wallet",
+       "I am trading from a burner wallet that holds only what I can afford to lose."
+      ],
+      [
+       "Contract",
+       "The contract matches the one posted on the official account."
+      ],
+      [
+       "Authorities",
+       "Mint and freeze authority are off, and there is no changeable transfer fee or hook."
+      ],
+      [
+       "Liquidity",
+       "LP is burned or locked, and liquidity is not thin compared with market cap."
+      ],
+      [
+       "Holders",
+       "Top 10 hold under about 30-35%, no linked cluster, and bundles are not sitting on a big share of supply."
+      ],
+      [
+       "Dev",
+       "There is no serial-rug history, and the dev did not dump early."
+      ],
+      [
+       "Shill check",
+       "The callers did not buy minutes before posting, and it is not a copy-paste shill wave."
+      ],
+      [
+       "Test sell",
+       "A tiny test buy and test sell both worked."
+      ],
+      [
+       "Demand",
+       "Buyers, holders and volume are rising together, and the price is holding most of its high."
+      ],
+      [
+       "Timing label",
+       "I wrote the label down, and it is a setup my journal says I trade well."
+      ],
+      [
+       "Stop",
+       "My invalidation price or event is written down."
+      ],
+      [
+       "Size",
+       "Size = risk ÷ stop, and I am OK if this position goes to zero."
+      ],
+      [
+       "Costs",
+       "Fees plus priority plus slippage are a small fraction of R."
+      ],
+      [
+       "Targets",
+       "I wrote where I take partial profits and how I trail the rest."
+      ],
+      [
+       "Time stop",
+       "I wrote how long I give the trade to work."
+      ],
+      [
+       "Daily brake",
+       "I have not hit my daily loss limit."
+      ],
+      [
+       "Journal",
+       "I will log this trade, including fees and mistakes."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "synthesis",
+   "title": "Where this playbook comes from",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "This playbook pulls together our Solana trading strategies guide (coin types, universal risk rules and the new-launch research process from the FreeTierCrypto research desk), our KOL strategies page (habits that well-known traders describe in public, with what not to copy), and the risk research on our scams page. The risk rules echo classic traders such as Paul Tudor Jones, Jesse Livermore, the Turtle Traders and Ed Seykota.",
+      "Creators' claims about their own results are their claims. We have not verified any trader's P&L, and nothing here is a signal."
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Solana trading strategies",
+       "url": "/strategies/solana/"
+      },
+      {
+       "label": "What top traders and creators teach",
+       "url": "/strategies/solana/#creators"
+      },
+      {
+       "label": "KOL strategies",
+       "url": "/strategies/kols/"
+      },
+      {
+       "label": "Scams and risks",
+       "url": "/guide/scams/"
+      },
+      {
+       "label": "Glossary",
+       "url": "/guide/glossary/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "slug": "meme-trading-playbook",
+ "updated": "2026-10-27"
+}

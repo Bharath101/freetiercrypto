@@ -1,0 +1,1096 @@
+{
+ "title": "Crypto scams and risks",
+ "h1": "Crypto scams and risks: how each one works, how to spot it, and what to do",
+ "eyebrow": "Scams and risks",
+ "seo_title": "Crypto scams explained: rugs, honeypots, drainers, fake airdrops, address poisoning and more",
+ "description": "How 16 common crypto scams work, how to spot each one, how to protect yourself, free check tools, what to do if you are hit, and real sourced incidents.",
+ "summary": "Sixteen scam types: how each works, how to spot it, how to protect yourself, free check tools, what to do if it happens to you, and real dated incidents with sources.",
+ "plain": [
+  "Most crypto losses are not bad trades. People lose money because they get tricked into signing something, sharing their seed phrase, or buying a token rigged against them.",
+  "Almost every scam relies on urgency, a link you didn't look for, or a promise that sounds too good. Slow down, check the address and the source, and never share your seed phrase."
+ ],
+ "dont_lose": [
+  "Never type or share your seed phrase anywhere except your own wallet when restoring it. No real support team, app or website will ask for it.",
+  "Keep savings in a wallet that never connects to new sites. Use a separate burner wallet for anything risky.",
+  "Only use links you typed or bookmarked yourself. Never use links from DMs, replies or ads.",
+  "Read every signature. If you don't understand it, reject it.",
+  "Copy addresses from a trusted source, never from your transaction history.",
+  "If someone promises fixed high returns, walk away."
+ ],
+ "risk": "Scam signals here are risk signals, not accusations against any named person. Thresholds are rules of thumb. Not financial advice; no strategy wins every trade.",
+ "sections": [
+  {
+   "id": "numbers",
+   "title": "The numbers",
+   "blocks": [
+    {
+     "type": "facts",
+     "items": [
+      {
+       "text": "An estimated $17B was stolen through crypto scams and fraud in 2025, with at least $14B received by scams on-chain. Impersonation scams grew 1,400% year over year, and the average scam payment rose from $782 to $2,764.",
+       "src": {
+        "label": "Chainalysis, 2026 Crypto Crime Report: scams",
+        "url": "https://www.chainalysis.com/blog/crypto-scams-2026/",
+        "date": "2026-01-13"
+       }
+      },
+      {
+       "text": "More than $3.4B was stolen in hacks in 2025, including about $1.5B from Bybit. There were 158,000 personal wallet compromises affecting 80,000 victims ($713M); about 26,500 of those victims were on Solana.",
+       "src": {
+        "label": "Chainalysis, 2026 Crypto Crime Report: stolen funds",
+        "url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/",
+        "date": "2026-10-27",
+        "read": true
+       }
+      },
+      {
+       "text": "Crypto investment fraud was the top loss category in the FBI's 2025 report at $7.2B. Crypto-related complaints totalled 181,565, with more than $11B lost.",
+       "src": {
+        "label": "FBI IC3, 2025 Internet Crime Report (PDF)",
+        "url": "https://www.fbi.gov/file-repository/2025_ic3report.pdf",
+        "date": "2026-10-27",
+        "read": true
+       }
+      },
+      {
+       "text": "EVM drainer and signature-phishing losses fell to $83.85M in 2025 across 106,106 victims, down 83% from 2024.",
+       "src": {
+        "label": "ScamSniffer, 2025 crypto phishing report",
+        "url": "https://drops.scamsniffer.io/scam-sniffer-2025-crypto-phishing-losses-fall-83-to-84-million/",
+        "date": "2026-01-03"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "types",
+   "title": "Scam types",
+   "blocks": [
+    {
+     "type": "entries",
+     "items": [
+      {
+       "id": "rug-pull",
+       "name": "Rug pulls",
+       "tag": "Memecoins, new tokens",
+       "summary": "The team or the deployer pulls the liquidity, or dumps a big hidden supply, and the price goes to almost zero in seconds. 'Soft rugs' are slower: the team abandons the project and sells over days.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "LP not locked or burned, or held by one wallet.",
+          "Mint authority still on.",
+          "Top holders linked to the deployer.",
+          "An anonymous team plus a hard countdown to 'launch'."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Run RugCheck and Bubblemaps before every buy.",
+          "Size every new-token trade as if it can go to zero.",
+          "Avoid tokens pushed hard in their first hour."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "You usually cannot get funds back. Write down the transaction hashes and report the token to the scanners and to Chainabuse so others are warned."
+         ]
+        ]
+       ],
+       "tools": [
+        "rugcheck",
+        "bubblemaps",
+        "solscan",
+        "tokensniffer"
+       ],
+       "links": [
+        {
+         "label": "Chainabuse (report a scam address)",
+         "url": "https://chainabuse.com"
+        }
+       ],
+       "incidents": [
+        {
+         "date": "2025-05-07",
+         "text": "Solidus Labs reported that 98.6% of pump.fun tokens it studied (Jan 2024 to Mar 2025) ended with under $1,000 of liquidity, and that 93% of Raydium pools showed soft-rug traits. pump.fun disputed the framing.",
+         "src": {
+          "label": "Solidus Labs, Solana rug pulls and pump-and-dumps report",
+          "url": "https://www.soliduslabs.com/reports/solana-rug-pulls-pump-dumps-crypto-compliance",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "honeypot",
+       "name": "Honeypots",
+       "tag": "All chains",
+       "summary": "A token you can buy but cannot sell. The contract blocks sells, or charges a huge sell tax, for everyone except insiders.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "Chart only goes up with almost no sells.",
+          "Freeze authority on (Solana), or blacklist or tax functions (EVM).",
+          "Scanners flag 'cannot sell' or 'modifiable tax'."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Do a tiny test buy and a test sell first.",
+          "Check with GoPlus or Token Sniffer on EVM chains, and RugCheck on Solana."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Nothing to do on-chain. Stop adding money, report the token, and keep the transaction records for tax."
+         ]
+        ]
+       ],
+       "tools": [
+        "goplus",
+        "tokensniffer",
+        "rugcheck",
+        "solsniffer"
+       ],
+       "links": [],
+       "incidents": [
+        {
+         "date": "2021-11-01",
+         "text": "SQUID (Squid Game token): buyers could not sell because the contract required another token that ordinary buyers did not have. The creators cashed out about $3.4M and the price fell to nearly zero within minutes (as reported).",
+         "src": {
+          "label": "WIRED, how a Squid Game crypto scam got away with millions",
+          "url": "https://www.wired.com/story/squid-game-coin-crypto-scam/",
+          "date": "2021-11-02"
+         }
+        }
+       ]
+      },
+      {
+       "id": "bundled-launch",
+       "name": "Bundled launches and insider supply",
+       "tag": "Memecoins",
+       "summary": "Insiders buy a big share of a new token in the launch block, or within seconds, spread across many fresh wallets so it looks like normal demand. They then sell into later buyers.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "Many wallets buying in the same block with near-identical amounts.",
+          "Bundles still holding about 15-20% or more of supply (rule of thumb).",
+          "Top holders funded by the same unlabelled wallet."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Check bundle share and funding links before buying (see the forensics section below).",
+          "Skip any coin where the bundle has not sold out."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Exit when you see the bundle starting to sell. Don't wait for a bounce."
+         ]
+        ]
+       ],
+       "tools": [
+        "bubblemaps",
+        "solscan",
+        "rugcheck"
+       ],
+       "links": [
+        {
+         "label": "WhoBought",
+         "url": "https://whobought.xyz"
+        },
+        {
+         "label": "Launch forensics",
+         "url": "#launch-forensics"
+        }
+       ],
+       "incidents": []
+      },
+      {
+       "id": "pump-and-dump",
+       "name": "Pump-and-dumps and paid shills",
+       "tag": "Memecoins, small caps",
+       "summary": "A group or a paid promoter buys first, hypes the coin to followers, and sells into the buying. Followers become 'exit liquidity': the buyers whose money lets the insiders cash out.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "The caller bought minutes before posting.",
+          "Many accounts post the same coin within minutes, in similar words.",
+          "Calls come near local tops.",
+          "Big follower counts with low real engagement."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Never buy off a single post.",
+          "Look up the caller's past calls and what happened after them.",
+          "Read 'a big name tweeted it' as unverified until you see the post yourself."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Don't average down. Note the account and avoid it from now on."
+         ]
+        ]
+       ],
+       "tools": [
+        "bubblemaps",
+        "solscan",
+        "lunarcrush",
+        "arkham"
+       ],
+       "links": [
+        {
+         "label": "Official-account launches",
+         "url": "/guide/meme-trading-playbook/#official-accounts"
+        }
+       ],
+       "incidents": [
+        {
+         "date": "2025-02-15",
+         "text": "LIBRA: after a promotion by Argentina's president, insiders reportedly cashed out about $107M and the price crashed. In October 2026 an Argentine court dismissed the case against the president and 10 others, according to CoinLab.",
+         "src": {
+          "label": "The Block, Milei retracts LIBRA endorsement after insiders cash out",
+          "url": "https://www.theblock.co/news/markets/2025-02-15-argentinian-president-javier-milei-retracts-libra-endorsement-after-insiders-cash-out-107-million-341206",
+          "date": "2025-02-15"
+         }
+        }
+       ]
+      },
+      {
+       "id": "drainers",
+       "name": "Wallet drainers",
+       "tag": "All chains",
+       "summary": "A malicious site or transaction takes everything it can from your wallet once you sign. Drainer kits are sold as a service and are often hidden behind fake mint, claim or airdrop pages.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "The site asks you to connect, then to sign something you don't understand.",
+          "Your wallet shows a warning or simulation that tokens will leave.",
+          "The site was shared in replies, DMs or ads."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Never connect your main wallet to new sites. Use a small burner.",
+          "Read every signature, and reject unlimited approvals, 'set authority' or anything unclear.",
+          "Use a wallet that simulates transactions (Rabby, Phantom, Solflare)."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Revoke approvals right away.",
+          "Move what's left to a brand-new wallet with a new seed phrase, created on a clean device.",
+          "Report the site to your wallet and to Chainabuse."
+         ]
+        ]
+       ],
+       "tools": [
+        "rabby",
+        "phantom"
+       ],
+       "links": [
+        {
+         "label": "Revoke.cash (check and revoke token approvals)",
+         "url": "https://revoke.cash"
+        },
+        {
+         "label": "ScamSniffer",
+         "url": "https://scamsniffer.io"
+        }
+       ],
+       "incidents": [
+        {
+         "date": "2026-01-03",
+         "text": "ScamSniffer counted $83.85M stolen from 106,106 victims by EVM drainers and signature phishing in 2025. That was down 83% from 2024, and losses tend to rise and fall with market activity.",
+         "src": {
+          "label": "ScamSniffer, 2025 crypto phishing report",
+          "url": "https://drops.scamsniffer.io/scam-sniffer-2025-crypto-phishing-losses-fall-83-to-84-million/",
+          "date": "2026-01-03"
+         }
+        }
+       ]
+      },
+      {
+       "id": "fake-airdrops",
+       "name": "Fake airdrops, claim pages and 'reward votes'",
+       "tag": "All chains",
+       "summary": "Copycat sites pretend a project is giving out tokens or rewards. When you click 'claim' or 'vote', you connect your wallet and get asked to sign an approval that hands over your tokens.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "Links from replies, ads, DMs or unknown accounts.",
+          "A domain that is not the project's official one.",
+          "Urgency: countdowns, 'unclaimed tokens get burned', bonus boosts."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Only claim through links on the project's official site or established official accounts. Type the address or use a bookmark.",
+          "Check the domain, not the design. Logos are easy to copy.",
+          "Voting or claiming should never need a spending approval."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Disconnect, then revoke approvals (disconnecting alone does not remove approvals).",
+          "If you typed a seed phrase, move everything to a new wallet now."
+         ]
+        ]
+       ],
+       "tools": [
+        "rabby"
+       ],
+       "links": [
+        {
+         "label": "Revoke.cash (check and revoke token approvals)",
+         "url": "https://revoke.cash"
+        }
+       ],
+       "incidents": [
+        {
+         "date": "2026-10-01",
+         "text": "Malwarebytes found 70 copycat sites impersonating projects such as xStocks, Pendle and Zama. They invited visitors to 'vote' on a rewards date for a 1.25x boost. The vote button opened a wallet connection, the first step toward a malicious approval.",
+         "src": {
+          "label": "Malwarebytes, fake xStocks, Pendle and other sites bait users with rewards votes",
+          "url": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-xstocks-pendle-and-other-sites-bait-crypto-users-with-rewards-votes",
+          "date": "2026-10-01"
+         }
+        }
+       ]
+      },
+      {
+       "id": "address-poisoning",
+       "name": "Address poisoning",
+       "tag": "EVM chains, also Solana",
+       "summary": "Bots send you a tiny or fake transfer from an address that starts and ends like one you really use. Later you copy the wrong address from your history and send money to the scammer.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "Tiny or zero-value transfers you did not expect.",
+          "Fake tokens named 'USDC' from the wrong contract.",
+          "Two addresses that match at the start and end but differ in the middle."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Take addresses from the person you are paying or from your saved contacts, never from your history.",
+          "Compare the middle characters, not just the ends.",
+          "Send a test payment, but get the address for the real payment from the same trusted source."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Funds sent to the wrong address are almost never returned. Report it to the exchange if the funds land there."
+         ]
+        ]
+       ],
+       "tools": [
+        "solscan",
+        "arkham"
+       ],
+       "links": [],
+       "incidents": [
+        {
+         "date": "2024-05-03",
+         "text": "A victim sent 1,155 WBTC (about $68M) to a look-alike address after a small mimic transfer. Most of the funds were returned about a week later after negotiation (as reported).",
+         "src": {
+          "label": "Chainalysis, address poisoning explained",
+          "url": "https://www.chainalysis.com/blog/address-poisoning-scam/",
+          "date": "2026-10-27",
+          "read": true
+         }
+        },
+        {
+         "date": "2026-10-22",
+         "text": "ChainWard measured one bot on Base that planted about 884,000 look-alike transfers copying about 439,000 real payments in a single week, for about $53 in gas. Half of its USDC copies landed within 142 seconds of the real payment.",
+         "src": {
+          "label": "ChainWard, address poisoning on Base, measured",
+          "url": "https://chainward.ai/decodes/address-poisoning-base",
+          "date": "2026-10-22"
+         }
+        }
+       ]
+      },
+      {
+       "id": "approval-phishing",
+       "name": "Approval and permit phishing (including EIP-7702)",
+       "tag": "EVM chains",
+       "summary": "Instead of stealing your seed, the scam gets you to sign a token approval or an off-chain 'permit' message that lets the attacker move your tokens later. After Ethereum's Pectra upgrade, malicious EIP-7702 signatures can hand control of an ordinary wallet to attacker code.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "A signature request for 'Permit', 'increaseAllowance', 'setApprovalForAll' or 7702 delegation on a site that has no reason to need one.",
+          "Unlimited amounts."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Use a wallet that decodes and simulates signatures.",
+          "Approve exact amounts, not unlimited ones.",
+          "Review and revoke old approvals every month."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Revoke at once.",
+          "Move what's left to a brand-new wallet with a new seed phrase, created on a clean device."
+         ]
+        ]
+       ],
+       "tools": [
+        "rabby",
+        "metamask"
+       ],
+       "links": [
+        {
+         "label": "Revoke.cash (check and revoke token approvals)",
+         "url": "https://revoke.cash"
+        }
+       ],
+       "incidents": [
+        {
+         "date": "2026-01-03",
+         "text": "ScamSniffer reported that Permit and Permit2 signatures made up 38% of losses in 2025 phishing cases of $1M or more, and that two malicious EIP-7702 batch signatures in August 2025 took $2.54M, shortly after the Pectra upgrade.",
+         "src": {
+          "label": "ScamSniffer, 2025 crypto phishing report",
+          "url": "https://drops.scamsniffer.io/scam-sniffer-2025-crypto-phishing-losses-fall-83-to-84-million/",
+          "date": "2026-01-03"
+         }
+        },
+        {
+         "date": "2026-10-20",
+         "text": "Researchers at Kauz found a phishing campaign that used a flaw on MetaMask's real Portfolio site to show a fake 'verify your wallet' notice asking for the seed phrase. MetaMask fixed it by Oct 19, 2026. Lesson: even a genuine domain can be abused. Nothing legitimate asks for your seed phrase.",
+         "src": {
+          "label": "Kauz Security, content injection on portfolio.metamask.io",
+          "url": "https://kauz.gmbh/research/metamask-portfolio-phishing/",
+          "date": "2026-10-20"
+         }
+        }
+       ]
+      },
+      {
+       "id": "fake-support",
+       "name": "Fake support, fake alerts and impersonators",
+       "tag": "Everyone",
+       "summary": "Someone posing as exchange or wallet support, or a fake 'security alert', tells you your account is at risk, then asks for your seed phrase or gets you to move funds to a 'safe' wallet.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "Unrequested DMs, calls or texts from 'support'.",
+          "Urgent alerts about a login from a strange place.",
+          "Any request for your seed phrase, private key or a 'verification' payment."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Real support never asks for your seed phrase. No exceptions.",
+          "Open the app or site yourself to check alerts. Don't use the link.",
+          "Turn off DMs from strangers."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "If you shared a seed phrase, move everything to a new wallet now.",
+          "Report the impersonator account.",
+          "Ignore anyone offering to recover funds for a fee."
+         ]
+        ]
+       ],
+       "tools": [],
+       "links": [],
+       "incidents": [
+        {
+         "date": "2025-05-15",
+         "text": "Coinbase said criminals bribed overseas support staff to steal customer data, then used it for impersonation scams. It affected at least 69,461 customers, and Coinbase estimated costs of $180M-$400M. Passwords and private keys were not exposed.",
+         "src": {
+          "label": "Coinbase, Protecting our customers: standing up to extortionists",
+          "url": "https://www.coinbase.com/blog/protecting-our-customers-standing-up-to-extortionists",
+          "date": "2025-05-15"
+         }
+        },
+        {
+         "date": "2026-10-19",
+         "text": "NGRAVE said attackers hijacked its push-notification provider and sent LIQUID app users a fake security alert that led to a copycat site asking for their recovery phrase. About $2.56M was traced as stolen from about 70 addresses.",
+         "src": {
+          "label": "NGRAVE, incident report: the fake LIQUID security alert",
+          "url": "https://www.ngrave.io/en/blog/incident-report-fake-liquid-security-alert-17-october",
+          "date": "2026-10-19"
+         }
+        }
+       ]
+      },
+      {
+       "id": "sim-swap",
+       "name": "SIM swaps",
+       "tag": "Exchange and social accounts",
+       "summary": "The attacker gets your phone number moved to their SIM, often with fake ID or a bribed store employee. They then receive your SMS codes and reset your passwords.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "Your phone suddenly loses signal.",
+          "Password-reset emails you did not request."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Don't use SMS for 2FA. Use an authenticator app or a hardware security key.",
+          "Set a port-out PIN or SIM lock with your carrier.",
+          "Keep your crypto phone number private."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Call your carrier right away, lock your accounts, and change passwords from a clean device."
+         ]
+        ]
+       ],
+       "tools": [],
+       "links": [],
+       "incidents": [
+        {
+         "date": "2024-01-09",
+         "text": "The SEC's X account was taken over through a SIM swap and posted a fake approval of bitcoin ETFs before the SEC corrected it. A man was arrested in October 2024 and sentenced in May 2025 (as reported).",
+         "src": {
+          "label": "SEC, statement on the @SECGov X account",
+          "url": "https://www.sec.gov/secgov-x-account",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "fake-apps",
+       "name": "Fake apps, extensions and tampered hardware",
+       "tag": "Everyone",
+       "summary": "Fake wallet apps, browser extensions or tampered hardware wallets capture your seed phrase or swap in the attacker's address. Sometimes a real extension is turned malicious later.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "App or extension published by an unfamiliar developer.",
+          "Hardware wallets sold far below the official price, or by unofficial resellers.",
+          "A device that arrives with a seed phrase already written down."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Install wallets only from links on the official site.",
+          "Buy hardware wallets directly from the maker.",
+          "Always create a fresh seed on the device yourself."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Move what's left to a brand-new wallet with a new seed phrase, created on a clean device.",
+          "Uninstall the app or extension and report it to the store."
+         ]
+        ]
+       ],
+       "tools": [
+        "ledger",
+        "trezor",
+        "keystone",
+        "tangem"
+       ],
+       "links": [],
+       "incidents": [
+        {
+         "date": "2025-08-01",
+         "text": "Koi Security reported 150+ malicious Firefox add-ons posing as popular crypto wallets, part of a wider campaign it called GreedyBear.",
+         "src": {
+          "label": "Koi Security, GreedyBear campaign",
+          "url": "https://www.koi.ai/blog/greedybear-650-attack-tools-one-coordinated-campaign",
+          "date": "2026-10-27",
+          "read": true
+         }
+        },
+        {
+         "date": "2025-12-24",
+         "text": "Trust Wallet's browser extension v2.68 was compromised in a supply-chain attack. Trust Wallet identified 2,520 affected wallets and began reimbursing.",
+         "src": {
+          "label": "Trust Wallet, browser extension v2.68 incident update",
+          "url": "https://trustwallet.com/blog/company/trust-wallet-browser-extension-v268-incident-community-update",
+          "date": "2026-10-27",
+          "read": true
+         }
+        },
+        {
+         "date": "2026-10-12",
+         "text": "Ledger confirmed that devices sold through a Southeast Asian reseller carried a hidden implant that captured recovery phrases during setup and sent them out over mobile data. Ledger said its chip and systems were not breached. An on-chain investigator traced more than $86M in suspected thefts, a figure Ledger said it had not verified.",
+         "src": {
+          "label": "BleepingComputer, Ledger confirms spy chip implant behind wallet crypto thefts",
+          "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+          "date": "2026-10-12"
+         }
+        },
+        {
+         "date": "2026-10-13",
+         "text": "Trezor said it would end its reseller authorisations on Jan 1, 2027 as a precaution, while saying there was no evidence its own devices were compromised.",
+         "src": {
+          "label": "Decrypt, Trezor cuts its resellers after Ledger finds spy implant",
+          "url": "https://decrypt.co/380848/trezor-cuts-resellers-ledger-finds-spy-implant-crypto-wallets",
+          "date": "2026-10-13"
+         }
+        }
+       ]
+      },
+      {
+       "id": "ponzi-yield",
+       "name": "Ponzi schemes and fake yield",
+       "tag": "Everyone",
+       "summary": "A platform pays 'yield' to old users out of new deposits, or invents its returns, until withdrawals stop.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "Fixed high returns, often 1% a day or more.",
+          "Referral bonuses for bringing in others.",
+          "No clear source of the yield.",
+          "Withdrawal limits that suddenly appear."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Ask where the yield comes from. If nobody can explain it, you are the yield.",
+          "Compare with market rates on DefiLlama."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Try to withdraw what you can now, document everything, and report to the police and regulators."
+         ]
+        ]
+       ],
+       "tools": [
+        "defillama"
+       ],
+       "links": [],
+       "incidents": [
+        {
+         "date": "2025-05-08",
+         "text": "Celsius founder Alex Mashinsky was sentenced to 12 years in prison after pleading guilty to fraud.",
+         "src": {
+          "label": "Reuters, Celsius founder Alex Mashinsky gets 12 years",
+          "url": "https://www.reuters.com/legal/celsius-founder-alex-mashinsky-gets-12-years-prison-crypto-fraud-2025-05-08/",
+          "date": "2025-05-08"
+         }
+        }
+       ]
+      },
+      {
+       "id": "cex-collapse",
+       "name": "Exchange collapses and exit scams",
+       "tag": "Centralised exchanges",
+       "summary": "An exchange misuses or loses customer deposits, then freezes withdrawals and collapses. Sometimes the operators simply disappear with the funds.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "Withdrawal delays and excuses.",
+          "Yields that look too good for parked deposits.",
+          "No proof of reserves, or an unclear licence."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Keep only trading money on exchanges, and move savings to self-custody.",
+          "Spread funds across well-regulated venues."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "File claims through the official bankruptcy process only. Many 'claims agents' are scammers."
+         ]
+        ]
+       ],
+       "tools": [
+        "ledger",
+        "trezor"
+       ],
+       "links": [],
+       "incidents": [
+        {
+         "date": "2024-03-28",
+         "text": "FTX founder Sam Bankman-Fried was sentenced to 25 years in prison for fraud involving customer funds.",
+         "src": {
+          "label": "US DOJ, Samuel Bankman-Fried sentenced to 25 years",
+          "url": "https://www.justice.gov/archives/opa/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes",
+          "date": "2024-03-28"
+         }
+        }
+       ]
+      },
+      {
+       "id": "pig-butchering",
+       "name": "Romance and 'pig-butchering' investment scams",
+       "tag": "Everyone",
+       "summary": "A stranger builds trust over weeks, through a dating app, social media or a 'wrong number' text, then introduces a crypto trading platform. The platform shows fake profits until you try to withdraw, and then demands 'taxes' or 'fees'.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "A new online friend who talks about crypto profits.",
+          "A platform you can only reach through their link.",
+          "Withdrawal blocked until you pay a fee."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Never invest on a platform recommended by someone you have only met online.",
+          "Check the site against regulator warning lists."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Stop paying. Report to IC3 (US) or cybercrime.gov.in and the 1930 helpline (India), or your local police.",
+          "Expect 'recovery' scammers to contact you next."
+         ]
+        ]
+       ],
+       "tools": [],
+       "links": [
+        {
+         "label": "FBI IC3 (report)",
+         "url": "https://www.ic3.gov"
+        }
+       ],
+       "incidents": [
+        {
+         "date": "2026-10-27",
+         "text": "The FBI's 2025 IC3 report put crypto investment fraud losses at $7.2B, the largest loss category in the report.",
+         "src": {
+          "label": "FBI IC3, 2025 Internet Crime Report (PDF)",
+          "url": "https://www.fbi.gov/file-repository/2025_ic3report.pdf",
+          "date": "2026-10-27",
+          "read": true
+         }
+        },
+        {
+         "date": "2026-10-14",
+         "text": "The Brooklyn DA's Virtual Currency Unit, with the FBI, disrupted 241 scam investment domains and 112 servers behind a scam that targeted Russian-speaking residents. The same group also ran a follow-up 'recovery' scam.",
+         "src": {
+          "label": "Brooklyn DA, Virtual Currency Unit dismantles crypto investment scam infrastructure",
+          "url": "https://www.brooklynda.org/2026/10/14/brooklyn-das-virtual-currency-unit-dismantles-infrastructure-of-multinational-crypto-investment-scam-that-targeted-russian-speakers/",
+          "date": "2026-10-14"
+         }
+        }
+       ]
+      },
+      {
+       "id": "impersonation-tokens",
+       "name": "Impersonation and copycat tokens",
+       "tag": "All chains",
+       "summary": "Scammers launch tokens with the same name or ticker as a real project, a brand or a news event, or post a fake 'official' contract address from a hacked or look-alike account.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "The contract address does not match the one on the official website.",
+          "A brand-new token with a famous name.",
+          "The post comes from a look-alike handle or a hacked account and is deleted soon after."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Verify the contract address on the official website and several official channels.",
+          "Treat deleted posts as a rug signal."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Sell if you still can, and report the token."
+         ]
+        ]
+       ],
+       "tools": [
+        "jupitertokens",
+        "coingecko",
+        "dexscreener"
+       ],
+       "links": [
+        {
+         "label": "Official-account launches",
+         "url": "/guide/meme-trading-playbook/#official-accounts"
+        }
+       ],
+       "incidents": [
+        {
+         "date": "2026-10-27",
+         "text": "Chainalysis estimated $17B was stolen in scams and fraud in 2025, and said impersonation scams grew 1,400% year over year.",
+         "src": {
+          "label": "Chainalysis, 2026 Crypto Crime Report: scams",
+          "url": "https://www.chainalysis.com/blog/crypto-scams-2026/",
+          "date": "2026-01-13"
+         }
+        }
+       ]
+      },
+      {
+       "id": "recovery-scams",
+       "name": "Recovery scams",
+       "tag": "Victims",
+       "summary": "After you lose money, 'recovery experts', fake lawyers or fake police offer to get it back for an upfront fee. They are often the same people who scammed you the first time.",
+       "lists": [
+        [
+         "How to spot it",
+         [
+          "Unsolicited offers to recover funds.",
+          "Upfront fees, or 'tax' payments to release funds."
+         ]
+        ],
+        [
+         "How to protect yourself",
+         [
+          "Only work with real law enforcement and your own lawyer.",
+          "Never pay to recover crypto."
+         ]
+        ],
+        [
+         "If it happened to you",
+         [
+          "Report the contact to IC3 or your local cybercrime authority."
+         ]
+        ]
+       ],
+       "tools": [],
+       "links": [],
+       "incidents": [
+        {
+         "date": "2026-10-14",
+         "text": "The Brooklyn DA reported that the scam ring it disrupted contacted victims again a few weeks later, promising to recover their stolen assets.",
+         "src": {
+          "label": "Brooklyn DA, Virtual Currency Unit dismantles crypto investment scam infrastructure",
+          "url": "https://www.brooklynda.org/2026/10/14/brooklyn-das-virtual-currency-unit-dismantles-infrastructure-of-multinational-crypto-investment-scam-that-targeted-russian-speakers/",
+          "date": "2026-10-14"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "launch-forensics",
+   "title": "New-launch forensics: the checks that catch most memecoin traps",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "These checks come from the FreeTierCrypto research desk's notes on Solana launches, rewritten as risk signals. No single check proves a coin is safe. Stack them, size small, and assume anything hard-promoted in its first hour is someone else's exit."
+     ]
+    },
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "Bundles",
+       "Wallets buying in the same block, or within seconds of launch. Risk signals: bundles holding more than about 15-20% of supply, many fresh wallets with near-identical amounts, or a bundle still holding after the pump (when it dumps, the price can fall 50% or more in minutes). Lower risk: the bundle has sold out, or holds only a few %."
+      ],
+      [
+       "Shared-funder rings",
+       "Trace the first SOL each top holder received. Several funded by the same unlabelled wallet are probably one person, and a ring holding more than about 10% is serious. Funding from an exchange hot wallet is normal, unless it was routed through intermediary wallets."
+      ],
+      [
+       "Dev history",
+       "Count the dev's past launches and what happened to them. Risk signals: the dev bought a few % and sold fast, the dev wallet was funded by a fresh wallet minutes before launch, or the funder is linked to past launches. A first-time dev is not safe; they just have no history yet."
+      ],
+      [
+       "Paid-shill tells",
+       "The caller bought seconds to minutes before posting and sold into the buying. Several accounts post the same token within minutes in similar words. Calls come near the top. New or low-engagement accounts have high follower counts. Check the caller's past calls."
+      ],
+      [
+       "Contract and honeypot checks",
+       "Mint and freeze authority are off, there is no transfer hook or tax, it is not upgradeable, and LP is locked or burned. Liquidity under about 20% of market cap is thin. Do a tiny test buy, then a tiny test sell."
+      ],
+      [
+       "Drainer hygiene",
+       "Never connect your main wallet to shilled sites, claim pages or links from DMs or replies. Watch for cloned branding. Read what you sign (unlimited approvals, 'set authority' or anything unclear means stop). Use a small burner wallet. Never share your seed, including with 'support'. Ignore unsolicited tokens and NFTs."
+      ],
+      [
+       "Market structure",
+       "A huge first-hour pump followed by a sharp drop, volume that is huge compared with liquidity, the dev or a ring selling after pump.fun graduation, and a placeholder website and socials."
+      ]
+     ]
+    },
+    {
+     "type": "tools",
+     "ids": [
+      "rugcheck",
+      "bubblemaps",
+      "solscan",
+      "dexscreener",
+      "birdeye"
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "WhoBought (early buyers of a token)",
+       "url": "https://whobought.xyz"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "if-hit",
+   "title": "If you've been hit: the first hour",
+   "blocks": [
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "1. Stop",
+       "Don't sign anything else, and don't send more money to 'unlock' funds."
+      ],
+      [
+       "2. Secure what is left",
+       "If your seed phrase may be exposed, create a new wallet with a new seed on a clean device and move everything there. If you only signed an approval, revoke it, then move funds anyway if you are unsure."
+      ],
+      [
+       "3. Record",
+       "Save transaction hashes, addresses, screenshots, chats and the website address."
+      ],
+      [
+       "4. Report",
+       "US: FBI IC3 (ic3.gov). India: call 1930 and file at cybercrime.gov.in under cryptocurrency crime. Elsewhere: your national cybercrime unit or police. Also report the address on Chainabuse, and tell any exchange where the funds landed. Exchanges usually need a police report before they freeze funds."
+      ],
+      [
+       "5. Beware recovery scams",
+       "Anyone offering to recover crypto for a fee is almost certainly a scammer."
+      ]
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Revoke.cash (check and revoke token approvals)",
+       "url": "https://revoke.cash"
+      },
+      {
+       "label": "FBI IC3",
+       "url": "https://www.ic3.gov"
+      },
+      {
+       "label": "National Cyber Crime Reporting Portal (India)",
+       "url": "https://cybercrime.gov.in/"
+      },
+      {
+       "label": "Chainabuse",
+       "url": "https://chainabuse.com"
+      }
+     ]
+    },
+    {
+     "type": "sources",
+     "items": [
+      {
+       "label": "Indian Cyber Crime Coordination Centre, helpline 1930 FAQ (PDF)",
+       "url": "https://cyberpolice.nic.in/Download/CFCFRMS_FAQ.pdf",
+       "date": "2026-10-27",
+       "read": true
+      },
+      {
+       "label": "FBI press release on the 2025 IC3 report",
+       "url": "https://www.fbi.gov/news/press-releases/cryptocurrency-and-ai-scams-bilk-americans-of-billions",
+       "date": "2026-10-27",
+       "read": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "Free check tools",
+   "blocks": [
+    {
+     "type": "tools",
+     "ids": [
+      "rugcheck",
+      "bubblemaps",
+      "solscan",
+      "jupitertokens",
+      "solsniffer",
+      "goplus",
+      "tokensniffer",
+      "dexscreener",
+      "birdeye",
+      "arkham"
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Revoke.cash (check and revoke token approvals)",
+       "url": "https://revoke.cash"
+      },
+      {
+       "label": "ScamSniffer",
+       "url": "https://scamsniffer.io"
+      },
+      {
+       "label": "Chainabuse",
+       "url": "https://chainabuse.com"
+      },
+      {
+       "label": "WhoBought",
+       "url": "https://whobought.xyz"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "slug": "scams",
+ "updated": "2026-10-27"
+}

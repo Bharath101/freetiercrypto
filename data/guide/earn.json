@@ -1,0 +1,623 @@
+{
+ "title": "How to earn with crypto",
+ "h1": "How to earn with crypto: realistic paths, returns and risks",
+ "eyebrow": "Earn",
+ "seo_title": "How to earn with crypto: staking, stablecoin yield, airdrops, bug bounties and more",
+ "description": "Realistic ways to earn with crypto, with effort, capital, sourced return ranges and risks, live yields, and what's hot in October 2026.",
+ "summary": "Seven earning paths with effort, capital, sourced return ranges and risks, live DefiLlama yields, and a dated 'what's hot' section.",
+ "plain": [
+  "You can earn with crypto by lending, staking, helping new projects early, finding bugs, or making content. Every path has a catch. Higher returns always mean higher risk, even when you can't see the risk.",
+  "Safe-looking yields on large platforms were roughly 2-6% a year in late October 2026. Anyone promising much more, guaranteed, is very likely running a scam."
+ ],
+ "dont_lose": [
+  "A 20% price drop erases years of staking yield, so only earn on coins you would hold anyway.",
+  "Never chase fixed high 'daily returns'. That is how Ponzi schemes look.",
+  "Claim airdrops only through the project's official site or established official accounts.",
+  "Split money across protocols, and prefer large, long-running ones.",
+  "Do airdrop farming at a size you'd accept even if the airdrop is worth zero."
+ ],
+ "risk": "Yields and dates are as of Oct 26-27, 2026 and change daily. No return is guaranteed. Not financial advice; no strategy wins every trade.",
+ "sections": [
+  {
+   "id": "paths",
+   "title": "Earning paths",
+   "blocks": [
+    {
+     "type": "entries",
+     "items": [
+      {
+       "id": "staking",
+       "name": "Staking and liquid staking",
+       "tag": "Low effort",
+       "summary": "Lock or delegate ETH or SOL to help secure the network and earn new coins. Liquid staking gives you a token (stETH, JitoSOL and others) that you can still use.",
+       "glance": [
+        [
+         "Effort",
+         "Low"
+        ],
+        [
+         "Capital",
+         "Any amount"
+        ],
+        [
+         "Recent range",
+         "About 1.8-2.3% on ETH and 4.4-5.5% on SOL (DefiLlama, Oct 27, 2026)"
+        ]
+       ],
+       "lists": [
+        [
+         "How to do it",
+         [
+          "Stake natively through your wallet, or use a large liquid-staking token.",
+          "Keep it in cold storage if you hold long term."
+         ]
+        ],
+        [
+         "Risks",
+         [
+          "Your yield is paid in the coin, so a 20% price drop wipes out years of yield.",
+          "Smart-contract and depeg risk on liquid-staking tokens."
+         ]
+        ]
+       ],
+       "links": [],
+       "facts": [
+        {
+         "text": "Rates are from DefiLlama pools; see the table below.",
+         "src": {
+          "label": "DefiLlama yields",
+          "url": "https://defillama.com/yields",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ],
+       "tools": []
+      },
+      {
+       "id": "stable-yield",
+       "name": "Stablecoin yield",
+       "tag": "Low-medium effort",
+       "summary": "Lend dollar stablecoins to borrowers on Aave, Kamino and others, or hold a savings token like sUSDS.",
+       "glance": [
+        [
+         "Effort",
+         "Low"
+        ],
+        [
+         "Capital",
+         "Any amount"
+        ],
+        [
+         "Recent range",
+         "About 3.6-5.8% on large pools (DefiLlama, Oct 27, 2026)"
+        ]
+       ],
+       "lists": [
+        [
+         "How to do it",
+         [
+          "Use large, long-running protocols, and split across two or more.",
+          "Check the 30-day average, not just today's rate."
+         ]
+        ],
+        [
+         "Risks",
+         [
+          "Smart-contract hacks, stablecoin depegs, and frozen withdrawals when a pool is fully lent out.",
+          "Synthetic dollars such as sUSDe carry extra risks from the trading strategy behind them.",
+          "Anything paying far above these rates is taking risks you can't see."
+         ]
+        ]
+       ],
+       "links": [],
+       "facts": [
+        {
+         "text": "Stablecoin supply reached $304.2B, according to CoinLab's weekly review.",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        }
+       ],
+       "tools": [
+        "defillama"
+       ]
+      },
+      {
+       "id": "airdrops",
+       "name": "Airdrops and points",
+       "tag": "Medium-high effort",
+       "summary": "Projects reward early users with tokens. Today that usually means points programmes: you use the product, collect points, and hope they convert into a token.",
+       "glance": [
+        [
+         "Effort",
+         "Medium to high"
+        ],
+        [
+         "Capital",
+         "Small to large"
+        ],
+        [
+         "Recent range",
+         "From zero (cancelled tokens) to large payouts. Very uneven"
+        ]
+       ],
+       "lists": [
+        [
+         "How to do it",
+         [
+          "Use the product for real, at a size you'd be happy with even if the airdrop is worth zero.",
+          "Estimate the value of a point: expected FDV x community share ÷ points outstanding.",
+          "Claim only through links on the project's official site or established official accounts."
+         ]
+        ],
+        [
+         "Risks",
+         [
+          "Fees, trading losses and opportunity cost can exceed the drop.",
+          "Tokens get delayed, cut or cancelled.",
+          "Fake claim pages are among the most common drainers."
+         ]
+        ]
+       ],
+       "links": [
+        {
+         "label": "Scam guide: fake airdrops",
+         "url": "/guide/scams/#fake-airdrops"
+        }
+       ],
+       "facts": [
+        {
+         "text": "Perp DEX points in 2025-26: Lighter (LIT, Dec 30, 2025, 25% to points holders), Paradex (DIME, Mar 5, 2026, 25%) and GRVT (Jul 30, 2026, 28%) paid out. StandX cancelled its token on Oct 15, 2026 and pays DUSD instead from Nov 1 to Dec 31, while Zeta withdrew its token and Extended ended distributions. The source's advice: size as if the airdrop is worth zero.",
+         "src": {
+          "label": "dexwatch, perp DEX points programmes in Q4 2026",
+          "url": "https://dexwatch.com/guides/perp-dex-points-programs/",
+          "date": "2026-10-25"
+         }
+        }
+       ],
+       "tools": []
+      },
+      {
+       "id": "bug-bounties",
+       "name": "Bug bounties",
+       "tag": "High skill",
+       "summary": "Find security bugs in smart contracts and report them responsibly for a reward.",
+       "glance": [
+        [
+         "Effort",
+         "High (needs coding and security skills)"
+        ],
+        [
+         "Capital",
+         "None"
+        ],
+        [
+         "Recent range",
+         "From zero to very large; most researchers earn little"
+        ]
+       ],
+       "lists": [
+        [
+         "How to do it",
+         [
+          "Learn Solidity or Rust and audit basics.",
+          "Start with audit contests and smaller programmes."
+         ]
+        ],
+        [
+         "Risks",
+         [
+          "Lots of unpaid time.",
+          "Out-of-scope or duplicate reports earn nothing."
+         ]
+        ]
+       ],
+       "links": [
+        {
+         "label": "Immunefi",
+         "url": "https://immunefi.com"
+        }
+       ],
+       "facts": [
+        {
+         "text": "Immunefi says it has paid more than $100M to whitehat researchers. The largest single bounty was $10M for a Wormhole bug.",
+         "src": {
+          "label": "Immunefi, surpasses $100 million in whitehat rewards",
+          "url": "https://immunefi.com/blog/company-announcement/immunefi-surpasses-100-million-in-whitehat-rewards-a-milestone-in-web3-security/",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ],
+       "tools": []
+      },
+      {
+       "id": "content",
+       "name": "Content, research and community work",
+       "tag": "Medium effort",
+       "summary": "Write, make videos, build tools or moderate communities, and get paid in grants, ambassador programmes, creator rewards or a job.",
+       "glance": [
+        [
+         "Effort",
+         "Medium, and steady"
+        ],
+        [
+         "Capital",
+         "None"
+        ],
+        [
+         "Recent range",
+         "Highly variable; most earn little at first"
+        ]
+       ],
+       "lists": [
+        [
+         "How to do it",
+         [
+          "Pick one niche and publish on a schedule.",
+          "Disclose any paid promotion."
+         ]
+        ],
+        [
+         "Risks",
+         [
+          "Shilling tokens for pay damages trust and may break the law where you live."
+         ]
+        ]
+       ],
+       "links": [],
+       "facts": [],
+       "tools": []
+      },
+      {
+       "id": "active-trading",
+       "name": "Active trading, including memecoins",
+       "tag": "High effort, high risk",
+       "summary": "Buying and selling for profit. It's possible, but most people lose money, especially in memecoins.",
+       "glance": [
+        [
+         "Effort",
+         "High"
+        ],
+        [
+         "Capital",
+         "Only what you can lose"
+        ],
+        [
+         "Recent range",
+         "No reliable range. Results are wildly spread and mostly negative"
+        ]
+       ],
+       "lists": [
+        [
+         "How to do it",
+         [
+          "Follow the meme trading playbook: checks, sizing, stops and a journal."
+         ]
+        ],
+        [
+         "Risks",
+         [
+          "Fees, slippage, rugs and your own emotions."
+         ]
+        ]
+       ],
+       "links": [
+        {
+         "label": "Meme trading playbook",
+         "url": "/guide/meme-trading-playbook/"
+        }
+       ],
+       "facts": [
+        {
+         "text": "On Oct 25, 2026, only 2.26% of the 40,315 coins launched on pump.fun graduated, and 72.2% of graduates closed the day below their graduation market cap.",
+         "src": {
+          "label": "pumpdata.fun, pump.fun stats for Oct 25, 2026",
+          "url": "https://pumpdata.fun/stats/2026-10-25",
+          "date": "2026-10-26"
+         }
+        }
+       ],
+       "tools": []
+      },
+      {
+       "id": "prediction-markets",
+       "name": "Prediction markets",
+       "tag": "Medium effort",
+       "summary": "Trade on the outcomes of real events. You profit only if you price events better than the crowd.",
+       "glance": [
+        [
+         "Effort",
+         "Medium"
+        ],
+        [
+         "Capital",
+         "Small to medium"
+        ],
+        [
+         "Recent range",
+         "No reliable range; it's a skill game against other traders"
+        ]
+       ],
+       "lists": [
+        [
+         "How to do it",
+         [
+          "Specialise in topics you know deeply, and check the market's resolution rules."
+         ]
+        ],
+        [
+         "Risks",
+         [
+          "Legal restrictions in many countries.",
+          "Ambiguous resolution and thin markets."
+         ]
+        ]
+       ],
+       "links": [],
+       "facts": [
+        {
+         "text": "Prediction markets had a record October, and Kalshi passed Polymarket in monthly volume. Venues count volume differently, so compare carefully.",
+         "src": {
+          "label": "Predictable, Kalshi overtakes Polymarket as October trading surges",
+          "url": "https://predictable.gg/news/2026/10/21/kalshi-overtakes-polymarket-in-october/",
+          "date": "2026-10-21"
+         }
+        }
+       ],
+       "tools": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "yields",
+   "title": "Live yields (DefiLlama, Oct 27, 2026)",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Live yields on large pools (DefiLlama, Oct 27, 2026)",
+     "head": [
+      "Pool",
+      "What it is",
+      "APY now",
+      "30-day avg",
+      "TVL"
+     ],
+     "rows": [
+      [
+       "Lido stETH",
+       "ETH liquid staking",
+       "2.24%",
+       "2.26%",
+       "$22.3B"
+      ],
+      [
+       "ether.fi weETH",
+       "ETH liquid restaking",
+       "2.31%",
+       "-",
+       "$5.13B"
+      ],
+      [
+       "Rocket Pool rETH",
+       "ETH liquid staking",
+       "1.83%",
+       "2.07%",
+       "$1.13B"
+      ],
+      [
+       "JitoSOL",
+       "SOL liquid staking",
+       "4.75%",
+       "4.77%",
+       "$1.04B"
+      ],
+      [
+       "BNSOL",
+       "SOL liquid staking",
+       "4.43%",
+       "-",
+       "$1.06B"
+      ],
+      [
+       "Marinade mSOL",
+       "SOL liquid staking",
+       "5.49%",
+       "5.03%",
+       "$226M"
+      ],
+      [
+       "Sky sUSDS",
+       "Stablecoin savings",
+       "3.80%",
+       "-",
+       "$4.84B"
+      ],
+      [
+       "Aave v3 USDC (Ethereum)",
+       "Stablecoin lending",
+       "3.69%",
+       "4.36%",
+       "$181M"
+      ],
+      [
+       "Aave v3 USDT (Ethereum)",
+       "Stablecoin lending",
+       "3.56%",
+       "-",
+       "$279M"
+      ],
+      [
+       "Kamino USDC (Solana)",
+       "Stablecoin lending",
+       "5.79%",
+       "-",
+       "$58M"
+      ],
+      [
+       "Ethena sUSDe",
+       "Synthetic dollar (not a plain stablecoin)",
+       "5.07%",
+       "-",
+       "$1.19B"
+      ]
+     ],
+     "note": "APY (annual percentage yield) is variable and changes daily. TVL (total value locked) is how much money is in the pool. '-' means we did not record a 30-day figure. Higher yield always means more risk somewhere."
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Lido stETH on DefiLlama",
+       "url": "https://defillama.com/yields/pool/747c1d2a-c668-4682-b9f9-296708a3dd90"
+      },
+      {
+       "label": "ether.fi weETH on DefiLlama",
+       "url": "https://defillama.com/yields/pool/46bd2bdf-6d92-4066-b482-e885ee172264"
+      },
+      {
+       "label": "Rocket Pool rETH on DefiLlama",
+       "url": "https://defillama.com/yields/pool/d4b3c522-6127-4b89-bedf-83641cdcd2eb"
+      },
+      {
+       "label": "JitoSOL on DefiLlama",
+       "url": "https://defillama.com/yields/pool/0e7d0722-9054-4907-8593-567b353c0900"
+      },
+      {
+       "label": "BNSOL on DefiLlama",
+       "url": "https://defillama.com/yields/pool/9e709e57-84eb-496b-82ce-2e8f6a17db1b"
+      },
+      {
+       "label": "Marinade mSOL on DefiLlama",
+       "url": "https://defillama.com/yields/pool/b3f93865-5ec8-4662-90a0-11808e0aa2bd"
+      },
+      {
+       "label": "Sky sUSDS on DefiLlama",
+       "url": "https://defillama.com/yields/pool/d8c4eff5-c8a9-46fc-a888-057c4c668e72"
+      },
+      {
+       "label": "Aave v3 USDC (Ethereum) on DefiLlama",
+       "url": "https://defillama.com/yields/pool/aa70268e-4b52-42bf-a116-608b370f9501"
+      },
+      {
+       "label": "Aave v3 USDT (Ethereum) on DefiLlama",
+       "url": "https://defillama.com/yields/pool/f981a304-bb6c-45b8-b0c5-fd2f515ad23a"
+      },
+      {
+       "label": "Kamino USDC (Solana) on DefiLlama",
+       "url": "https://defillama.com/yields/pool/8c4bbc10-5763-5d5b-8450-05ddd24b1c33"
+      },
+      {
+       "label": "Ethena sUSDe on DefiLlama",
+       "url": "https://defillama.com/yields/pool/66985a81-9c51-46ca-9977-42b4fe7bc6df"
+      }
+     ]
+    },
+    {
+     "type": "sources",
+     "items": [
+      {
+       "label": "DefiLlama yields",
+       "url": "https://defillama.com/yields",
+       "date": "2026-10-27",
+       "read": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hot",
+   "title": "What's hot right now (Oct 2026)",
+   "blocks": [
+    {
+     "type": "text",
+     "paras": [
+      "Dated snapshot as of Oct 27, 2026. Treat it as context, not a buy list."
+     ]
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "text": "Market backdrop: BTC closed the week of Oct 19-25 at $80,154 (down 2.4%), its third losing week in a row and well below its all-time high of $126,080 (Oct 6, 2025). More than $810M of positions were liquidated on Oct 24. A Fed decision is due Oct 28.",
+       "src": {
+        "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+        "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+        "date": "2026-10-26"
+       }
+      },
+      {
+       "text": "Sector moves that week: DeFi tokens fell hardest (AAVE -10.3%, MORPHO -16.9%) while some memecoins rose (PEPE +9.1%). ZEC rose 7.3% ahead of its NU7 upgrade. JPMorgan launched tokenized money-market funds on Solana.",
+       "src": {
+        "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+        "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+        "date": "2026-10-26"
+       }
+      },
+      {
+       "text": "Solana's Alpenglow upgrade went live on Oct 21, 2026, targeting finality of about 150 milliseconds.",
+       "src": {
+        "label": "CoinDesk, Solana's Alpenglow goes live",
+        "url": "https://www.coindesk.com/tech/2026/10/21/solana-s-alpenglow-its-biggest-network-overhaul-since-2020-goes-live-wednesday",
+        "date": "2026-10-21"
+       }
+      },
+      {
+       "text": "Points season: Aster's Stage 6 claims run Oct 28 to Nov 28, and StandX switched from a token to DUSD rewards from Nov 1. Variational plans a VAR token in Q4 2026 with 32% to points holders.",
+       "src": {
+        "label": "dexwatch, perp DEX points programmes in Q4 2026",
+        "url": "https://dexwatch.com/guides/perp-dex-points-programs/",
+        "date": "2026-10-25"
+       }
+      },
+      {
+       "text": "This week's airdrop roundups also flag Aster and StandX as open.",
+       "src": {
+        "label": "CryptoTicker, crypto airdrops week 44/2026: Aster and StandX open",
+        "url": "https://cryptoticker.io/en/most-profitable-crypto-airdrops-week-44-2026/",
+        "date": "2026-10-26"
+       }
+      },
+      {
+       "text": "Token launches: Fraction AI is set to start trading Nov 11, 2026 (TGE Index disclosure score 3 of 8). Teneo, Variational, infiniFi and others are listed for Q4 without a confirmed date.",
+       "src": {
+        "label": "TGE Index, token launches in November 2026",
+        "url": "https://tgeindex.com/tge/november-2026/",
+        "date": "2026-10-27",
+        "read": true
+       }
+      },
+      {
+       "text": "Prediction markets: record October volume, with Kalshi ahead of Polymarket for the month.",
+       "src": {
+        "label": "Predictable, Kalshi overtakes Polymarket as October trading surges",
+        "url": "https://predictable.gg/news/2026/10/21/kalshi-overtakes-polymarket-in-october/",
+        "date": "2026-10-21"
+       }
+      },
+      {
+       "text": "Security this week: Initia was hit by an exploit of about $2.6M, and an exploiter linked to Drift moved $109M to Tornado Cash.",
+       "src": {
+        "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+        "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+        "date": "2026-10-26"
+       }
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Beware: fake claim pages and fake 'tokenized stock airdrop' sites are circulating. Claim only through links on official project websites. Videos promising to turn $30 into $1,000 are entertainment, not proof that it works."
+    }
+   ]
+  }
+ ],
+ "slug": "earn",
+ "updated": "2026-10-27"
+}

@@ -1,10 +1,22 @@
 {% extends "base.html" %}{% from "_macros.html" import table, filters, filter_script, signup %}
 {% block content %}
 <section class="hero">
-  <p class="eyebrow">Checked {{ stats.last|nicedate }} · {{ stats.tools }} tools · {{ stats.cats }} categories</p>
-  <h1>Crypto tools: <em>what you get free, and what the first paid plan costs</em>.</h1>
-  <p class="lead">Free tier limits, the cheapest paid plan in USD and the best free alternative for {{ stats.tools }} charting, screener, bot, tax, wallet, on-chain, portfolio, alert, DEX, multi-chain and token-safety tools. Every price was read from the vendor's own pricing page and links to it with the date checked. Anything we could not read there says <em>unverified</em>.</p>
-  <p class="risk"><strong>Not financial advice.</strong> This is a price list for software. It never tells you what to buy or trade.</p>
+  <p class="eyebrow">Free crypto guide · updated {{ guide_updated|nicedate if guide_updated else stats.last|nicedate }}</p>
+  <h1>Trade memecoins <em>without blowing up</em>, and learn crypto the safe way.</h1>
+  <p class="lead">The meme trading playbook shows the tools to use at each step, the mistakes that lose money, when to buy and when to sell (and why), the maths behind it, sizing, a journal and a printable checklist. Every figure links to its source and date.</p>
+  <p class="row"><a class="btn" href="/guide/meme-trading-playbook/">Read the meme trading playbook</a> <a href="/start-here/">New to crypto? Start here</a></p>
+  <p class="risk"><strong>Not financial advice; no strategy wins every trade.</strong> Most memecoin traders lose money. The playbook is about cutting losses, not promising gains.</p>
+  <div class="grid">
+    <div class="card"><h3><a href="/guide/coin-types/">Every coin type</a></h3><p class="small">What each type is, examples, how people trade it, and red flags.</p></div>
+    <div class="card"><h3><a href="/guide/scams/">Scams and risks</a></h3><p class="small">How each scam works, how to spot it, and what to do if you're hit.</p></div>
+    <div class="card"><h3><a href="/guide/wallets/">Wallets compared</a></h3><p class="small">Hardware, hot, multisig and seedless wallets, plus a 10-step safe setup.</p></div>
+    <div class="card"><h3><a href="/guide/earn/">How to earn</a></h3><p class="small">Realistic paths, live yields, and what's hot right now.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Free crypto tools: what you get free, and what the first paid plan costs</h2>
+  <p class="lead">Free tier limits, the cheapest paid plan in USD and the best free alternative for {{ stats.tools }} tools. Every price was read from the vendor's own pricing page and links to it with the date checked. Anything we could not read there says <em>unverified</em>.</p>
   <div class="stats">
     <div><strong>{{ stats.tools }}</strong><span>tools</span></div>
     <div><strong>{{ stats.verified }}</strong><span>fully verified</span></div>

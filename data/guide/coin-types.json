@@ -1,0 +1,1272 @@
+{
+ "title": "Every coin type explained",
+ "h1": "Every type of coin, how people trade it, and what can go wrong",
+ "eyebrow": "Coin types, all chains",
+ "seo_title": "Every crypto coin type explained: examples, strategies, risks and red flags",
+ "description": "Bitcoin, layer 1s, layer 2s, stablecoins, staking tokens, DeFi, oracles, memecoins, AI, DePIN, RWA, gaming, perps, prediction markets, privacy coins and new launches: what each is, examples, strategies, risks, red flags.",
+ "summary": "Seventeen kinds of coins across all chains: what each one is, one or two real examples, how people trade or hold it, the main risks and the red flags.",
+ "plain": [
+  "Coins are not all the same. Bitcoin, a stablecoin and a two-hour-old memecoin behave completely differently, and a strategy that works on one can wipe you out on another.",
+  "Each section below says what the type is in plain words, gives real examples (examples, not picks), and lists how people trade it and what goes wrong."
+ ],
+ "dont_lose": [
+  "Match your position size to the type. Memecoins and new launches get the smallest size; bitcoin and stablecoins can be bigger.",
+  "Always check the contract address, not the ticker. Copycat tokens use the same names.",
+  "Keep long-term holdings in self-custody on a hardware wallet, and only trade from a hot wallet.",
+  "Don't buy anything because it promises a fixed high return. That is the signature of a scam.",
+  "Read the unlock schedule before buying a new token."
+ ],
+ "risk": "Not financial advice; no strategy wins every trade. Coins named here are examples of a category, not recommendations. Prices and yields are dated and change constantly.",
+ "sections": [
+  {
+   "id": "types",
+   "title": "The coin types",
+   "blocks": [
+    {
+     "type": "entries",
+     "items": [
+      {
+       "id": "bitcoin",
+       "name": "Bitcoin (BTC)",
+       "tag": "Largest, most liquid",
+       "summary": "The first cryptocurrency and the largest by market value. New supply is released on a fixed schedule that halves roughly every four years. Many people treat it as a long-term store of value, and big funds hold it through spot ETFs.",
+       "examples": [
+        "Bitcoin (BTC)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "High for an asset, low for crypto"
+        ],
+        [
+         "Moves on",
+         "Macro news, rates, ETF flows, stock market risk mood"
+        ],
+        [
+         "Liquidity",
+         "Deepest in crypto"
+        ],
+        [
+         "Typical horizon",
+         "Months to years"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Dollar-cost averaging (DCA): buying a fixed amount on a schedule so you never have to time the market.",
+          "Hold long term in self-custody, ideally on a hardware wallet.",
+          "Swing trading ranges and key levels, with a stop below the level.",
+          "Rebalancing: trimming after big rallies and adding after big drops, back to a target % of your portfolio."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Drawdowns of 30% or more happen regularly. On Oct 25, 2026 it was about 36% below its all-time high, even in what many call a bull market.",
+          "Leverage gets liquidated on sudden wicks.",
+          "Exchange custody risk if you leave it on an exchange.",
+          "Rate decisions and stock market sell-offs move it."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"Bitcoin doubler\" or guaranteed-return schemes.",
+          "Wrapped or \"bridged\" BTC on unknown chains.",
+          "Fake BTC giveaways from impersonated celebrities."
+         ]
+        ]
+       ],
+       "tools": [
+        "tradingview",
+        "coinglass",
+        "glassnode",
+        "ledger",
+        "trezor"
+       ],
+       "links": [],
+       "facts": [
+        {
+         "text": "Bitcoin closed the week of Oct 19-25, 2026 at about $80,154, its third losing week in a row and about 36% below its Oct 6, 2025 all-time high of $126,080. Spot bitcoin ETFs held about $104.7B.",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        },
+        {
+         "text": "About 76,805 blocks were left until the April 2028 halving as of Oct 26, 2026.",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        }
+       ]
+      },
+      {
+       "id": "l1",
+       "name": "Ethereum and other layer 1s (ETH, SOL, BNB)",
+       "tag": "Large caps",
+       "summary": "Layer 1s are base blockchains that run apps, tokens and DeFi. Their coins pay transaction fees and can usually be staked to help secure the network. Ethereum is the largest. Solana is known for speed and memecoin trading. BNB powers BNB Chain.",
+       "examples": [
+        "Ether (ETH)",
+        "Solana (SOL)",
+        "BNB"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Higher than BTC"
+        ],
+        [
+         "Moves on",
+         "BTC, network activity, upgrades, ETF flows"
+        ],
+        [
+         "Liquidity",
+         "Very deep"
+        ],
+        [
+         "Typical horizon",
+         "Weeks to years"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Hold and stake for yield, directly or through a liquid staking token.",
+          "Trade the ETH/BTC or SOL/ETH ratio when you have a view on relative strength.",
+          "Position ahead of major upgrades, and take profit into the news, since upgrades are often 'sell the news' events.",
+          "Swing trade trend pullbacks with stops."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "They usually fall harder than BTC when the market turns risk-off.",
+          "Competition between chains.",
+          "Network outages or failed upgrades.",
+          "Concentration among validators."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"New Ethereum\" clones with no users.",
+          "Unofficial staking sites promising fixed high returns."
+         ]
+        ]
+       ],
+       "tools": [
+        "tradingview",
+        "defillama",
+        "tokenterminal",
+        "coingecko"
+       ],
+       "links": [
+        {
+         "label": "Solana guide: blue chip SOL",
+         "url": "/strategies/solana/"
+        }
+       ],
+       "facts": [
+        {
+         "text": "Ethereum staking hit a record 43.8M ETH, about 35.9% of supply, per Bitwise.",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        },
+        {
+         "text": "Solana switched on its Alpenglow consensus upgrade on Oct 21, 2026. It targets about 150 ms finality (the point where a transaction can no longer be reversed), down from about six seconds.",
+         "src": {
+          "label": "CoinDesk, Solana's Alpenglow goes live",
+          "url": "https://www.coindesk.com/tech/2026/10/21/solana-s-alpenglow-its-biggest-network-overhaul-since-2020-goes-live-wednesday",
+          "date": "2026-10-21"
+         }
+        }
+       ]
+      },
+      {
+       "id": "l2",
+       "name": "Layer 2s (ARB, OP)",
+       "tag": "Mid caps",
+       "summary": "Layer 2s are networks built on top of Ethereum. They batch transactions so they are cheaper and faster, then settle back to Ethereum. Their tokens are mostly used for governance. Some big L2s, such as Base, have no token of their own.",
+       "examples": [
+        "Arbitrum (ARB)",
+        "Optimism (OP)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "High"
+        ],
+        [
+         "Moves on",
+         "ETH, activity, token unlocks"
+        ],
+        [
+         "Liquidity",
+         "Good on major exchanges"
+        ],
+        [
+         "Typical horizon",
+         "Weeks to months"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Trade around ecosystem incentive programmes and big app launches.",
+          "Watch token-unlock calendars, since big unlocks often bring selling pressure.",
+          "Hold as a small part of an ETH-ecosystem basket."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "How the token captures value is often unclear.",
+          "Large insider and treasury supply unlocking over time.",
+          "Centralised sequencers (the single operator that orders transactions) and upgrade keys."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"L2 airdrop claim\" links in replies.",
+          "Brand-new L2 tokens with most of the supply locked and a tiny float."
+         ]
+        ]
+       ],
+       "tools": [
+        "defillama",
+        "tokenterminal",
+        "dune",
+        "jumper"
+       ],
+       "links": [],
+       "facts": []
+      },
+      {
+       "id": "stablecoins",
+       "name": "Stablecoins (USDC, USDT)",
+       "tag": "Low volatility",
+       "summary": "Tokens built to stay at $1, usually backed by cash and short-term government bonds held by an issuer. People use them for trading, payments, and parking value between trades.",
+       "examples": [
+        "USD Coin (USDC)",
+        "Tether (USDT)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Very low while the peg holds"
+        ],
+        [
+         "Moves on",
+         "Issuer health, regulation"
+        ],
+        [
+         "Liquidity",
+         "Deepest pairs in crypto"
+        ],
+        [
+         "Typical horizon",
+         "Parking cash, earning yield"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Keep your 'dry powder' (cash ready for trades) in stablecoins between trades.",
+          "Earn lending or savings yield (see How to earn).",
+          "Spread holdings across issuers rather than trusting one."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Depeg (losing the $1 price) under stress.",
+          "Issuers can freeze tokens at specific addresses.",
+          "Algorithmic designs have collapsed before, for example Terra's UST in May 2022.",
+          "Rules differ by country."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"Stablecoins\" paying 20%+ with no clear source of the yield.",
+          "Unknown stablecoins with a tiny pool."
+         ]
+        ]
+       ],
+       "tools": [
+        "defillama",
+        "coingecko"
+       ],
+       "links": [
+        {
+         "label": "How to earn: stablecoin yield",
+         "url": "/guide/earn/#stable-yield"
+        }
+       ],
+       "facts": [
+        {
+         "text": "Total stablecoin supply was about $304.2B on Oct 25, 2026 (DefiLlama data, cited by CoinLab). The US OCC became the first regulator to finalise rules under the GENIUS Act on stablecoins.",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        }
+       ]
+      },
+      {
+       "id": "lst",
+       "name": "Liquid staking and restaking tokens (stETH, JitoSOL, weETH)",
+       "tag": "Low to medium",
+       "summary": "You stake a coin through a protocol and get a token back that earns the staking reward while staying tradable. Restaking tokens (LRTs) put that stake to work securing extra services for extra reward, which adds extra risk.",
+       "examples": [
+        "Lido stETH",
+        "JitoSOL",
+        "ether.fi weETH"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Tracks ETH or SOL"
+        ],
+        [
+         "Moves on",
+         "The underlying coin; occasional discount to it"
+        ],
+        [
+         "Liquidity",
+         "Good for the big ones"
+        ],
+        [
+         "Typical horizon",
+         "Long term"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Hold instead of the plain coin to earn staking yield.",
+          "Buy at a discount to the underlying coin when markets panic, if you understand why the discount is there.",
+          "Use as collateral in lending, carefully, because looping (borrowing against it to buy more) raises your liquidation risk."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Smart contract bugs.",
+          "Slashing (validators losing part of their stake as a penalty).",
+          "Trading at a discount when everyone wants out at once.",
+          "Restaking adds layers of risk for small extra yield."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "Yields far above the market rate for staking that coin.",
+          "Unaudited LST forks."
+         ]
+        ]
+       ],
+       "tools": [
+        "defillama",
+        "dune"
+       ],
+       "links": [
+        {
+         "label": "Solana guide: LSTs",
+         "url": "/strategies/solana/"
+        }
+       ],
+       "facts": [
+        {
+         "text": "Yields on Oct 27, 2026: Lido stETH about 2.24%, JitoSOL about 4.75%, ether.fi weETH about 2.31% (DefiLlama). These change daily.",
+         "src": {
+          "label": "DefiLlama yields",
+          "url": "https://defillama.com/yields",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "defi",
+       "name": "DeFi tokens (AAVE, UNI, JUP)",
+       "tag": "High",
+       "summary": "Tokens of lending markets, exchanges and aggregators. Some share fees with holders or buy back tokens. Many only give voting rights.",
+       "examples": [
+        "Aave (AAVE)",
+        "Uniswap (UNI)",
+        "Jupiter (JUP)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "High"
+        ],
+        [
+         "Moves on",
+         "Usage, fees, buybacks, unlocks, market mood"
+        ],
+        [
+         "Liquidity",
+         "Good for the leaders"
+        ],
+        [
+         "Typical horizon",
+         "Weeks to months"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Compare fees and revenue with market value (price-to-fees), the same way you would value a business.",
+          "Buy leaders on pullbacks when usage is growing.",
+          "Avoid holding through big unlocks."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Hacks and exploits.",
+          "Regulation.",
+          "Tokens with no claim on fees.",
+          "They fall hardest when the market turns risk-off."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "Big TVL that is mostly paid-for incentives.",
+          "Anonymous team, no audit, upgradeable contracts with one key."
+         ]
+        ]
+       ],
+       "tools": [
+        "defillama",
+        "tokenterminal",
+        "dune",
+        "messari"
+       ],
+       "links": [],
+       "facts": [
+        {
+         "text": "In the week of Oct 19-25, 2026, AAVE fell about 10.3% and MORPHO about 16.9% while bitcoin fell 2.4%. DeFi led the dip. Aerodrome and Velodrome merged into one DEX called Aero.",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        }
+       ]
+      },
+      {
+       "id": "infra",
+       "name": "Infrastructure and oracle tokens (LINK, PYTH)",
+       "tag": "Medium to high",
+       "summary": "Oracles bring outside data, such as prices, on-chain so apps can use it. Other infrastructure tokens pay for storage, data indexing or cross-chain messaging.",
+       "examples": [
+        "Chainlink (LINK)",
+        "Pyth (PYTH)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "High"
+        ],
+        [
+         "Moves on",
+         "Integrations, partnerships, unlocks"
+        ],
+        [
+         "Liquidity",
+         "Good"
+        ],
+        [
+         "Typical horizon",
+         "Months"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Hold as a long-term bet that blockchains get used more.",
+          "Trade around big integration news, often selling into the headline."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Partnership news that never turns into revenue.",
+          "Large token supply still to unlock."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"Partnership\" claims you cannot find on the partner's own site."
+         ]
+        ]
+       ],
+       "tools": [
+        "tokenterminal",
+        "messari",
+        "defillama"
+       ],
+       "links": [],
+       "facts": []
+      },
+      {
+       "id": "memes-established",
+       "name": "Established memecoins (DOGE, BONK, WIF, PEPE)",
+       "tag": "Very high",
+       "summary": "Memecoins that have survived long enough to build deep liquidity and a lasting community. They move on attention and market mood.",
+       "examples": [
+        "Dogecoin (DOGE)",
+        "Bonk (BONK)",
+        "dogwifhat (WIF)",
+        "Pepe (PEPE)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Very high"
+        ],
+        [
+         "Moves on",
+         "Attention, the market, exchange listings"
+        ],
+        [
+         "Liquidity",
+         "Good for the top ones"
+        ],
+        [
+         "Typical horizon",
+         "Days to weeks"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Trend and level trading with stops; no leverage.",
+          "Rotation: attention moves between memecoins in waves.",
+          "Take profit into hype spikes."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Drawdowns of 70-90% are common.",
+          "The whole category can go out of fashion."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "Copycat tickers on other chains.",
+          "Paid influencer waves."
+         ]
+        ]
+       ],
+       "tools": [
+        "dexscreener",
+        "tradingview",
+        "lunarcrush",
+        "bubblemaps"
+       ],
+       "links": [
+        {
+         "label": "Memecoin playbook",
+         "url": "/guide/meme-trading-playbook/"
+        },
+        {
+         "label": "Solana guide: memecoins",
+         "url": "/strategies/solana/"
+        }
+       ],
+       "facts": [
+        {
+         "text": "Memecoins stayed green in the week of Oct 19-25, 2026 (PEPE about +9.1%) while DeFi tokens fell. Attention-driven coins can decouple from the rest of the market, in both directions.",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        }
+       ]
+      },
+      {
+       "id": "memes-new",
+       "name": "New memecoin launches (pump.fun and fresh pairs)",
+       "tag": "Extreme",
+       "summary": "Brand-new tokens launched in minutes, often on a bonding curve (a pricing formula where the price rises automatically as people buy) before they 'graduate' to a DEX pool.",
+       "examples": [
+        "Fresh pump.fun launches (no specific coin named on purpose)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Extreme"
+        ],
+        [
+         "Moves on",
+         "Minutes of attention, bots, insiders"
+        ],
+        [
+         "Liquidity",
+         "Thin"
+        ],
+        [
+         "Typical horizon",
+         "Minutes to hours"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Follow the full playbook: safety checks, survival hold, a small fixed size, partial profits at 2x, and a time stop."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Most launches go to zero.",
+          "Rugs and honeypots.",
+          "Bundled insider supply.",
+          "Fees of several % per round trip."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "Anything pushed hard in its first hour.",
+          "Big holder clusters.",
+          "Authorities still on."
+         ]
+        ]
+       ],
+       "tools": [
+        "rugcheck",
+        "bubblemaps",
+        "solscan",
+        "gmgn",
+        "axiom"
+       ],
+       "links": [
+        {
+         "label": "Memecoin playbook",
+         "url": "/guide/meme-trading-playbook/"
+        },
+        {
+         "label": "New-launch forensics",
+         "url": "/guide/scams/#launch-forensics"
+        }
+       ],
+       "facts": [
+        {
+         "text": "Solidus Labs reported that 98.6% of pump.fun tokens created between January 2024 and March 2025 fell below $1,000 of liquidity (pump.fun disputed the framing).",
+         "src": {
+          "label": "Solidus Labs, Solana rug pulls and pump-and-dumps report",
+          "url": "https://www.soliduslabs.com/reports/solana-rug-pulls-pump-dumps-crypto-compliance",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "ai",
+       "name": "AI and AI-agent tokens (VIRTUAL, TAO)",
+       "tag": "Very high",
+       "summary": "Tokens linked to AI: networks that reward machine-learning work, such as Bittensor's TAO, and launchpads for on-chain AI agents, such as Virtuals.",
+       "examples": [
+        "Bittensor (TAO)",
+        "Virtuals Protocol (VIRTUAL)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Very high"
+        ],
+        [
+         "Moves on",
+         "AI news cycles, launches"
+        ],
+        [
+         "Liquidity",
+         "Mixed"
+        ],
+        [
+         "Typical horizon",
+         "Days to months"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Trade the narrative in waves, taking profit into AI headlines.",
+          "Separate real usage from 'AI' labels on token pages."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Many 'AI' tokens have no product.",
+          "AI stock sell-offs spill over into these tokens."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"AI trading bot\" tokens that promise returns.",
+          "Agent tokens where the dev holds a large share of supply."
+         ]
+        ]
+       ],
+       "tools": [
+        "dexscreener",
+        "lunarcrush",
+        "messari"
+       ],
+       "links": [],
+       "facts": []
+      },
+      {
+       "id": "depin",
+       "name": "DePIN (HNT, RENDER)",
+       "tag": "High",
+       "summary": "DePIN stands for decentralised physical infrastructure networks. They pay tokens to people who provide real-world resources such as wireless coverage, GPU compute or storage.",
+       "examples": [
+        "Helium (HNT)",
+        "Render (RENDER)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "High"
+        ],
+        [
+         "Moves on",
+         "Network growth, revenue, the narrative"
+        ],
+        [
+         "Liquidity",
+         "Good for the leaders"
+        ],
+        [
+         "Typical horizon",
+         "Months"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Compare revenue from real customers with token emissions (newly created tokens paid out).",
+          "Hold as a long-term bet if usage is growing."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Emissions can be far bigger than real demand.",
+          "Hardware costs if you take part as a provider."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"Buy this miner to earn passive income\" sales pitches."
+         ]
+        ]
+       ],
+       "tools": [
+        "messari",
+        "tokenterminal",
+        "dune"
+       ],
+       "links": [],
+       "facts": []
+      },
+      {
+       "id": "rwa",
+       "name": "Real-world assets, RWA (ONDO, BUIDL)",
+       "tag": "Low to medium",
+       "summary": "Real-world assets are tokens that represent things like government bonds, money-market funds or stocks on-chain. Some are only open to qualified or institutional investors.",
+       "examples": [
+        "Ondo (ONDO)",
+        "BlackRock's tokenised fund (BUIDL)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Low for the asset tokens, high for governance tokens"
+        ],
+        [
+         "Moves on",
+         "Regulation, institutional adoption"
+        ],
+        [
+         "Liquidity",
+         "Varies"
+        ],
+        [
+         "Typical horizon",
+         "Months"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Hold tokenised bond funds for yield, where you are allowed to.",
+          "Trade RWA governance tokens on adoption news."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Legal and issuer risk.",
+          "Redemption limits.",
+          "Fakes using real brand names."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"Tokenised stock airdrops\" and claim pages.",
+          "RWA tokens you cannot redeem anywhere."
+         ]
+        ]
+       ],
+       "tools": [
+        "defillama",
+        "messari"
+       ],
+       "links": [],
+       "facts": [
+        {
+         "text": "JPMorgan brought tokenised money-market funds to Solana, and the SEC added tokenisation to its fiscal 2027 exam priorities (both reported in the week of Oct 19-25, 2026).",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        }
+       ]
+      },
+      {
+       "id": "gaming",
+       "name": "Gaming and NFT tokens (IMX, AXS)",
+       "tag": "Very high",
+       "summary": "Tokens of gaming networks, games and NFT ecosystems. They are used for in-game items, fees and rewards.",
+       "examples": [
+        "Immutable (IMX)",
+        "Axie Infinity (AXS)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Very high"
+        ],
+        [
+         "Moves on",
+         "Game launches, player numbers"
+        ],
+        [
+         "Liquidity",
+         "Mixed"
+        ],
+        [
+         "Typical horizon",
+         "Weeks"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Trade around big game launches.",
+          "Check real player numbers, not just trailers."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Play-to-earn economies that collapse when new players stop coming.",
+          "Bridge hacks."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "Fake game 'beta' downloads (often malware).",
+          "NFT mint links in DMs."
+         ]
+        ]
+       ],
+       "tools": [
+        "dune",
+        "messari"
+       ],
+       "links": [],
+       "facts": []
+      },
+      {
+       "id": "perps",
+       "name": "Perpetuals and derivatives tokens (HYPE, DYDX)",
+       "tag": "High",
+       "summary": "Tokens of perpetual-futures exchanges. Perpetuals (perps) are futures with no expiry date, often traded with leverage. Some of these tokens get value from buybacks paid for by fees.",
+       "examples": [
+        "Hyperliquid (HYPE)",
+        "dYdX (DYDX)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "High"
+        ],
+        [
+         "Moves on",
+         "Trading volume, fees, buybacks, competition"
+        ],
+        [
+         "Liquidity",
+         "Good for the leaders"
+        ],
+        [
+         "Typical horizon",
+         "Weeks to months"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Compare fees and buybacks with market value.",
+          "Farm points on new venues only with money you would trade anyway (see How to earn)."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Leverage liquidations: in one day in October 2026, more than $800M of positions were force-closed.",
+          "Exchange or oracle exploits.",
+          "Points programmes that never become a token."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "Venues with self-reported volume and no audit.",
+          "Points 'guaranteed to convert'."
+         ]
+        ]
+       ],
+       "tools": [
+        "coinglass",
+        "defillama",
+        "tokenterminal"
+       ],
+       "links": [
+        {
+         "label": "How to earn: points farming",
+         "url": "/guide/earn/#airdrops"
+        }
+       ],
+       "facts": [
+        {
+         "text": "On Oct 24, 2026 more than $810M was liquidated across the market in 24 hours, about $689M of it long positions (Bitcoin.com News via CoinLab).",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        },
+        {
+         "text": "In 2026 some perp DEX points programmes paid out (for example Lighter gave 25% of LIT to points holders on Dec 30, 2025), while others ended with no token (StandX cancelled its token on Oct 15, 2026).",
+         "src": {
+          "label": "dexwatch, perp DEX points programmes in Q4 2026",
+          "url": "https://dexwatch.com/guides/perp-dex-points-programs/",
+          "date": "2026-10-25"
+         }
+        }
+       ]
+      },
+      {
+       "id": "prediction",
+       "name": "Prediction markets (Polymarket, Kalshi)",
+       "tag": "Varies",
+       "summary": "Markets where you buy 'yes' or 'no' shares on real-world events. Each share pays $1 if it is right and $0 if it is wrong. You trade outcome shares, not a coin.",
+       "examples": [
+        "Polymarket",
+        "Kalshi"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Event-driven; goes to $0 or $1 at the end"
+        ],
+        [
+         "Moves on",
+         "News, odds"
+        ],
+        [
+         "Liquidity",
+         "Deep on big markets, thin on small ones"
+        ],
+        [
+         "Typical horizon",
+         "Days to months"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Only bet where you have a real information edge.",
+          "Treat the price as a probability: buying 'yes' at $0.30 means you think the chance is above 30%.",
+          "Size small, because every share can go to zero."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Rules about how a market resolves can be ambiguous.",
+          "Legal limits in some countries.",
+          "Thin markets are easy to move."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"Insider tips\" groups selling picks.",
+          "Copycat prediction-market sites."
+         ]
+        ]
+       ],
+       "tools": [],
+       "links": [],
+       "facts": [
+        {
+         "text": "October 2026 was reported as a record month for prediction markets, with Kalshi passing Polymarket in monthly volume for the first time. The two venues count volume differently, so compare with care.",
+         "src": {
+          "label": "Predictable, Kalshi overtakes Polymarket as October trading surges",
+          "url": "https://predictable.gg/news/2026/10/21/kalshi-overtakes-polymarket-in-october/",
+          "date": "2026-10-21"
+         }
+        },
+        {
+         "text": "How prediction-market venues count volume.",
+         "src": {
+          "label": "pdata, how prediction-market venues count volume",
+          "url": "https://pdata.world/research/prediction-market-volume",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      },
+      {
+       "id": "privacy",
+       "name": "Privacy coins (ZEC, XMR)",
+       "tag": "High",
+       "summary": "Coins that can hide who sent how much to whom. Zcash makes privacy optional. Monero makes it the default.",
+       "examples": [
+        "Zcash (ZEC)",
+        "Monero (XMR)"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "High"
+        ],
+        [
+         "Moves on",
+         "Upgrades, regulation, the privacy narrative"
+        ],
+        [
+         "Liquidity",
+         "Shrinking on some exchanges"
+        ],
+        [
+         "Typical horizon",
+         "Weeks to months"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Trade the narrative around upgrades.",
+          "Hold small if you value privacy."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Exchange delistings in some countries.",
+          "Narrative-driven rallies can reverse hard."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "\"Untraceable\" mixers promising to clean funds (often scams or illegal)."
+         ]
+        ]
+       ],
+       "tools": [
+        "coingecko",
+        "tradingview"
+       ],
+       "links": [],
+       "facts": [
+        {
+         "text": "Zcash was the best top-10 performer in the week of Oct 19-25, 2026 (about +7.3%) ahead of its NU7 upgrade, planned for early November.",
+         "src": {
+          "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
+          "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
+          "date": "2026-10-26"
+         }
+        }
+       ]
+      },
+      {
+       "id": "launches",
+       "name": "New launches, presales and airdrops",
+       "tag": "Extreme to high",
+       "summary": "A TGE (token generation event) is when a new token first goes live. Presales sell tokens before launch. Airdrops and points reward early users with tokens.",
+       "examples": [
+        "Upcoming TGEs listed by trackers (no picks)",
+        "Points programmes on new apps"
+       ],
+       "glance": [
+        [
+         "Volatility",
+         "Extreme at launch"
+        ],
+        [
+         "Moves on",
+         "Unlocks, airdrop selling, listings"
+        ],
+        [
+         "Liquidity",
+         "Unknown until launch"
+        ],
+        [
+         "Typical horizon",
+         "Days"
+        ]
+       ],
+       "lists": [
+        [
+         "Ways people trade or hold it",
+         [
+          "Farm airdrops with small, real usage you would do anyway.",
+          "Wait for the post-launch selling to settle before buying.",
+          "Read the token unlock schedule before buying."
+         ]
+        ],
+        [
+         "Main risks",
+         [
+          "Most presales underperform or fail.",
+          "Airdrops can be smaller than you expect, or cancelled.",
+          "Fake claim sites appear the day a token launches."
+         ]
+        ],
+        [
+         "Red flags",
+         [
+          "Presales sold through DMs or Telegram only.",
+          "\"Guaranteed listing\" or guaranteed-multiple claims.",
+          "No public team, no audit, no published token supply split."
+         ]
+        ]
+       ],
+       "tools": [
+        "defillama",
+        "messari",
+        "rugcheck"
+       ],
+       "links": [
+        {
+         "label": "How to earn: airdrops and points",
+         "url": "/guide/earn/#airdrops"
+        },
+        {
+         "label": "Fake airdrops",
+         "url": "/guide/scams/#fake-airdrops"
+        }
+       ],
+       "facts": [
+        {
+         "text": "TGE Index listed one dated November 2026 launch and nine more with only a 'Q4 2026' window. It scores what each project has disclosed (many scored 1-3 out of 8), not whether the token is any good.",
+         "src": {
+          "label": "TGE Index, token launches in November 2026",
+          "url": "https://tgeindex.com/tge/november-2026/",
+          "date": "2026-10-27",
+          "read": true
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "how-to-use",
+   "title": "How to use this page",
+   "blocks": [
+    {
+     "type": "list",
+     "items": [
+      "Pick the type, then use the risk rules and sizing from the memecoin playbook, scaled to how volatile that type is.",
+      "For Solana-specific detail, read the Solana guide.",
+      "Look up any unfamiliar word in the glossary."
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Memecoin playbook",
+       "url": "/guide/meme-trading-playbook/"
+      },
+      {
+       "label": "Solana strategies",
+       "url": "/strategies/solana/"
+      },
+      {
+       "label": "Glossary",
+       "url": "/guide/glossary/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "slug": "coin-types",
+ "updated": "2026-10-27"
+}
