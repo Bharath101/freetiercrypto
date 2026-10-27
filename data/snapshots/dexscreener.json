@@ -1,0 +1,21 @@
+{
+ "id": "dexscreener",
+ "url": "https://docs.dexscreener.com/api/reference",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "41d5649bf313c23c621b93a0038fa213cfc1a274f38003037b92641737dfc1b2",
+ "lines": [
+  "Get the latest token profiles (rate-limit 60 requests per minute)",
+  "Get recently updated token profiles (rate-limit 60 requests per minute)",
+  "Get the latest token community takeovers (rate-limit 60 requests per minute)",
+  "Get the latest ads (rate-limit 60 requests per minute)",
+  "Get the latest boosted tokens (rate-limit 60 requests per minute)",
+  "Get the tokens with most active boosts (rate-limit 60 requests per minute)",
+  "Check paid orders for a token (rate-limit 60 requests per minute)",
+  "Get one or multiple pairs by chain and pair address (rate-limit 300 requests per minute)",
+  "Search for pairs matching query (rate-limit 300 requests per minute)",
+  "Get the pools of a given token address (rate-limit 300 requests per minute)",
+  "Get one or multiple pairs by token address (rate-limit 300 requests per minute)",
+  "Get trending metas (rate-limit 60 requests per minute)",
+  "Get meta information for a given slug (rate-limit 60 requests per minute)"
+ ]
+}

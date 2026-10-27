@@ -1,0 +1,21 @@
+{
+ "id": "tokentax",
+ "url": "https://tokentax.co/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "6803d19a7d3319b4a6d5ab06eea24e99896f6fc1a47afccbbfa3e280999d592c",
+ "lines": [
+  "$49",
+  "/tax year",
+  "Up to 100 transactions",
+  "IRS audit trail transaction report",
+  "$199",
+  "Up to 5,000 transactions",
+  "Add 20,000 transactions",
+  "$1,999",
+  "Up to 20,000 transactions",
+  "$3,499",
+  "Up to 30,000 CEX transactions",
+  "Custom transaction counts",
+  "unsupported or cross-chain transactions."
+ ]
+}

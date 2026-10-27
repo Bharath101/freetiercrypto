@@ -1,0 +1,30 @@
+{
+ "id": "threecommas",
+ "url": "https://3commas.io/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "cfe6dff1336f1aec2e3227e7c85ef79637f939a412fb2c3f2763200430683334",
+ "lines": [
+  "Try it for Free!",
+  "Monthly",
+  "Annual",
+  "$15",
+  "$20",
+  "$60",
+  "3 months free",
+  "Start free trial",
+  "$38",
+  "$50",
+  "$144",
+  "$105",
+  "$140",
+  "$420",
+  "Compare features by plan",
+  "Try for free",
+  "Is it possible to upgrade my plan after payment?",
+  "Can I downgrade my plan after payment?",
+  "Yes, you can downgrade your plan after payment. You have two options:",
+  "If you have an annual plan and wish to downgrade, request a refund for the unused time as per our",
+  ". This will terminate your current plan, allowing you to choose any other plan.",
+  "Can I buy a subscription during the Trial?"
+ ]
+}

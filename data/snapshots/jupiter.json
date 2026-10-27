@@ -1,0 +1,23 @@
+{
+ "id": "jupiter",
+ "url": "https://portal.jup.ag/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "ca8b3ea832b0ddf3a72d4775607ff261e7e390ec29d6c0b153d0737d548ef0e1",
+ "lines": [
+  "Monthly",
+  "Annual",
+  "2 months free",
+  "Free",
+  "Unlimited usage",
+  "1 request/second",
+  "Includes 25M credits each month. Additional usage: $1 per million credits.",
+  "25M included credits",
+  "10 requests/second",
+  "Includes 100M credits each month. Additional usage: $1 per million credits.",
+  "100M included credits",
+  "50 requests/second",
+  "Includes 500M credits each month. Additional usage: $1 per million credits.",
+  "500M included credits",
+  "150 requests/second"
+ ]
+}

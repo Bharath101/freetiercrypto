@@ -1,0 +1,25 @@
+{
+ "id": "zenledger",
+ "url": "https://zenledger.io/pricing/",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "9cf8c27c3234925360525920133973969a9ce9aada70017c46a3f62edb9ab155",
+ "lines": [
+  "$49",
+  "100 transactions or less​",
+  "Select Plan",
+  "$199",
+  "5,000 transactions or less​",
+  "$399",
+  "15,000 transactions or less​",
+  "Unlimited Transactions +$600",
+  "*Unlimited also includes 1 hr of live support",
+  "Annual Fee",
+  "Transactions",
+  "Unlimited Exchanges",
+  "FinCen/FBAR Alert",
+  "Personal product consulting available per request at $150/hr as an add-on.",
+  "Tax Pro Prepared Plan - Single Year",
+  "Tax Pro Prepared Plan - Multi Year",
+  "Not sure which plan is right for you?​"
+ ]
+}

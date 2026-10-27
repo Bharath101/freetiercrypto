@@ -1,0 +1,21 @@
+{
+ "id": "gmgn",
+ "url": "https://docs.gmgn.ai/index/gmgn-fees-settings",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "0c7693d848d0805aea9358271952eff14de38e521f6f91e565fac8db1664d0a5",
+ "lines": [
+  "ALERT: Sniper New, Following, Limit Orders",
+  "Transaction/Limit Order failure",
+  "Wallet Alert on Telegram",
+  "GMGN TG Alert Channel＆Bot",
+  "Auto Buy: Auto Buy ＆ Limit buy",
+  "🤝🏻 Cooperation-Referral:💰Refer friends to earn rebate-30% rebates, easily earn over $8000 monthly",
+  "🤝🏻 Cooperation-Referral:📸Share transaction profits",
+  "✅Tips: You can get details of various transaction fees by querying the transaction hash at",
+  "✅ Transaction on-chain fee = Priority fee + Tip fee + Gas",
+  ": transactions sent to all nodes, very fast",
+  ": transactions sent to limited nodes, fast, may be front-run",
+  ": transactions sent to safe nodes, slightly slower, with compensation",
+  ": Transaction submission - Sends transactions to the blockchain for validation and recording"
+ ]
+}

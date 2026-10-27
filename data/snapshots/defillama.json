@@ -1,0 +1,31 @@
+{
+ "id": "defillama",
+ "url": "https://defillama.com/subscription",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "74a05bef4661eb3858c79b8a89d8143df5eabf08a06480ad1d176816f689017c",
+ "lines": [
+  "Monthly",
+  "Yearly",
+  "Get 2 months free",
+  "Free",
+  "$0",
+  "LlamaAI free",
+  ": 1 free question a day, plus 3 ready-made ✦ questions and 1 research report every 14 days",
+  "$40.83",
+  "7-day free trial available",
+  "Includes all Free tier features",
+  "Includes all Pro tier features",
+  "Increased rate limit: 1,000 requests / minute, 1M calls / month",
+  "$0.60 per 1,000 calls beyond the 1M limit",
+  "Includes all Pro & API tier features",
+  "$490/year",
+  "Free public API endpoints",
+  "Increased rate limits (1000 requests/minute)",
+  "Increased monthly call volume (1M calls/month)",
+  "$0.60 per 1,000 additional calls after 1M limit",
+  "Yes, crypto payment is available for monthly and yearly subscriptions on most major EVM chains.",
+  "7-day free trials",
+  "What happens if I hit my API rate limit?",
+  "You can continue to use the API, but additional calls beyond your plan’s limits will be charged at $0.60 per 1,000 calls."
+ ]
+}

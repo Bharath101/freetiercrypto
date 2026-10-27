@@ -1,0 +1,11 @@
+{
+ "id": "koinx",
+ "url": "https://www.koinx.com/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "dcc699a2c7101fc0c58b0490d8b862cfb6e8e3628b3eccdcbd2a82bacb3b9e04",
+ "lines": [
+  "Number of Transactions",
+  "Unlimited Exchanges & Wallets Integration",
+  "Free Crypto Tax Calculators"
+ ]
+}

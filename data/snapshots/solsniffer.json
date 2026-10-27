@@ -1,0 +1,31 @@
+{
+ "id": "solsniffer",
+ "url": "https://solsniffer.com/api-service",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "187cf8a3adb7d7eaa4c0f5476ec8e21fdf268b1234d2d983421a991c70cc4537",
+ "lines": [
+  "Customizable security alerts",
+  "Start for free",
+  "Pay Monthly",
+  "Save with Yearly",
+  "Free",
+  "100 API calls/month",
+  "Start Free",
+  "$47",
+  "$564",
+  "$525/year (Save 7%)",
+  "5,000 API calls/month",
+  "$197",
+  "$2,364",
+  "$2,199/year (Save 7%)",
+  "30,000 API calls/month",
+  "$997",
+  "$11,964",
+  "$11,127/year (Save 7%)",
+  "230,000 API calls/month",
+  "On request",
+  "Unlimited API calls",
+  "Is there a free trial available?",
+  "Yes, we offer a free trial to test our services."
+ ]
+}

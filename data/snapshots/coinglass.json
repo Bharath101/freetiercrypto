@@ -1,0 +1,15 @@
+{
+ "id": "coinglass",
+ "url": "https://www.coinglass.com/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "88e00851fd99db707edcf625a67e33acf03ea9cb93e2f841029fd1e0c746c59f",
+ "lines": [
+  "Get started by picking the plan that matches your goals",
+  "Billed monthly",
+  "Billed annually",
+  "Rate limit/min",
+  "Is there a discount for annual payments?",
+  "How can I upgrade my API plan?",
+  "Alerts"
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "checked_at": "2026-10-27T08:07:35Z",
+ "checked": 67,
+ "unchanged": 0,
+ "baselined": [
+  "tradingview",
+  "trendspider",
+  "coinigy",
+  "gocharting",
+  "coingecko",
+  "coinmarketcap",
+  "coinglass",
+  "lunarcrush",
+  "threecommas",
+  "cryptohopper",
+  "bitsgap",
+  "wundertrading",
+  "gunbot",
+  "haasonline",
+  "koinly",
+  "cointracker",
+  "coinledger",
+  "zenledger",
+  "tokentax",
+  "koinx",
+  "cointracking",
+  "ledger",
+  "trezor",
+  "tangem",
+  "keystone",
+  "metamask",
+  "rabby",
+  "zerion",
+  "cryptoquant",
+  "santiment",
+  "dune",
+  "arkham",
+  "tokenterminal",
+  "defillama",
+  "bubblemaps",
+  "coinstats",
+  "delta",
+  "kubera",
+  "debank",
+  "cryptocurrencyalerting",
+  "whalealert",
+  "dexscreener",
+  "dextools",
+  "geckoterminal",
+  "birdeye",
+  "jupiter",
+  "jumper",
+  "goplus",
+  "jupitertokens",
+  "solsniffer",
+  "tokensniffer",
+  "solscan",
+  "gmgn"
+ ],
+ "changed": [],
+ "failed": [
+  {
+   "id": "altfins",
+   "url": "https://altfins.com/pricing/",
+   "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "coinrule",
+   "url": "https://coinrule.com/pricing/",
+   "error": "fetch_http: HTTPError: 404 Client Error: Not Found for url: https://coinrule.com/pricing/"
+  },
+  {
+   "id": "tradesanta",
+   "url": "https://tradesanta.com/en/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://tradesanta.com/en/pricing"
+  },
+  {
+   "id": "summ",
+   "url": "https://summ.com/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://summ.com/pricing"
+  },
+  {
+   "id": "phantom",
+   "url": "https://phantom.com/",
+   "error": "fetch_http: only 1 pricing lines"
+  },
+  {
+   "id": "nansen",
+   "url": "https://www.nansen.ai/plans",
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpdw9m8mp5', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+  },
+  {
+   "id": "glassnode",
+   "url": "https://studio.glassnode.com/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
+  },
+  {
+   "id": "messari",
+   "url": "https://messari.io/pricing",
+   "error": "fetch_http: HTTPError: 429 Client Error: Too Many Requests for url: https://messari.io/pricing"
+  },
+  {
+   "id": "oneinch",
+   "url": "https://business.1inch.com/portal/pricing",
+   "error": "fetch_chrome: OSError: [Errno 39] Directory not empty: '/tmp/tmpga56fa6s/Default'"
+  },
+  {
+   "id": "rango",
+   "url": "https://docs.rango.exchange/",
+   "error": "fetch_http: only 1 pricing lines"
+  },
+  {
+   "id": "zapper",
+   "url": "https://zapper.xyz/",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://zapper.xyz/"
+  },
+  {
+   "id": "rugcheck",
+   "url": "https://api.rugcheck.xyz/swagger/index.html",
+   "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "axiom",
+   "url": "https://docs.axiom.trade/getting-started/fees/axiom-fees",
+   "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "photon",
+   "url": "https://photon-sol.tinyastro.io/",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://photon-sol.tinyastro.io/"
+  }
+ ]
+}

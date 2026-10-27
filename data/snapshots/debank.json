@@ -1,0 +1,12 @@
+{
+ "id": "debank",
+ "url": "https://cloud.debank.com/",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "3eb914bf55d902cf6a9ac73de7d620eefa38e04291ab5400fad9591847748eff",
+ "lines": [
+  "Enhanced transaction pre-execution",
+  "1 million units / 200 USDC",
+  "20% discount for purchases of $100,000 and above",
+  "For purchases of $1,000,000 and above, contact us for specific discounts"
+ ]
+}

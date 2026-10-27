@@ -1,0 +1,31 @@
+{
+ "id": "birdeye",
+ "url": "https://data.birdeye.so/docs/guides/payment/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "249fff2337dbbeb8bcd44b87ccfccd300a05382d23256bcc2d42027eb68755dc",
+ "lines": [
+  "Rate Limit (E)",
+  "$39",
+  "$23",
+  "$99",
+  "$19.9",
+  "$199",
+  "$9.9",
+  "$499",
+  "$6.9",
+  "$899",
+  "$4.5",
+  "$1350",
+  "$2050",
+  "$3.5",
+  "*rps: request per second",
+  "** rpm: request per minute",
+  "plan, which includes",
+  "$699/month",
+  "Monthly plan:",
+  "$699",
+  "$6.90 / 1M CUs",
+  "$4.50 / 1M CUs",
+  "$3.50 / 1M CUs"
+ ]
+}

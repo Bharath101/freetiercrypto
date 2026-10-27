@@ -1,0 +1,33 @@
+{
+ "id": "dune",
+ "url": "https://dune.com/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "556ff6f0c712e44f03121c0ff9fb4dbcfb4ab9f91976ad016af50aa53f61e00d",
+ "lines": [
+  "Monthly",
+  "Yearly",
+  "Save 15% with yearly",
+  "Free",
+  "4,000 credits",
+  "25,000 credits",
+  "100,000+ credits",
+  "Number of credits per month",
+  "Price per extra credit",
+  "$0.016",
+  "$0.014",
+  "Data uploads/writes (credits per GB)",
+  "Credits per MB (API or CSV)",
+  "API Calls per minute",
+  "Alerts",
+  "Uses plan credits",
+  "How credits work",
+  "Learn more about credits",
+  "~3.27 credits",
+  "~8.46 credits",
+  "~18.72 credits",
+  "How does the monthly request limit work?",
+  "What happens if I exceed my monthly limit?",
+  "Can I change my plan anytime?",
+  "Do you offer annual discounts?"
+ ]
+}

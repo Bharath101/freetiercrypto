@@ -1,0 +1,21 @@
+{
+ "id": "tokenterminal",
+ "url": "https://tokenterminal.com/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "1d4a30849ee41d0bf98bf95a4864bf3d8b588acc8a6af075f679d578c4327aa5",
+ "lines": [
+  "Choose your plan",
+  "Monthly",
+  "Annual",
+  "Free",
+  "$0",
+  "Sign up for Free",
+  "$350",
+  "Unlimited custom dashboards",
+  "Start 7 day trial",
+  "250,000 requests/day",
+  "Need a custom plan or not sure which one is right for you?",
+  "Unlimited",
+  "settings page. You will be charged monthly for each user you add to your team."
+ ]
+}

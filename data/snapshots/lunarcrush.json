@@ -1,0 +1,33 @@
+{
+ "id": "lunarcrush",
+ "url": "https://lunarcrush.com/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "b979eeb7951908a1323dee4ae8ce010c3e4fc459e0d41f7d249b06253502e4c3",
+ "lines": [
+  "$1 per 1,000 requests",
+  "One flat price · credits never expire · shared across API, MCP and CLI",
+  "Buy credits",
+  "$5",
+  "$20",
+  "$50",
+  "$100",
+  "any amount from $5",
+  "20,000 requests",
+  "· credits never expire",
+  "Or type any amount from $5.",
+  "Add $10 when you drop under 1,000 credits · up to $100 a month",
+  "Add $10 under 1,000 credits",
+  "Get your API key · $20",
+  "Only successful requests use a credit · errors and rate limits are free",
+  "Only successful requests use a credit",
+  "1,000 free credits when you sign up",
+  "Using credits every day? Subscriptions from $72/mo include Discover.",
+  "Not sure which plan to choose? Ask Sophie, our AI plan advisor.",
+  "What are the request limits on each plan?",
+  "What happens if I go over my limit?",
+  "Requests over the limit return a rate-limit error (429) and are not billed. Upgrade anytime to raise your limits.",
+  "Is there a free plan or a free trial?",
+  "What payment methods do you accept for plan subscriptions?",
+  "Can I change my plan later if I want to upgrade or downgrade?"
+ ]
+}

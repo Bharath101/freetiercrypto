@@ -1,0 +1,15 @@
+{
+ "id": "cryptohopper",
+ "url": "https://www.cryptohopper.com/pricing",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "42b58cfeeb25668b8bd67b9ed5785f1f37e970bd8d342283352141304186eadd",
+ "lines": [
+  "$9.99 to $99.99/month",
+  "Monthly",
+  "Try 3 days for free!",
+  "billed annually",
+  "Save $58 compared to monthly",
+  "Save $138 compared to monthly",
+  "Save $258 compared to monthly"
+ ]
+}

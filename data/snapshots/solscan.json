@@ -1,0 +1,17 @@
+{
+ "id": "solscan",
+ "url": "https://pro-api.solscan.io/pro-api-docs/v2.0/docs/packages_endpoint_allocation",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "3b5697dda21999b9c7c9aaa777eac5f84e49323a4082704d0b06473c02606f04",
+ "lines": [
+  "Rate Limits by Plan",
+  "Plan",
+  "Price/mo",
+  "Monthly CU",
+  "Rate Limit (req/60s)",
+  "$49",
+  "$199",
+  "$399",
+  "$1,099"
+ ]
+}

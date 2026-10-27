@@ -1,0 +1,12 @@
+{
+ "id": "rabby",
+ "url": "https://rabby.io/",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "4ff2d3ab2a1cda2b22c52c22405265acbb16efbfa2c61f21fbdc827037d13cda",
+ "lines": [
+  "Just saved me from signing a malicious transaction & having my wallet drained.",
+  "Just made my first transaction with @Rabby_io and I immediately needed to shift my mindset away from bad UX habits.",
+  "No need to switch networks before making a transaction, Rabby just handles it under the hood.",
+  "You can just deposit min $20 into that account and it can pay for gas on any chain that the wallet supports."
+ ]
+}

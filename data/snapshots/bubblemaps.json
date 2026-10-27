@@ -1,0 +1,20 @@
+{
+ "id": "bubblemaps",
+ "url": "https://pro.bubblemaps.io/api/plans",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "ea8bf4c4e7f2434eb934d06dd43234bcf77b58e96753b71f4954560b0e446e41",
+ "lines": [
+  "Choose the plan that fits your needs. Scale your integration with flexible credit-based pricing.",
+  "Monthly",
+  "Yearly",
+  "Crypto payments on yearly plans",
+  "$170",
+  "$136/mo",
+  "billed yearly",
+  "100,000 Credits / month",
+  "$850",
+  "$680/mo",
+  "750,000 Credits / month",
+  "Custom credits"
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "jumper",
+ "url": "https://docs.li.fi/",
+ "fetched_at": "2026-10-27T08:07:35Z",
+ "sha256": "5330970079ae082d4d2ee596fc5dcd88498e2c45038d959ec743894e48063703",
+ "lines": [
+  "Partnership Requests",
+  "End-to-end Transaction Example",
+  "Solana Transaction Example",
+  "Bitcoin Transaction Example",
+  "Transaction Status Tracking",
+  "Monthly Updates",
+  "Cross-chain contract calls",
+  "Multi-step transaction flows (bridge → swap → zap → deposit)",
+  "Transactions with built-in monitoring and fallback logic to maximise success.",
+  "If a provider fails or a route becomes invalid, LI.FI automatically re-routes to maximise transaction success.",
+  "Failed transactions"
+ ]
+}
