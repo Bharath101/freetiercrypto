@@ -313,7 +313,7 @@
        ],
        "facts": [
         {
-         "text": "On Oct 25, 2026, only 2.26% of the 40,315 coins launched on pump.fun graduated, and 72.2% of graduates closed the day below their graduation market cap.",
+         "text": "On Oct 25, 2026, only 2.26% of the 40,315 coins launched on pump.fun graduated, and 72.2% of the 596 tracked graduates (430) closed below their graduation market cap.",
          "src": {
           "label": "pumpdata.fun, pump.fun stats for Oct 25, 2026",
           "url": "https://pumpdata.fun/stats/2026-10-25",
@@ -441,7 +441,7 @@
       [
        "Aave v3 USDC (Ethereum)",
        "Stablecoin lending",
-       "3.69%",
+       "3.70%",
        "4.36%",
        "$181M"
       ],
@@ -545,7 +545,7 @@
      "type": "facts",
      "items": [
       {
-       "text": "Market backdrop: BTC closed the week of Oct 19-25 at $80,154 (down 2.4%), its third losing week in a row and well below its all-time high of $126,080 (Oct 6, 2025). More than $810M of positions were liquidated on Oct 24. A Fed decision is due Oct 28.",
+       "text": "Market backdrop: BTC closed the week of Oct 19-25 at $80,154 (the weekly close, down 2.4%; range $79,221-$84,898), its third losing week in a row and well below its all-time high of $126,080 (Oct 6, 2025). More than $810M of positions were liquidated in 24 hours on Oct 24, about $689M of it longs. A Fed decision is due Oct 28.",
        "src": {
         "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
         "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
@@ -561,15 +561,16 @@
        }
       },
       {
-       "text": "Solana's Alpenglow upgrade went live on Oct 21, 2026, targeting finality of about 150 milliseconds.",
+       "text": "Solana's Alpenglow upgrade went live on Oct 21, 2026, at epoch 1064, targeting finality of about 150 milliseconds, down from about 12.8 seconds.",
        "src": {
-        "label": "CoinDesk, Solana's Alpenglow goes live",
-        "url": "https://www.coindesk.com/tech/2026/10/21/solana-s-alpenglow-its-biggest-network-overhaul-since-2020-goes-live-wednesday",
-        "date": "2026-10-21"
+        "label": "Solana, Alpenglow upgrade page",
+        "url": "https://solana.com/upgrades/alpenglow",
+        "date": "2026-10-27",
+        "read": true
        }
       },
       {
-       "text": "Points season: Aster's Stage 6 claims run Oct 28 to Nov 28, and StandX switched from a token to DUSD rewards from Nov 1. Variational plans a VAR token in Q4 2026 with 32% to points holders.",
+       "text": "Points season: Aster's Stage 6 runs Oct 28 to Nov 28, 2026 (starting 12:00 UTC), and StandX switched from a token to DUSD rewards from Nov 1 to Dec 31, 2026. Variational plans a VAR token in Q4 2026 with 32% to points holders.",
        "src": {
         "label": "dexwatch, perp DEX points programmes in Q4 2026",
         "url": "https://dexwatch.com/guides/perp-dex-points-programs/",
@@ -585,7 +586,7 @@
        }
       },
       {
-       "text": "Token launches: Fraction AI is set to start trading Nov 11, 2026 (TGE Index disclosure score 3 of 8). Teneo, Variational, infiniFi and others are listed for Q4 without a confirmed date.",
+       "text": "Token launches: Fraction AI's token launch (TGE) on Nov 11, 2026 is scheduled (per its MiCA white paper, not yet confirmed by the team). Its TGE Index disclosure score is 3 of 8. Teneo, Variational, infiniFi and others are listed for Q4 without a confirmed date.",
        "src": {
         "label": "TGE Index, token launches in November 2026",
         "url": "https://tgeindex.com/tge/november-2026/",

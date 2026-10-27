@@ -70,7 +70,7 @@
        "App yes, SE OS no",
        "EAL5+ secure element",
        "2020 data leak; 2023 Connect Kit; 2026 reseller implant",
-       "From $69",
+       "See ledger.com",
        "Wide coin support"
       ],
       [
@@ -203,7 +203,7 @@
        "glance": [
         [
          "Price",
-         "From $69 (Nano S Plus); other models $99-$399. Checked Oct 26, 2026"
+         "Models and prices change. Check Ledger's official site (ledger.com) for current models and prices"
         ],
         [
          "Chains",
@@ -244,7 +244,7 @@
          }
         },
         {
-         "text": "Dec 14, 2023: a malicious version of Ledger's Connect Kit code library was pushed to apps that used it, and drained about $600K from users who signed on affected dapps. The devices themselves were not breached.",
+         "text": "Dec 14, 2023: a malicious version of Ledger's Connect Kit code library was pushed to apps that used it, and Ledger reported that a low volume of users who signed on affected dapps lost funds. The devices themselves were not breached.",
          "src": {
           "label": "Ledger, Connect Kit security incident report",
           "url": "https://www.ledger.com/blog/security-incident-report",
@@ -252,7 +252,7 @@
          }
         },
         {
-         "text": "Oct 2026: Ledger confirmed that devices sold by a Southeast Asian reseller carried a hidden implant that captured the recovery phrase during setup and sent it out over mobile data. Ledger says its chip, OS and servers were not compromised. It asked resellers in the region to suspend sales and tightened handling rules.",
+         "text": "Oct 2026: Ledger confirmed that devices sold by CryptoBilis, a reseller in Southeast Asia, carried a hidden implant that captured the recovery phrase during setup and sent it out over mobile data. Ledger says there was no flaw in its chip, and its OS and servers were not compromised. The loss is more than $86M, traced by on-chain investigator Specter (not verified by Ledger). It asked resellers in the region to suspend sales and tightened handling rules.",
          "src": {
           "label": "BleepingComputer, Ledger confirms spy chip implant behind wallet crypto thefts",
           "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
@@ -299,7 +299,7 @@
         [
          "Watch out for",
          [
-          "Buy direct: Trezor is ending reseller authorisations on Jan 1, 2027",
+          "Buy direct: Trezor is cutting some resellers from Jan 1, 2027",
           "Never use a device that arrives with a seed already written down"
          ]
         ]
@@ -326,7 +326,7 @@
          }
         },
         {
-         "text": "Oct 13, 2026: Trezor told resellers their authorisation ends on Jan 1, 2027, calling it a precaution after the Ledger implant case. It said there was no evidence its own devices were compromised.",
+         "text": "Oct 13, 2026: Trezor said it is cutting some resellers from Jan 1, 2027, calling it a precaution after the Ledger implant case. It said there was no evidence its own devices were compromised.",
          "src": {
           "label": "Decrypt, Trezor cuts its resellers after Ledger finds spy implant",
           "url": "https://decrypt.co/380848/trezor-cuts-resellers-ledger-finds-spy-implant-crypto-wallets",
@@ -707,11 +707,20 @@
        "tools": [],
        "facts": [
         {
-         "text": "Feb 21, 2025: about $1.5B was stolen from Bybit. The FBI attributed it to North Korea. Investigators found malicious JavaScript in Safe's web interface that showed signers a harmless-looking transaction. Lesson: check the transaction on the hardware device screen, not just the website.",
+         "text": "Feb 21, 2025: about $1.5B was stolen from Bybit. The FBI attributed the theft to North Korea (a group it calls TraderTraitor).",
          "src": {
           "label": "FBI PSA: North Korea responsible for $1.5 billion Bybit hack",
           "url": "https://www.fbi.gov/investigate/cyber/alerts/2025/north-korea-responsible-for-1-5-billion-bybit-hack",
           "date": "2025-02-26"
+         }
+        },
+        {
+         "text": "Sygnia's investigation found malicious code injected into Safe{Wallet}'s web interface. It showed Bybit's signers a harmless-looking transaction while they actually approved the attacker's. Lesson: check the transaction on the hardware device screen, not just the website.",
+         "src": {
+          "label": "Sygnia, investigation into the Bybit hack",
+          "url": "https://www.sygnia.co/blog/sygnia-investigation-bybit-hack/",
+          "date": "2026-10-27",
+          "read": true
          }
         }
        ]
@@ -885,7 +894,7 @@
        }
       },
       {
-       "text": "Dec 24, 2025: Trust Wallet's browser extension v2.68 was compromised. About 2,520 wallets were hit, the fix was v2.69, and Trust Wallet began reimbursing.",
+       "text": "Dec 24-26, 2025: Trust Wallet's browser extension v2.68 was compromised. 2,520 wallet addresses lost about $8.5M, the fix was v2.69, and Trust Wallet began reimbursing.",
        "src": {
         "label": "Trust Wallet, browser extension v2.68 incident update",
         "url": "https://trustwallet.com/blog/company/trust-wallet-browser-extension-v268-incident-community-update",
@@ -894,7 +903,7 @@
        }
       },
       {
-       "text": "Oct 17, 2026: attackers hijacked a notification provider used by NGRAVE's LIQUID app and sent a fake security alert linking to a copycat site that asked for the recovery phrase. NGRAVE traced about $2.56M stolen. The ZERO device itself was not breached.",
+       "text": "Oct 17, 2026: attackers hijacked a notification provider used by NGRAVE's LIQUID app and sent a fake security alert linking to a copycat site that asked for the recovery phrase. NGRAVE traced at least about $2.56M stolen from about 70 addresses. The ZERO device itself was not breached.",
        "src": {
         "label": "NGRAVE, incident report: the fake LIQUID security alert",
         "url": "https://www.ngrave.io/en/blog/incident-report-fake-liquid-security-alert-17-october",

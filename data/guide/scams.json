@@ -35,7 +35,7 @@
        }
       },
       {
-       "text": "More than $3.4B was stolen in hacks in 2025, including about $1.5B from Bybit. There were 158,000 personal wallet compromises affecting 80,000 victims ($713M); about 26,500 of those victims were on Solana.",
+       "text": "More than $3.4B was stolen in hacks in 2025, including about $1.5B from Bybit, which the FBI attributes to North Korea. There were 158,000 personal wallet compromises affecting 80,000 victims ($713M); about 26,500 of those victims were on Solana.",
        "src": {
         "label": "Chainalysis, 2026 Crypto Crime Report: stolen funds",
         "url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/",
@@ -427,7 +427,7 @@
         },
         {
          "date": "2026-10-22",
-         "text": "ChainWard measured one bot on Base that planted about 884,000 look-alike transfers copying about 439,000 real payments in a single week, for about $53 in gas. Half of its USDC copies landed within 142 seconds of the real payment.",
+         "text": "ChainWard (Oct 22, 2026) measured one attacker on Base that sent 884,017 look-alike transfers copying about 439,209 real payments in a single week, for about $53 in gas. Half of its USDC copies landed within 142 seconds of the real payment.",
          "src": {
           "label": "ChainWard, address poisoning on Base, measured",
           "url": "https://chainward.ai/decodes/address-poisoning-base",
@@ -541,7 +541,7 @@
         },
         {
          "date": "2026-10-19",
-         "text": "NGRAVE said attackers hijacked its push-notification provider and sent LIQUID app users a fake security alert that led to a copycat site asking for their recovery phrase. About $2.56M was traced as stolen from about 70 addresses.",
+         "text": "On Oct 17, 2026, NGRAVE said, attackers hijacked its push-notification provider and sent LIQUID app users a fake security alert that led to a copycat site asking for their recovery phrase. At least about $2.56M was traced as stolen from about 70 addresses.",
          "src": {
           "label": "NGRAVE, incident report: the fake LIQUID security alert",
           "url": "https://www.ngrave.io/en/blog/incident-report-fake-liquid-security-alert-17-october",
@@ -643,7 +643,7 @@
         },
         {
          "date": "2025-12-24",
-         "text": "Trust Wallet's browser extension v2.68 was compromised in a supply-chain attack. Trust Wallet identified 2,520 affected wallets and began reimbursing.",
+         "text": "In a past incident (Dec 24-26, 2025), Trust Wallet's browser extension v2.68 was compromised in a supply-chain attack. 2,520 wallet addresses lost about $8.5M, and Trust Wallet began reimbursing.",
          "src": {
           "label": "Trust Wallet, browser extension v2.68 incident update",
           "url": "https://trustwallet.com/blog/company/trust-wallet-browser-extension-v268-incident-community-update",
@@ -653,7 +653,7 @@
         },
         {
          "date": "2026-10-12",
-         "text": "Ledger confirmed that devices sold through a Southeast Asian reseller carried a hidden implant that captured recovery phrases during setup and sent them out over mobile data. Ledger said its chip and systems were not breached. An on-chain investigator traced more than $86M in suspected thefts, a figure Ledger said it had not verified.",
+         "text": "Ledger confirmed that devices sold through CryptoBilis, a reseller in Southeast Asia, carried a hidden implant that captured recovery phrases during setup and sent them out over mobile data. Ledger said there was no flaw in its chip. The loss is more than $86M, traced by on-chain investigator Specter (not verified by Ledger).",
          "src": {
           "label": "BleepingComputer, Ledger confirms spy chip implant behind wallet crypto thefts",
           "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
@@ -662,7 +662,7 @@
         },
         {
          "date": "2026-10-13",
-         "text": "Trezor said it would end its reseller authorisations on Jan 1, 2027 as a precaution, while saying there was no evidence its own devices were compromised.",
+         "text": "Trezor said it would cut some of its resellers from Jan 1, 2027 as a precaution, while saying there was no evidence its own devices were compromised.",
          "src": {
           "label": "Decrypt, Trezor cuts its resellers after Ledger finds spy implant",
           "url": "https://decrypt.co/380848/trezor-cuts-resellers-ledger-finds-spy-implant-crypto-wallets",
@@ -861,7 +861,7 @@
        "incidents": [
         {
          "date": "2026-10-27",
-         "text": "Chainalysis estimated $17B was stolen in scams and fraud in 2025, and said impersonation scams grew 1,400% year over year.",
+         "text": "Chainalysis estimated $17B was stolen in scams and fraud in 2025 (at least $14B was seen on-chain; the rest is an estimate), and said impersonation scams grew 1,400% year over year.",
          "src": {
           "label": "Chainalysis, 2026 Crypto Crime Report: scams",
           "url": "https://www.chainalysis.com/blog/crypto-scams-2026/",

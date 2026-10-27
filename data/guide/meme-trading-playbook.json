@@ -36,7 +36,7 @@
      "type": "facts",
      "items": [
       {
-       "text": "On a single day (Oct 25, 2026, UTC), 40,315 coins launched on pump.fun and only 911 (2.26%) graduated, meaning they filled the bonding curve and moved to a DEX pool. 91.8% of launches had no trade at all in their second hour, and 72.2% of that day's graduates closed the day below the market cap they graduated at.",
+       "text": "On a single day (Oct 25, 2026, UTC), 40,315 coins launched on pump.fun and only 911 (2.26%) graduated, meaning they filled the bonding curve and moved to a DEX pool. 91.8% of launches had no trade at all in their second hour, and 72.2% of the 596 tracked graduates (430) closed below their graduation market cap.",
        "src": {
         "label": "pumpdata.fun, pump.fun stats for Oct 25, 2026",
         "url": "https://pumpdata.fun/stats/2026-10-25",
@@ -357,7 +357,7 @@
      "title": "A real example: costs flip the answer",
      "items": [
       {
-       "text": "Launch Tape backtested one simple rule: buy 15 seconds after a pump.fun graduation, sell after 3 minutes or at -20%, 0.1 SOL per trade, on 67 coins. The naive test (filled at the signal price, no fees, no price impact) showed +2.3% per trade. Filling one block late, charging fees on both sides and letting the trade size move the pool turned it into -0.9% per trade. Same coins, same rules, opposite answer. It was only two hours of data, but the lesson holds: test with real costs or don't trust the result.",
+       "text": "In a post published Oct 14, 2026, Launch Tape backtested one simple rule on data collected Oct 10: buy 15 seconds after a pump.fun graduation, sell after 3 minutes or at -20%, 0.1 SOL per trade, on 67 coins. The naive test (filled at the signal price, no fees, no price impact) showed +2.3% per trade before costs (gross). Filling one block late, charging fees on both sides and letting the trade size move the pool (price impact) turned it into -0.9% per trade. Same coins, same rules, opposite answer. It was only two hours of data, but the lesson holds: test with real costs or don't trust the result.",
        "src": {
         "label": "Launch Tape, Your backtest is lying",
         "url": "https://launchtape.io/blog/your-backtest-is-lying",

@@ -89,7 +89,7 @@
        "links": [],
        "facts": [
         {
-         "text": "Bitcoin closed the week of Oct 19-25, 2026 at about $80,154, its third losing week in a row and about 36% below its Oct 6, 2025 all-time high of $126,080. Spot bitcoin ETFs held about $104.7B.",
+         "text": "Bitcoin closed the week of Oct 19-25, 2026 at about $80,154 (its weekly close; the week's range was $79,221-$84,898), its third losing week in a row and about 36% below its Oct 6, 2025 all-time high of $126,080. Spot bitcoin ETFs held about $104.7B.",
          "src": {
           "label": "CoinLab, crypto market weekly review Oct 19-25, 2026",
           "url": "https://coinlab.info/en/reviews/weekly-review-2026-10-19-10-25/",
@@ -183,11 +183,12 @@
          }
         },
         {
-         "text": "Solana switched on its Alpenglow consensus upgrade on Oct 21, 2026. It targets about 150 ms finality (the point where a transaction can no longer be reversed), down from about six seconds.",
+         "text": "Solana switched on its Alpenglow consensus upgrade on Oct 21, 2026, at epoch 1064. It targets about 150 ms finality (the point where a transaction can no longer be reversed), down from about 12.8 seconds before.",
          "src": {
-          "label": "CoinDesk, Solana's Alpenglow goes live",
-          "url": "https://www.coindesk.com/tech/2026/10/21/solana-s-alpenglow-its-biggest-network-overhaul-since-2020-goes-live-wednesday",
-          "date": "2026-10-21"
+          "label": "Solana, Alpenglow upgrade page",
+          "url": "https://solana.com/upgrades/alpenglow",
+          "date": "2026-10-27",
+          "read": true
          }
         }
        ]
@@ -969,7 +970,7 @@
         [
          "Main risks",
          [
-          "Leverage liquidations: in one day in October 2026, more than $800M of positions were force-closed.",
+          "Leverage liquidations: on Oct 24, 2026, more than $810M of positions were force-closed in 24 hours, about $689M of them longs.",
           "Exchange or oracle exploits.",
           "Points programmes that never become a token."
          ]
