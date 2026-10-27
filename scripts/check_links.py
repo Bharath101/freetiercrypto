@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check every internal link/asset in dist/ resolves to a built file. Usage: python scripts/check_links.py [dist]"""
+"""Check every internal link/asset in dist/ resolves to a built file, and every #anchor exists on its target page. Usage: python scripts/check_links.py [dist]"""
 import json, os, sys
 from pathlib import Path
 from urllib.parse import urlparse
@@ -8,12 +8,18 @@ ROOT = Path(__file__).resolve().parent.parent
 dist = Path(sys.argv[1] if len(sys.argv) > 1 else ROOT / "dist")
 BASE = urlparse(os.environ.get("SITE_URL", json.loads((ROOT / "site.json").read_text())["base_url"])).path.rstrip("/")
 bad, n = [], 0
-for f in dist.rglob("*.html"):
-    s = BeautifulSoup(f.read_text(), "lxml")
+soups = {f: BeautifulSoup(f.read_text(), "lxml") for f in dist.rglob("*.html")}
+ids = {f: {el["id"] for el in s.find_all(id=True)} | {el["name"] for el in s.find_all("a", attrs={"name": True})} for f, s in soups.items()}
+for f, s in soups.items():
     for tag, attr in (("a", "href"), ("link", "href"), ("script", "src"), ("img", "src")):
         for el in s.find_all(tag):
             u = el.get(attr)
-            if not u or u.startswith(("mailto:", "#", "javascript:")):
+            if not u or u.startswith(("mailto:", "javascript:")):
+                continue
+            if u.startswith("#"):
+                n += 1
+                if len(u) > 1 and u[1:] not in ids[f]:
+                    bad.append((str(f.relative_to(dist)), u + "  (missing anchor)"))
                 continue
             p = urlparse(u)
             if p.scheme in ("http", "https"):
@@ -29,6 +35,8 @@ for f in dist.rglob("*.html"):
                 target = target / "index.html"
             if not target.exists():
                 bad.append((str(f.relative_to(dist)), u))
+            elif p.fragment and target.suffix == ".html" and p.fragment not in ids.get(target, set()):
+                bad.append((str(f.relative_to(dist)), u + "  (missing anchor)"))
 print(f"checked {n} internal links across {len(list(dist.rglob('*.html')))} pages; broken: {len(bad)}")
 for b in bad[:50]:
     print("  BROKEN", b)

@@ -10,7 +10,7 @@
 <td>{% if t.free_tier_limits == 'unverified' %}<span class="tag tag-unverified">unverified</span>{% else %}{{ t.free_tier_limits }}{% endif %}</td>
 <td>{% if t.price_text == 'unverified' %}<span class="tag tag-unverified">unverified</span>{% else %}{{ t.price_text }}{% if t.cheapest_paid.plan %} <span class="small muted">({{ t.cheapest_paid.plan }})</span>{% endif %}{% endif %}
 <div class="small"><a href="{{ t.price_source_url }}" rel="nofollow noopener" target="_blank">source</a> · checked {{ t.date_checked|nicedate }}</div></td>
-<td><a href="#{{ t.alt.id }}">{{ t.alt.name }}</a></td>
+<td><a href="/category/{{ t.alt.category }}/#{{ t.alt.id }}">{{ t.alt.name }}</a></td>
 <td>{% if t.chains == 'unverified' %}<span class="tag tag-unverified">unverified</span>{% else %}{{ t.chains }}{% endif %}</td>
 <td>{% if t.affiliate_program == 'yes' %}<span class="tag tag-verified">yes</span>{% elif t.affiliate_program == 'no' %}<span class="tag">no</span>{% else %}<span class="tag tag-unverified">unverified</span>{% endif %}</td>
 <td><span class="tag tag-{{ t.verification }}" title="{{ t.status_help }}">{{ t.status_label }}</span></td>
