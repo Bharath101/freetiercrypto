@@ -1,0 +1,18 @@
+{
+ "id": "glassnode",
+ "url": "https://studio.glassnode.com/pricing",
+ "fetched_at": "2026-10-28T08:48:12Z",
+ "sha256": "3c3a879de04f940e59ffa470ce06fee720d0a0385e839fbda8a7366081f5ee0e",
+ "lines": [
+  "$49",
+  "Yearly",
+  "Billed annually",
+  "$584",
+  "50 calls/downloads per day",
+  "Calls/downloads are credit-based, choose between 50, 5,000, 50,000, 500,000, 5,000,000, and unlimited credits per month",
+  "Alerts",
+  "Starting at $749/mo",
+  "Is API access included in my plan?",
+  "How do Data Credits work?"
+ ]
+}
