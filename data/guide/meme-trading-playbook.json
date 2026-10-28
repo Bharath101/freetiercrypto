@@ -401,6 +401,19 @@
        "read": true
       }
      ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Slippage settings and sandwich protection",
+       "url": "#slippage-and-mev"
+      },
+      {
+       "label": "Exiting thin pools",
+       "url": "#thin-liquidity-exits"
+      }
+     ]
     }
    ]
   },
@@ -1070,83 +1083,478 @@
   },
   {
    "id": "exits",
-   "title": "Step 4: When to exit, and why",
+   "title": "Step 4: Exits, because the exit matters as much as the entry",
+   "plain": [
+    "Your entry decides where a trade starts. Your exit decides what you actually take home. Two people can buy the same coin at the same price and end up with opposite results, only because one had a plan for getting out and the other didn't.",
+    "So decide how you will leave before you buy: where you cut the loss, where you take profits, how long you give the trade, and what news makes you sell at once. Then check that you can actually sell, because on small memecoins the way out is often much narrower than the way in."
+   ],
    "blocks": [
+    {
+     "type": "note",
+     "text": "Not financial advice. You can lose everything you put into memecoins, and no exit plan guarantees a profit. A rug can skip straight past any stop. Numbers marked as rules of thumb are this guide's own rules, not facts about the market."
+    },
     {
      "type": "text",
      "paras": [
-      "Write your exits down before you buy. There are four kinds, and you need all four."
+      "Most beginners spend all their effort on finding the next coin and almost none on leaving it. That is backwards. A good entry with no exit plan often becomes a winner that turns into a loss. An average entry with a clear exit plan can still end small and controlled.",
+      "Exits are also where emotions are strongest. While you are in a trade, hope keeps you in losers and fear pushes you out of winners. Writing the plan down before you buy is how you make those decisions while you are still calm."
+     ]
+    },
+    {
+     "type": "list",
+     "id": "exit-plan-before-entry",
+     "title": "1. Plan the exit before you buy",
+     "items": [
+      "Your stop: the price, or the event, that proves the idea wrong. Your position size comes from this (see sizing in Step 6).",
+      "Your first target, where you take your original stake back, and the later levels where you sell more.",
+      "Your trailing rule for whatever is left.",
+      "Your time limit (see time stops in Step 5).",
+      "Your 'sell now' signals: the things that make you leave at once, whatever the price (see section 5 below).",
+      "Your exit route: a tiny test sell worked, you know the pool's liquidity, and your position is small compared with it.",
+      "Who presses the button: an automated order, or you with price alerts switched on. If neither is possible, for example because you are going to sleep, make the position smaller or don't open it (this guide's rule of thumb)."
      ]
     },
     {
      "type": "why",
-     "title": "1. Stops (price says you are wrong)",
+     "id": "scaling-out",
+     "title": "2. Scaling out in stages",
+     "items": [
+      [
+       "Take back your stake around 2x",
+       "When the coin doubles, sell about half, so you have your original money back.",
+       "What is left now rides on profit, so one sharp reversal can't turn this winner into a loss."
+      ],
+      [
+       "Sell more into strength",
+       "Sell further pieces on the way up, for example another quarter of the position at 4x. Sell into big green candles and hype spikes, not into red ones.",
+       "Buyers are plentiful when the price is jumping, so your sells move the price less. In a panic, the buyers vanish."
+      ],
+      [
+       "Sell down to the sleeping point",
+       "If a position keeps you up at night or glued to the chart, sell until it doesn't.",
+       "It is an old Wall Street saying, quoted in Edwin Lefèvre's Reminiscences of a Stock Operator (p. 120). A position you can't stop thinking about pushes you into rushed decisions."
+      ],
+      [
+       "Trail the rest",
+       "Keep a trailing stop under the last piece and let it run until the trail is hit or a 'sell now' signal appears.",
+       "In the same book, the narrator, a character based on Jesse Livermore, says: \"It is the big swing that makes the big money for you.\" The runner is your ticket to that rare big swing, and the trail protects what it has already made."
+      ],
+      [
+       "Sell more as you become a bigger part of the pool",
+       "If the coin rises a lot while its liquidity does not, your position becomes a bigger share of the pool. Scale out faster when that happens.",
+       "A position that was 0.2% of the pool at entry can be 2% of it after a 10x. Selling it all at once then costs you a lot in price impact (see section 6)."
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Example ladder on a $40 position (this guide's rule of thumb; our arithmetic, before fees and slippage)",
+     "head": [
+      "Step",
+      "What you sell",
+      "Cash taken out so far",
+      "What is left"
+     ],
+     "rows": [
+      [
+       "Coin hits 2x",
+       "Half the coins, worth $40",
+       "$40 (your stake back)",
+       "Half the coins, worth $40"
+      ],
+      [
+       "Coin hits 4x",
+       "A quarter of the original coins, worth $40",
+       "$80",
+       "A quarter of the coins, worth $40"
+      ],
+      [
+       "Trail hit or sell signal",
+       "The last quarter, at whatever it is worth",
+       "$80 plus the runner",
+       "Nothing"
+      ]
+     ],
+     "note": "If the coin rugs right after the 2x sale, you are still roughly at breakeven instead of down the full $40. The levels are examples; pick yours before you buy and write them down."
+    },
+    {
+     "type": "why",
+     "id": "stop-losses",
+     "title": "3. Stop-losses: hard, trailing and mental",
      "items": [
       [
        "Hard stop at your invalidation level",
-       "For example, under the higher low you bought, or about 30% under entry on a fresh launch.",
-       "It caps the loss at about -1R, which is what keeps your expectancy positive. Every widened stop turns a planned -1R into an unplanned -3R or worse."
+       "Put the stop where your reason for the trade stops being true, for example under the higher low you bought, or about 30% under entry on a fresh launch (rule of thumb).",
+       "It caps the loss near -1R, which is what keeps your average result positive. Every widened stop turns a planned -1R into an unplanned -3R or worse."
       ],
       [
        "Never widen, only tighten",
        "Once you are in profit, move the stop up. Never move it down.",
        "Losses you planned for are survivable. Losses you renegotiate with yourself are not."
-      ]
-     ]
-    },
-    {
-     "type": "why",
-     "title": "2. Invalidation signals (the story changed)",
-     "items": [
-      [
-       "Dev or linked wallets sell",
-       "The dev wallet, a dev-funded wallet or a ring of linked wallets starts selling.",
-       "The people with the most information are leaving. You are now their exit liquidity."
       ],
       [
-       "Buyers dry up",
-       "Unique buyers fall and holder count drops while the price goes sideways.",
-       "Memecoins need new buyers to go up. Without them, the next big move is down."
+       "Trailing stop",
+       "A trailing stop sits a set % below the highest price since you set it. It moves up when the price makes new highs and stays put when the price falls.",
+       "It lets a winner run without you guessing the top. You give back the trail distance by design: too tight and normal swings knock you out, too wide and you hand back a lot."
       ],
       [
-       "Coordinated shill wave or a deleted post",
-       "Many accounts post the same coin in similar words, or the 'official' post that started the move gets deleted.",
-       "Paid promotion usually means the promoters are selling into the buying. A deleted post often means the people behind it are already out."
+       "On a DEX, no exchange holds your stop",
+       "On a centralised exchange, the exchange watches your stop for you. On a DEX, nothing sells for you unless an app does. Tools such as Jupiter's limit and trigger orders offer stop-loss, take-profit and trailing stop orders that an off-chain service watches and fires for you.",
+       "Jupiter's own docs warn that a stop-loss is not guaranteed to fill: if the price falls through it too fast, or liquidity is too thin within your slippage limit, the order does not execute. They say this is especially common with new memecoins and rugged tokens."
       ],
       [
-       "Liquidity falls",
-       "LP is pulled or liquidity drops sharply against market cap.",
-       "Thin liquidity means your sell will crash the price. Leave while you still can."
+       "Mental stops need you watching",
+       "A mental stop is a price you promise yourself to sell at. It works only if you are watching and you actually click sell.",
+       "Most people hesitate when the moment comes. If you rely on mental stops, set price alerts and treat the alert as an order, not a suggestion."
+      ],
+      [
+       "Assume the stop will slip",
+       "Plan as if your real loss will be bigger than your stop, and size the position so that even a total loss is a small hit.",
+       "On memecoins the price can gap straight through your level, and a pulled pool means there may be nothing to sell into at all."
       ]
      ]
     },
     {
      "type": "text",
-     "title": "3. Profit-taking (lock in wins)",
+     "id": "time-exits",
+     "title": "4. Time exits",
      "paras": [
-      "Take profits in stages: get your original stake back around 2x, sell more into strength, and trail a stop under the rest so the rare big winner can run. The full plan, with the reasons behind each step, is in Step 6 under taking profits in stages."
+      "Sometimes the price hits neither your stop nor your target and just drifts. A time exit gets you out when the trade has not worked within the window you wrote down. The suggested windows for fresh launches and for swing trades are in Step 5: time stops.",
+      "Two practical points for exits: sell a stalled coin while buyers are still around, not after the volume has gone, and close or shrink positions before you step away from the screen if no automated order is protecting them (this guide's rule of thumb)."
      ]
     },
     {
      "type": "links",
      "items": [
       {
-       "label": "Taking profits in stages",
-       "url": "#take-profits"
+       "label": "Step 5: Time stops",
+       "url": "#time-stops"
       }
      ]
     },
     {
      "type": "why",
-     "title": "4. Time stops (it did not work in time)",
+     "id": "dev-dump-signals",
+     "title": "5. Signs to exit now",
      "items": [
       [
-       "Leave if nothing happens",
-       "On a fresh launch, about 5-15 minutes; on an established memecoin swing, a few days (rules of thumb).",
-       "A memecoin that is not moving is usually losing attention. Your money is better used on the next good setup."
+       "Dev, insider or linked wallets sell",
+       "The dev wallet, a dev-funded wallet or a ring of linked wallets starts selling (the same wallets you looked at in the rug check).",
+       "The people with the most information are leaving. If you stay, you become their exit liquidity."
+      ],
+      [
+       "Liquidity is pulled or falls fast",
+       "LP is removed, or liquidity drops sharply compared with market cap.",
+       "Thin liquidity means your own sell will crash the price. If the LP is fully pulled it is usually too late, which is why the LP check comes before you buy."
+      ],
+      [
+       "Volume and buyers are dying",
+       "Volume, unique buyers and holder count fall while the price goes sideways, or sells clearly outnumber buys.",
+       "Memecoins only go up while new buyers arrive. When they stop arriving, the next big move is usually down."
+      ],
+      [
+       "The caller or KOL is out",
+       "The account that pushed the coin sells (where its wallet is public), quietly stops mentioning it, or deletes the post.",
+       "Paid or early promoters often sell into the buying they create. A deleted post often means the people behind it are already out."
+      ],
+      [
+       "A copy-paste shill wave",
+       "Many accounts suddenly post the same coin in similar words.",
+       "Coordinated promotion usually means someone needs buyers to sell to. Treat it as a reason to sell into the spike, not to buy more."
       ]
      ]
+    },
+    {
+     "type": "text",
+     "id": "thin-liquidity-exits",
+     "title": "6. Exiting when liquidity is thin",
+     "paras": [
+      "A DEX pool is a pot of the coin and SOL (or a stablecoin). When you sell, you put coins in and take SOL out, so the price falls as you sell. That drop is called price impact. The smaller the pool compared with your sell, the worse the price you get. On fresh memecoins, getting out is often harder than getting in.",
+      "The table shows the maths for a simple pool where the coin and the SOL sides are each half of the liquidity. Real pools and bonding curves behave differently, so always read the price impact your swap app shows before you sign."
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Price impact of one sell in a simple 50/50 pool (our arithmetic, before fees)",
+     "head": [
+      "Your sell as % of total liquidity",
+      "Your average price vs the price before you sold",
+      "Price after your sell"
+     ],
+     "rows": [
+      [
+       "0.5%",
+       "about 1% worse",
+       "about 2% lower"
+      ],
+      [
+       "1%",
+       "about 2% worse",
+       "about 4% lower"
+      ],
+      [
+       "2%",
+       "about 4% worse",
+       "about 7.5% lower"
+      ],
+      [
+       "5%",
+       "about 9% worse",
+       "about 17% lower"
+      ],
+      [
+       "10%",
+       "about 17% worse",
+       "about 31% lower"
+      ]
+     ],
+     "note": "Example: a $400 sell into a pool showing $20,000 of liquidity is 2% of it, so expect a fill about 4% worse than the quoted price, plus fees."
+    },
+    {
+     "type": "pairs",
+     "title": "How to get out of a thin pool",
+     "items": [
+      [
+       "Check depth before you buy",
+       "Look at the pool's liquidity on DexScreener or Birdeye, and keep your position to about 1% of it or less (the sizing rule in Step 6)."
+      ],
+      [
+       "Read the quote",
+       "Before you confirm a sell, look at the price impact and minimum received that your swap app shows. If the impact is bigger than you planned, sell a smaller piece."
+      ],
+      [
+       "Split big sells, with gaps",
+       "Sell in several pieces with some time between them. Selling all the pieces back to back costs about the same as one big sell; splitting helps because new buyers and arbitrage can refill the pool between your sells, and each smaller sell needs a lower slippage limit."
+      ],
+      [
+       "Sell into buying",
+       "Sell on green candles, when buyers are hitting the pool, rather than after the drop starts."
+      ],
+      [
+       "Start early",
+       "If the pool is thin, begin scaling out sooner. The last person trying to leave a thin pool gets the worst price."
+      ]
+     ]
+    },
+    {
+     "type": "why",
+     "id": "slippage-and-mev",
+     "title": "7. Slippage settings and sandwich (MEV) protection",
+     "items": [
+      [
+       "What a sandwich attack is",
+       "A bot sees your swap coming, trades just before you to push the price against you, lets your trade fill at the worse price, then trades back right after you and keeps the difference.",
+       "The bot's profit is capped by your slippage limit. A loose limit is an open invitation."
+      ],
+      [
+       "Use the lowest slippage that still fills",
+       "Set a slippage limit on purpose instead of maxing it out. Solana's own developer docs call tight slippage limits the single most effective defence against sandwich attacks.",
+       "Too tight and your sell may fail while the price keeps falling; too loose and you can be sandwiched or filled far below the quote."
+      ],
+      [
+       "Stops need room to fill",
+       "Exits that must happen, like stop-losses, need more slippage than calm sells. Jupiter's trigger orders, for example, default stop-loss orders to 20% slippage, because filling matters more than the exact price when cutting a loss.",
+       "A stop that never fills is worse than one that fills a bit low. Smaller positions mean you need less slippage in the first place."
+      ],
+      [
+       "Use MEV-protected sending where you can",
+       "Jupiter's default swap mode (Ultra) sends trades through its own landing service, which it describes as private and MEV-resistant, though its blog says the risk is not zero. Jito's block engine has a 'don't front' option that apps and developers can add to block sandwiches inside Jito bundles; Jito says it may reduce sandwiches but does not guarantee it.",
+       "Protection lowers the risk; it does not remove it. Check what your own wallet or trading app actually does before you rely on it."
+      ],
+      [
+       "Limit and trigger orders",
+       "Jupiter says its trigger orders are stored off-chain and kept private until they fire, which removes the easiest target: a visible pending order.",
+       "You can set your exits in advance without broadcasting them to bots."
+      ]
+     ]
+    },
+    {
+     "type": "why",
+     "id": "exit-mistakes",
+     "title": "8. Common exit mistakes, and why they happen",
+     "items": [
+      [
+       "Round-tripping a winner",
+       "The coin goes to 3x, you don't sell anything, and you ride it back to your entry or below.",
+       "Greed says it will go higher. Taking your stake back at the first target makes this mistake almost impossible."
+      ],
+      [
+       "Moving the stop lower",
+       "The price nears your stop, so you move it down 'just this once'.",
+       "Hope. In How to Trade in Stocks (1940), Jesse Livermore describes hope as what keeps traders in losing trades. A stop you move is not a stop."
+      ],
+      [
+       "Averaging down",
+       "Buying more of a falling coin to lower your average price.",
+       "It turns a small loss into a big one, and a falling memecoin often keeps falling to zero. See the averaging-down trap in Step 6."
+      ],
+      [
+       "Cutting winners early, holding losers long",
+       "Selling a winner at the first small dip while sitting through a big loss on another coin.",
+       "Fear of giving back gains plus hope of getting back to even. Your written plan, not your mood, should decide both exits."
+      ],
+      [
+       "Waiting for the price to come back",
+       "Refusing to sell below your entry, or below a recent high, and waiting to 'get out even'.",
+       "The market doesn't know your entry price. Sell on your rules, not on what you paid."
+      ],
+      [
+       "Panic-selling with huge slippage",
+       "Hitting sell on a red candle with slippage turned all the way up.",
+       "You are now the easiest target for sandwich bots and the worst fill in the pool. Pre-set exits avoid the panic."
+      ],
+      [
+       "Many tiny sells",
+       "Selling dust amounts over and over.",
+       "Every sell pays fees and priority fees, which are a bigger share of a small sell (see the costs section)."
+      ],
+      [
+       "No exit plan at all",
+       "Buying first and deciding later.",
+       "Later is when you are least calm. Write the plan before you buy, every time."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "id": "exit-market-check",
+     "title": "9. Check the tide on DefiLlama",
+     "items": [
+      [
+       "What it is",
+       "DefiLlama is a free site that tracks DEX volume and the money locked in DeFi (TVL) for each chain. Its Solana DEX volume page shows daily, weekly and monthly trading volume across Solana's DEXs."
+      ],
+      [
+       "How to use it for exits",
+       "Compare today's Solana DEX volume with recent weeks. When chain-wide volume is shrinking, fewer buyers are around, so take profits sooner and trail tighter. When it is growing, you can give a runner a little more room (this guide's rule of thumb)."
+      ],
+      [
+       "What it does not show",
+       "It shows the whole chain and the big DEXs, not the depth of one memecoin's pool. For your coin, use DexScreener or Birdeye and the price impact in your swap quote."
+      ],
+      [
+       "For spreadsheets",
+       "DefiLlama also has a free public API (api.llama.fi) if you want to pull the same numbers into a sheet or script."
+      ]
+     ]
+    },
+    {
+     "type": "facts",
+     "items": [
+      {
+       "text": "On Oct 28, 2026, DefiLlama's Solana DEX volume page showed about $1.65 billion of DEX volume in the past 24 hours and about $55.3 billion over 30 days (about $1.84 billion a day on average, our arithmetic), with weekly volume down 16%. Numbers change daily, so check the live page.",
+       "src": {
+        "label": "DefiLlama, Solana DEX volume",
+        "url": "https://defillama.com/dexs/chain/solana",
+        "date": "2026-10-28",
+        "read": true
+       }
+      }
+     ]
+    },
+    {
+     "type": "tools",
+     "ids": [
+      "defillama",
+      "dexscreener",
+      "birdeye",
+      "jupiter"
+     ]
+    },
+    {
+     "type": "text",
+     "title": "A note on taxes",
+     "paras": [
+      "In many countries, selling a coin, or swapping one coin for another, can count as a taxable event, even if you never move money back to your bank. Keep a record of every buy and sell (your trade journal helps) and check your local rules or ask a tax professional. This guide does not give tax advice."
+     ]
+    },
+    {
+     "type": "text",
+     "title": "Books cited",
+     "paras": [
+      "Edwin Lefèvre, Reminiscences of a Stock Operator (p. 120); Jesse Livermore, How to Trade in Stocks (1940)."
+     ]
+    },
+    {
+     "type": "sources",
+     "items": [
+      {
+       "label": "Jupiter docs, limit orders, take profit and stop loss",
+       "url": "https://docs.jup.ag/user-docs/trade/spot/limit-orders",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "Jupiter developer docs, trigger orders",
+       "url": "https://developers.jup.ag/docs/trigger",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "Jupiter docs, Ultra mode",
+       "url": "https://docs.jup.ag/user-docs/trade/spot/ultra-mode",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "Jupiter blog, Ultra V3",
+       "url": "https://developers.jup.ag/blog/ultra-v3",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "Solana docs, MEV protection",
+       "url": "https://solana.com/docs/defi/mev-protection",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "Jito docs, sandwich mitigation",
+       "url": "https://docs.jito.wtf/lowlatencytxnsend/",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "DefiLlama, Solana DEX volume",
+       "url": "https://defillama.com/dexs/chain/solana",
+       "date": "2026-10-28",
+       "read": true
+      }
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Sizing",
+       "url": "#sizing"
+      },
+      {
+       "label": "Time stops",
+       "url": "#time-stops"
+      },
+      {
+       "label": "Fees and slippage",
+       "url": "#costs"
+      },
+      {
+       "label": "Rug-check checklist",
+       "url": "#rug-check"
+      },
+      {
+       "label": "Trade journal",
+       "url": "#journal"
+      }
+     ]
     }
+   ],
+   "dont_lose": [
+    "Write your stop, targets, trail, time limit and 'sell now' signals before you buy.",
+    "Take your original stake back around 2x, then trail the rest. Never move a stop lower.",
+    "Expect stops to slip or fail on memecoins, and size so that a total loss is a small hit.",
+    "Keep positions small against the pool, check the price impact before you sell, and scale out early when liquidity is thin.",
+    "Use the lowest slippage that fills and an MEV-protected way of sending trades where you can.",
+    "Sell at once when the dev or insiders sell, the LP is pulled, or buyers dry up. Don't wait to get back to even."
    ]
   },
   {
@@ -1158,6 +1566,19 @@
      "paras": [
       "A time stop means leaving a trade that has not done what you expected within a set time, even if your price stop was never hit. Your money and your attention are limited, and a coin going sideways is usually losing its buyers.",
       "Rules of thumb: on a fresh launch, if it has not moved your way within about 5-15 minutes, get out. On an established memecoin swing trade, give it a few days. Write the window down when you enter, and stick to it."
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Step 4: Exits",
+       "url": "#exits"
+      },
+      {
+       "label": "Time exits in practice",
+       "url": "#time-exits"
+      }
      ]
     }
    ]
@@ -1253,42 +1674,21 @@
      "id": "take-profits",
      "title": "2. Taking profits in stages",
      "paras": [
-      "Write your stop, your first target and your exit plan before you buy. Think in R, the way Van Tharp teaches with R-multiples in Trade Your Way to Financial Freedom: 1R is the amount you risk, and your profits need to be much bigger than 1R to pay for all the small losses. Our own rule is to take only trades where a realistic target is at least 2R."
+      "Write your stop, your first target and your exit plan before you buy. Think in R, the way Van Tharp teaches with R-multiples in Trade Your Way to Financial Freedom: 1R is the amount you risk, and your profits need to be much bigger than 1R to pay for all the small losses. Our own rule is to take only trades where a realistic target is at least 2R.",
+      "Profit-taking is part of your exit plan, so the full ladder lives in Step 4: take your stake back around 2x, sell more into strength, sell down to the sleeping point and trail the rest."
      ]
     },
     {
-     "type": "why",
+     "type": "links",
      "items": [
-      [
-       "Take back your stake around 2x",
-       "When the coin doubles, sell about half so you have your original stake back.",
-       "The rest now rides on profit, so one sharp reversal can no longer turn a winner into a loss."
-      ],
-      [
-       "Scale out into strength",
-       "Sell more in stages, for example another quarter at 4x, and sell into big green candles and hype spikes rather than red ones.",
-       "Buyers are plentiful on green candles, so you get better prices. In a panic there are not."
-      ],
-      [
-       "Sell down to the sleeping point",
-       "If a position keeps you up at night or glued to the chart, sell until it doesn't.",
-       "It is an old Wall Street saying quoted in Edwin Lefèvre's Reminiscences of a Stock Operator (p. 120). A position you can't stop thinking about pushes you into bad decisions."
-      ],
-      [
-       "Trail the rest",
-       "Move your stop up under each new higher low. Never move it down.",
-       "The same book puts it plainly: \"It is the big swing that makes the big money for you.\" A trailing stop lets the rare big winner run while protecting what you have made."
-      ],
-      [
-       "Exit everything when demand fades",
-       "Sell the rest when buying dries up, sells clearly outnumber buys, or the creator sells.",
-       "Memecoins need fresh buyers. When they stop coming, or the people who know most are leaving, the next big move is usually down."
-      ],
-      [
-       "Use a time stop",
-       "If the trade has not worked within the time you wrote down, get out (Step 5).",
-       "Money stuck in a coin going nowhere can't be used on a better setup."
-      ]
+      {
+       "label": "Scaling out in stages",
+       "url": "#scaling-out"
+      },
+      {
+       "label": "Step 4: Exits",
+       "url": "#exits"
+      }
      ]
     },
     {
@@ -1378,7 +1778,7 @@
      "type": "text",
      "title": "Books cited",
      "paras": [
-      "Jack D. Schwager, Market Wizards; Curtis Faith, Way of the Turtle (p. 258); Linda Bradford Raschke and Laurence A. Connors, Street Smarts; Van K. Tharp, Trade Your Way to Financial Freedom; Edwin Lefèvre, Reminiscences of a Stock Operator (p. 120); Jesse Livermore, How to Trade in Stocks (1940); Mark Douglas, Trading in the Zone; Brett N. Steenbarger, The Daily Trading Coach (lesson 31)."
+      "Jack D. Schwager, Market Wizards; Curtis Faith, Way of the Turtle (p. 258); Linda Bradford Raschke and Laurence A. Connors, Street Smarts; Van K. Tharp, Trade Your Way to Financial Freedom; Jesse Livermore, How to Trade in Stocks (1940); Mark Douglas, Trading in the Zone; Brett N. Steenbarger, The Daily Trading Coach (lesson 31)."
      ]
     },
     {
@@ -1407,6 +1807,10 @@
     {
      "type": "links",
      "items": [
+      {
+       "label": "Exits",
+       "url": "#exits"
+      },
       {
        "label": "The maths of staying net positive",
        "url": "#maths"
@@ -1596,6 +2000,10 @@
       [
        "Time stop",
        "I wrote how long I give the trade to work."
+      ],
+      [
+       "Exit route",
+       "My position is small next to the pool's liquidity, I know my slippage limit, and an automated order or a price alert will tell me when to sell."
       ],
       [
        "Daily brake",

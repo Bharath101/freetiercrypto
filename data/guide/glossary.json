@@ -179,7 +179,7 @@
        "id": "mev",
        "term": "MEV / sandwich",
        "def": "When bots see your trade coming and trade just before and after it, profiting from your slippage.",
-       "link": "/guide/meme-trading-playbook/#costs"
+       "link": "/guide/meme-trading-playbook/#slippage-and-mev"
       },
       {
        "id": "mint-authority",
@@ -269,7 +269,7 @@
        "id": "stop-loss",
        "term": "Stop-loss",
        "def": "A price at which you sell to cap your loss.",
-       "link": "/guide/meme-trading-playbook/#exits"
+       "link": "/guide/meme-trading-playbook/#stop-losses"
       },
       {
        "id": "tge",
