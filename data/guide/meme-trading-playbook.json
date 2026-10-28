@@ -3,8 +3,8 @@
  "h1": "The memecoin trading playbook: find, check, enter, exit, size and stay net positive",
  "eyebrow": "Flagship guide",
  "seo_title": "Memecoin trading playbook: safety checks, entries, exits, sizing and the maths",
- "description": "A step-by-step memecoin playbook: finding coins, safety checks, entries, exits, position sizing, time stops, journaling, the maths of staying net positive, and a printable checklist. Not financial advice.",
- "summary": "The whole process end to end: finding coins, safety checks, entries, exits, sizing, time stops and journaling, plus the maths of staying net positive after fees and a printable checklist.",
+ "description": "A step-by-step memecoin playbook: finding coins, a 6-check rug-check checklist, entries, exits, a risk plan with position sizing, staged profit-taking, mindset traps, a trade journal, the maths of staying net positive, and a printable checklist. Not financial advice.",
+ "summary": "The whole process end to end: finding coins, a 6-check rug-check checklist, entries, exits, a risk plan, staged profit-taking, mindset traps and a trade journal, plus the maths of staying net positive after fees and a printable checklist.",
  "plain": [
   "Memecoins are tokens with no business behind them. Their price moves on attention, and most new ones go to zero within hours.",
   "Nobody wins every memecoin trade. The traders who come out ahead lose small and often, and a few bigger winners pay for those losses. This page shows you how to set that up: check a coin before you buy, decide your exit before you enter, keep every position small, and count your fees.",
@@ -19,7 +19,7 @@
   "Count fees. On small trades, fees alone can turn a winning strategy into a losing one.",
   "Stop for the day after a set number of losses. Do not revenge-trade."
  ],
- "risk": "Not financial advice; no strategy wins every trade. A study by Solidus Labs (May 2025) reported that 98.6% of pump.fun tokens it looked at ended with almost no liquidity; pump.fun disputed the framing. Most new memecoins fail. The aim of this playbook is positive expected value through risk control, not a promise of profit.",
+ "risk": "You can lose everything you put into memecoins. A study by Solidus Labs (May 2025) reported that 98.6% of pump.fun tokens it looked at ended with almost no liquidity; pump.fun disputed the framing. Most new memecoins fail. The aim of this playbook is positive expected value through risk control, not a promise of profit.",
  "sections": [
   {
    "id": "truth",
@@ -260,6 +260,19 @@
        "You cannot tell luck from edge. Without data, you keep repeating your most expensive mistake."
       ]
      ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "Fixes for FOMO, hope, averaging down, revenge and overtrading",
+       "url": "#mindset-traps"
+      },
+      {
+       "label": "Rug-check checklist",
+       "url": "#rug-check"
+      }
+     ]
     }
    ]
   },
@@ -435,54 +448,272 @@
    ]
   },
   {
-   "id": "safety",
-   "title": "Step 2: Safety checks (the kill list)",
+   "id": "rug-check",
+   "aliases": [
+    "safety"
+   ],
+   "title": "Step 2: Rug-check checklist (6 checks)",
+   "plain": [
+    "Before you buy a new coin, spend a few minutes checking who made it, who holds it and whether the address you were given is the real one. Most rugs leave clues: a few people quietly own a big share, the creator has done this before, or the coin is a copy.",
+    "The danger levels here are rules of thumb, not guarantees. A coin can pass every check and still go to zero. A red flag is a risk signal, not proof that anyone did something wrong."
+   ],
    "blocks": [
     {
      "type": "text",
      "paras": [
-      "Any failed check means you skip the coin. No single check proves a coin is safe, so stack them. The full detail of each check is on the scams page under new-launch forensics."
+      "Run all six checks and the extra checks before every buy. If any check fails, skip the coin; there is always another one. No single check proves a coin is safe, so stack them and keep your size small anyway. The scam patterns behind each check are explained on the scams page under new-launch forensics."
      ]
     },
     {
      "type": "pairs",
+     "title": "The tools, and what each one actually shows",
      "items": [
       [
-       "Right contract",
-       "Get the contract address from the project's official X account or site, and make sure it matches the one in your swap screen. Tickers get copied all the time."
+       "WhoBought (whobought.xyz)",
+       "Shows bundler %, snipers, insiders, where holders got their funds, and wallet clusters. It is mainly a live feed of swaps by Solana and pump.fun traders. Its before-and-after-a-post view only covers the traders and KOLs it tracks, not any account you pick."
       ],
       [
+       "RugCheck (rugcheck.xyz)",
+       "Shows mint and freeze authority, holders, insider networks and any transfer fee. It has no bundle field, so use another tool for bundles."
+      ],
+      [
+       "Bubblemaps (bubblemaps.io)",
+       "Draws linked wallets as connected bubbles and has a bundle checker. It supports Solana. Use it for both bundles and wallet rings."
+      ],
+      [
+       "Solscan, DexScreener and Birdeye",
+       "Their holder tabs list the biggest wallets and show how much the top 10 own."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Check 1: Bundled launch",
+     "items": [
+      [
+       "What it is",
+       "Many wallets buy in the same block, or within seconds of launch. Usually one person or team controls all of them, so they can all sell at once."
+      ],
+      [
+       "How to check",
+       "Look at the bundle share of supply in WhoBought (bundler %) or the Bubblemaps bundle checker. RugCheck does not show bundles."
+      ],
+      [
+       "Danger level (rule of thumb)",
+       "Bundles holding about 10% or more of supply is a major red flag, and above about 15% is danger. If the bundle wallets have already sold, they are less of a threat, but make sure they really sold and did not just move the tokens to new wallets."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Check 2: Wallet rings",
+     "items": [
+      [
+       "What it is",
+       "A group of wallets that all got their first SOL from the same place. They look like many separate holders, but they are probably one."
+      ],
+      [
+       "How to check",
+       "Bubblemaps shows linked wallets as connected bubbles. On Solscan, open a top holder and look at its earliest incoming transfer. WhoBought shows shared funding sources and clusters."
+      ],
+      [
+       "Danger level (rule of thumb)",
+       "A linked group holding more than about 10% of supply is a serious warning. That is our stricter line for beginners; Bubblemaps' own guide flags single clusters at about 20-30%."
+      ],
+      [
+       "Caveat: exchange withdrawals",
+       "Many wallets funded by the same big exchange is usually just ordinary people withdrawing, not a ring. What matters is a shared private wallet that funded them."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Check 3: Dev history",
+     "items": [
+      [
+       "What it is",
+       "How the creator behaved on past launches is the best clue to what they will do next."
+      ],
+      [
+       "How to check",
+       "Find the creator wallet on the token's RugCheck or WhoBought page, then look at its past tokens and sells on Solscan or its pump.fun profile."
+      ],
+      [
+       "Danger level (rule of thumb)",
+       "Several past tokens that died within hours: warning. The dev bought a few % and sold soon after launch: warning. A first-time dev is neutral, not safe; there is simply no history to judge."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Check 4: Holder concentration and liquidity",
+     "items": [
+      [
+       "What it is",
+       "If a few wallets own most of the supply, one of them selling can crash the price. If liquidity is thin, even small sells move the price a lot."
+      ],
+      [
+       "How to check",
+       "Open the holders tab on Solscan, DexScreener or Birdeye. Leave out the liquidity pool and the burn address, because they are not people. Count linked wallets from check 2 as one holder. Then compare liquidity with market cap on DexScreener or Birdeye."
+      ],
+      [
+       "Danger level (rule of thumb)",
+       "Top 10 non-pool holders above about 30%: warning (this matches GMGN's default; tools differ, and RugCheck only warns above 50%). One non-pool wallet above about 5%: look closer at who it is. Liquidity under about 10% of market cap: caution. Under about 5%: thin, so sells will move the price hard."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Check 5: Fake contract addresses",
+     "items": [
+      [
+       "What it is",
+       "Copies with the same name and ticker appear within minutes of a real launch. Only the contract address tells them apart."
+      ],
+      [
+       "How to check",
+       "Take the contract address only from the verified official account or the project's own website. Compare the full address character by character, not just the first and last few, which are easy to fake. The real token usually has far more liquidity, holders and trading history on DexScreener or Birdeye, and Solscan shows when each one was created."
+      ],
+      [
+       "Danger level (rule of thumb)",
+       "Any mismatch: don't buy. A token with the same name that is only minutes old and has tiny liquidity is almost always a copy."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Check 6: Hacked or insider official-account launches",
+     "items": [
+      [
+       "What it is",
+       "A famous or 'official' account posts a token, but the account was hacked, or insiders bought before the post. Real cases are in the next section."
+      ],
+      [
+       "How to check",
+       "Wait until a second official channel, such as the website or another official account, shows the same contract address. Be suspicious if the post is deleted, out of character, or has replies locked. Use Bubblemaps to look for linked wallets buying just before the post. WhoBought's before-and-after view only helps if the poster is one of the traders it tracks."
+      ],
+      [
+       "Danger level (rule of thumb)",
+       "A new token from one account with no second confirmation: very dangerous. Big linked buys in the minutes before the post: a strong sign of insiders."
+      ]
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Extra checks before every buy",
+     "items": [
+      [
        "Mint and freeze authority off",
-       "If someone can still mint, they can print new supply and dump it on you. If freeze authority is on, they can freeze your tokens so you cannot sell. On Token-2022 tokens, also check for a transfer fee or hook."
+       "Check on RugCheck. If someone can still mint, they can print new supply and dump it on you. If freeze authority is on, they can freeze your tokens so you cannot sell."
+      ],
+      [
+       "No transfer tax",
+       "RugCheck shows any transfer fee. On Token-2022 tokens, also check for a transfer hook. A tax or hook can take a cut of every sale, or block it."
       ],
       [
        "Liquidity locked or burned",
-       "If the liquidity pool (LP) can be pulled, the price can go to zero instantly. Liquidity below about 20% of market cap is thin (rule of thumb)."
-      ],
-      [
-       "Holder concentration",
-       "If the top 10 holders own more than about 30-35% (not counting the pool and burn address), treat that as a risk. Linked top wallets count as one holder."
-      ],
-      [
-       "Bundles and snipers",
-       "Bundles are many wallets buying in the same block or within seconds of launch. If they still hold more than about 15-20% of supply, they can dump on you."
-      ],
-      [
-       "Shared funders",
-       "Trace where the top holders got their first SOL. Several wallets funded by the same unlabelled wallet are probably one person."
-      ],
-      [
-       "Dev history",
-       "A serial launcher whose past coins died, or a dev who bought and sold fast, is a red flag. A first-time dev is not safe either; they simply have no history to check."
+       "If the liquidity pool (LP) can be pulled, the price can go to zero instantly."
       ],
       [
        "Paid-shill tells",
-       "Watch for callers who bought minutes before posting, several accounts posting the same coin within minutes in similar words, and big follower counts with little real engagement."
+       "Watch for callers who bought minutes before posting, several accounts posting the same coin in similar words, and big follower counts with little real engagement."
       ],
       [
        "Test sell",
        "Do a tiny test buy and then a tiny test sell before you size up. If you cannot sell, it is a honeypot."
+      ],
+      [
+       "Use a separate small wallet",
+       "Trade from a separate wallet that holds only a small amount you can afford to lose. Never use your main wallet."
+      ],
+      [
+       "Never connect to links from replies or DMs",
+       "Links in replies and DMs are a common way to drain wallets. Type the site address yourself, and never share your seed phrase or private key with anyone or any site."
       ]
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Danger levels at a glance (rules of thumb, not guarantees)",
+     "head": [
+      "Signal",
+      "Caution",
+      "Danger",
+      "Where to check"
+     ],
+     "rows": [
+      [
+       "Bundle share of supply",
+       "About 10% or more (major red flag)",
+       "Above about 15%",
+       "WhoBought, Bubblemaps"
+      ],
+      [
+       "Linked wallet group",
+       "Any clear ring: dig deeper",
+       "Above about 10% (serious warning)",
+       "Bubblemaps, Solscan, WhoBought"
+      ],
+      [
+       "Top 10 non-pool holders",
+       "Above about 30%",
+       "Much higher, or linked",
+       "Solscan, DexScreener, Birdeye"
+      ],
+      [
+       "Single non-pool wallet",
+       "Above about 5% (look closer)",
+       "Linked to the dev or a ring",
+       "Solscan, Bubblemaps"
+      ],
+      [
+       "Liquidity vs market cap",
+       "Under about 10%",
+       "Under about 5% (thin)",
+       "DexScreener, Birdeye"
+      ]
+     ],
+     "note": "There is no single standard. GMGN calls its numbers defaults, not standards, and tools differ: RugCheck warns about top holders only above 50%, while Bubblemaps flags single clusters at about 20-30%. We use stricter lines because beginners should skip more coins, not fewer. Every line here is a risk signal, not an accusation."
+    },
+    {
+     "type": "sources",
+     "items": [
+      {
+       "label": "Solana Tracker, risk docs",
+       "url": "https://docs.solanatracker.io/data-api/risk",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "Bubblemaps, How to spot a rug pull using Bubblemaps before it happens",
+       "url": "https://blog.bubblemaps.io/how-to-spot-a-rug-pull-using-bubblemaps-before-it-happens/",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "GMGN, CA security checks",
+       "url": "https://docs.gmgn.ai/index/ca-security-checks.md",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "GMGN, What to check after finding a trending memecoin",
+       "url": "https://gmgn.ai/blog/what-to-check-after-finding-a-trending-memecoin/",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "CoinMarketCap Academy, on-chain liquidity to market cap ratio",
+       "url": "https://coinmarketcap.com/academy/article/on-chain-liquidity-to-market-cap-ratio-now-live-on-coinmarketcap-why-it-matters",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "FOMO Trendings, liquidity to market cap ratio",
+       "url": "https://fomotrendings.com/tools/liquidity-to-market-cap-ratio",
+       "date": "2026-10-28",
+       "read": true
+      }
      ]
     },
     {
@@ -491,6 +722,9 @@
       "rugcheck",
       "bubblemaps",
       "solscan",
+      "dexscreener",
+      "birdeye",
+      "gmgn",
       "jupitertokens",
       "solsniffer",
       "goplus",
@@ -505,11 +739,29 @@
        "url": "/guide/scams/#launch-forensics"
       },
       {
-       "label": "WhoBought (who bought a token early)",
+       "label": "'Official account' launches",
+       "url": "#official-accounts"
+      },
+      {
+       "label": "WhoBought",
        "url": "https://whobought.xyz"
+      },
+      {
+       "label": "RugCheck",
+       "url": "https://rugcheck.xyz"
+      },
+      {
+       "label": "Bubblemaps",
+       "url": "https://bubblemaps.io"
       }
      ]
     }
+   ],
+   "dont_lose": [
+    "If any check fails, skip the coin. There will always be another one.",
+    "Copy the contract address only from an official source, and check every character.",
+    "Passing every check only lowers the risk. Size each trade as if it could still go to zero.",
+    "Use a separate small wallet, never connect it through links in replies or DMs, and never share your seed phrase."
    ]
   },
   {
@@ -650,8 +902,8 @@
        "No matter how big or official the account is."
       ],
       [
-       "Wait for confirmation from several official channels",
-       "The website, the blog, a second official account, or a press release. If it is real, it will still be real in an hour."
+       "Require a second official channel",
+       "The same contract address on the website, the blog, a second official account or a press release. If it is real, it will still be real in an hour."
       ],
       [
        "Deleted means rug",
@@ -659,7 +911,7 @@
       ],
       [
        "Check who bought before the post",
-       "Run Bubblemaps and Solscan on the earliest buyers."
+       "Run Bubblemaps and Solscan on the earliest buyers. Big linked buys in the minutes before the post are a strong sign of insiders. WhoBought's before-and-after-a-post view only helps when the poster is one of the traders and KOLs it tracks."
       ],
       [
        "Expect copycats",
@@ -679,6 +931,10 @@
     {
      "type": "links",
      "items": [
+      {
+       "label": "Check 6 in the rug-check checklist",
+       "url": "#rug-check"
+      },
       {
        "label": "Impersonation tokens on the scams page",
        "url": "/guide/scams/#impersonation-tokens"
@@ -865,24 +1121,19 @@
      ]
     },
     {
-     "type": "why",
+     "type": "text",
      "title": "3. Profit-taking (lock in wins)",
+     "paras": [
+      "Take profits in stages: get your original stake back around 2x, sell more into strength, and trail a stop under the rest so the rare big winner can run. The full plan, with the reasons behind each step, is in Step 6 under taking profits in stages."
+     ]
+    },
+    {
+     "type": "links",
      "items": [
-      [
-       "Sell half at about 2x",
-       "Take out roughly your starting stake.",
-       "The rest of the trade becomes a 'free' position, and one sharp reversal can no longer turn a winner into a loser."
-      ],
-      [
-       "Scale out into strength",
-       "Sell more into big green candles, hype spikes and influencer posts.",
-       "Liquidity is best when everyone is buying. Selling into strength gets better fills than selling into panic."
-      ],
-      [
-       "Trail the rest",
-       "Move your stop under each new higher low, or use a fixed % trail.",
-       "This lets the few big winners run, and those few winners pay for all your small losses."
-      ]
+      {
+       "label": "Taking profits in stages",
+       "url": "#take-profits"
+      }
      ]
     },
     {
@@ -899,43 +1150,8 @@
    ]
   },
   {
-   "id": "sizing",
-   "title": "Step 5: Position sizing",
-   "blocks": [
-    {
-     "type": "pairs",
-     "items": [
-      [
-       "Risk a small fixed slice",
-       "Risk 0.5% to 1% of your trading account per trade, and never more than 2%. On fresh launches, use half that or less."
-      ],
-      [
-       "Size from the stop",
-       "Position size = money you are willing to lose ÷ stop distance. With a $1,000 account risking 1% ($10) and a 25% stop, the position is $40."
-      ],
-      [
-       "Assume zero on fresh launches",
-       "Because rugs skip stops, plan for the whole position going to zero. Size it so that a total loss is still only a small hit."
-      ],
-      [
-       "Cap exposure",
-       "Limit how much of the account sits in memecoins at once, and how much is in any one coin. Ten positions in the same narrative are really one big bet."
-      ],
-      [
-       "Daily loss brake",
-       "Stop for the day after a set loss, for example three losing trades or -3% on the account. Tired, tilted trading is where accounts die."
-      ],
-      [
-       "No leverage on memecoins",
-       "Leverage on something that can move 50% in a minute is how accounts get wiped out."
-      ]
-     ]
-    }
-   ]
-  },
-  {
    "id": "time-stops",
-   "title": "Step 6: Time stops",
+   "title": "Step 5: Time stops",
    "blocks": [
     {
      "type": "text",
@@ -947,23 +1163,185 @@
    ]
   },
   {
-   "id": "journal",
-   "title": "Step 7: Journaling and review",
+   "id": "risk-plan",
+   "title": "Step 6: Risk plan, taking profits, mindset traps and a trade journal",
+   "plain": [
+    "Before you buy, decide three things: how much you are willing to lose on this trade, where you will take profits, and what will make you stop for the day. Write them down, then keep score.",
+    "The aim is simple: keep every loss small, let a few winners grow, and learn something from every trade."
+   ],
    "blocks": [
     {
+     "type": "note",
+     "text": "Not financial advice. You can lose everything you put into memecoins. These are rules of thumb that help you survive losing streaks, not a way to guarantee a profit."
+    },
+    {
      "type": "text",
+     "id": "sizing",
+     "title": "1. The risk plan: protect the account first",
      "paras": [
-      "The journal is how you find out whether your edge is real. Keep it private. The fields that matter:"
+      "Keep memecoin money in its own wallet, apart from your savings, and only put in money you could lose without it hurting your life. Warren Buffett's famous line, \"Rule No. 1: Never lose money. Rule No. 2: Never forget Rule No. 1,\" is the spirit here. You will have losing trades; what you can refuse is a loss big enough to knock you out of the game."
+     ]
+    },
+    {
+     "type": "pairs",
+     "items": [
+      [
+       "Risk 0.5% to 1% per trade",
+       "Your risk is what you lose if your stop is hit, as a share of your memecoin account. On $1,000 that is $5 to $10 a trade. Ed Seykota's own FAQ suggests risking under 1% per trade, and Bruce Kovner describes keeping the risk on any single trade to about 1% or less in Jack Schwager's Market Wizards."
+      ],
+      [
+       "Never more than 2%",
+       "The Turtle traders capped risk at no more than 2% per trade (Curtis Faith, Way of the Turtle). On fresh launches stay at the low end or below, because rugs skip stops."
+      ],
+      [
+       "Size from the stop",
+       "Position size = amount at risk ÷ stop distance. Risking 1% with a 25% stop means a 4% position: on a $1,000 account, $10 at risk in a $40 position."
+      ],
+      [
+       "Assume slippage",
+       "On fast coins your stop can fill well below where you set it, and a rug can skip it completely. Treat your real loss as bigger than planned, and size so that even a total loss is a small hit."
+      ],
+      [
+       "Stay small against the pool",
+       "Keep your position to about 1% of the pool's liquidity or less. Bigger orders move the price against you on the way in and, worse, on the way out."
+      ],
+      [
+       "One open position while learning",
+       "Hold one trade at a time until your journal shows a positive average R. Ten coins in the same narrative are really one big bet anyway."
+      ],
+      [
+       "Daily loss limit",
+       "Stop for the day after losing 2-3% of the account or after three losing trades, whichever comes first. This is standard practice on trading desks, and it is our rule for this guide."
+      ],
+      [
+       "Cut size in a drawdown",
+       "Our own beginner rule, inspired by the Turtles: if the account falls 10% from its peak, halve your risk per trade until it recovers. The Turtles' actual rule was more gradual: they cut the account size they traded by 20% for every 10% drawdown (Way of the Turtle, p. 258)."
+      ],
+      [
+       "No leverage on memecoins",
+       "Leverage on something that can move 50% in a minute is how accounts get wiped out."
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Position size from risk and stop on a $1,000 account (our arithmetic, before fees and slippage)",
+     "head": [
+      "Risk per trade",
+      "15% stop",
+      "25% stop",
+      "40% stop"
+     ],
+     "rows": [
+      [
+       "0.5% ($5)",
+       "$33",
+       "$20",
+       "$13"
+      ],
+      [
+       "1% ($10)",
+       "$67",
+       "$40",
+       "$25"
+      ]
+     ],
+     "note": "If the position would be more than about 1% of the pool's liquidity, make it smaller."
+    },
+    {
+     "type": "text",
+     "id": "take-profits",
+     "title": "2. Taking profits in stages",
+     "paras": [
+      "Write your stop, your first target and your exit plan before you buy. Think in R, the way Van Tharp teaches with R-multiples in Trade Your Way to Financial Freedom: 1R is the amount you risk, and your profits need to be much bigger than 1R to pay for all the small losses. Our own rule is to take only trades where a realistic target is at least 2R."
+     ]
+    },
+    {
+     "type": "why",
+     "items": [
+      [
+       "Take back your stake around 2x",
+       "When the coin doubles, sell about half so you have your original stake back.",
+       "The rest now rides on profit, so one sharp reversal can no longer turn a winner into a loss."
+      ],
+      [
+       "Scale out into strength",
+       "Sell more in stages, for example another quarter at 4x, and sell into big green candles and hype spikes rather than red ones.",
+       "Buyers are plentiful on green candles, so you get better prices. In a panic there are not."
+      ],
+      [
+       "Sell down to the sleeping point",
+       "If a position keeps you up at night or glued to the chart, sell until it doesn't.",
+       "It is an old Wall Street saying quoted in Edwin Lefèvre's Reminiscences of a Stock Operator (p. 120). A position you can't stop thinking about pushes you into bad decisions."
+      ],
+      [
+       "Trail the rest",
+       "Move your stop up under each new higher low. Never move it down.",
+       "The same book puts it plainly: \"It is the big swing that makes the big money for you.\" A trailing stop lets the rare big winner run while protecting what you have made."
+      ],
+      [
+       "Exit everything when demand fades",
+       "Sell the rest when buying dries up, sells clearly outnumber buys, or the creator sells.",
+       "Memecoins need fresh buyers. When they stop coming, or the people who know most are leaving, the next big move is usually down."
+      ],
+      [
+       "Use a time stop",
+       "If the trade has not worked within the time you wrote down, get out (Step 5).",
+       "Money stuck in a coin going nowhere can't be used on a better setup."
+      ]
+     ]
+    },
+    {
+     "type": "why",
+     "id": "mindset-traps",
+     "title": "3. Mindset traps and their fixes",
+     "items": [
+      [
+       "FOMO (fear of missing out)",
+       "Don't buy a candle that is shooting up. Wait for the first pullback that holds, then buy with your stop under it.",
+       "Chasing puts your stop far away and makes you the buyer insiders sell to. Linda Bradford Raschke and Laurence Connors put the habit in a rule in Street Smarts: \"always buy (sell) the first pullback.\""
+      ],
+      [
+       "Hope",
+       "Set your stop before you enter, and never move it lower.",
+       "In How to Trade in Stocks (1940), Jesse Livermore describes hope and fear as the trader's big enemies: hope keeps you in a losing trade, and fear pushes you out of a winning one too early."
+      ],
+      [
+       "Averaging down",
+       "Add only to winning trades, never to losing ones.",
+       "A sign on Paul Tudor Jones's office wall read \"Losers average losers\" (Business Insider, 2011), and in Market Wizards he said \"Don't ever average losers.\" A falling memecoin often keeps falling to zero."
+      ],
+      [
+       "Revenge trading",
+       "After a loss, wait at least 30 minutes before the next trade (our own rule), and respect your daily loss limit.",
+       "Mark Douglas explains in Trading in the Zone why chasing a loss goes wrong: each loss is one result in a run of probabilities, not a debt to win back. Accept it, and judge yourself over 20 or more trades, not one."
+      ],
+      [
+       "Overtrading",
+       "No setup, no trade. A day with zero trades is a good day if nothing met your rules. Don't size up after a winning streak.",
+       "Ed Seykota said: \"Win or lose, everybody gets what they want out of the market.\" If what you really want is action, the market will happily sell it to you."
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "id": "journal",
+     "title": "4. The trade journal",
+     "paras": [
+      "The journal is how you find out whether you have a real edge or just got lucky. Brett Steenbarger gives it a whole lesson in The Daily Trading Coach (lesson 31, \"Self-Monitoring By Keeping a Trading Journal\"). Keep it private, and write each entry when you trade, not from memory later. Log these fields:"
      ]
     },
     {
      "type": "list",
      "items": [
-      "Date and time, the coin and its contract (in your own private notes), and the setup label.",
-      "Why you took the trade, in one sentence. If the reason is \"saw it on X\", write that down honestly.",
-      "Entry, stop, size, planned R and time stop.",
-      "Exit, the result in R, and fees paid (trading fee, priority fee, slippage).",
-      "Did you follow your rules? What was the mistake, if any? Add a screenshot of the chart."
+      "Date and time, the coin (keep contracts in your private notes) and the setup label.",
+      "The reason for the trade, in one sentence. If it was \"saw it on X\", write that honestly.",
+      "Entry, stop, target and size.",
+      "Exit, and the reason for it: stop, target, time stop, demand faded, or a broken rule.",
+      "Result in R, after fees (trading fee, priority fee and slippage).",
+      "Best and worst price while you were in, so you can see whether your stops and targets fit how the coin really moved.",
+      "Your emotion before and during the trade: calm, bored, FOMO, revenge, scared.",
+      "Trades you passed on, and why. They show whether your filters are saving you money."
      ]
     },
     {
@@ -972,18 +1350,84 @@
      "items": [
       [
        "Measure",
-       "Win rate, average win in R, average loss in R, expectancy after costs, broken down by setup label."
+       "Average R per trade, win rate, average win versus average loss (in R), and every rule you broke. Break it down by setup label."
       ],
       [
-       "Cut",
-       "After about 30 or more trades of a setup, drop the setups with negative expectancy, and stop trading the times of day where you lose."
+       "A low win rate is fine",
+       "Winning 30% of trades is fine if your average result per trade is positive after costs. See the maths section above."
       ],
       [
-       "Fix one thing",
-       "Pick the single most expensive mistake of the week and write a rule against it."
+       "Review every 20 trades",
+       "Judge yourself on batches of 20 or more trades, not on one result. This idea comes from Mark Douglas's Trading in the Zone."
+      ],
+      [
+       "Grade the process apart from profit",
+       "Score each trade on how well you followed your plan, separately from whether it made money (also from Douglas). A loss that followed every rule is a good trade; a win that broke your rules is a bad habit."
+      ],
+      [
+       "Cut what doesn't work",
+       "Once a setup has 20 or more trades logged, drop it if its average R is negative after costs, and stop trading the times of day where you lose."
+      ],
+      [
+       "Change one rule at a time",
+       "Fix your single most expensive mistake, then wait for the next batch of trades. If you change several things at once, you can't tell which one helped."
       ]
      ]
+    },
+    {
+     "type": "text",
+     "title": "Books cited",
+     "paras": [
+      "Jack D. Schwager, Market Wizards; Curtis Faith, Way of the Turtle (p. 258); Linda Bradford Raschke and Laurence A. Connors, Street Smarts; Van K. Tharp, Trade Your Way to Financial Freedom; Edwin Lefèvre, Reminiscences of a Stock Operator (p. 120); Jesse Livermore, How to Trade in Stocks (1940); Mark Douglas, Trading in the Zone; Brett N. Steenbarger, The Daily Trading Coach (lesson 31)."
+     ]
+    },
+    {
+     "type": "sources",
+     "items": [
+      {
+       "label": "Ed Seykota, FAQ",
+       "url": "https://www.seykota.com/tt/Aggregation/Seykota_FAQ-1.html",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "TurtleTrader, drawdown recovery",
+       "url": "https://www.turtletrader.com/recovery/",
+       "date": "2026-10-28",
+       "read": true
+      },
+      {
+       "label": "Business Insider (2011), the best things Paul Tudor Jones has ever said",
+       "url": "https://www.businessinsider.com/the-tk-best-things-paul-tudor-jones-has-ever-said-2011-8",
+       "date": "2026-10-28",
+       "read": true
+      }
+     ]
+    },
+    {
+     "type": "links",
+     "items": [
+      {
+       "label": "The maths of staying net positive",
+       "url": "#maths"
+      },
+      {
+       "label": "Time stops",
+       "url": "#time-stops"
+      },
+      {
+       "label": "The mistakes that lose money",
+       "url": "#mistakes"
+      }
+     ]
     }
+   ],
+   "dont_lose": [
+    "Risk 0.5-1% of your memecoin account per trade, and assume your stop can slip.",
+    "Take your stake back around 2x, and never move a stop lower.",
+    "Never add to a losing trade.",
+    "Stop for the day at your daily loss limit, and wait 30 minutes after any loss.",
+    "Log every trade, including the ones you skipped, and review every 20 trades."
    ]
   },
   {
@@ -1095,11 +1539,11 @@
      "items": [
       [
        "Burner wallet",
-       "I am trading from a burner wallet that holds only what I can afford to lose."
+       "I am trading from a separate small wallet that holds only what I can afford to lose, and I did not connect it through a link from a reply or DM."
       ],
       [
        "Contract",
-       "The contract matches the one posted on the official account."
+       "The contract matches the official account or website character by character, and a second official channel confirms it."
       ],
       [
        "Authorities",
@@ -1107,11 +1551,11 @@
       ],
       [
        "Liquidity",
-       "LP is burned or locked, and liquidity is not thin compared with market cap."
+       "LP is burned or locked, and liquidity is at least about 10% of market cap."
       ],
       [
        "Holders",
-       "Top 10 hold under about 30-35%, no linked cluster, and bundles are not sitting on a big share of supply."
+       "Top 10 non-pool holders own under about 30%, no single non-pool wallet over about 5% that I can't explain, no linked group over about 10%, and bundles under about 10% of supply."
       ],
       [
        "Dev",
@@ -1139,7 +1583,7 @@
       ],
       [
        "Size",
-       "Size = risk ÷ stop, and I am OK if this position goes to zero."
+       "Size = risk ÷ stop, risk is 0.5-1% of the account, the position is about 1% of pool liquidity or less, and I am OK if it goes to zero."
       ],
       [
        "Costs",
@@ -1147,7 +1591,7 @@
       ],
       [
        "Targets",
-       "I wrote where I take partial profits and how I trail the rest."
+       "I wrote where I take my stake back (around 2x), where I scale out, and how I trail the rest."
       ],
       [
        "Time stop",
@@ -1155,7 +1599,7 @@
       ],
       [
        "Daily brake",
-       "I have not hit my daily loss limit."
+       "I have not hit my daily loss limit (2-3% or three losing trades), and I waited 30 minutes after my last loss."
       ],
       [
        "Journal",
@@ -1172,7 +1616,7 @@
     {
      "type": "text",
      "paras": [
-      "This playbook pulls together our Solana trading strategies guide (coin types, universal risk rules and the new-launch research process from the FreeTierCrypto research desk), our KOL strategies page (habits that well-known traders describe in public, with what not to copy), and the risk research on our scams page. The risk rules echo classic traders such as Paul Tudor Jones, Jesse Livermore, the Turtle Traders and Ed Seykota.",
+      "This playbook pulls together our Solana trading strategies guide (coin types, universal risk rules and the new-launch research process from the FreeTierCrypto research desk), our KOL strategies page (habits that well-known traders describe in public, with what not to copy), and the risk research on our scams page. The risk plan draws on classic trading books and traders, cited by title where each idea is used; rules we made up ourselves are labelled as our own.",
       "Creators' claims about their own results are their claims. We have not verified any trader's P&L, and nothing here is a signal."
      ]
     },
@@ -1205,5 +1649,5 @@
   }
  ],
  "slug": "meme-trading-playbook",
- "updated": "2026-10-27"
+ "updated": "2026-10-28"
 }

@@ -3,7 +3,7 @@
 {% macro toollinks(ids) %}{% for i in ids %}{% set t = tool_by_id[i] %}<a href="/category/{{ t.category }}/#{{ t.id }}">{{ t.name }}</a>{% if t.has_free_tier == "yes" %} <span class="tag tag-verified">free tier</span>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% endmacro %}
 {% macro factlist(items) %}<ul class="facts">{% for f in items %}<li>{{ f.text }} <span class="src">({{ src(f.src) }})</span></li>{% endfor %}</ul>{% endmacro %}
 {% macro block(b) %}
-{% if b.title %}<h3 class="step">{{ b.title }}</h3>{% endif %}
+{% if b.title %}<h3 class="step"{% if b.id %} id="{{ b.id }}"{% endif %}>{{ b.title }}</h3>{% endif %}
 {% if b.type == "text" %}{% for p in b.paras %}<p>{{ p }}</p>{% endfor %}
 {% elif b.type == "note" %}<p class="note">{{ b.text }}</p>
 {% elif b.type == "list" %}{% if b.ordered %}<ol>{% else %}<ul>{% endif %}{% for i in b["items"] %}<li>{{ i }}</li>{% endfor %}{% if b.ordered %}</ol>{% else %}</ul>{% endif %}
@@ -41,8 +41,10 @@
   {% if g.dont_lose %}<div class="dontlose"><h2>How not to lose money here</h2><ul>{% for i in g.dont_lose %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}
   {% if g.risk %}<p class="risk"><strong>Not financial advice; no strategy wins every trade.</strong> {{ g.risk }}</p>{% endif %}
   {% if g.sections|length > 1 %}<nav class="toc noprint"><h2>Contents</h2><ol class="links">{% for s in g.sections %}<li><a href="#{{ s.id }}">{{ s.title }}</a></li>{% endfor %}</ol></nav>{% endif %}
-  {% for s in g.sections %}<section id="{{ s.id }}" class="gsec{% if s.id == 'checklist' %} print-me{% endif %}"><h2>{{ s.title }}</h2>
-  {% for b in s.blocks %}{{ block(b) }}{% endfor %}</section>{% endfor %}
+  {% for s in g.sections %}<section id="{{ s.id }}" class="gsec{% if s.id == 'checklist' %} print-me{% endif %}"><h2>{{ s.title }}</h2>{% for a in s.aliases or [] %}<span id="{{ a }}"></span>{% endfor %}
+  {% if s.plain %}<div class="plain"><h3>In plain English</h3>{% for p in s.plain %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+  {% for b in s.blocks %}{{ block(b) }}{% endfor %}
+  {% if s.dont_lose %}<div class="dontlose"><h3>How not to lose money here</h3><ul>{% for i in s.dont_lose %}<li>{{ i }}</li>{% endfor %}</ul></div>{% endif %}</section>{% endfor %}
   <p class="small muted">Rules of thumb and risk signals on this page are not accusations against any named person. Figures are as reported by the linked sources on the dates shown.</p>
 </section>
 {% endblock %}
