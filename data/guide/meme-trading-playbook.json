@@ -1198,8 +1198,8 @@
        "It lets a winner run without you guessing the top. You give back the trail distance by design: too tight and normal swings knock you out, too wide and you hand back a lot."
       ],
       [
-       "On a DEX, no exchange holds your stop",
-       "On a centralised exchange, the exchange watches your stop for you. On a DEX, nothing sells for you unless an app does. Tools such as Jupiter's limit and trigger orders offer stop-loss, take-profit and trailing stop orders that an off-chain service watches and fires for you.",
+       "On a DEX, nothing sells for you unless an app does",
+       "A DEX does not watch your stop price. Your stop only fires if you are watching, or if an app watches it for you. Jupiter's limit and trigger orders, for example, offer stop-loss, take-profit and trailing stop-loss orders (but not a trailing take-profit) that an off-chain service watches and fires.",
        "Jupiter's own docs warn that a stop-loss is not guaranteed to fill: if the price falls through it too fast, or liquidity is too thin within your slippage limit, the order does not execute. They say this is especially common with new memecoins and rugged tokens."
       ],
       [
@@ -1308,7 +1308,7 @@
        "about 31% lower"
       ]
      ],
-     "note": "Example: a $400 sell into a pool showing $20,000 of liquidity is 2% of it, so expect a fill about 4% worse than the quoted price, plus fees."
+     "note": "'Total liquidity' counts both sides of the pool, so selling 1% of total liquidity means selling 2% of the pool's coin reserve. The middle column is your average fill; the right column is where the price is left after you sell (both before fees). Example: a $400 sell into a pool showing $20,000 of liquidity is 2% of it, so expect a fill about 4% worse than the quoted price, plus fees."
     },
     {
      "type": "pairs",
@@ -1353,7 +1353,7 @@
       ],
       [
        "Stops need room to fill",
-       "Exits that must happen, like stop-losses, need more slippage than calm sells. Jupiter's trigger orders, for example, default stop-loss orders to 20% slippage, because filling matters more than the exact price when cutting a loss.",
+       "Exits that must happen, like stop-losses, need more slippage than calm sells. In Jupiter's Trigger API, for example, a stop-loss order uses 20% slippage by default when no slippage is set, because filling matters more than the exact price when you are cutting a loss. Check the slippage your own app actually uses for stops.",
        "A stop that never fills is worse than one that fills a bit low. Smaller positions mean you need less slippage in the first place."
       ],
       [
@@ -1442,7 +1442,7 @@
      "type": "facts",
      "items": [
       {
-       "text": "On Oct 28, 2026, DefiLlama's Solana DEX volume page showed about $1.65 billion of DEX volume in the past 24 hours and about $55.3 billion over 30 days (about $1.84 billion a day on average, our arithmetic), with weekly volume down 16%. Numbers change daily, so check the live page.",
+       "text": "On Oct 28, 2026, DefiLlama's Solana DEX volume page showed about $1.65 billion of DEX volume in the past 24 hours and about $55.3 billion over 30 days, with weekly volume down 16%. DefiLlama's public API showed somewhat higher totals the same day (about $1.85 billion and $60.8 billion), so the numbers depend on what is counted. They change daily, so check the live page.",
        "src": {
         "label": "DefiLlama, Solana DEX volume",
         "url": "https://defillama.com/dexs/chain/solana",
