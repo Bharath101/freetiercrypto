@@ -677,6 +677,10 @@
          "url": "/guide/meme-trading-playbook/"
         },
         {
+         "label": "Rug-check checklist",
+         "url": "/guide/meme-trading-playbook/#rug-check"
+        },
+        {
          "label": "New-launch forensics",
          "url": "/guide/scams/#launch-forensics"
         }
@@ -1269,5 +1273,5 @@
   }
  ],
  "slug": "coin-types",
- "updated": "2026-10-27"
+ "updated": "2026-10-28"
 }

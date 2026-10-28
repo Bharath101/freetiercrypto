@@ -183,14 +183,14 @@
          "How to spot it",
          [
           "Many wallets buying in the same block with near-identical amounts.",
-          "Bundles still holding about 15-20% or more of supply (rule of thumb).",
+          "Bundles still holding about 10% or more of supply is a major red flag, and above about 15% is danger (rules of thumb, not guarantees).",
           "Top holders funded by the same unlabelled wallet."
          ]
         ],
         [
          "How to protect yourself",
          [
-          "Check bundle share and funding links before buying (see the forensics section below).",
+          "Check bundle share with WhoBought or the Bubblemaps bundle checker (RugCheck has no bundle field), and check funding links, before buying. See the forensics section below and the playbook's rug-check checklist.",
           "Skip any coin where the bundle has not sold out."
          ]
         ],
@@ -214,6 +214,10 @@
         {
          "label": "Launch forensics",
          "url": "#launch-forensics"
+        },
+        {
+         "label": "Rug-check checklist",
+         "url": "/guide/meme-trading-playbook/#rug-check"
         }
        ],
        "incidents": []
@@ -930,7 +934,7 @@
      "items": [
       [
        "Bundles",
-       "Wallets buying in the same block, or within seconds of launch. Risk signals: bundles holding more than about 15-20% of supply, many fresh wallets with near-identical amounts, or a bundle still holding after the pump (when it dumps, the price can fall 50% or more in minutes). Lower risk: the bundle has sold out, or holds only a few %."
+       "Wallets buying in the same block, or within seconds of launch. Risk signals: bundles holding about 10% or more of supply (a major red flag; above about 15% is danger), many fresh wallets with near-identical amounts, or a bundle still holding after the pump (when it dumps, the price can fall 50% or more in minutes). Lower risk: the bundle has sold out, or holds only a few %."
       ],
       [
        "Shared-funder rings",
@@ -946,7 +950,7 @@
       ],
       [
        "Contract and honeypot checks",
-       "Mint and freeze authority are off, there is no transfer hook or tax, it is not upgradeable, and LP is locked or burned. Liquidity under about 20% of market cap is thin. Do a tiny test buy, then a tiny test sell."
+       "Mint and freeze authority are off, there is no transfer hook or tax, it is not upgradeable, and LP is locked or burned. Liquidity under about 10% of market cap is a caution, and under about 5% is thin. Do a tiny test buy, then a tiny test sell."
       ],
       [
        "Drainer hygiene",
@@ -974,6 +978,10 @@
       {
        "label": "WhoBought (early buyers of a token)",
        "url": "https://whobought.xyz"
+      },
+      {
+       "label": "Rug-check checklist",
+       "url": "/guide/meme-trading-playbook/#rug-check"
       }
      ]
     }
@@ -1085,6 +1093,10 @@
       {
        "label": "WhoBought",
        "url": "https://whobought.xyz"
+      },
+      {
+       "label": "Rug-check checklist",
+       "url": "/guide/meme-trading-playbook/#rug-check"
       }
      ]
     }
@@ -1092,5 +1104,5 @@
   }
  ],
  "slug": "scams",
- "updated": "2026-10-27"
+ "updated": "2026-10-28"
 }

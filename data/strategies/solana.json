@@ -1,7 +1,7 @@
 {
  "chain": "Solana",
  "slug": "solana",
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "title": "Solana trading strategies: coin types, example coins and how each is traded",
  "summary": "A field guide to how people trade on Solana: nine kinds of coins, a real example of each, the strategies commonly used on them, written entry, stop, exit and sizing rules, the free tools that help, and the red flags.",
  "intro": [
@@ -87,11 +87,11 @@
    ],
    [
     "Top-holder concentration",
-    "Top 10 holders (excluding the pool and burn addresses) above roughly 30-35% is a risk flag. If those wallets are linked to each other, treat it as serious."
+    "Top 10 holders (excluding the pool and burn addresses) above roughly 30% is a risk flag, and one non-pool wallet above about 5% deserves a closer look. If those wallets are linked to each other, treat it as serious. Tools differ: RugCheck only warns above 50%."
    ],
    [
     "Bundles and snipers",
-    "Wallets that bought in the launch block together (a bundle) and still hold a big share can dump on the pool. Check what share they bought and whether they still hold."
+    "Wallets that bought in the launch block together (a bundle) and still hold a big share can dump on the pool. Bundles holding about 10% or more of supply is a major red flag, and above about 15% is danger (rules of thumb). Check what share they bought and whether they still hold."
    ],
    [
     "Shared funding",
@@ -665,7 +665,7 @@
    ],
    [
     "2. Kill checks",
-    "Any of these ends the look: mint authority live; freeze authority live or a changeable transfer fee; LP not burned or locked, or held by one wallet (coins still on the bonding curve have no LP yet); a dev who sold in the first minute, has earlier rugs, or has pulled more SOL out than they put in; bundles or snipers holding enough to dump the pool. Top-10 holders above about 30-35% (excluding pool and burn) is a risk tag, and linked top holders are serious. Ten wallets funded from one source are one person, and exchange-funded wallets can look independent. Copycats and re-mints are common: the contract address is the identity, not the ticker."
+    "Any of these ends the look: mint authority live; freeze authority live or a changeable transfer fee; LP not burned or locked, or held by one wallet (coins still on the bonding curve have no LP yet); a dev who sold in the first minute, has earlier rugs, or has pulled more SOL out than they put in; bundles or snipers holding enough to dump the pool (bundles at about 10% or more of supply are a major red flag, and above about 15% is danger). Top-10 holders above about 30% (excluding pool and burn) is a risk tag, and linked top holders are serious. Ten wallets funded from one source are one person, and exchange-funded wallets can look independent. Copycats and re-mints are common: the contract address is the identity, not the ticker."
    ],
    [
     "3. Demand",

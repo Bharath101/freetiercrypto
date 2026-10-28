@@ -113,12 +113,12 @@
        "Write down where you'll take profit and where you'll cut the loss."
       ],
       [
-       "Risk 1-2% per trade",
-       "That way one bad trade can't hurt you much."
+       "Risk 0.5-1% per trade",
+       "That way one bad trade can't hurt you much. Never risk more than 2%."
       ],
       [
        "Check the coin first",
-       "Run token-safety checks before buying anything new."
+       "Run the rug-check checklist before buying anything new."
       ]
      ]
     },
@@ -128,6 +128,10 @@
       {
        "label": "Meme trading playbook",
        "url": "/guide/meme-trading-playbook/"
+      },
+      {
+       "label": "Rug-check checklist",
+       "url": "/guide/meme-trading-playbook/#rug-check"
       },
       {
        "label": "Solana memecoin guide",
@@ -215,5 +219,5 @@
   }
  ],
  "slug": "start-here",
- "updated": "2026-10-27"
+ "updated": "2026-10-28"
 }
