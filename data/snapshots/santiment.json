@@ -1,8 +1,8 @@
 {
  "id": "santiment",
  "url": "https://app.santiment.net/pricing",
- "fetched_at": "2026-10-28T08:48:12Z",
- "sha256": "a49e2d06d8dfd2470a273a869bee9a520998bde8d45b43bf01f861f6fdf8b894",
+ "fetched_at": "2026-10-29T08:43:50Z",
+ "sha256": "8af0bf13954184bae3ec9e1d547f2882784ba7969f3290fafd68415cdd7dae33",
  "lines": [
   "Pricing for Crypto Analytic Tools - Start a Free Trial",
   "Alerts",
@@ -24,8 +24,7 @@
   "Alert durations",
   "Unlimited",
   "with your transaction details, and the team will promptly add the subscription to your account.",
-  "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-  "Get Free Demo",
+  "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free.",
   "Subscribe to the monthly Digest!"
  ]
 }

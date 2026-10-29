@@ -1,8 +1,8 @@
 {
  "id": "whalealert",
  "url": "https://whale-alert.io/pricing",
- "fetched_at": "2026-10-27T08:07:35Z",
- "sha256": "4a3d87abce6ac207d778f109edc15aa0080cba18a1b147d42706b24b6e9e6776",
+ "fetched_at": "2026-10-29T08:43:50Z",
+ "sha256": "e3e4cef7c33f72812a77d181fd874465c7af75ac38e6953febe3ed6932550049",
  "lines": [
   "Home | Whale Alert",
   "Alerts",
@@ -14,6 +14,7 @@
   "Create Your Own Alerts",
   "View Transaction",
   "Explore More Alerts",
+  "Crypto hacks drive $2.35 billion in losses in 2026, led by centralized exchanges and DeFi exploits",
   "The Whale Alert dashboard is the only tool you need to stay up to date",
   "with important crypto transactions, live analytics and breaking news.",
   "Transactions",

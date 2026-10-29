@@ -1,17 +1,14 @@
 {
  "id": "cryptoquant",
  "url": "https://cryptoquant.com/pricing",
- "fetched_at": "2026-10-27T08:07:35Z",
- "sha256": "180d74784a677346d8e7d52049d917ad64623698f7a43c6530b971fa309acdd6",
+ "fetched_at": "2026-10-29T08:43:50Z",
+ "sha256": "3a1a75ca42de5c1bc37a23d531afa10f1e036dcbe38ba70da627abd14c03f8fe",
  "lines": [
-  "Free ETH",
-  "Alerts",
   "Free",
   "1 alert",
   "10K API credits/mo",
   "Monthly",
   "$29",
-  "Try free for 7 days",
   "5 alerts",
   "300K API credits/mo",
   "$99",
@@ -22,10 +19,6 @@
   "100 alerts",
   "Unlimited API credits",
   "*Ask AI is subject to both daily and monthly limits.",
-  "Start free trial",
-  "Unlimited",
-  "Monthly credits",
-  "Top-up credits",
   "What is the difference between Advanced plan and Professional plan?",
   "Why do I see Professional priced at both $99 and $109?",
   "How do I change my subscription plan?",
@@ -41,6 +34,7 @@
   "You can cancel your paid plan at any time by following these steps.",
   "2. Click [Downgrade] button under the Basic plan box.",
   "You'll be able to keep your paid plan for the remaining period until the next billing date.",
-  "My plan renewed automatically and I was charged. Can I get that refunded?"
+  "My plan renewed automatically and I was charged. Can I get that refunded?",
+  "Alerts"
  ]
 }
