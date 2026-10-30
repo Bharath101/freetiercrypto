@@ -1,11 +1,12 @@
 {
  "id": "metamask",
  "url": "https://metamask.io/",
- "fetched_at": "2026-10-27T08:07:35Z",
- "sha256": "2dcec991ac86b1e72f5e0d79a99eecf3dcebdba2ea840f4d4131204795fb9b44",
+ "fetched_at": "2026-10-30T08:56:00Z",
+ "sha256": "b4940430560dddf2366a0f774f28801a5235c365c8901b161b397b22b75921d1",
  "lines": [
   "Transaction Shield",
   "Community Calls",
+  "The Perps Trading Competition is back with double the prize pool. Compete for your share of up to $100K in mUSD.",
   "Pro order types - Limit, Stop, Chase, Scale, TWAP",
   "markets open, humans on call",
   "Eligible transactions protected up to $10,000/mo for a $9.99/mo fee with real-time scam flags.",

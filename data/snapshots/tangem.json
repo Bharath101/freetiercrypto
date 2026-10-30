@@ -1,11 +1,10 @@
 {
  "id": "tangem",
  "url": "https://tangem.com/en/pricing/",
- "fetched_at": "2026-10-27T08:07:35Z",
- "sha256": "754617fb115984fba93d100cfc670c27d3d14ba163099c47fb4b8f9bc8f9a848",
+ "fetched_at": "2026-10-30T08:56:00Z",
+ "sha256": "5816e1879412ed27039795fb0110c2a23d05129d582240ed0e86478e6744e776",
  "lines": [
   "Tangem Wallet Pricing – 2 & 3 Card and Ring Packs with Free App",
-  "Tangem Wallet for Just $10",
   "$20 in Bitcoin",
   "Free BTC on every wallet you order",
   "$69.90",
@@ -16,7 +15,7 @@
   "$0.00",
   "Free standard shipping for all orders above $100.00 (VAT excl).",
   "Free application",
-  "Standard shipping is free for all orders above $100 (VAT excluded). Select your country above to see the shipping cost and estimated delivery date for your order.",
+  "Standard shipping is free for all orders above $89 or €89 (VAT excluded). Select your country above to see the shipping cost and estimated delivery date for your order.",
   "Yearly Recap 2025"
  ]
 }

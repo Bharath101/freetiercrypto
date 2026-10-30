@@ -1,19 +1,20 @@
 {
- "checked_at": "2026-10-29T08:43:50Z",
+ "checked_at": "2026-10-30T08:56:00Z",
  "checked": 67,
- "unchanged": 40,
+ "unchanged": 44,
  "baselined": [
-  "oneinch"
+  "messari"
  ],
  "changed": [
   {
-   "id": "gocharting",
-   "name": "GoCharting",
-   "url": "https://gocharting.com/pricing",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
+   "id": "trendspider",
+   "name": "TrendSpider",
+   "url": "https://trendspider.com/pricing/",
+   "previous_fetch": "2026-10-28T08:48:12Z",
+   "fetched_at": "2026-10-30T08:56:00Z",
    "added": [
-    "Happy Diwali 🪔 Celebrate with 50% Off On Annual Plans"
+    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
+    "Also, these alerts played out well (Using +3% sell, -2% stop)"
    ],
    "removed": []
   },
@@ -21,88 +22,52 @@
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-10-28T08:48:12Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-10-30T08:56:00Z",
    "added": [
+    "$2.73T",
+    "$142.572B"
+   ],
+   "removed": [
     "$2.774T",
     "$73.424B"
-   ],
-   "removed": [
-    "$2.807T",
-    "$62.565B"
    ]
   },
   {
-   "id": "cointracker",
-   "name": "CoinTracker",
-   "url": "https://www.cointracker.io/pricing",
-   "previous_fetch": "2026-10-28T08:48:12Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
-   "added": [
-    "How many transactions will you have this year?"
-   ],
-   "removed": [
-    "— Your plan covers the transactions in the tax year you're filing. Trades from earlier years don't count against it.",
-    "— Card and referral rebates don't count toward your limit on any paid plan.",
-    "— On Base, staking rewards don't count until they reach $25 in proceeds each year. Prime and above exclude all staking and interest.",
-    "— We match both sides of every transfer and label each transaction, so you aren't sorting a list by hand.",
-    "— Set FIFO, HIFO or LIFO separately for each wallet and each tax year.",
-    "— Every wallet, exchange and chain in one place, free, whether or not you file with us."
-   ]
-  },
-  {
-   "id": "cryptoquant",
-   "name": "CryptoQuant",
-   "url": "https://cryptoquant.com/pricing",
+   "id": "trezor",
+   "name": "Trezor",
+   "url": "https://trezor.io/trezor-safe-3",
    "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
-   "added": [],
+   "fetched_at": "2026-10-30T08:56:00Z",
+   "added": [
+    "15% off all hardware wallets & backups, plus free US shipping over $160."
+   ],
    "removed": [
-    "Free ETH",
-    "Try free for 7 days",
-    "Start free trial",
-    "Unlimited",
-    "Monthly credits",
-    "Top-up credits"
+    "FREE US shipping on orders over $160. Ends Nov 13, 2026."
    ]
   },
   {
-   "id": "santiment",
-   "name": "Santiment (Sanbase)",
-   "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-10-28T08:48:12Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
+   "id": "tangem",
+   "name": "Tangem",
+   "url": "https://tangem.com/en/pricing/",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-10-30T08:56:00Z",
    "added": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+    "Standard shipping is free for all orders above $89 or €89 (VAT excluded). Select your country above to see the shipping cost and estimated delivery date for your order."
    ],
    "removed": [
-    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-    "Get Free Demo"
+    "Tangem Wallet for Just $10",
+    "Standard shipping is free for all orders above $100 (VAT excluded). Select your country above to see the shipping cost and estimated delivery date for your order."
    ]
   },
   {
-   "id": "defillama",
-   "name": "DefiLlama",
-   "url": "https://defillama.com/subscription",
+   "id": "metamask",
+   "name": "MetaMask",
+   "url": "https://metamask.io/",
    "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-10-30T08:56:00Z",
    "added": [
-    "$250",
-    "$3,000 /year",
-    "$3,000/year"
-   ],
-   "removed": []
-  },
-  {
-   "id": "coinstats",
-   "name": "CoinStats",
-   "url": "https://coinstats.app/pricing/",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
-   "added": [
-    "Current Plan",
-    "$62.91",
-    "Select Plan"
+    "The Perps Trading Competition is back with double the prize pool. Compete for your share of up to $100K in mUSD."
    ],
    "removed": []
   },
@@ -110,20 +75,60 @@
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-10-30T08:56:00Z",
    "added": [
-    "Crypto hacks drive $2.35 billion in losses in 2026, led by centralized exchanges and DeFi exploits"
+    "Binance hack triggers $1.54B crypto liquidation bloodbath after $6.3B theft tied to compromised employee laptop",
+    "Power your trades with Whale Alert",
+    "7-day free trial on every plan",
+    "US$14.95",
+    "US$29.95",
+    "Overview and latest alerts",
+    "Live whale transactions",
+    "Try every feature free for 7 days"
    ],
-   "removed": []
+   "removed": [
+    "Crypto hacks drive $2.35 billion in losses in 2026, led by centralized exchanges and DeFi exploits"
+   ]
   },
   {
    "id": "dextools",
    "name": "DEXTools",
    "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-10-28T08:48:12Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-10-30T08:56:00Z",
    "added": [
+    "ETH: $2,230.15",
+    "$280.96M",
+    "$0.1899",
+    "$408.76M",
+    "$2.84B",
+    "$2.05B",
+    "$0.0₅4963",
+    "$102.16M",
+    "$48.05M",
+    "$1.91B",
+    "$125.09",
+    "$28.28M",
+    "$2.00B",
+    "$10.75M",
+    "$1.0001",
+    "$23.89M",
+    "$402.64M",
+    "$193.14M",
+    "$3.98K",
+    "$23.88M",
+    "$3.29B",
+    "$1.23B",
+    "$0.3902",
+    "$19.32M",
+    "$3.90B",
+    "$913.55M",
+    "$0.3933",
+    "$12.20M",
+    "$3.93B"
+   ],
+   "removed": [
     "ETH: $2,315.34",
     "$5.11B",
     "$1.0009",
@@ -131,7 +136,10 @@
     "$6.82B",
     "$26.28M",
     "$80.9948",
+    "$0.9999",
     "$7.99M",
+    "$10.59M",
+    "$2.04B",
     "$0.0₅4938",
     "$6.14M",
     "$1.19B",
@@ -149,100 +157,23 @@
     "$130.50",
     "$1.89M",
     "$2.08B"
-   ],
-   "removed": [
-    "ETH: $2,377.19",
-    "$10.75M",
-    "$1.0001",
-    "$11.78M",
-    "$402.67M",
-    "$80.9940",
-    "$8.07M",
-    "$20.38M",
-    "$0.0203",
-    "$4.23M",
-    "$0.0₅4946",
-    "$4.21M",
-    "$310.31M",
-    "$0.2097",
-    "$2.46M",
-    "$3.14B",
-    "$442.96M",
-    "$1.0664",
-    "$2.37M",
-    "$10.05B",
-    "$2.96K",
-    "$2.29M",
-    "$10.95B",
-    "$2.07B",
-    "$135.96",
-    "$1.50M",
-    "$2.17B"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-10-28T08:48:12Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-10-30T08:56:00Z",
    "added": [
+    "$2.73T",
+    "$142.572B"
+   ],
+   "removed": [
     "$2.774T",
     "$73.424B",
     "Go Ad-free"
-   ],
-   "removed": [
-    "$2.807T",
-    "$62.565B"
    ]
-  },
-  {
-   "id": "jupiter",
-   "name": "Jupiter (Developer Platform)",
-   "url": "https://portal.jup.ag/pricing",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
-   "added": [
-    "Start for free, scale as you grow. All paid plans include access to Jupiter's full API suite.",
-    "Quota limits and pricing at a glance across every plan.",
-    "Price per month",
-    "$0",
-    "$25",
-    "$100",
-    "$500",
-    "Credits per month",
-    "Unlimited",
-    "API requests per second",
-    "Is it free?",
-    "How do I upgrade or downgrade my plan?",
-    "What are credits?",
-    "Start Free"
-   ],
-   "removed": []
-  },
-  {
-   "id": "jupitertokens",
-   "name": "Jupiter Tokens API",
-   "url": "https://portal.jup.ag/pricing",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-29T08:43:50Z",
-   "added": [
-    "Start for free, scale as you grow. All paid plans include access to Jupiter's full API suite.",
-    "Quota limits and pricing at a glance across every plan.",
-    "Price per month",
-    "$0",
-    "$25",
-    "$100",
-    "$500",
-    "Credits per month",
-    "Unlimited",
-    "API requests per second",
-    "Is it free?",
-    "How do I upgrade or downgrade my plan?",
-    "What are credits?",
-    "Start Free"
-   ],
-   "removed": []
   }
  ],
  "failed": [
@@ -267,11 +198,6 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://summ.com/pricing"
   },
   {
-   "id": "trezor",
-   "url": "https://trezor.io/trezor-safe-3",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmptj1zv47d', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
-  },
-  {
    "id": "phantom",
    "url": "https://phantom.com/",
    "error": "fetch_http: only 1 pricing lines"
@@ -279,7 +205,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpwftt_1s3', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp26xeeq8g', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "glassnode",
@@ -287,9 +213,14 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
   },
   {
-   "id": "messari",
-   "url": "https://messari.io/pricing",
-   "error": "fetch_http: HTTPError: 429 Client Error: Too Many Requests for url: https://messari.io/pricing"
+   "id": "coinstats",
+   "url": "https://coinstats.app/pricing/",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://coinstats.app/pricing/"
+  },
+  {
+   "id": "oneinch",
+   "url": "https://business.1inch.com/portal/pricing",
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp48etx12h', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
@@ -299,7 +230,7 @@
   {
    "id": "zapper",
    "url": "https://zapper.xyz/",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp5hwp9ji7', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://zapper.xyz/"
   },
   {
    "id": "rugcheck",
