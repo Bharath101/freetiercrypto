@@ -1,8 +1,8 @@
 {
  "id": "gunbot",
  "url": "https://www.gunbot.com/",
- "fetched_at": "2026-10-27T08:07:35Z",
- "sha256": "feb73a96ef780cf3bac80cf0d65bd6e4539874fd0442e8f508912176555953a3",
+ "fetched_at": "2026-10-31T08:37:25Z",
+ "sha256": "e6e2a7e900eefab00b5759f7c3dee081b74d41af286ab6c9f519424f298e9325",
  "lines": [
   "Gunbot Unlimited · Sample workspace · Login required",
   "Unlimited Customization",
@@ -21,6 +21,7 @@
   "Custom Code included in Gunbot Unlimited →",
   "Limit Grids:",
   "Trade Unlimited Pairs",
+  "Unlimited discount for lifetime owners",
   "Bitcoin monthly returns"
  ]
 }

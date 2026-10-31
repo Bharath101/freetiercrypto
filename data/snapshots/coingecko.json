@@ -1,11 +1,11 @@
 {
  "id": "coingecko",
  "url": "https://www.coingecko.com/en/api/pricing",
- "fetched_at": "2026-10-30T08:56:00Z",
- "sha256": "46dcf3625631245d4439de48f4d697555cdaf7c2c34bd375370542cd06e24209",
+ "fetched_at": "2026-10-31T08:37:25Z",
+ "sha256": "b7fd381b6c2523118089b85fd7b7fcc6a5275dd276e97bed4818dfe345053ed7",
  "lines": [
-  "$2.73T",
-  "$142.572B",
+  "$2.698T",
+  "$83.391B",
   "Free Trial",
   "Same request, fewer credits used",
   "Credit usage for:",

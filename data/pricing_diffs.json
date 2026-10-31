@@ -1,103 +1,142 @@
 {
- "checked_at": "2026-10-30T08:56:00Z",
+ "checked_at": "2026-10-31T08:37:25Z",
  "checked": 67,
- "unchanged": 44,
- "baselined": [
-  "messari"
- ],
+ "unchanged": 47,
+ "baselined": [],
  "changed": [
-  {
-   "id": "trendspider",
-   "name": "TrendSpider",
-   "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-10-28T08:48:12Z",
-   "fetched_at": "2026-10-30T08:56:00Z",
-   "added": [
-    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
-    "Also, these alerts played out well (Using +3% sell, -2% stop)"
-   ],
-   "removed": []
-  },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-10-29T08:43:50Z",
-   "fetched_at": "2026-10-30T08:56:00Z",
+   "previous_fetch": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-10-31T08:37:25Z",
    "added": [
+    "$2.698T",
+    "$83.391B"
+   ],
+   "removed": [
     "$2.73T",
     "$142.572B"
-   ],
-   "removed": [
-    "$2.774T",
-    "$73.424B"
    ]
   },
   {
-   "id": "trezor",
-   "name": "Trezor",
-   "url": "https://trezor.io/trezor-safe-3",
+   "id": "lunarcrush",
+   "name": "LunarCrush",
+   "url": "https://lunarcrush.com/pricing",
    "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-10-31T08:37:25Z",
    "added": [
-    "15% off all hardware wallets & backups, plus free US shipping over $160."
+    "5,000 requests",
+    "Get your API key · $5"
    ],
    "removed": [
-    "FREE US shipping on orders over $160. Ends Nov 13, 2026."
+    "20,000 requests",
+    "Get your API key · $20"
    ]
   },
   {
-   "id": "tangem",
-   "name": "Tangem",
-   "url": "https://tangem.com/en/pricing/",
+   "id": "gunbot",
+   "name": "Gunbot",
+   "url": "https://www.gunbot.com/",
    "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-10-31T08:37:25Z",
    "added": [
-    "Standard shipping is free for all orders above $89 or €89 (VAT excluded). Select your country above to see the shipping cost and estimated delivery date for your order."
-   ],
-   "removed": [
-    "Tangem Wallet for Just $10",
-    "Standard shipping is free for all orders above $100 (VAT excluded). Select your country above to see the shipping cost and estimated delivery date for your order."
-   ]
-  },
-  {
-   "id": "metamask",
-   "name": "MetaMask",
-   "url": "https://metamask.io/",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-30T08:56:00Z",
-   "added": [
-    "The Perps Trading Competition is back with double the prize pool. Compete for your share of up to $100K in mUSD."
+    "Unlimited discount for lifetime owners"
    ],
    "removed": []
+  },
+  {
+   "id": "santiment",
+   "name": "Santiment (Sanbase)",
+   "url": "https://app.santiment.net/pricing",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-10-31T08:37:25Z",
+   "added": [
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
+   ],
+   "removed": [
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+   ]
+  },
+  {
+   "id": "messari",
+   "name": "Messari",
+   "url": "https://messari.io/pricing",
+   "previous_fetch": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-10-31T08:37:25Z",
+   "added": [
+    "Blockworks Intel Pricing: Free, Pro & Data Packages | Blockworks Intel",
+    "Free",
+    "New Report Alerts",
+    "Does Blockworks offer a trial?"
+   ],
+   "removed": [
+    "Available via Request",
+    "Research Alerts",
+    "Intel Alerts",
+    "Diligence Alerts",
+    "What features does the Enterprise Plan include?",
+    "The Enterprise Plan provides access to all premium features available on the Messari Website including:",
+    "Real-time events monitoring, signals, and alerts",
+    "Does the Enterprise Plan include access to an API?",
+    "You can pay via Credit card, Apple Pay, or Google Pay. ACH payments are also available, please",
+    "Does Messari offer a trial for Enterprise?",
+    "Self-serve trials are not currently available. If your team is interested in a trial, please",
+    ". Alternatively, you can explore our Basic plan to get a preview of the services we provide.",
+    "We believe crypto is the technology of free people, free thinking, and free markets."
+   ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-10-29T08:43:50Z",
-   "fetched_at": "2026-10-30T08:56:00Z",
-   "added": [
-    "Binance hack triggers $1.54B crypto liquidation bloodbath after $6.3B theft tied to compromised employee laptop",
-    "Power your trades with Whale Alert",
-    "7-day free trial on every plan",
-    "US$14.95",
-    "US$29.95",
-    "Overview and latest alerts",
-    "Live whale transactions",
-    "Try every feature free for 7 days"
-   ],
+   "previous_fetch": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-10-31T08:37:25Z",
+   "added": [],
    "removed": [
-    "Crypto hacks drive $2.35 billion in losses in 2026, led by centralized exchanges and DeFi exploits"
+    "Binance hack triggers $1.54B crypto liquidation bloodbath after $6.3B theft tied to compromised employee laptop"
    ]
   },
   {
    "id": "dextools",
    "name": "DEXTools",
    "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-10-29T08:43:50Z",
-   "fetched_at": "2026-10-30T08:56:00Z",
+   "previous_fetch": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-10-31T08:37:25Z",
    "added": [
+    "ETH: $2,238.69",
+    "$5.11B",
+    "$1.0008",
+    "$235.35M",
+    "$6.82B",
+    "$2.08B",
+    "$0.0₅5026",
+    "$15.69M",
+    "$0.9999",
+    "$11.02M",
+    "$402.58M",
+    "$39.23M",
+    "$0.0735",
+    "$6.97M",
+    "$74.22M",
+    "$9.47B",
+    "$2.79K",
+    "$6.69M",
+    "$10.31B",
+    "$7.91B",
+    "$11.3627",
+    "$5.57M",
+    "$11.36B",
+    "$258.02M",
+    "$0.0050",
+    "$5.39M",
+    "$291.57M",
+    "$428.43M",
+    "$1.0673",
+    "$4.09M"
+   ],
+   "removed": [
     "ETH: $2,230.15",
     "$280.96M",
     "$0.1899",
@@ -111,7 +150,6 @@
     "$125.09",
     "$28.28M",
     "$2.00B",
-    "$10.75M",
     "$1.0001",
     "$23.89M",
     "$402.64M",
@@ -127,52 +165,21 @@
     "$0.3933",
     "$12.20M",
     "$3.93B"
-   ],
-   "removed": [
-    "ETH: $2,315.34",
-    "$5.11B",
-    "$1.0009",
-    "$260.22M",
-    "$6.82B",
-    "$26.28M",
-    "$80.9948",
-    "$0.9999",
-    "$7.99M",
-    "$10.59M",
-    "$2.04B",
-    "$0.0₅4938",
-    "$6.14M",
-    "$1.19B",
-    "$1.2563",
-    "$2.82M",
-    "$292.30M",
-    "$0.1976",
-    "$1.94M",
-    "$2.96B",
-    "$7.96B",
-    "$11.4303",
-    "$1.93M",
-    "$11.43B",
-    "$1.99B",
-    "$130.50",
-    "$1.89M",
-    "$2.08B"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-10-29T08:43:50Z",
-   "fetched_at": "2026-10-30T08:56:00Z",
+   "previous_fetch": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-10-31T08:37:25Z",
    "added": [
-    "$2.73T",
-    "$142.572B"
+    "$2.698T",
+    "$83.391B"
    ],
    "removed": [
-    "$2.774T",
-    "$73.424B",
-    "Go Ad-free"
+    "$2.73T",
+    "$142.572B"
    ]
   }
  ],
@@ -198,6 +205,11 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://summ.com/pricing"
   },
   {
+   "id": "trezor",
+   "url": "https://trezor.io/trezor-safe-3",
+   "error": "fetch_http: only 2 pricing lines"
+  },
+  {
    "id": "phantom",
    "url": "https://phantom.com/",
    "error": "fetch_http: only 1 pricing lines"
@@ -205,22 +217,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp26xeeq8g', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
-  },
-  {
-   "id": "glassnode",
-   "url": "https://studio.glassnode.com/pricing",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
-  },
-  {
-   "id": "coinstats",
-   "url": "https://coinstats.app/pricing/",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://coinstats.app/pricing/"
-  },
-  {
-   "id": "oneinch",
-   "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp48etx12h', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpv7eaehoe', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",

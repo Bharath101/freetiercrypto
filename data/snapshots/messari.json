@@ -1,22 +1,13 @@
 {
  "id": "messari",
  "url": "https://messari.io/pricing",
- "fetched_at": "2026-10-30T08:56:00Z",
- "sha256": "3999dbf60c2bed4d5587d09c667de6dbc13ce606b348af7084c87d88eb8f7065",
+ "fetched_at": "2026-10-31T08:37:25Z",
+ "sha256": "e17cf63fd14ab20441915c373b0aebbdf32ff915c6b64740c480661818737849",
  "lines": [
+  "Blockworks Intel Pricing: Free, Pro & Data Packages | Blockworks Intel",
+  "Free",
   "Unlimited",
-  "Available via Request",
-  "Research Alerts",
-  "Intel Alerts",
-  "Diligence Alerts",
-  "What features does the Enterprise Plan include?",
-  "The Enterprise Plan provides access to all premium features available on the Messari Website including:",
-  "Real-time events monitoring, signals, and alerts",
-  "Does the Enterprise Plan include access to an API?",
-  "You can pay via Credit card, Apple Pay, or Google Pay. ACH payments are also available, please",
-  "Does Messari offer a trial for Enterprise?",
-  "Self-serve trials are not currently available. If your team is interested in a trial, please",
-  ". Alternatively, you can explore our Basic plan to get a preview of the services we provide.",
-  "We believe crypto is the technology of free people, free thinking, and free markets."
+  "New Report Alerts",
+  "Does Blockworks offer a trial?"
  ]
 }
