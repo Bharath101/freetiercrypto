@@ -457,7 +457,8 @@
          "Watch out for",
          [
           "It's a hot wallet, so keep savings elsewhere",
-          "Not open source"
+          "Not open source",
+          "The Copy button copies one trade, not the trader's exits"
          ]
         ]
        ],
@@ -480,6 +481,15 @@
           "label": "Walletbeat, Phantom profile",
           "url": "https://beta.walletbeat.eth.link/phantom/",
           "date": "2026-10-27",
+          "read": true
+         }
+        },
+        {
+         "text": "Phantom's mobile app has Live Trades and Top Traders lists with a Copy button. Its help centre says a copy is a one-time action: the trader's later exits and new trades are not copied, you manage the trade yourself, and your entry price can differ from theirs.",
+         "src": {
+          "label": "Phantom help, use Live Trades in Phantom",
+          "url": "https://help.phantom.com/articles/use-live-trades-in-phantom-55656033921939",
+          "date": "2026-11-01",
           "read": true
          }
         }
@@ -909,6 +919,24 @@
         "url": "https://www.ngrave.io/en/blog/incident-report-fake-liquid-security-alert-17-october",
         "date": "2026-10-19"
        }
+      },
+      {
+       "text": "Oct 29, 2026: about $6.3B (Binance's estimate; Elliptic counted $6.43B) was taken from Binance's hot wallets across 11 blockchains, the largest crypto theft on record. Binance paused withdrawals, said it would cover users' losses from its own funds, and planned to reopen withdrawals on Nov 1. The FBI blamed North Korea's TraderTraitor group. Lesson: coins kept on an exchange are held by the exchange, and even the biggest one can freeze withdrawals for days. Keep only what you are actively trading there.",
+       "src": {
+        "label": "Elliptic, the $6.4 billion Binance hack",
+        "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history/",
+        "date": "2026-11-01",
+        "read": true
+       }
+      },
+      {
+       "text": "Binance's Oct 31 update said it had replaced about 90% of the stolen assets using its SAFU emergency fund, part of its futures insurance fund and company money, and the FBI named North Korea as responsible the same day (as reported by Reuters).",
+       "src": {
+        "label": "Nikkei Asia (Reuters), Binance says it has covered 90% of losses from $6.3bn hack",
+        "url": "https://asia.nikkei.com/spotlight/cryptocurrencies/binance-says-it-has-covered-90-of-losses-from-6.3bn-hack",
+        "date": "2026-11-01",
+        "read": true
+       }
       }
      ]
     }
@@ -916,5 +944,5 @@
   }
  ],
  "slug": "wallets",
- "updated": "2026-10-27"
+ "updated": "2026-11-01"
 }

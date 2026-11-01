@@ -249,16 +249,20 @@
     "url": "https://coinrule.com/",
     "category": "trading-bots",
     "chains": "unverified",
-    "has_free_tier": "unverified",
-    "free_tier_limits": "unverified",
-    "cheapest_paid": "unverified",
-    "price_source_url": "https://coinrule.com/pricing/",
-    "date_checked": "2026-10-26",
+    "has_free_tier": "yes",
+    "free_tier_limits": "Free Starter plan: 2 running strategies, 1 connected exchange, $3k monthly volume",
+    "cheapest_paid": {
+      "text": "$29.99/mo Investor ($359 billed yearly)",
+      "usd_per_month": 29.99,
+      "plan": "Investor"
+    },
+    "price_source_url": "https://coinrule.com/pricing.html",
+    "date_checked": "2026-11-01",
     "best_free_alternative": "bitsgap",
     "affiliate_program": "unverified",
     "affiliate_url": null,
-    "verification": "unverified",
-    "notes": "Pricing page returned an error when checked."
+    "verification": "verified",
+    "notes": "The old /pricing/ address now returns an error; the pricing page moved to /pricing.html."
   },
   {
     "id": "tradesanta",

@@ -860,6 +860,16 @@
        }
       },
       {
+       "date": "2026-10-25",
+       "text": "Playboi Carti's X account: the rapper's long-quiet profile (about 3.6M followers) suddenly tagged pump.fun in its bio, and a 'CARTI' token appeared under his name. It reached a reported market cap of about $1.2M, then collapsed within hours, and more than 20 copycat CARTI tokens popped up on several chains. His team had made no statement at the time of reporting, so it is not confirmed whether the account was hacked or who launched the token.",
+       "src": {
+        "label": "Bitcoin.com News, Playboi Carti's X account pushed a meme coin that rugged within hours",
+        "url": "https://news.bitcoin.com/security/playboi-carti-x-account-memecoin-rug-pull/",
+        "date": "2026-10-26",
+        "read": true
+       }
+      },
+      {
        "date": "2025-02-11",
        "text": "The pattern is common. A Merkle Science report covered by CoinDesk said more than $500M was lost to memecoin rug pulls and scams in 2024, much of it through social engineering and hacked high-profile accounts, and that 75% of the attacks it tracked were on X.",
        "src": {
@@ -1442,11 +1452,11 @@
      "type": "facts",
      "items": [
       {
-       "text": "On Oct 28, 2026, DefiLlama's Solana DEX volume page showed about $1.65 billion of DEX volume in the past 24 hours and about $55.3 billion over 30 days, with weekly volume down 16%. DefiLlama's public API showed somewhat higher totals the same day (about $1.85 billion and $60.8 billion), so the numbers depend on what is counted. They change daily, so check the live page.",
+       "text": "On Nov 1, 2026, DefiLlama's Solana DEX volume page showed about $1.49 billion of DEX volume in the past 24 hours and about $52.6 billion over 30 days, with weekly volume down about 14%. DefiLlama's public API showed different totals the same morning (about $1.44 billion and $58.1 billion), so the numbers depend on what is counted. They change daily, so check the live page.",
        "src": {
         "label": "DefiLlama, Solana DEX volume",
         "url": "https://defillama.com/dexs/chain/solana",
-        "date": "2026-10-28",
+        "date": "2026-11-01",
         "read": true
        }
       }
@@ -2057,5 +2067,5 @@
   }
  ],
  "slug": "meme-trading-playbook",
- "updated": "2026-10-28"
+ "updated": "2026-11-01"
 }

@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-01",
+    "title": "Coinrule pricing found",
+    "summary": "The pricing page moved to /pricing.html. Free Starter plan (2 running strategies, 1 exchange, $3k monthly volume); cheapest paid plan is Investor at $29.99/mo ($359 billed yearly).",
+    "source_url": "https://coinrule.com/pricing.html"
+  },
+  {
     "date": "2026-10-26",
     "title": "LunarCrush cheapest plan corrected",
     "summary": "Cheapest paid plan is Light at $90/mo billed monthly ($72/mo yearly), with API access at 10 requests/min and 2,000/day. The $240 we showed was Medium billed yearly.",
