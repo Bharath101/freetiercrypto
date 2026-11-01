@@ -44,11 +44,11 @@
        }
       },
       {
-       "text": "Crypto investment fraud was the top loss category in the FBI's 2025 report at $7.2B. Crypto-related complaints totalled 181,565, with more than $11B lost.",
+       "text": "In the FBI's 2025 IC3 report, 181,565 complaints involved crypto, with $11.37B lost (up 22% from 2024). Crypto investment fraud alone was $7.23B from 61,559 complaints. People aged 60 and over reported $4.43B of the crypto losses (44,555 complaints), according to the report's crypto section (printed page 52).",
        "src": {
         "label": "FBI IC3, 2025 Internet Crime Report (PDF)",
         "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
-        "date": "2026-10-27",
+        "date": "2026-11-01",
         "read": true
        }
       },
@@ -804,7 +804,7 @@
        "incidents": [
         {
          "date": "2026-10-27",
-         "text": "The FBI's 2025 IC3 report put crypto investment fraud losses at $7.2B, the largest loss category in the report.",
+         "text": "The FBI's 2025 IC3 report put crypto investment fraud losses at $7.23B from 61,559 complaints. Investment fraud was again the costliest crime type in the report, and most of its losses involved crypto.",
          "src": {
           "label": "FBI IC3, 2025 Internet Crime Report (PDF)",
           "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
@@ -1104,5 +1104,5 @@
   }
  ],
  "slug": "scams",
- "updated": "2026-10-28"
+ "updated": "2026-11-01"
 }

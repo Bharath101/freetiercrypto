@@ -585,8 +585,8 @@
         {
          "text": "Rabby offers pre-sign transaction simulation and a built-in approvals manager.",
          "src": {
-          "label": "Rabby, security",
-          "url": "https://rabby.is/en/security.html",
+          "label": "Rabby, official site",
+          "url": "https://rabby.io/",
           "date": "2026-10-27",
           "read": true
          }
@@ -921,7 +921,7 @@
        }
       },
       {
-       "text": "Oct 29, 2026: about $6.3B (Binance's estimate; Elliptic counted $6.43B) was taken from Binance's hot wallets across 11 blockchains, the largest crypto theft on record. Binance paused withdrawals, said it would cover users' losses from its own funds, and planned to reopen withdrawals on Nov 1. The FBI blamed North Korea's TraderTraitor group. Lesson: coins kept on an exchange are held by the exchange, and even the biggest one can freeze withdrawals for days. Keep only what you are actively trading there.",
+       "text": "Oct 29, 2026: about $6.3B (Binance's estimate; Elliptic counted $6.43B) was taken from Binance's hot wallets across 11 blockchains, the largest crypto theft on record. Binance paused withdrawals and said users would not bear the loss. As of early Nov 1, it said it was on track to reopen withdrawals that day, but had not yet confirmed they were back. The FBI blamed North Korea's TraderTraitor group. Lesson: coins kept on an exchange are held by the exchange, and even the biggest one can freeze withdrawals for days. Keep only what you are actively trading there.",
        "src": {
         "label": "Elliptic, the $6.4 billion Binance hack",
         "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history/",
@@ -930,7 +930,7 @@
        }
       },
       {
-       "text": "Binance's Oct 31 update said it had replaced about 90% of the stolen assets using its SAFU emergency fund, part of its futures insurance fund and company money, and the FBI named North Korea as responsible the same day (as reported by Reuters).",
+       "text": "Binance's Oct 31 update said it had replenished about 90% of the stolen assets by buying replacement tokens with its SAFU emergency fund, part of its Futures insurance fund and corporate funds. That means Binance filled the gap with its own money, not that the stolen coins came back. The FBI named North Korea as responsible the same day (as reported by Reuters).",
        "src": {
         "label": "Nikkei Asia (Reuters), Binance says it has covered 90% of losses from $6.3bn hack",
         "url": "https://asia.nikkei.com/spotlight/cryptocurrencies/binance-says-it-has-covered-90-of-losses-from-6.3bn-hack",
