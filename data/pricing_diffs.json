@@ -1,119 +1,93 @@
 {
- "checked_at": "2026-10-31T08:37:25Z",
+ "checked_at": "2026-11-01T09:28:09Z",
  "checked": 67,
- "unchanged": 47,
- "baselined": [],
+ "unchanged": 49,
+ "baselined": [
+  "coinrule"
+ ],
  "changed": [
+  {
+   "id": "trendspider",
+   "name": "TrendSpider",
+   "url": "https://trendspider.com/pricing/",
+   "previous_fetch": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-11-01T09:28:09Z",
+   "added": [],
+   "removed": [
+    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
+    "Also, these alerts played out well (Using +3% sell, -2% stop)"
+   ]
+  },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-10-30T08:56:00Z",
-   "fetched_at": "2026-10-31T08:37:25Z",
+   "previous_fetch": "2026-10-31T08:37:25Z",
+   "fetched_at": "2026-11-01T09:28:09Z",
    "added": [
+    "$2.684T",
+    "$75.255B"
+   ],
+   "removed": [
     "$2.698T",
     "$83.391B"
-   ],
-   "removed": [
-    "$2.73T",
-    "$142.572B"
-   ]
-  },
-  {
-   "id": "lunarcrush",
-   "name": "LunarCrush",
-   "url": "https://lunarcrush.com/pricing",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-31T08:37:25Z",
-   "added": [
-    "5,000 requests",
-    "Get your API key · $5"
-   ],
-   "removed": [
-    "20,000 requests",
-    "Get your API key · $20"
-   ]
-  },
-  {
-   "id": "gunbot",
-   "name": "Gunbot",
-   "url": "https://www.gunbot.com/",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-10-31T08:37:25Z",
-   "added": [
-    "Unlimited discount for lifetime owners"
-   ],
-   "removed": []
-  },
-  {
-   "id": "santiment",
-   "name": "Santiment (Sanbase)",
-   "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-10-29T08:43:50Z",
-   "fetched_at": "2026-10-31T08:37:25Z",
-   "added": [
-    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-    "Get Free Demo"
-   ],
-   "removed": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
-   ]
-  },
-  {
-   "id": "messari",
-   "name": "Messari",
-   "url": "https://messari.io/pricing",
-   "previous_fetch": "2026-10-30T08:56:00Z",
-   "fetched_at": "2026-10-31T08:37:25Z",
-   "added": [
-    "Blockworks Intel Pricing: Free, Pro & Data Packages | Blockworks Intel",
-    "Free",
-    "New Report Alerts",
-    "Does Blockworks offer a trial?"
-   ],
-   "removed": [
-    "Available via Request",
-    "Research Alerts",
-    "Intel Alerts",
-    "Diligence Alerts",
-    "What features does the Enterprise Plan include?",
-    "The Enterprise Plan provides access to all premium features available on the Messari Website including:",
-    "Real-time events monitoring, signals, and alerts",
-    "Does the Enterprise Plan include access to an API?",
-    "You can pay via Credit card, Apple Pay, or Google Pay. ACH payments are also available, please",
-    "Does Messari offer a trial for Enterprise?",
-    "Self-serve trials are not currently available. If your team is interested in a trial, please",
-    ". Alternatively, you can explore our Basic plan to get a preview of the services we provide.",
-    "We believe crypto is the technology of free people, free thinking, and free markets."
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-10-30T08:56:00Z",
-   "fetched_at": "2026-10-31T08:37:25Z",
-   "added": [],
-   "removed": [
-    "Binance hack triggers $1.54B crypto liquidation bloodbath after $6.3B theft tied to compromised employee laptop"
-   ]
+   "previous_fetch": "2026-10-31T08:37:25Z",
+   "fetched_at": "2026-11-01T09:28:09Z",
+   "added": [
+    "Binance reopens Bitcoin withdrawals after $6.3B hack, says 95% restored"
+   ],
+   "removed": []
   },
   {
    "id": "dextools",
    "name": "DEXTools",
    "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-10-30T08:56:00Z",
-   "fetched_at": "2026-10-31T08:37:25Z",
+   "previous_fetch": "2026-10-31T08:37:25Z",
+   "fetched_at": "2026-11-01T09:28:09Z",
    "added": [
+    "ETH: $2,268.09",
+    "$1.0010",
+    "$93.50M",
+    "$6.44B",
+    "$9.61B",
+    "$2.83K",
+    "$5.80M",
+    "$10.50B",
+    "$80.9991",
+    "$4.43M",
+    "$10.83M",
+    "$49.71M",
+    "$0.2258",
+    "$3.96M",
+    "$67.74M",
+    "$2.06B",
+    "$0.0₅4991",
+    "$3.62M",
+    "$276.36M",
+    "$0.0053",
+    "$3.37M",
+    "$306.99M",
+    "$136.80",
+    "$2.50M",
+    "$2.18B",
+    "$1.17B",
+    "$1.2556",
+    "$2.13M"
+   ],
+   "removed": [
     "ETH: $2,238.69",
-    "$5.11B",
     "$1.0008",
     "$235.35M",
     "$6.82B",
-    "$2.08B",
     "$0.0₅5026",
     "$15.69M",
-    "$0.9999",
+    "$10.75M",
     "$11.02M",
     "$402.58M",
     "$39.23M",
@@ -135,51 +109,21 @@
     "$428.43M",
     "$1.0673",
     "$4.09M"
-   ],
-   "removed": [
-    "ETH: $2,230.15",
-    "$280.96M",
-    "$0.1899",
-    "$408.76M",
-    "$2.84B",
-    "$2.05B",
-    "$0.0₅4963",
-    "$102.16M",
-    "$48.05M",
-    "$1.91B",
-    "$125.09",
-    "$28.28M",
-    "$2.00B",
-    "$1.0001",
-    "$23.89M",
-    "$402.64M",
-    "$193.14M",
-    "$3.98K",
-    "$23.88M",
-    "$3.29B",
-    "$1.23B",
-    "$0.3902",
-    "$19.32M",
-    "$3.90B",
-    "$913.55M",
-    "$0.3933",
-    "$12.20M",
-    "$3.93B"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-10-30T08:56:00Z",
-   "fetched_at": "2026-10-31T08:37:25Z",
+   "previous_fetch": "2026-10-31T08:37:25Z",
+   "fetched_at": "2026-11-01T09:28:09Z",
    "added": [
-    "$2.698T",
-    "$83.391B"
+    "$2.684T",
+    "$75.255B"
    ],
    "removed": [
-    "$2.73T",
-    "$142.572B"
+    "$2.698T",
+    "$83.391B"
    ]
   }
  ],
@@ -188,11 +132,6 @@
    "id": "altfins",
    "url": "https://altfins.com/pricing/",
    "error": "fetch_http: only 0 pricing lines"
-  },
-  {
-   "id": "coinrule",
-   "url": "https://coinrule.com/pricing/",
-   "error": "fetch_http: HTTPError: 404 Client Error: Not Found for url: https://coinrule.com/pricing/"
   },
   {
    "id": "tradesanta",
@@ -205,11 +144,6 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://summ.com/pricing"
   },
   {
-   "id": "trezor",
-   "url": "https://trezor.io/trezor-safe-3",
-   "error": "fetch_http: only 2 pricing lines"
-  },
-  {
    "id": "phantom",
    "url": "https://phantom.com/",
    "error": "fetch_http: only 1 pricing lines"
@@ -217,7 +151,17 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpv7eaehoe', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmph8mnvv69', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+  },
+  {
+   "id": "coinstats",
+   "url": "https://coinstats.app/pricing/",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://coinstats.app/pricing/"
+  },
+  {
+   "id": "oneinch",
+   "url": "https://business.1inch.com/portal/pricing",
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpnh5mi__u', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
