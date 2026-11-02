@@ -1,129 +1,71 @@
 {
- "checked_at": "2026-11-01T09:28:09Z",
+ "checked_at": "2026-11-02T09:44:22Z",
  "checked": 67,
  "unchanged": 49,
- "baselined": [
-  "coinrule"
- ],
+ "baselined": [],
  "changed": [
   {
    "id": "trendspider",
    "name": "TrendSpider",
    "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-10-30T08:56:00Z",
-   "fetched_at": "2026-11-01T09:28:09Z",
+   "previous_fetch": "2026-11-01T09:28:09Z",
+   "fetched_at": "2026-11-02T09:44:22Z",
    "added": [],
    "removed": [
-    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
-    "Also, these alerts played out well (Using +3% sell, -2% stop)"
+    "Try any plan for $19, or buy now and save even more.",
+    "Plus 2 free months of Sidekick Plus AI,",
+    "a $258 value"
    ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-10-31T08:37:25Z",
-   "fetched_at": "2026-11-01T09:28:09Z",
+   "previous_fetch": "2026-11-01T09:28:09Z",
+   "fetched_at": "2026-11-02T09:44:22Z",
    "added": [
-    "$2.684T",
-    "$75.255B"
+    "$48.442B"
    ],
    "removed": [
-    "$2.698T",
-    "$83.391B"
+    "$75.255B"
+   ]
+  },
+  {
+   "id": "santiment",
+   "name": "Santiment (Sanbase)",
+   "url": "https://app.santiment.net/pricing",
+   "previous_fetch": "2026-10-31T08:37:25Z",
+   "fetched_at": "2026-11-02T09:44:22Z",
+   "added": [
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+   ],
+   "removed": [
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-10-31T08:37:25Z",
-   "fetched_at": "2026-11-01T09:28:09Z",
-   "added": [
-    "Binance reopens Bitcoin withdrawals after $6.3B hack, says 95% restored"
-   ],
-   "removed": []
-  },
-  {
-   "id": "dextools",
-   "name": "DEXTools",
-   "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-10-31T08:37:25Z",
-   "fetched_at": "2026-11-01T09:28:09Z",
-   "added": [
-    "ETH: $2,268.09",
-    "$1.0010",
-    "$93.50M",
-    "$6.44B",
-    "$9.61B",
-    "$2.83K",
-    "$5.80M",
-    "$10.50B",
-    "$80.9991",
-    "$4.43M",
-    "$10.83M",
-    "$49.71M",
-    "$0.2258",
-    "$3.96M",
-    "$67.74M",
-    "$2.06B",
-    "$0.0₅4991",
-    "$3.62M",
-    "$276.36M",
-    "$0.0053",
-    "$3.37M",
-    "$306.99M",
-    "$136.80",
-    "$2.50M",
-    "$2.18B",
-    "$1.17B",
-    "$1.2556",
-    "$2.13M"
-   ],
+   "previous_fetch": "2026-11-01T09:28:09Z",
+   "fetched_at": "2026-11-02T09:44:22Z",
+   "added": [],
    "removed": [
-    "ETH: $2,238.69",
-    "$1.0008",
-    "$235.35M",
-    "$6.82B",
-    "$0.0₅5026",
-    "$15.69M",
-    "$10.75M",
-    "$11.02M",
-    "$402.58M",
-    "$39.23M",
-    "$0.0735",
-    "$6.97M",
-    "$74.22M",
-    "$9.47B",
-    "$2.79K",
-    "$6.69M",
-    "$10.31B",
-    "$7.91B",
-    "$11.3627",
-    "$5.57M",
-    "$11.36B",
-    "$258.02M",
-    "$0.0050",
-    "$5.39M",
-    "$291.57M",
-    "$428.43M",
-    "$1.0673",
-    "$4.09M"
+    "Binance reopens Bitcoin withdrawals after $6.3B hack, says 95% restored"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-10-31T08:37:25Z",
-   "fetched_at": "2026-11-01T09:28:09Z",
+   "previous_fetch": "2026-11-01T09:28:09Z",
+   "fetched_at": "2026-11-02T09:44:22Z",
    "added": [
-    "$2.684T",
-    "$75.255B"
+    "$48.442B"
    ],
    "removed": [
-    "$2.698T",
-    "$83.391B"
+    "$75.255B"
    ]
   }
  ],
@@ -151,17 +93,22 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmph8mnvv69', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpo52anz_y', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
-   "id": "coinstats",
-   "url": "https://coinstats.app/pricing/",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://coinstats.app/pricing/"
+   "id": "bubblemaps",
+   "url": "https://pro.bubblemaps.io/api/plans",
+   "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "dextools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "error": "fetch_http: only 0 pricing lines"
   },
   {
    "id": "oneinch",
    "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpnh5mi__u', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp11oo8sdf', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",

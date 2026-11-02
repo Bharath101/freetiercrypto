@@ -1,8 +1,8 @@
 {
  "id": "whalealert",
  "url": "https://whale-alert.io/pricing",
- "fetched_at": "2026-11-01T09:28:09Z",
- "sha256": "969268346a654cc6a620b9195160cf2f035204111875417dcef63cf5e0c87c35",
+ "fetched_at": "2026-11-02T09:44:22Z",
+ "sha256": "9ca1abf2d938628554fa30c4a18f494799f7b20cb8514b4adeeeabe7143942a1",
  "lines": [
   "Home | Whale Alert",
   "Alerts",
@@ -14,7 +14,6 @@
   "Create Your Own Alerts",
   "View Transaction",
   "Explore More Alerts",
-  "Binance reopens Bitcoin withdrawals after $6.3B hack, says 95% restored",
   "The Whale Alert dashboard is the only tool you need to stay up to date",
   "with important crypto transactions, live analytics and breaking news.",
   "Transactions",
