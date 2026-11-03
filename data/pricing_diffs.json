@@ -1,71 +1,112 @@
 {
- "checked_at": "2026-11-02T09:44:22Z",
+ "checked_at": "2026-11-03T09:48:19Z",
  "checked": 67,
- "unchanged": 49,
+ "unchanged": 44,
  "baselined": [],
  "changed": [
   {
    "id": "trendspider",
    "name": "TrendSpider",
    "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-01T09:28:09Z",
-   "fetched_at": "2026-11-02T09:44:22Z",
-   "added": [],
+   "previous_fetch": "2026-11-02T09:44:22Z",
+   "fetched_at": "2026-11-03T09:48:19Z",
+   "added": [
+    "Black Friday pricing: $1 a day to try, or buy now and save more.",
+    "Plus 6 free months of Sidekick Plus AI & SignalStack Pro,",
+    "a $2,814 value",
+    "Trial (7 Days)"
+   ],
    "removed": [
-    "Try any plan for $19, or buy now and save even more.",
-    "Plus 2 free months of Sidekick Plus AI,",
-    "a $258 value"
+    "Trial (14 Days)"
    ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-01T09:28:09Z",
-   "fetched_at": "2026-11-02T09:44:22Z",
+   "previous_fetch": "2026-11-02T09:44:22Z",
+   "fetched_at": "2026-11-03T09:48:19Z",
    "added": [
-    "$48.442B"
+    "$2.644T",
+    "$68.17B"
    ],
    "removed": [
-    "$75.255B"
+    "$2.684T",
+    "$48.442B"
    ]
   },
   {
-   "id": "santiment",
-   "name": "Santiment (Sanbase)",
-   "url": "https://app.santiment.net/pricing",
+   "id": "gunbot",
+   "name": "Gunbot",
+   "url": "https://www.gunbot.com/",
    "previous_fetch": "2026-10-31T08:37:25Z",
-   "fetched_at": "2026-11-02T09:44:22Z",
+   "fetched_at": "2026-11-03T09:48:19Z",
    "added": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+    "See your upgrade offer for Gunbot Unlimited."
+   ],
+   "removed": []
+  },
+  {
+   "id": "tangem",
+   "name": "Tangem",
+   "url": "https://tangem.com/en/pricing/",
+   "previous_fetch": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-11-03T09:48:19Z",
+   "added": [
+    "$139.80"
    ],
    "removed": [
-    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-    "Get Free Demo"
+    "$129.80"
    ]
+  },
+  {
+   "id": "defillama",
+   "name": "DefiLlama",
+   "url": "https://defillama.com/subscription",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-11-03T09:48:19Z",
+   "added": [],
+   "removed": [
+    "$250",
+    "$3,000 /year",
+    "$3,000/year"
+   ]
+  },
+  {
+   "id": "kubera",
+   "name": "Kubera",
+   "url": "https://www.kubera.com/",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-03T09:48:19Z",
+   "added": [
+    "$250 a year. Not 1% of your wealth"
+   ],
+   "removed": []
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-01T09:28:09Z",
-   "fetched_at": "2026-11-02T09:44:22Z",
-   "added": [],
-   "removed": [
-    "Binance reopens Bitcoin withdrawals after $6.3B hack, says 95% restored"
-   ]
+   "previous_fetch": "2026-11-02T09:44:22Z",
+   "fetched_at": "2026-11-03T09:48:19Z",
+   "added": [
+    "Binance breach pushes crypto hack losses above $11.4 billion"
+   ],
+   "removed": []
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-01T09:28:09Z",
-   "fetched_at": "2026-11-02T09:44:22Z",
+   "previous_fetch": "2026-11-02T09:44:22Z",
+   "fetched_at": "2026-11-03T09:48:19Z",
    "added": [
-    "$48.442B"
+    "$2.644T",
+    "$68.17B"
    ],
    "removed": [
-    "$75.255B"
+    "$2.684T",
+    "$48.442B"
    ]
   }
  ],
@@ -86,6 +127,11 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://summ.com/pricing"
   },
   {
+   "id": "trezor",
+   "url": "https://trezor.io/trezor-safe-3",
+   "error": "fetch_http: only 1 pricing lines"
+  },
+  {
    "id": "phantom",
    "url": "https://phantom.com/",
    "error": "fetch_http: only 1 pricing lines"
@@ -93,12 +139,17 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpo52anz_y', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpx376e3e2', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
-   "id": "bubblemaps",
-   "url": "https://pro.bubblemaps.io/api/plans",
-   "error": "fetch_http: only 0 pricing lines"
+   "id": "glassnode",
+   "url": "https://studio.glassnode.com/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
+  },
+  {
+   "id": "messari",
+   "url": "https://messari.io/pricing",
+   "error": "fetch_http: HTTPError: 429 Client Error: Too Many Requests for url: https://app.blockworks.com/pricing"
   },
   {
    "id": "dextools",
@@ -108,7 +159,7 @@
   {
    "id": "oneinch",
    "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp11oo8sdf', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpg6gdu0ey', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
