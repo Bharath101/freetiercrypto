@@ -1,116 +1,99 @@
 {
- "checked_at": "2026-11-03T09:48:19Z",
+ "checked_at": "2026-11-04T09:34:52Z",
  "checked": 67,
  "unchanged": 44,
  "baselined": [],
  "changed": [
   {
-   "id": "trendspider",
-   "name": "TrendSpider",
-   "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-02T09:44:22Z",
-   "fetched_at": "2026-11-03T09:48:19Z",
+   "id": "gocharting",
+   "name": "GoCharting",
+   "url": "https://gocharting.com/pricing",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-11-04T09:34:52Z",
    "added": [
-    "Black Friday pricing: $1 a day to try, or buy now and save more.",
-    "Plus 6 free months of Sidekick Plus AI & SignalStack Pro,",
-    "a $2,814 value",
-    "Trial (7 Days)"
+    "Embed GoCharting free, or white-label it"
    ],
    "removed": [
-    "Trial (14 Days)"
+    "Embed charts with the free GoCharting SDK"
    ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-02T09:44:22Z",
-   "fetched_at": "2026-11-03T09:48:19Z",
+   "previous_fetch": "2026-11-03T09:48:19Z",
+   "fetched_at": "2026-11-04T09:34:52Z",
    "added": [
-    "$2.644T",
-    "$68.17B"
+    "$2.713T",
+    "$74.816B"
    ],
    "removed": [
-    "$2.684T",
-    "$48.442B"
+    "$2.644T",
+    "$68.17B"
    ]
-  },
-  {
-   "id": "gunbot",
-   "name": "Gunbot",
-   "url": "https://www.gunbot.com/",
-   "previous_fetch": "2026-10-31T08:37:25Z",
-   "fetched_at": "2026-11-03T09:48:19Z",
-   "added": [
-    "See your upgrade offer for Gunbot Unlimited."
-   ],
-   "removed": []
   },
   {
    "id": "tangem",
    "name": "Tangem",
    "url": "https://tangem.com/en/pricing/",
-   "previous_fetch": "2026-10-30T08:56:00Z",
-   "fetched_at": "2026-11-03T09:48:19Z",
+   "previous_fetch": "2026-11-03T09:48:19Z",
+   "fetched_at": "2026-11-04T09:34:52Z",
    "added": [
+    "$144.80"
+   ],
+   "removed": [
     "$139.80"
-   ],
-   "removed": [
-    "$129.80"
    ]
   },
   {
-   "id": "defillama",
-   "name": "DefiLlama",
-   "url": "https://defillama.com/subscription",
-   "previous_fetch": "2026-10-29T08:43:50Z",
-   "fetched_at": "2026-11-03T09:48:19Z",
-   "added": [],
-   "removed": [
-    "$250",
-    "$3,000 /year",
-    "$3,000/year"
-   ]
-  },
-  {
-   "id": "kubera",
-   "name": "Kubera",
-   "url": "https://www.kubera.com/",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-11-03T09:48:19Z",
+   "id": "santiment",
+   "name": "Santiment (Sanbase)",
+   "url": "https://app.santiment.net/pricing",
+   "previous_fetch": "2026-11-02T09:44:22Z",
+   "fetched_at": "2026-11-04T09:34:52Z",
    "added": [
-    "$250 a year. Not 1% of your wealth"
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
    ],
-   "removed": []
+   "removed": [
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+   ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-02T09:44:22Z",
-   "fetched_at": "2026-11-03T09:48:19Z",
+   "previous_fetch": "2026-11-03T09:48:19Z",
+   "fetched_at": "2026-11-04T09:34:52Z",
    "added": [
-    "Binance breach pushes crypto hack losses above $11.4 billion"
+    "Mercado Bitcoin says it will cover customer losses after $38 million hack and suspends withdrawals"
    ],
-   "removed": []
+   "removed": [
+    "Binance breach pushes crypto hack losses above $11.4 billion"
+   ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-02T09:44:22Z",
-   "fetched_at": "2026-11-03T09:48:19Z",
+   "previous_fetch": "2026-11-03T09:48:19Z",
+   "fetched_at": "2026-11-04T09:34:52Z",
    "added": [
-    "$2.644T",
-    "$68.17B"
+    "$2.713T",
+    "$74.816B"
    ],
    "removed": [
-    "$2.684T",
-    "$48.442B"
+    "$2.644T",
+    "$68.17B"
    ]
   }
  ],
  "failed": [
+  {
+   "id": "trendspider",
+   "url": "https://trendspider.com/pricing/",
+   "error": "fetch_chrome: bot challenge page"
+  },
   {
    "id": "altfins",
    "url": "https://altfins.com/pricing/",
@@ -120,6 +103,11 @@
    "id": "tradesanta",
    "url": "https://tradesanta.com/en/pricing",
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://tradesanta.com/en/pricing"
+  },
+  {
+   "id": "cointracker",
+   "url": "https://www.cointracker.io/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://www.cointracker.io/pricing"
   },
   {
    "id": "summ",
@@ -139,17 +127,17 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpx376e3e2', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
-  },
-  {
-   "id": "glassnode",
-   "url": "https://studio.glassnode.com/pricing",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpazwb5wu6', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "messari",
    "url": "https://messari.io/pricing",
    "error": "fetch_http: HTTPError: 429 Client Error: Too Many Requests for url: https://app.blockworks.com/pricing"
+  },
+  {
+   "id": "bubblemaps",
+   "url": "https://pro.bubblemaps.io/api/plans",
+   "error": "fetch_http: only 0 pricing lines"
   },
   {
    "id": "dextools",
@@ -159,7 +147,7 @@
   {
    "id": "oneinch",
    "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpg6gdu0ey', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpt6ffeac7', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
