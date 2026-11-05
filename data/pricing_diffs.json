@@ -1,99 +1,150 @@
 {
- "checked_at": "2026-11-04T09:34:52Z",
+ "checked_at": "2026-11-05T09:41:23Z",
  "checked": 67,
  "unchanged": 44,
  "baselined": [],
  "changed": [
   {
-   "id": "gocharting",
-   "name": "GoCharting",
-   "url": "https://gocharting.com/pricing",
-   "previous_fetch": "2026-10-29T08:43:50Z",
-   "fetched_at": "2026-11-04T09:34:52Z",
+   "id": "tradingview",
+   "name": "TradingView",
+   "url": "https://www.tradingview.com/pricing/",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-05T09:41:23Z",
    "added": [
-    "Embed GoCharting free, or white-label it"
+    "Unlimited real-time market data subscriptions",
+    "Only the Ultimate plan is available for professional users. Learn more about who qualifies as a"
    ],
    "removed": [
-    "Embed charts with the free GoCharting SDK"
+    "$12.95",
+    "$29.95",
+    "$59.95",
+    "$199.95",
+    "Only the Ultimate plan is available for professional users. Learn more about who qualifies as a professional."
+   ]
+  },
+  {
+   "id": "trendspider",
+   "name": "TrendSpider",
+   "url": "https://trendspider.com/pricing/",
+   "previous_fetch": "2026-11-03T09:48:19Z",
+   "fetched_at": "2026-11-05T09:41:23Z",
+   "added": [
+    "Start a low-cost trial (one-time fee) or buy now and save for life.",
+    "Select your plan below, then customize your trial and payment options in the next step.",
+    "Trial (14 Days)",
+    "per month",
+    "Customized plan features",
+    "Unlimited training"
+   ],
+   "removed": [
+    "Black Friday pricing: $1 a day to try, or buy now and save more.",
+    "Plus 6 free months of Sidekick Plus AI & SignalStack Pro,",
+    "a $2,814 value",
+    "Trial (7 Days)"
    ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-03T09:48:19Z",
-   "fetched_at": "2026-11-04T09:34:52Z",
+   "previous_fetch": "2026-11-04T09:34:52Z",
+   "fetched_at": "2026-11-05T09:41:23Z",
    "added": [
+    "$2.781T",
+    "$87.339B"
+   ],
+   "removed": [
     "$2.713T",
     "$74.816B"
-   ],
-   "removed": [
-    "$2.644T",
-    "$68.17B"
-   ]
-  },
-  {
-   "id": "tangem",
-   "name": "Tangem",
-   "url": "https://tangem.com/en/pricing/",
-   "previous_fetch": "2026-11-03T09:48:19Z",
-   "fetched_at": "2026-11-04T09:34:52Z",
-   "added": [
-    "$144.80"
-   ],
-   "removed": [
-    "$139.80"
    ]
   },
   {
    "id": "santiment",
    "name": "Santiment (Sanbase)",
    "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-11-02T09:44:22Z",
-   "fetched_at": "2026-11-04T09:34:52Z",
+   "previous_fetch": "2026-11-04T09:34:52Z",
+   "fetched_at": "2026-11-05T09:41:23Z",
    "added": [
-    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-    "Get Free Demo"
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
    ],
    "removed": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
+   ]
+  },
+  {
+   "id": "dune",
+   "name": "Dune",
+   "url": "https://dune.com/pricing",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-05T09:41:23Z",
+   "added": [
+    "Upgrade plan"
+   ],
+   "removed": [
+    "Monthly",
+    "Yearly",
+    "Save 15% with yearly",
+    "Free",
+    "4,000 credits",
+    "25,000 credits",
+    "100,000+ credits",
+    "Number of credits per month",
+    "Price per extra credit",
+    "$0.016",
+    "$0.014",
+    "Data uploads/writes (credits per GB)",
+    "Credits per MB (API or CSV)",
+    "API Calls per minute",
+    "Uses plan credits",
+    "How credits work",
+    "Learn more about credits",
+    "~3.27 credits",
+    "~8.46 credits",
+    "~18.72 credits"
+   ]
+  },
+  {
+   "id": "coinstats",
+   "name": "CoinStats",
+   "url": "https://coinstats.app/pricing/",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-11-05T09:41:23Z",
+   "added": [],
+   "removed": [
+    "Current Plan",
+    "$62.91",
+    "Select Plan"
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-03T09:48:19Z",
-   "fetched_at": "2026-11-04T09:34:52Z",
-   "added": [
-    "Mercado Bitcoin says it will cover customer losses after $38 million hack and suspends withdrawals"
-   ],
+   "previous_fetch": "2026-11-04T09:34:52Z",
+   "fetched_at": "2026-11-05T09:41:23Z",
+   "added": [],
    "removed": [
-    "Binance breach pushes crypto hack losses above $11.4 billion"
+    "Mercado Bitcoin says it will cover customer losses after $38 million hack and suspends withdrawals"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-03T09:48:19Z",
-   "fetched_at": "2026-11-04T09:34:52Z",
+   "previous_fetch": "2026-11-04T09:34:52Z",
+   "fetched_at": "2026-11-05T09:41:23Z",
    "added": [
-    "$2.713T",
-    "$74.816B"
+    "$2.781T",
+    "$87.339B"
    ],
    "removed": [
-    "$2.644T",
-    "$68.17B"
+    "$2.713T",
+    "$74.816B"
    ]
   }
  ],
  "failed": [
-  {
-   "id": "trendspider",
-   "url": "https://trendspider.com/pricing/",
-   "error": "fetch_chrome: bot challenge page"
-  },
   {
    "id": "altfins",
    "url": "https://altfins.com/pricing/",
@@ -103,11 +154,6 @@
    "id": "tradesanta",
    "url": "https://tradesanta.com/en/pricing",
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://tradesanta.com/en/pricing"
-  },
-  {
-   "id": "cointracker",
-   "url": "https://www.cointracker.io/pricing",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://www.cointracker.io/pricing"
   },
   {
    "id": "summ",
@@ -127,7 +173,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpazwb5wu6', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpbzkg8qir', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "messari",
@@ -147,7 +193,7 @@
   {
    "id": "oneinch",
    "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpt6ffeac7', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmptghsctny', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
