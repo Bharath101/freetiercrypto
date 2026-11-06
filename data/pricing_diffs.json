@@ -1,146 +1,152 @@
 {
- "checked_at": "2026-11-05T09:41:23Z",
+ "checked_at": "2026-11-06T09:36:44Z",
  "checked": 67,
- "unchanged": 44,
+ "unchanged": 46,
  "baselined": [],
  "changed": [
   {
    "id": "tradingview",
    "name": "TradingView",
    "url": "https://www.tradingview.com/pricing/",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-11-05T09:41:23Z",
+   "previous_fetch": "2026-11-05T09:41:23Z",
+   "fetched_at": "2026-11-06T09:36:44Z",
    "added": [
-    "Unlimited real-time market data subscriptions",
-    "Only the Ultimate plan is available for professional users. Learn more about who qualifies as a"
+    "Historical annual financial data",
+    "Active technical alerts",
+    "Alert duration",
+    "AI Screener requests"
    ],
    "removed": [
-    "$12.95",
-    "$29.95",
-    "$59.95",
-    "$199.95",
-    "Only the Ultimate plan is available for professional users. Learn more about who qualifies as a professional."
+    "Historical annual financial data on charts",
+    "Active technical alerts on indicators, strategies, and drawings",
+    "Alert durations",
+    "AI screener requests"
    ]
   },
   {
    "id": "trendspider",
    "name": "TrendSpider",
    "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-03T09:48:19Z",
-   "fetched_at": "2026-11-05T09:41:23Z",
+   "previous_fetch": "2026-11-05T09:41:23Z",
+   "fetched_at": "2026-11-06T09:36:44Z",
    "added": [
+    "This Black Friday, try any plan for",
+    "$1 a day",
+    "+ Free bonus worth $2,814",
+    "Discount + free bonus",
+    "worth $2,345",
+    "worth $1,876",
+    "worth $1,407",
+    "Trial (7 Days)"
+   ],
+   "removed": [
     "Start a low-cost trial (one-time fee) or buy now and save for life.",
     "Select your plan below, then customize your trial and payment options in the next step.",
     "Trial (14 Days)",
     "per month",
     "Customized plan features",
     "Unlimited training"
-   ],
-   "removed": [
-    "Black Friday pricing: $1 a day to try, or buy now and save more.",
-    "Plus 6 free months of Sidekick Plus AI & SignalStack Pro,",
-    "a $2,814 value",
-    "Trial (7 Days)"
    ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-04T09:34:52Z",
-   "fetched_at": "2026-11-05T09:41:23Z",
+   "previous_fetch": "2026-11-05T09:41:23Z",
+   "fetched_at": "2026-11-06T09:36:44Z",
    "added": [
-    "$2.781T",
-    "$87.339B"
+    "$2.634T",
+    "$106.57B"
    ],
    "removed": [
-    "$2.713T",
-    "$74.816B"
+    "$2.781T",
+    "$87.339B"
    ]
   },
   {
    "id": "santiment",
    "name": "Santiment (Sanbase)",
    "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-11-04T09:34:52Z",
-   "fetched_at": "2026-11-05T09:41:23Z",
+   "previous_fetch": "2026-11-05T09:41:23Z",
+   "fetched_at": "2026-11-06T09:36:44Z",
    "added": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
-   ],
-   "removed": [
     "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
     "Get Free Demo"
-   ]
-  },
-  {
-   "id": "dune",
-   "name": "Dune",
-   "url": "https://dune.com/pricing",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-11-05T09:41:23Z",
-   "added": [
-    "Upgrade plan"
    ],
    "removed": [
-    "Monthly",
-    "Yearly",
-    "Save 15% with yearly",
-    "Free",
-    "4,000 credits",
-    "25,000 credits",
-    "100,000+ credits",
-    "Number of credits per month",
-    "Price per extra credit",
-    "$0.016",
-    "$0.014",
-    "Data uploads/writes (credits per GB)",
-    "Credits per MB (API or CSV)",
-    "API Calls per minute",
-    "Uses plan credits",
-    "How credits work",
-    "Learn more about credits",
-    "~3.27 credits",
-    "~8.46 credits",
-    "~18.72 credits"
-   ]
-  },
-  {
-   "id": "coinstats",
-   "name": "CoinStats",
-   "url": "https://coinstats.app/pricing/",
-   "previous_fetch": "2026-10-29T08:43:50Z",
-   "fetched_at": "2026-11-05T09:41:23Z",
-   "added": [],
-   "removed": [
-    "Current Plan",
-    "$62.91",
-    "Select Plan"
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-04T09:34:52Z",
-   "fetched_at": "2026-11-05T09:41:23Z",
-   "added": [],
+   "previous_fetch": "2026-11-05T09:41:23Z",
+   "fetched_at": "2026-11-06T09:36:44Z",
+   "added": [
+    "Asian stocks extend sharp sell-off as Bitcoin falls below $76,000 on reduced rate-cut expectations"
+   ],
+   "removed": []
+  },
+  {
+   "id": "dextools",
+   "name": "DEXTools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "previous_fetch": "2026-11-01T09:28:09Z",
+   "fetched_at": "2026-11-06T09:36:44Z",
+   "added": [
+    "$14.04M",
+    "$0.0140",
+    "$670.08K",
+    "$80.9954",
+    "$13.34M"
+   ],
    "removed": [
-    "Mercado Bitcoin says it will cover customer losses after $38 million hack and suspends withdrawals"
+    "ETH: $2,268.09",
+    "$5.11B",
+    "$1.0010",
+    "$93.50M",
+    "$6.44B",
+    "$9.61B",
+    "$2.83K",
+    "$5.80M",
+    "$10.50B",
+    "$80.9991",
+    "$4.43M",
+    "$10.83M",
+    "$49.71M",
+    "$0.2258",
+    "$3.96M",
+    "$67.74M",
+    "$2.06B",
+    "$0.0₅4991",
+    "$3.62M",
+    "$276.36M",
+    "$0.0053",
+    "$3.37M",
+    "$306.99M",
+    "$2.08B",
+    "$136.80",
+    "$2.50M",
+    "$2.18B",
+    "$1.17B",
+    "$1.2556",
+    "$2.13M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-04T09:34:52Z",
-   "fetched_at": "2026-11-05T09:41:23Z",
+   "previous_fetch": "2026-11-05T09:41:23Z",
+   "fetched_at": "2026-11-06T09:36:44Z",
    "added": [
-    "$2.781T",
-    "$87.339B"
+    "$2.634T",
+    "$106.57B"
    ],
    "removed": [
-    "$2.713T",
-    "$74.816B"
+    "$2.781T",
+    "$87.339B"
    ]
   }
  ],
@@ -149,6 +155,11 @@
    "id": "altfins",
    "url": "https://altfins.com/pricing/",
    "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "lunarcrush",
+   "url": "https://lunarcrush.com/pricing",
+   "error": "fetch_http: only 1 pricing lines"
   },
   {
    "id": "tradesanta",
@@ -173,12 +184,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpbzkg8qir', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
-  },
-  {
-   "id": "messari",
-   "url": "https://messari.io/pricing",
-   "error": "fetch_http: HTTPError: 429 Client Error: Too Many Requests for url: https://app.blockworks.com/pricing"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpid6o08lq', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "bubblemaps",
@@ -186,14 +192,9 @@
    "error": "fetch_http: only 0 pricing lines"
   },
   {
-   "id": "dextools",
-   "url": "https://www.dextools.io/app/en/pricing",
-   "error": "fetch_http: only 0 pricing lines"
-  },
-  {
    "id": "oneinch",
    "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmptghsctny', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp3voh5gf0', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
