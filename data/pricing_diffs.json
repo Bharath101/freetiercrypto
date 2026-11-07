@@ -1,152 +1,120 @@
 {
- "checked_at": "2026-11-06T09:36:44Z",
+ "checked_at": "2026-11-07T08:59:53Z",
  "checked": 67,
- "unchanged": 46,
+ "unchanged": 50,
  "baselined": [],
  "changed": [
-  {
-   "id": "tradingview",
-   "name": "TradingView",
-   "url": "https://www.tradingview.com/pricing/",
-   "previous_fetch": "2026-11-05T09:41:23Z",
-   "fetched_at": "2026-11-06T09:36:44Z",
-   "added": [
-    "Historical annual financial data",
-    "Active technical alerts",
-    "Alert duration",
-    "AI Screener requests"
-   ],
-   "removed": [
-    "Historical annual financial data on charts",
-    "Active technical alerts on indicators, strategies, and drawings",
-    "Alert durations",
-    "AI screener requests"
-   ]
-  },
-  {
-   "id": "trendspider",
-   "name": "TrendSpider",
-   "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-05T09:41:23Z",
-   "fetched_at": "2026-11-06T09:36:44Z",
-   "added": [
-    "This Black Friday, try any plan for",
-    "$1 a day",
-    "+ Free bonus worth $2,814",
-    "Discount + free bonus",
-    "worth $2,345",
-    "worth $1,876",
-    "worth $1,407",
-    "Trial (7 Days)"
-   ],
-   "removed": [
-    "Start a low-cost trial (one-time fee) or buy now and save for life.",
-    "Select your plan below, then customize your trial and payment options in the next step.",
-    "Trial (14 Days)",
-    "per month",
-    "Customized plan features",
-    "Unlimited training"
-   ]
-  },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-05T09:41:23Z",
-   "fetched_at": "2026-11-06T09:36:44Z",
+   "previous_fetch": "2026-11-06T09:36:44Z",
+   "fetched_at": "2026-11-07T08:59:53Z",
    "added": [
-    "$2.634T",
-    "$106.57B"
+    "$2.645T",
+    "$63.433B"
    ],
    "removed": [
-    "$2.781T",
-    "$87.339B"
+    "$2.634T",
+    "$106.57B"
    ]
   },
   {
-   "id": "santiment",
-   "name": "Santiment (Sanbase)",
-   "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-11-05T09:41:23Z",
-   "fetched_at": "2026-11-06T09:36:44Z",
+   "id": "lunarcrush",
+   "name": "LunarCrush",
+   "url": "https://lunarcrush.com/pricing",
+   "previous_fetch": "2026-10-31T08:37:25Z",
+   "fetched_at": "2026-11-07T08:59:53Z",
    "added": [
-    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-    "Get Free Demo"
+    "$1",
+    "/1,000 requests",
+    "All 37 endpoints through the API, MCP, and CLI. Buy credits, use them when you need them. They never expire.",
+    "} · 1 credit",
+    "2K–100K requests/day",
+    "From $5/day",
+    "From $15/day",
+    "From $45/day",
+    "Requests a day",
+    "Pay per request",
+    "Requests a minute",
+    "Every plan includes the API, MCP, and CLI with full history since 2020."
    ],
    "removed": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+    "One flat price · credits never expire · shared across API, MCP and CLI",
+    "Buy credits",
+    "$20",
+    "$50",
+    "$100",
+    "any amount from $5",
+    "5,000 requests",
+    "· credits never expire",
+    "Or type any amount from $5.",
+    "Add $10 when you drop under 1,000 credits · up to $100 a month",
+    "Add $10 under 1,000 credits",
+    "Get your API key · $5",
+    "Only successful requests use a credit · errors and rate limits are free",
+    "Only successful requests use a credit",
+    "1,000 free credits when you sign up",
+    "Using credits every day? Subscriptions from $72/mo include Discover.",
+    "Not sure which plan to choose? Ask Sophie, our AI plan advisor.",
+    "What are the request limits on each plan?",
+    "What happens if I go over my limit?",
+    "Requests over the limit return a rate-limit error (429) and are not billed. Upgrade anytime to raise your limits.",
+    "Is there a free plan or a free trial?",
+    "What payment methods do you accept for plan subscriptions?",
+    "Can I change my plan later if I want to upgrade or downgrade?"
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-05T09:41:23Z",
-   "fetched_at": "2026-11-06T09:36:44Z",
+   "previous_fetch": "2026-11-06T09:36:44Z",
+   "fetched_at": "2026-11-07T08:59:53Z",
    "added": [
-    "Asian stocks extend sharp sell-off as Bitcoin falls below $76,000 on reduced rate-cut expectations"
+    "US Treasury blocks MEXC over $16B in illicit transactions tied to Iran, Russia and North Korea"
    ],
-   "removed": []
+   "removed": [
+    "Asian stocks extend sharp sell-off as Bitcoin falls below $76,000 on reduced rate-cut expectations"
+   ]
   },
   {
    "id": "dextools",
    "name": "DEXTools",
    "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-01T09:28:09Z",
-   "fetched_at": "2026-11-06T09:36:44Z",
+   "previous_fetch": "2026-11-06T09:36:44Z",
+   "fetched_at": "2026-11-07T08:59:53Z",
    "added": [
+    "$308.23K",
+    "$0.0₃3082",
+    "$4.38M",
+    "$16.37M",
+    "$0.0163",
+    "$2.83M"
+   ],
+   "removed": [
     "$14.04M",
     "$0.0140",
     "$670.08K",
     "$80.9954",
+    "$0.9999",
     "$13.34M"
-   ],
-   "removed": [
-    "ETH: $2,268.09",
-    "$5.11B",
-    "$1.0010",
-    "$93.50M",
-    "$6.44B",
-    "$9.61B",
-    "$2.83K",
-    "$5.80M",
-    "$10.50B",
-    "$80.9991",
-    "$4.43M",
-    "$10.83M",
-    "$49.71M",
-    "$0.2258",
-    "$3.96M",
-    "$67.74M",
-    "$2.06B",
-    "$0.0₅4991",
-    "$3.62M",
-    "$276.36M",
-    "$0.0053",
-    "$3.37M",
-    "$306.99M",
-    "$2.08B",
-    "$136.80",
-    "$2.50M",
-    "$2.18B",
-    "$1.17B",
-    "$1.2556",
-    "$2.13M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-05T09:41:23Z",
-   "fetched_at": "2026-11-06T09:36:44Z",
+   "previous_fetch": "2026-11-06T09:36:44Z",
+   "fetched_at": "2026-11-07T08:59:53Z",
    "added": [
-    "$2.634T",
-    "$106.57B"
+    "$2.645T",
+    "$63.433B",
+    "Go Ad-free"
    ],
    "removed": [
-    "$2.781T",
-    "$87.339B"
+    "$2.634T",
+    "$106.57B"
    ]
   }
  ],
@@ -155,11 +123,6 @@
    "id": "altfins",
    "url": "https://altfins.com/pricing/",
    "error": "fetch_http: only 0 pricing lines"
-  },
-  {
-   "id": "lunarcrush",
-   "url": "https://lunarcrush.com/pricing",
-   "error": "fetch_http: only 1 pricing lines"
   },
   {
    "id": "tradesanta",
@@ -184,17 +147,12 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpid6o08lq', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp_ulsiimb', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "bubblemaps",
    "url": "https://pro.bubblemaps.io/api/plans",
    "error": "fetch_http: only 0 pricing lines"
-  },
-  {
-   "id": "oneinch",
-   "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp3voh5gf0', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
