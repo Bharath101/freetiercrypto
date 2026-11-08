@@ -1,120 +1,65 @@
 {
- "checked_at": "2026-11-07T08:59:53Z",
+ "checked_at": "2026-11-08T09:17:36Z",
  "checked": 67,
- "unchanged": 50,
+ "unchanged": 48,
  "baselined": [],
  "changed": [
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-06T09:36:44Z",
-   "fetched_at": "2026-11-07T08:59:53Z",
+   "previous_fetch": "2026-11-07T08:59:53Z",
+   "fetched_at": "2026-11-08T09:17:36Z",
    "added": [
-    "$2.645T",
-    "$63.433B"
+    "$2.639T",
+    "$29.875B",
+    "Go Ad-free"
    ],
    "removed": [
-    "$2.634T",
-    "$106.57B"
+    "$2.645T",
+    "$63.433B"
    ]
   },
   {
-   "id": "lunarcrush",
-   "name": "LunarCrush",
-   "url": "https://lunarcrush.com/pricing",
-   "previous_fetch": "2026-10-31T08:37:25Z",
-   "fetched_at": "2026-11-07T08:59:53Z",
+   "id": "santiment",
+   "name": "Santiment (Sanbase)",
+   "url": "https://app.santiment.net/pricing",
+   "previous_fetch": "2026-11-06T09:36:44Z",
+   "fetched_at": "2026-11-08T09:17:36Z",
    "added": [
-    "$1",
-    "/1,000 requests",
-    "All 37 endpoints through the API, MCP, and CLI. Buy credits, use them when you need them. They never expire.",
-    "} · 1 credit",
-    "2K–100K requests/day",
-    "From $5/day",
-    "From $15/day",
-    "From $45/day",
-    "Requests a day",
-    "Pay per request",
-    "Requests a minute",
-    "Every plan includes the API, MCP, and CLI with full history since 2020."
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
    ],
    "removed": [
-    "One flat price · credits never expire · shared across API, MCP and CLI",
-    "Buy credits",
-    "$20",
-    "$50",
-    "$100",
-    "any amount from $5",
-    "5,000 requests",
-    "· credits never expire",
-    "Or type any amount from $5.",
-    "Add $10 when you drop under 1,000 credits · up to $100 a month",
-    "Add $10 under 1,000 credits",
-    "Get your API key · $5",
-    "Only successful requests use a credit · errors and rate limits are free",
-    "Only successful requests use a credit",
-    "1,000 free credits when you sign up",
-    "Using credits every day? Subscriptions from $72/mo include Discover.",
-    "Not sure which plan to choose? Ask Sophie, our AI plan advisor.",
-    "What are the request limits on each plan?",
-    "What happens if I go over my limit?",
-    "Requests over the limit return a rate-limit error (429) and are not billed. Upgrade anytime to raise your limits.",
-    "Is there a free plan or a free trial?",
-    "What payment methods do you accept for plan subscriptions?",
-    "Can I change my plan later if I want to upgrade or downgrade?"
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-06T09:36:44Z",
-   "fetched_at": "2026-11-07T08:59:53Z",
+   "previous_fetch": "2026-11-07T08:59:53Z",
+   "fetched_at": "2026-11-08T09:17:36Z",
    "added": [
+    "U.S. Treasury and FinCEN target MEXC over alleged $16B illicit crypto transactions and sanction-evasion links"
+   ],
+   "removed": [
     "US Treasury blocks MEXC over $16B in illicit transactions tied to Iran, Russia and North Korea"
-   ],
-   "removed": [
-    "Asian stocks extend sharp sell-off as Bitcoin falls below $76,000 on reduced rate-cut expectations"
-   ]
-  },
-  {
-   "id": "dextools",
-   "name": "DEXTools",
-   "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-06T09:36:44Z",
-   "fetched_at": "2026-11-07T08:59:53Z",
-   "added": [
-    "$308.23K",
-    "$0.0₃3082",
-    "$4.38M",
-    "$16.37M",
-    "$0.0163",
-    "$2.83M"
-   ],
-   "removed": [
-    "$14.04M",
-    "$0.0140",
-    "$670.08K",
-    "$80.9954",
-    "$0.9999",
-    "$13.34M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-06T09:36:44Z",
-   "fetched_at": "2026-11-07T08:59:53Z",
+   "previous_fetch": "2026-11-07T08:59:53Z",
+   "fetched_at": "2026-11-08T09:17:36Z",
    "added": [
-    "$2.645T",
-    "$63.433B",
-    "Go Ad-free"
+    "$2.639T",
+    "$29.875B"
    ],
    "removed": [
-    "$2.634T",
-    "$106.57B"
+    "$2.645T",
+    "$63.433B"
    ]
   }
  ],
@@ -147,12 +92,27 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp_ulsiimb', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp1u5t_hlz', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+  },
+  {
+   "id": "glassnode",
+   "url": "https://studio.glassnode.com/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
   },
   {
    "id": "bubblemaps",
    "url": "https://pro.bubblemaps.io/api/plans",
    "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "dextools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "oneinch",
+   "url": "https://business.1inch.com/portal/pricing",
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp_4788ve3', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",

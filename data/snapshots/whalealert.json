@@ -1,8 +1,8 @@
 {
  "id": "whalealert",
  "url": "https://whale-alert.io/pricing",
- "fetched_at": "2026-11-07T08:59:53Z",
- "sha256": "13fc740c41b9938100176bbcdf717ec8e642d57ab526c1683dd5ae2d73b87307",
+ "fetched_at": "2026-11-08T09:17:36Z",
+ "sha256": "17d173c66bf6b19a1dd896f0e77d53f7e704f73b571737af7317d59cb0c5050f",
  "lines": [
   "Home | Whale Alert",
   "Alerts",
@@ -14,7 +14,7 @@
   "Create Your Own Alerts",
   "View Transaction",
   "Explore More Alerts",
-  "US Treasury blocks MEXC over $16B in illicit transactions tied to Iran, Russia and North Korea",
+  "U.S. Treasury and FinCEN target MEXC over alleged $16B illicit crypto transactions and sanction-evasion links",
   "The Whale Alert dashboard is the only tool you need to stay up to date",
   "with important crypto transactions, live analytics and breaking news.",
   "Transactions",
