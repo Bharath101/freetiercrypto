@@ -1,65 +1,85 @@
 {
- "checked_at": "2026-11-08T09:17:36Z",
+ "checked_at": "2026-11-09T10:00:02Z",
  "checked": 67,
- "unchanged": 48,
+ "unchanged": 49,
  "baselined": [],
  "changed": [
+  {
+   "id": "trendspider",
+   "name": "TrendSpider",
+   "url": "https://trendspider.com/pricing/",
+   "previous_fetch": "2026-11-06T09:36:44Z",
+   "fetched_at": "2026-11-09T10:00:02Z",
+   "added": [
+    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
+    "Also, these alerts played out well (Using +3% sell, -2% stop)"
+   ],
+   "removed": []
+  },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-07T08:59:53Z",
-   "fetched_at": "2026-11-08T09:17:36Z",
+   "previous_fetch": "2026-11-08T09:17:36Z",
+   "fetched_at": "2026-11-09T10:00:02Z",
    "added": [
+    "$2.53T",
+    "$63.189B"
+   ],
+   "removed": [
     "$2.639T",
     "$29.875B",
     "Go Ad-free"
-   ],
-   "removed": [
-    "$2.645T",
-    "$63.433B"
    ]
   },
   {
-   "id": "santiment",
-   "name": "Santiment (Sanbase)",
-   "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-11-06T09:36:44Z",
-   "fetched_at": "2026-11-08T09:17:36Z",
+   "id": "kubera",
+   "name": "Kubera",
+   "url": "https://www.kubera.com/",
+   "previous_fetch": "2026-11-03T09:48:19Z",
+   "fetched_at": "2026-11-09T10:00:02Z",
    "added": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+    "From $250/year.",
+    "Unlimited portfolios",
+    "Unlimited users",
+    "Unlimited AI agent updates"
    ],
    "removed": [
-    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-    "Get Free Demo"
+    "Personal Balance Sheet: $250 a year, not 1% | Kubera",
+    "$250 a year, not 1% of your wealth. Whether you have $250K or $2.5 billion.",
+    "For your AI, it's the source of truth. Point your agent at it to reconcile a brokerage account, see where you'd be if you hadn't sold that stock, or model what happens if you buy a $3M house.",
+    "$250 a year. Not 1% of your wealth",
+    "1:1 Zoom Calls",
+    "Book a 30-minute demo for $250, credited when you join Black:"
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-07T08:59:53Z",
-   "fetched_at": "2026-11-08T09:17:36Z",
+   "previous_fetch": "2026-11-08T09:17:36Z",
+   "fetched_at": "2026-11-09T10:00:02Z",
    "added": [
-    "U.S. Treasury and FinCEN target MEXC over alleged $16B illicit crypto transactions and sanction-evasion links"
+    "Bitcoin breaks below $74K as traders watch whether $60K support holds"
    ],
    "removed": [
-    "US Treasury blocks MEXC over $16B in illicit transactions tied to Iran, Russia and North Korea"
+    "U.S. Treasury and FinCEN target MEXC over alleged $16B illicit crypto transactions and sanction-evasion links"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-07T08:59:53Z",
-   "fetched_at": "2026-11-08T09:17:36Z",
+   "previous_fetch": "2026-11-08T09:17:36Z",
+   "fetched_at": "2026-11-09T10:00:02Z",
    "added": [
-    "$2.639T",
-    "$29.875B"
+    "$2.53T",
+    "$63.189B"
    ],
    "removed": [
-    "$2.645T",
-    "$63.433B"
+    "$2.639T",
+    "$29.875B",
+    "Go Ad-free"
    ]
   }
  ],
@@ -92,7 +112,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp1u5t_hlz', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpimrzyimk', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "glassnode",
@@ -100,19 +120,9 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
   },
   {
-   "id": "bubblemaps",
-   "url": "https://pro.bubblemaps.io/api/plans",
-   "error": "fetch_http: only 0 pricing lines"
-  },
-  {
    "id": "dextools",
    "url": "https://www.dextools.io/app/en/pricing",
    "error": "fetch_http: only 0 pricing lines"
-  },
-  {
-   "id": "oneinch",
-   "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp_4788ve3', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",

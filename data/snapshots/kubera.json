@@ -1,18 +1,16 @@
 {
  "id": "kubera",
  "url": "https://www.kubera.com/",
- "fetched_at": "2026-11-03T09:48:19Z",
- "sha256": "967cc97f53d1135f98039d0b0fe4d8c54f133451a259515ff3b9060cfb7167dd",
+ "fetched_at": "2026-11-09T10:00:02Z",
+ "sha256": "fdad8b8f1a74a59d0cf7bfaed9dc9161c8ece818691b564eeee809ca07fbd570",
  "lines": [
-  "Personal Balance Sheet: $250 a year, not 1% | Kubera",
-  "$250 a year, not 1% of your wealth. Whether you have $250K or $2.5 billion.",
-  "For your AI, it's the source of truth. Point your agent at it to reconcile a brokerage account, see where you'd be if you hadn't sold that stock, or model what happens if you buy a $3M house.",
-  "$250 a year. Not 1% of your wealth",
+  "From $250/year.",
   "$250",
-  "1:1 Zoom Calls",
+  "Unlimited portfolios",
+  "Unlimited users",
+  "Unlimited AI agent updates",
   "$2500",
   "Try all the features during your trial.",
-  "Choose your subscription plan when the trial ends.",
-  "Book a 30-minute demo for $250, credited when you join Black:"
+  "Choose your subscription plan when the trial ends."
  ]
 }
