@@ -1,14 +1,15 @@
 {
  "id": "kubera",
  "url": "https://www.kubera.com/",
- "fetched_at": "2026-11-09T10:00:02Z",
- "sha256": "fdad8b8f1a74a59d0cf7bfaed9dc9161c8ece818691b564eeee809ca07fbd570",
+ "fetched_at": "2026-11-10T10:10:42Z",
+ "sha256": "bc5d8104d2762a0156c99ba0870c417e08d118c489dcf90d9d2a7efb2de38a60",
  "lines": [
   "From $250/year.",
   "$250",
   "Unlimited portfolios",
   "Unlimited users",
   "Unlimited AI agent updates",
+  "1:1 Zoom calls with your dedicated expert",
   "$2500",
   "Try all the features during your trial.",
   "Choose your subscription plan when the trial ends."

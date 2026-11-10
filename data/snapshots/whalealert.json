@@ -1,8 +1,8 @@
 {
  "id": "whalealert",
  "url": "https://whale-alert.io/pricing",
- "fetched_at": "2026-11-09T10:00:02Z",
- "sha256": "fdb72ae1e1f8547e36afb08bdc3ba78bba9ee5947c56493898cd106bb578cd7f",
+ "fetched_at": "2026-11-10T10:10:42Z",
+ "sha256": "a7337019a9e56ced98cf4ff31a66f1b22e04a8abad416c18e5e71b2b56eee5a7",
  "lines": [
   "Home | Whale Alert",
   "Alerts",
@@ -12,9 +12,8 @@
   "and discover how Whale Alert can improve your trades!",
   "Latest Whale Alerts",
   "Create Your Own Alerts",
-  "View Transaction",
   "Explore More Alerts",
-  "Bitcoin breaks below $74K as traders watch whether $60K support holds",
+  "Coldcard’s $116M exploit reignites dispute over earlier RNG warnings",
   "The Whale Alert dashboard is the only tool you need to stay up to date",
   "with important crypto transactions, live analytics and breaking news.",
   "Transactions",
