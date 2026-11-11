@@ -1,132 +1,118 @@
 {
- "checked_at": "2026-11-10T10:10:42Z",
+ "checked_at": "2026-11-11T09:40:11Z",
  "checked": 67,
- "unchanged": 47,
+ "unchanged": 45,
  "baselined": [],
  "changed": [
   {
    "id": "trendspider",
    "name": "TrendSpider",
    "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-09T10:00:02Z",
-   "fetched_at": "2026-11-10T10:10:42Z",
-   "added": [
-    "+ Free bonus worth $2,345"
-   ],
-   "removed": [
-    "+ Free bonus worth $2,814",
-    "worth $2,345"
-   ]
-  },
-  {
-   "id": "gocharting",
-   "name": "GoCharting",
-   "url": "https://gocharting.com/pricing",
-   "previous_fetch": "2026-11-04T09:34:52Z",
-   "fetched_at": "2026-11-10T10:10:42Z",
+   "previous_fetch": "2026-11-10T10:10:42Z",
+   "fetched_at": "2026-11-11T09:40:11Z",
    "added": [],
    "removed": [
-    "Happy Diwali 🪔 Celebrate with 50% Off On Annual Plans"
+    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
+    "Also, these alerts played out well (Using +3% sell, -2% stop)"
    ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-09T10:00:02Z",
-   "fetched_at": "2026-11-10T10:10:42Z",
+   "previous_fetch": "2026-11-10T10:10:42Z",
+   "fetched_at": "2026-11-11T09:40:11Z",
    "added": [
-    "$2.556T",
-    "$65.21B"
+    "$2.526T",
+    "$83.295B"
    ],
    "removed": [
-    "$2.53T",
-    "$63.189B"
+    "$2.556T",
+    "$65.21B"
    ]
   },
   {
-   "id": "cryptohopper",
-   "name": "Cryptohopper",
-   "url": "https://www.cryptohopper.com/pricing",
-   "previous_fetch": "2026-10-28T08:48:12Z",
-   "fetched_at": "2026-11-10T10:10:42Z",
+   "id": "coinglass",
+   "name": "CoinGlass",
+   "url": "https://www.coinglass.com/pricing",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-11T09:40:11Z",
    "added": [
-    "Black Friday: a full year of Hero for $903 with code BF30. That is $645 less than paying monthly. Ends December 1.",
-    "See yearly plans",
-    "30% off your first payment on every plan",
-    "A full year of Hero for $903 with code BF30. That is $645 less than paying monthly. Ends December 1."
+    "Annual and 2-year billing · All four plans, Hobbyist to Professional",
+    "$273",
+    "$420",
+    "- Save $147 (35% off)",
+    "$22.75",
+    "$741",
+    "$1,140",
+    "- Save $399 (35% off)",
+    "$61.75",
+    "$2,956",
+    "$4,548",
+    "- Save $1,592 (35% off)",
+    "$246.33",
+    "$6,856",
+    "$10,548",
+    "- Save $3,692 (35% off)",
+    "$571.33",
+    "Does monthly billing get the Black Friday discount?",
+    "No. Black Friday prices apply to annual billing (35% off) and 2-year billing (50% off).",
+    "I already have a plan. Can I use the offer?",
+    "Your plan doesn't renew automatically. To keep access, renew at the regular price.",
+    "With a one-time payment in crypto."
    ],
    "removed": []
+  },
+  {
+   "id": "metamask",
+   "name": "MetaMask",
+   "url": "https://metamask.io/",
+   "previous_fetch": "2026-10-30T08:56:00Z",
+   "fetched_at": "2026-11-11T09:40:11Z",
+   "added": [],
+   "removed": [
+    "Pro order types - Limit, Stop, Chase, Scale, TWAP"
+   ]
   },
   {
    "id": "kubera",
    "name": "Kubera",
    "url": "https://www.kubera.com/",
-   "previous_fetch": "2026-11-09T10:00:02Z",
-   "fetched_at": "2026-11-10T10:10:42Z",
+   "previous_fetch": "2026-11-10T10:10:42Z",
+   "fetched_at": "2026-11-11T09:40:11Z",
    "added": [
-    "1:1 Zoom calls with your dedicated expert"
+    "Unlimited AI agent operations"
    ],
-   "removed": []
+   "removed": [
+    "Unlimited AI agent updates"
+   ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-09T10:00:02Z",
-   "fetched_at": "2026-11-10T10:10:42Z",
+   "previous_fetch": "2026-11-10T10:10:42Z",
+   "fetched_at": "2026-11-11T09:40:11Z",
    "added": [
+    "Bitcoin falls below $73,000 after hotter-than-expected U.S. inflation triggers broad crypto selloff and $1.6 billion in Bitcoin ETF outflows"
+   ],
+   "removed": [
     "Coldcard’s $116M exploit reignites dispute over earlier RNG warnings"
-   ],
-   "removed": [
-    "View Transaction",
-    "Bitcoin breaks below $74K as traders watch whether $60K support holds"
-   ]
-  },
-  {
-   "id": "dextools",
-   "name": "DEXTools",
-   "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-07T08:59:53Z",
-   "fetched_at": "2026-11-10T10:10:42Z",
-   "added": [
-    "$6.18M",
-    "$0.0061",
-    "$4.32M",
-    "$16.24M",
-    "$0.0162",
-    "$3.06M",
-    "$1.30M",
-    "$0.0217",
-    "$77.27K",
-    "$1.18M",
-    "$0.0011",
-    "$266.73K",
-    "$87.37K",
-    "$0.0₄8737"
-   ],
-   "removed": [
-    "$308.23K",
-    "$0.0₃3082",
-    "$4.38M",
-    "$16.37M",
-    "$0.0163",
-    "$2.83M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-09T10:00:02Z",
-   "fetched_at": "2026-11-10T10:10:42Z",
+   "previous_fetch": "2026-11-10T10:10:42Z",
+   "fetched_at": "2026-11-11T09:40:11Z",
    "added": [
-    "$2.556T",
-    "$65.21B"
+    "$2.526T",
+    "$83.295B"
    ],
    "removed": [
-    "$2.53T",
-    "$63.189B"
+    "$2.556T",
+    "$65.21B"
    ]
   }
  ],
@@ -159,12 +145,27 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpfl67ms58', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmphe52kxe6', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+  },
+  {
+   "id": "arkham",
+   "url": "https://info.arkm.com/",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://arkm.com/"
+  },
+  {
+   "id": "bubblemaps",
+   "url": "https://pro.bubblemaps.io/api/plans",
+   "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "dextools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "error": "fetch_http: only 0 pricing lines"
   },
   {
    "id": "oneinch",
    "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp78dimi9g', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpdpoca45y', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
