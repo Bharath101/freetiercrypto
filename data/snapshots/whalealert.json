@@ -1,8 +1,8 @@
 {
  "id": "whalealert",
  "url": "https://whale-alert.io/pricing",
- "fetched_at": "2026-11-11T09:40:11Z",
- "sha256": "780018ec601e9b91d821abeafc45d6e5c392592403fa091c9685e58a6a6fdcb5",
+ "fetched_at": "2026-11-12T10:00:30Z",
+ "sha256": "011554de3e36de8743a3f2ed811123f8d591c571c7f316c6ea313967fe4ba6e9",
  "lines": [
   "Home | Whale Alert",
   "Alerts",
@@ -13,7 +13,7 @@
   "Latest Whale Alerts",
   "Create Your Own Alerts",
   "Explore More Alerts",
-  "Bitcoin falls below $73,000 after hotter-than-expected U.S. inflation triggers broad crypto selloff and $1.6 billion in Bitcoin ETF outflows",
+  "Ethereum falls toward $2,000 amid broader crypto market sell-off and continued ETF outflows",
   "The Whale Alert dashboard is the only tool you need to stay up to date",
   "with important crypto transactions, live analytics and breaking news.",
   "Transactions",

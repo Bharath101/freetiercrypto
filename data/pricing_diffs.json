@@ -1,118 +1,90 @@
 {
- "checked_at": "2026-11-11T09:40:11Z",
+ "checked_at": "2026-11-12T10:00:30Z",
  "checked": 67,
- "unchanged": 45,
+ "unchanged": 47,
  "baselined": [],
  "changed": [
   {
    "id": "trendspider",
    "name": "TrendSpider",
    "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-10T10:10:42Z",
-   "fetched_at": "2026-11-11T09:40:11Z",
-   "added": [],
-   "removed": [
+   "previous_fetch": "2026-11-11T09:40:11Z",
+   "fetched_at": "2026-11-12T10:00:30Z",
+   "added": [
     "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
     "Also, these alerts played out well (Using +3% sell, -2% stop)"
-   ]
+   ],
+   "removed": []
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-10T10:10:42Z",
-   "fetched_at": "2026-11-11T09:40:11Z",
+   "previous_fetch": "2026-11-11T09:40:11Z",
+   "fetched_at": "2026-11-12T10:00:30Z",
    "added": [
+    "$2.508T",
+    "$61.395B",
+    "Go Ad-free"
+   ],
+   "removed": [
     "$2.526T",
     "$83.295B"
-   ],
-   "removed": [
-    "$2.556T",
-    "$65.21B"
    ]
   },
   {
-   "id": "coinglass",
-   "name": "CoinGlass",
-   "url": "https://www.coinglass.com/pricing",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-11-11T09:40:11Z",
+   "id": "tangem",
+   "name": "Tangem",
+   "url": "https://tangem.com/en/pricing/",
+   "previous_fetch": "2026-11-04T09:34:52Z",
+   "fetched_at": "2026-11-12T10:00:30Z",
    "added": [
-    "Annual and 2-year billing · All four plans, Hobbyist to Professional",
-    "$273",
-    "$420",
-    "- Save $147 (35% off)",
-    "$22.75",
-    "$741",
-    "$1,140",
-    "- Save $399 (35% off)",
-    "$61.75",
-    "$2,956",
-    "$4,548",
-    "- Save $1,592 (35% off)",
-    "$246.33",
-    "$6,856",
-    "$10,548",
-    "- Save $3,692 (35% off)",
-    "$571.33",
-    "Does monthly billing get the Black Friday discount?",
-    "No. Black Friday prices apply to annual billing (35% off) and 2-year billing (50% off).",
-    "I already have a plan. Can I use the offer?",
-    "Your plan doesn't renew automatically. To keep access, renew at the regular price.",
-    "With a one-time payment in crypto."
+    "$139.80"
    ],
-   "removed": []
-  },
-  {
-   "id": "metamask",
-   "name": "MetaMask",
-   "url": "https://metamask.io/",
-   "previous_fetch": "2026-10-30T08:56:00Z",
-   "fetched_at": "2026-11-11T09:40:11Z",
-   "added": [],
    "removed": [
-    "Pro order types - Limit, Stop, Chase, Scale, TWAP"
+    "$144.80"
    ]
   },
   {
-   "id": "kubera",
-   "name": "Kubera",
-   "url": "https://www.kubera.com/",
-   "previous_fetch": "2026-11-10T10:10:42Z",
-   "fetched_at": "2026-11-11T09:40:11Z",
+   "id": "santiment",
+   "name": "Santiment (Sanbase)",
+   "url": "https://app.santiment.net/pricing",
+   "previous_fetch": "2026-11-08T09:17:36Z",
+   "fetched_at": "2026-11-12T10:00:30Z",
    "added": [
-    "Unlimited AI agent operations"
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
    ],
    "removed": [
-    "Unlimited AI agent updates"
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-10T10:10:42Z",
-   "fetched_at": "2026-11-11T09:40:11Z",
+   "previous_fetch": "2026-11-11T09:40:11Z",
+   "fetched_at": "2026-11-12T10:00:30Z",
    "added": [
-    "Bitcoin falls below $73,000 after hotter-than-expected U.S. inflation triggers broad crypto selloff and $1.6 billion in Bitcoin ETF outflows"
+    "Ethereum falls toward $2,000 amid broader crypto market sell-off and continued ETF outflows"
    ],
    "removed": [
-    "Coldcard’s $116M exploit reignites dispute over earlier RNG warnings"
+    "Bitcoin falls below $73,000 after hotter-than-expected U.S. inflation triggers broad crypto selloff and $1.6 billion in Bitcoin ETF outflows"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-10T10:10:42Z",
-   "fetched_at": "2026-11-11T09:40:11Z",
+   "previous_fetch": "2026-11-11T09:40:11Z",
+   "fetched_at": "2026-11-12T10:00:30Z",
    "added": [
-    "$2.526T",
-    "$83.295B"
+    "$2.508T",
+    "$61.395B"
    ],
    "removed": [
-    "$2.556T",
-    "$65.21B"
+    "$2.526T",
+    "$83.295B"
    ]
   }
  ],
@@ -145,7 +117,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmphe52kxe6', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpbppp4tql', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "arkham",
@@ -153,19 +125,14 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://arkm.com/"
   },
   {
-   "id": "bubblemaps",
-   "url": "https://pro.bubblemaps.io/api/plans",
-   "error": "fetch_http: only 0 pricing lines"
-  },
-  {
    "id": "dextools",
    "url": "https://www.dextools.io/app/en/pricing",
-   "error": "fetch_http: only 0 pricing lines"
+   "error": "fetch_chrome: OSError: [Errno 39] Directory not empty: '/tmp/tmpv4y_y29b/Default'"
   },
   {
    "id": "oneinch",
    "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpdpoca45y', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpfvlqktgj', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
