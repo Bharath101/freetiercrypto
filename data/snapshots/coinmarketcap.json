@@ -1,10 +1,9 @@
 {
  "id": "coinmarketcap",
  "url": "https://coinmarketcap.com/api/pricing/",
- "fetched_at": "2026-10-27T08:07:35Z",
- "sha256": "4ec5021df802538880796b130f00c06e29ef2a094b116ef09f4344acb3b552ef",
+ "fetched_at": "2026-11-13T09:49:15Z",
+ "sha256": "901b554ce057fe9e13bcf70a30b87b0ab5686b33418e6bdc59d44feb748cc36a",
  "lines": [
-  "AI Alerts",
   "🎉 10% off all yearly plans with code at checkout",
   "Monthly",
   "Yearly",

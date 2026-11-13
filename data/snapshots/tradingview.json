@@ -1,8 +1,8 @@
 {
  "id": "tradingview",
  "url": "https://www.tradingview.com/pricing/",
- "fetched_at": "2026-11-06T09:36:44Z",
- "sha256": "1ea628fdb143136630530137f696975f6f0d192ae3254269b01eff3951e42364",
+ "fetched_at": "2026-11-13T09:49:15Z",
+ "sha256": "6e331309b115bb3659e19abe8ebdf75350507bc99f6fed1d1f879b9e4542b3e0",
  "lines": [
   "Free, until you’re ready",
   "No credit card needed",
@@ -10,6 +10,7 @@
   "Special price: $12.95 / mo",
   "billed annually",
   "$24",
+  "AI screener requests",
   "Alerts",
   "20 price alerts",
   "20 technical alerts",
@@ -42,7 +43,6 @@
   "Alert duration",
   "Alerts on financial metrics",
   "Second-based alerts",
-  "AI Screener requests",
   "Preset requests only",
   "Unlimited access to all news sources",
   "Ad-free",
