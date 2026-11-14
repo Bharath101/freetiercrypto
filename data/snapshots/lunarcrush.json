@@ -1,13 +1,15 @@
 {
  "id": "lunarcrush",
  "url": "https://lunarcrush.com/pricing",
- "fetched_at": "2026-11-07T08:59:53Z",
- "sha256": "74486f008cda8e554a022627f752e57cff385cc020965aec40d1ba7f56c0f87e",
+ "fetched_at": "2026-11-14T09:11:55Z",
+ "sha256": "243442d4c01d9cafccaa9fe96fa2dd4d7af7204d5349ea1e64504d2cc9b1a9f1",
  "lines": [
+  "LunarCrush Pricing: Social Data API & MCP for Crypto & Stocks, $90/mo",
   "$1",
   "/1,000 requests",
   "All 37 endpoints through the API, MCP, and CLI. Buy credits, use them when you need them. They never expire.",
-  "} · 1 credit",
+  "Credits never expire",
+  "1 credit",
   "$5",
   "2K–100K requests/day",
   "$1 per 1,000 requests",
@@ -17,6 +19,16 @@
   "Requests a day",
   "Pay per request",
   "Requests a minute",
-  "Every plan includes the API, MCP, and CLI with full history since 2020."
+  "Every plan includes the API, MCP, and CLI with full history since 2020. Prices in USD.",
+  "What are the request limits on each plan?",
+  "What happens if I go over my limit?",
+  "Requests over the limit return a rate-limit error (429) and are not billed. Upgrade anytime to raise your limits.",
+  "What payment methods do you accept for plan subscriptions?",
+  "Can I change my plan later if I want to upgrade or downgrade?",
+  "What are credits for?",
+  "Do credits expire?",
+  "No. Credits never expire.",
+  "What happens when I run out of credits?",
+  "Turn on Recharge when low and we add $10 in credits when your balance drops under 1,000. You can also add credits anytime from your account."
  ]
 }
