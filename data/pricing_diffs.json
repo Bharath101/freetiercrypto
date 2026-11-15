@@ -1,128 +1,37 @@
 {
- "checked_at": "2026-11-14T09:11:55Z",
+ "checked_at": "2026-11-15T09:41:12Z",
  "checked": 67,
- "unchanged": 45,
+ "unchanged": 49,
  "baselined": [],
  "changed": [
-  {
-   "id": "trendspider",
-   "name": "TrendSpider",
-   "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-13T09:49:15Z",
-   "fetched_at": "2026-11-14T09:11:55Z",
-   "added": [],
-   "removed": [
-    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
-    "Also, these alerts played out well (Using +3% sell, -2% stop)"
-   ]
-  },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-13T09:49:15Z",
-   "fetched_at": "2026-11-14T09:11:55Z",
+   "previous_fetch": "2026-11-14T09:11:55Z",
+   "fetched_at": "2026-11-15T09:41:12Z",
    "added": [
+    "$2.258T",
+    "$117.303B"
+   ],
+   "removed": [
     "$2.358T",
     "$80.357B"
-   ],
-   "removed": [
-    "$2.403T",
-    "$96.194B"
-   ]
-  },
-  {
-   "id": "lunarcrush",
-   "name": "LunarCrush",
-   "url": "https://lunarcrush.com/pricing",
-   "previous_fetch": "2026-11-07T08:59:53Z",
-   "fetched_at": "2026-11-14T09:11:55Z",
-   "added": [
-    "LunarCrush Pricing: Social Data API & MCP for Crypto & Stocks, $90/mo",
-    "Credits never expire",
-    "1 credit",
-    "Every plan includes the API, MCP, and CLI with full history since 2020. Prices in USD.",
-    "What are the request limits on each plan?",
-    "What happens if I go over my limit?",
-    "Requests over the limit return a rate-limit error (429) and are not billed. Upgrade anytime to raise your limits.",
-    "What payment methods do you accept for plan subscriptions?",
-    "Can I change my plan later if I want to upgrade or downgrade?",
-    "What are credits for?",
-    "Do credits expire?",
-    "No. Credits never expire.",
-    "What happens when I run out of credits?",
-    "Turn on Recharge when low and we add $10 in credits when your balance drops under 1,000. You can also add credits anytime from your account."
-   ],
-   "removed": [
-    "} · 1 credit",
-    "Every plan includes the API, MCP, and CLI with full history since 2020."
-   ]
-  },
-  {
-   "id": "cointracker",
-   "name": "CoinTracker",
-   "url": "https://www.cointracker.io/pricing",
-   "previous_fetch": "2026-11-13T09:49:15Z",
-   "fetched_at": "2026-11-14T09:11:55Z",
-   "added": [
-    "How many transactions will you have this year?"
-   ],
-   "removed": [
-    "— Your plan covers the transactions in the tax year you're filing. Trades from earlier years don't count against it.",
-    "— Card and referral rebates don't count toward your limit on any paid plan.",
-    "— On Base, staking rewards don't count until they reach $25 in proceeds each year. Prime and above exclude all staking and interest.",
-    "— We match both sides of every transfer and label each transaction, so you aren't sorting a list by hand.",
-    "— Set FIFO, HIFO or LIFO separately for each wallet and each tax year.",
-    "— Every wallet, exchange and chain in one place, free, whether or not you file with us."
-   ]
-  },
-  {
-   "id": "whalealert",
-   "name": "Whale Alert",
-   "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-13T09:49:15Z",
-   "fetched_at": "2026-11-14T09:11:55Z",
-   "added": [],
-   "removed": [
-    "Bitcoin returns to 200-week trend line as analyst sees risk of $57.7K next"
-   ]
-  },
-  {
-   "id": "dextools",
-   "name": "DEXTools",
-   "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-13T09:49:15Z",
-   "fetched_at": "2026-11-14T09:11:55Z",
-   "added": [
-    "$2.31M",
-    "$0.0023",
-    "$12.37M",
-    "$13.77M",
-    "$0.0137",
-    "$2.10M"
-   ],
-   "removed": [
-    "$3.78M",
-    "$0.0037",
-    "$2.48M",
-    "$517.78K",
-    "$0.0₃5192",
-    "$1.47M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-13T09:49:15Z",
-   "fetched_at": "2026-11-14T09:11:55Z",
+   "previous_fetch": "2026-11-14T09:11:55Z",
+   "fetched_at": "2026-11-15T09:41:12Z",
    "added": [
-    "$2.358T",
-    "$80.357B"
+    "$2.258T",
+    "$117.303B"
    ],
    "removed": [
-    "$2.403T",
-    "$96.194B"
+    "$2.358T",
+    "$80.357B"
    ]
   }
  ],
@@ -160,7 +69,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpiagl5e3b', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpk6zow2fw', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "arkham",
@@ -173,9 +82,14 @@
    "error": "fetch_http: only 0 pricing lines"
   },
   {
+   "id": "dextools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "error": "fetch_http: only 0 pricing lines"
+  },
+  {
    "id": "oneinch",
    "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpwl3c_9l_', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpce86twri', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
