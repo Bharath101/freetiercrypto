@@ -1,37 +1,96 @@
 {
- "checked_at": "2026-11-15T09:41:12Z",
+ "checked_at": "2026-11-16T09:59:08Z",
  "checked": 67,
- "unchanged": 49,
+ "unchanged": 44,
  "baselined": [],
  "changed": [
+  {
+   "id": "trendspider",
+   "name": "TrendSpider",
+   "url": "https://trendspider.com/pricing/",
+   "previous_fetch": "2026-11-14T09:11:55Z",
+   "fetched_at": "2026-11-16T09:59:08Z",
+   "added": [
+    "+ Free bonus worth $1,876"
+   ],
+   "removed": [
+    "+ Free bonus worth $2,345",
+    "worth $1,876",
+    "Trial (7 Days)"
+   ]
+  },
+  {
+   "id": "gocharting",
+   "name": "GoCharting",
+   "url": "https://gocharting.com/pricing",
+   "previous_fetch": "2026-11-10T10:10:42Z",
+   "fetched_at": "2026-11-16T09:59:08Z",
+   "added": [
+    "GoCharting Pricing Plans — Free, Pro & Premium for India, US & Crypto"
+   ],
+   "removed": [
+    "GoCharting Pricing Plans — Free, Pro & Premium for India, US &",
+    "Start free with basic charting tools, Market Profile and Footprint Charts.",
+    "India Free includes real-time NSE and MCX data. No credit card required.",
+    "Upgrade to a paid plan for real-time US markets (NASDAQ, NYSE and CME",
+    "Futures), unlimited charts, options chain, advanced orderflow tools and",
+    "live one-click trading. Annual billing saves up to 20%."
+   ]
+  },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-14T09:11:55Z",
-   "fetched_at": "2026-11-15T09:41:12Z",
+   "previous_fetch": "2026-11-15T09:41:12Z",
+   "fetched_at": "2026-11-16T09:59:08Z",
    "added": [
-    "$2.258T",
-    "$117.303B"
+    "$2.261T",
+    "$70.479B"
    ],
    "removed": [
-    "$2.358T",
-    "$80.357B"
+    "$2.258T",
+    "$117.303B"
    ]
+  },
+  {
+   "id": "santiment",
+   "name": "Santiment (Sanbase)",
+   "url": "https://app.santiment.net/pricing",
+   "previous_fetch": "2026-11-13T09:49:15Z",
+   "fetched_at": "2026-11-16T09:59:08Z",
+   "added": [
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
+   ],
+   "removed": [
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+   ]
+  },
+  {
+   "id": "whalealert",
+   "name": "Whale Alert",
+   "url": "https://whale-alert.io/pricing",
+   "previous_fetch": "2026-11-14T09:11:55Z",
+   "fetched_at": "2026-11-16T09:59:08Z",
+   "added": [
+    "Bitcoin Weak Near $64,799 After Weekend Selloff and ETF Outflows"
+   ],
+   "removed": []
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-14T09:11:55Z",
-   "fetched_at": "2026-11-15T09:41:12Z",
+   "previous_fetch": "2026-11-15T09:41:12Z",
+   "fetched_at": "2026-11-16T09:59:08Z",
    "added": [
-    "$2.258T",
-    "$117.303B"
+    "$2.261T",
+    "$70.479B"
    ],
    "removed": [
-    "$2.358T",
-    "$80.357B"
+    "$2.258T",
+    "$117.303B",
+    "Go Ad-free"
    ]
   }
  ],
@@ -69,7 +128,12 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpk6zow2fw', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp43c2mwd1', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+  },
+  {
+   "id": "glassnode",
+   "url": "https://studio.glassnode.com/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
   },
   {
    "id": "arkham",
@@ -89,7 +153,7 @@
   {
    "id": "oneinch",
    "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpce86twri', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpqt01a_ph', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "rango",
