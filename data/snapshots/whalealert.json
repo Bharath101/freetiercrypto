@@ -1,8 +1,8 @@
 {
  "id": "whalealert",
  "url": "https://whale-alert.io/pricing",
- "fetched_at": "2026-11-16T09:59:08Z",
- "sha256": "c9ab499b3916a773d036c60f53734251a9dbd057629f4979a073c4a2ca424a17",
+ "fetched_at": "2026-11-17T10:55:27Z",
+ "sha256": "065b6354392d63fb3236a4f6c6588b8babe0c0cfcf0e2187adac7e7413665da3",
  "lines": [
   "Home | Whale Alert",
   "Alerts",
@@ -13,7 +13,6 @@
   "Latest Whale Alerts",
   "Create Your Own Alerts",
   "Explore More Alerts",
-  "Bitcoin Weak Near $64,799 After Weekend Selloff and ETF Outflows",
   "The Whale Alert dashboard is the only tool you need to stay up to date",
   "with important crypto transactions, live analytics and breaking news.",
   "Transactions",

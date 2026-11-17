@@ -1,15 +1,16 @@
 {
  "id": "coinrule",
  "url": "https://coinrule.com/pricing.html",
- "fetched_at": "2026-11-01T09:28:09Z",
- "sha256": "32a13f9688f8ba7e5563952aa2ca5de2656799af81801af1e382b9fc078d86b0",
+ "fetched_at": "2026-11-17T10:55:27Z",
+ "sha256": "37482a041d5ca8af1fd0bca707f719ad26ca79a3d5cd14d0013bdaada94e225a",
  "lines": [
   "Free Account",
   "Monthly",
   "Annual",
   "Free",
-  "$3k Monthly Volume",
+  "Start Free",
   "Monthly rolling. Cancel anytime.",
+  "$3k Monthly Volume",
   "billed yearly",
   "500 AI Credits",
   "$500k Monthly Volume",
@@ -34,6 +35,7 @@
   "Up to $10M",
   "monthly",
   "Explore Free",
+  "No credit card required",
   "Receive free trading signals, create rules and manage your portfolio",
   "for free",
   "Join Our Free Webinar"

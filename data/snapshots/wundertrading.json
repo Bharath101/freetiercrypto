@@ -1,13 +1,13 @@
 {
  "id": "wundertrading",
  "url": "https://wundertrading.com/en/pricing",
- "fetched_at": "2026-10-27T08:07:35Z",
- "sha256": "164cc0cdaace82522e918c9490985670aa41309607590817748c238637e86581",
+ "fetched_at": "2026-11-17T10:55:27Z",
+ "sha256": "d19737532aede1d3ef18d390964a791094ac14cb15f301b93356e22167d2489f",
  "lines": [
   "Monthly",
   "Free",
   "Free Premium for Hyperliquid Traders",
-  "Free Udemy Course: “Mastering Pine Script",
+  "Free Udemy Course: “Mastering Pine Script”",
   "Included in Every Plan",
   "Compare Features by Plan",
   "Unlimited",
@@ -16,6 +16,6 @@
   "Can I upgrade or downgrade my plan at any time?",
   "Can I switch between monthly and annual billing?",
   "Can I trade on Hyperliquid for free?",
-  "A small builder fee of 0.035% per trade applies, charged directly on execution. For example, trading $100 means a fee of $0.035. This is the only cost associated with trading on Hyperliquid through WunderTrading ."
+  "A small builder fee of 0.035% per trade applies, charged directly on execution. For example, trading $100 means a fee of $0.035. This is the only cost associated with trading on Hyperliquid through WunderTrading."
  ]
 }
