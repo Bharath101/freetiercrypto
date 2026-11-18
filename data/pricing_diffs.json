@@ -1,121 +1,102 @@
 {
- "checked_at": "2026-11-17T10:55:27Z",
+ "checked_at": "2026-11-18T10:27:14Z",
  "checked": 67,
  "unchanged": 45,
- "baselined": [],
+ "baselined": [
+  "summ"
+ ],
  "changed": [
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-16T09:59:08Z",
-   "fetched_at": "2026-11-17T10:55:27Z",
+   "previous_fetch": "2026-11-17T10:55:27Z",
+   "fetched_at": "2026-11-18T10:27:14Z",
    "added": [
+    "$2.258T",
+    "$76.678B"
+   ],
+   "removed": [
     "$2.248T",
-    "$75.71B"
-   ],
-   "removed": [
-    "$2.261T",
-    "$70.479B"
-   ]
-  },
-  {
-   "id": "coinrule",
-   "name": "Coinrule",
-   "url": "https://coinrule.com/pricing.html",
-   "previous_fetch": "2026-11-01T09:28:09Z",
-   "fetched_at": "2026-11-17T10:55:27Z",
-   "added": [
-    "Start Free",
-    "No credit card required"
-   ],
-   "removed": []
-  },
-  {
-   "id": "wundertrading",
-   "name": "WunderTrading",
-   "url": "https://wundertrading.com/en/pricing",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-11-17T10:55:27Z",
-   "added": [
-    "Free Udemy Course: “Mastering Pine Script”",
-    "A small builder fee of 0.035% per trade applies, charged directly on execution. For example, trading $100 means a fee of $0.035. This is the only cost associated with trading on Hyperliquid through WunderTrading."
-   ],
-   "removed": [
-    "Free Udemy Course: “Mastering Pine Script",
-    "A small builder fee of 0.035% per trade applies, charged directly on execution. For example, trading $100 means a fee of $0.035. This is the only cost associated with trading on Hyperliquid through WunderTrading ."
+    "$75.71B",
+    "Go Ad-free"
    ]
   },
   {
    "id": "santiment",
    "name": "Santiment (Sanbase)",
    "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-11-16T09:59:08Z",
-   "fetched_at": "2026-11-17T10:55:27Z",
+   "previous_fetch": "2026-11-17T10:55:27Z",
+   "fetched_at": "2026-11-18T10:27:14Z",
    "added": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
-   ],
-   "removed": [
     "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
     "Get Free Demo"
+   ],
+   "removed": [
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-16T09:59:08Z",
-   "fetched_at": "2026-11-17T10:55:27Z",
-   "added": [],
-   "removed": [
-    "Bitcoin Weak Near $64,799 After Weekend Selloff and ETF Outflows"
-   ]
+   "previous_fetch": "2026-11-17T10:55:27Z",
+   "fetched_at": "2026-11-18T10:27:14Z",
+   "added": [
+    "Ripple-backed Evernorth takes massive $505 million XRP hit"
+   ],
+   "removed": []
   },
   {
    "id": "dextools",
    "name": "DEXTools",
    "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-14T09:11:55Z",
-   "fetched_at": "2026-11-17T10:55:27Z",
+   "previous_fetch": "2026-11-17T10:55:27Z",
+   "fetched_at": "2026-11-18T10:27:14Z",
    "added": [
+    "$10.12M",
+    "$0.0101",
+    "$1.69M",
+    "$2.83M",
+    "$0.0028",
+    "$1.54M"
+   ],
+   "removed": [
     "$13.31M",
     "$0.0134",
     "$4.23M",
     "$18.29M",
     "$0.0183",
     "$1.71M"
-   ],
-   "removed": [
-    "$2.31M",
-    "$0.0023",
-    "$12.37M",
-    "$13.77M",
-    "$0.0137",
-    "$2.10M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-16T09:59:08Z",
-   "fetched_at": "2026-11-17T10:55:27Z",
+   "previous_fetch": "2026-11-17T10:55:27Z",
+   "fetched_at": "2026-11-18T10:27:14Z",
    "added": [
+    "$2.258T",
+    "$76.678B"
+   ],
+   "removed": [
     "$2.248T",
     "$75.71B",
     "Go Ad-free"
-   ],
-   "removed": [
-    "$2.261T",
-    "$70.479B"
    ]
   }
  ],
  "failed": [
   {
+   "id": "trendspider",
+   "url": "https://trendspider.com/pricing/",
+   "error": "fetch_chrome: bot challenge page"
+  },
+  {
    "id": "coinigy",
    "url": "https://www.coinigy.com/pricing",
-   "error": "fetch_http: HTTPError: 503 Server Error: Service Unavailable for url: https://www.coinigy.com/pricing"
+   "error": "fetch_http: HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://www.coinigy.com/pricing"
   },
   {
    "id": "altfins",
@@ -128,9 +109,9 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://tradesanta.com/en/pricing"
   },
   {
-   "id": "summ",
-   "url": "https://summ.com/pricing",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://summ.com/pricing"
+   "id": "cointracker",
+   "url": "https://www.cointracker.io/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://www.cointracker.io/pricing"
   },
   {
    "id": "trezor",
@@ -145,7 +126,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpmzr48fxe', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp8vmkmj8k', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "glassnode",
@@ -158,9 +139,9 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://arkm.com/"
   },
   {
-   "id": "bubblemaps",
-   "url": "https://pro.bubblemaps.io/api/plans",
-   "error": "fetch_http: only 0 pricing lines"
+   "id": "messari",
+   "url": "https://messari.io/pricing",
+   "error": "fetch_http: HTTPError: 429 Client Error: Too Many Requests for url: https://app.blockworks.com/pricing"
   },
   {
    "id": "rango",

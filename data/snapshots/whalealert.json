@@ -1,8 +1,8 @@
 {
  "id": "whalealert",
  "url": "https://whale-alert.io/pricing",
- "fetched_at": "2026-11-17T10:55:27Z",
- "sha256": "065b6354392d63fb3236a4f6c6588b8babe0c0cfcf0e2187adac7e7413665da3",
+ "fetched_at": "2026-11-18T10:27:14Z",
+ "sha256": "b14263703cf1248d7b54f2dad0e87d012660f855722eac7031a8cf76e0f056d9",
  "lines": [
   "Home | Whale Alert",
   "Alerts",
@@ -13,6 +13,7 @@
   "Latest Whale Alerts",
   "Create Your Own Alerts",
   "Explore More Alerts",
+  "Ripple-backed Evernorth takes massive $505 million XRP hit",
   "The Whale Alert dashboard is the only tool you need to stay up to date",
   "with important crypto transactions, live analytics and breaking news.",
   "Transactions",
