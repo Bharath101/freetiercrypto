@@ -1,13 +1,30 @@
 {
  "id": "messari",
  "url": "https://messari.io/pricing",
- "fetched_at": "2026-10-31T08:37:25Z",
- "sha256": "e17cf63fd14ab20441915c373b0aebbdf32ff915c6b64740c480661818737849",
+ "fetched_at": "2026-11-19T10:34:09Z",
+ "sha256": "52c26a8906726052350382460974e44b08cfc0c95089ad5b0f2c7ed9da175be3",
  "lines": [
   "Blockworks Intel Pricing: Free, Pro & Data Packages | Blockworks Intel",
+  "Annual",
   "Free",
+  "$0",
+  "Just getting started? Try Blockworks Intel for free and see what's possible.",
+  "Sign Up Free",
+  "$375",
+  "Billed annually",
+  "$4,500",
+  "Everything in Free",
+  "In-app alerts & watchlist digests",
+  "Configure your plan with",
+  "The full dataset as a Snowflake share. BigQuery and Databricks on request.",
+  "Alerts in the channels your team already watches, with the evidence attached.",
+  "The same alerts in Telegram, for desks that live there.",
   "Unlimited",
   "New Report Alerts",
-  "Does Blockworks offer a trial?"
+  "claim $100 of free API credits",
+  "Pro includes alerts and daily watchlist digests inside the Intel app.",
+  "You can pay via Credit card, Apple Pay, or Google Pay. ACH payments are also available, please",
+  "Does Blockworks offer a trial?",
+  "For the Blockworks API and MCP, yes: free accounts can"
  ]
 }

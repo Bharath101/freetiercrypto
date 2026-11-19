@@ -1,98 +1,129 @@
 {
- "checked_at": "2026-11-18T10:27:14Z",
+ "checked_at": "2026-11-19T10:34:09Z",
  "checked": 67,
- "unchanged": 45,
- "baselined": [
-  "summ"
- ],
+ "unchanged": 48,
+ "baselined": [],
  "changed": [
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-17T10:55:27Z",
-   "fetched_at": "2026-11-18T10:27:14Z",
+   "previous_fetch": "2026-11-18T10:27:14Z",
+   "fetched_at": "2026-11-19T10:34:09Z",
    "added": [
-    "$2.258T",
-    "$76.678B"
+    "$2.236T",
+    "$73.29B",
+    "your first annual or monthly plan"
    ],
    "removed": [
-    "$2.248T",
-    "$75.71B",
-    "Go Ad-free"
+    "$2.258T",
+    "$76.678B",
+    "🎉 Limited offer for your first annual or monthly plan!",
+    "Get 10% OFF Your Plan"
    ]
   },
   {
    "id": "santiment",
    "name": "Santiment (Sanbase)",
    "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-11-17T10:55:27Z",
-   "fetched_at": "2026-11-18T10:27:14Z",
+   "previous_fetch": "2026-11-18T10:27:14Z",
+   "fetched_at": "2026-11-19T10:34:09Z",
    "added": [
-    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-    "Get Free Demo"
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
    ],
    "removed": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
    ]
+  },
+  {
+   "id": "messari",
+   "name": "Messari",
+   "url": "https://messari.io/pricing",
+   "previous_fetch": "2026-10-31T08:37:25Z",
+   "fetched_at": "2026-11-19T10:34:09Z",
+   "added": [
+    "Annual",
+    "$0",
+    "Just getting started? Try Blockworks Intel for free and see what's possible.",
+    "Sign Up Free",
+    "$375",
+    "Billed annually",
+    "$4,500",
+    "Everything in Free",
+    "In-app alerts & watchlist digests",
+    "Configure your plan with",
+    "The full dataset as a Snowflake share. BigQuery and Databricks on request.",
+    "Alerts in the channels your team already watches, with the evidence attached.",
+    "The same alerts in Telegram, for desks that live there.",
+    "claim $100 of free API credits",
+    "Pro includes alerts and daily watchlist digests inside the Intel app.",
+    "You can pay via Credit card, Apple Pay, or Google Pay. ACH payments are also available, please",
+    "For the Blockworks API and MCP, yes: free accounts can"
+   ],
+   "removed": []
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-17T10:55:27Z",
-   "fetched_at": "2026-11-18T10:27:14Z",
+   "previous_fetch": "2026-11-18T10:27:14Z",
+   "fetched_at": "2026-11-19T10:34:09Z",
    "added": [
-    "Ripple-backed Evernorth takes massive $505 million XRP hit"
+    "Bitcoin ETF outflows hit $2.9B in November as BTC struggles to hold $64,000",
+    "Includes News Alerts",
+    "free"
    ],
-   "removed": []
+   "removed": [
+    "Ripple-backed Evernorth takes massive $505 million XRP hit",
+    "$14.95",
+    "FREE",
+    "$29.95"
+   ]
   },
   {
    "id": "dextools",
    "name": "DEXTools",
    "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-17T10:55:27Z",
-   "fetched_at": "2026-11-18T10:27:14Z",
+   "previous_fetch": "2026-11-18T10:27:14Z",
+   "fetched_at": "2026-11-19T10:34:09Z",
    "added": [
+    "$12.10M",
+    "$0.0123",
+    "$3.72M",
+    "$16.42M",
+    "$0.0164",
+    "$1.72M"
+   ],
+   "removed": [
     "$10.12M",
     "$0.0101",
     "$1.69M",
     "$2.83M",
     "$0.0028",
     "$1.54M"
-   ],
-   "removed": [
-    "$13.31M",
-    "$0.0134",
-    "$4.23M",
-    "$18.29M",
-    "$0.0183",
-    "$1.71M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-17T10:55:27Z",
-   "fetched_at": "2026-11-18T10:27:14Z",
+   "previous_fetch": "2026-11-18T10:27:14Z",
+   "fetched_at": "2026-11-19T10:34:09Z",
    "added": [
-    "$2.258T",
-    "$76.678B"
+    "$2.236T",
+    "$73.29B",
+    "your first annual or monthly plan"
    ],
    "removed": [
-    "$2.248T",
-    "$75.71B",
-    "Go Ad-free"
+    "$2.258T",
+    "$76.678B",
+    "🎉 Limited offer for your first annual or monthly plan!",
+    "Get 10% OFF Your Plan"
    ]
   }
  ],
  "failed": [
-  {
-   "id": "trendspider",
-   "url": "https://trendspider.com/pricing/",
-   "error": "fetch_chrome: bot challenge page"
-  },
   {
    "id": "coinigy",
    "url": "https://www.coinigy.com/pricing",
@@ -109,11 +140,6 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://tradesanta.com/en/pricing"
   },
   {
-   "id": "cointracker",
-   "url": "https://www.cointracker.io/pricing",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://www.cointracker.io/pricing"
-  },
-  {
    "id": "trezor",
    "url": "https://trezor.io/trezor-safe-3",
    "error": "fetch_http: only 1 pricing lines"
@@ -126,7 +152,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp8vmkmj8k', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpv8c_87z3', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "glassnode",
@@ -137,11 +163,6 @@
    "id": "arkham",
    "url": "https://info.arkm.com/",
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://arkm.com/"
-  },
-  {
-   "id": "messari",
-   "url": "https://messari.io/pricing",
-   "error": "fetch_http: HTTPError: 429 Client Error: Too Many Requests for url: https://app.blockworks.com/pricing"
   },
   {
    "id": "rango",
