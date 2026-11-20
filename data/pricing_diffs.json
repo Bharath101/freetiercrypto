@@ -1,125 +1,191 @@
 {
- "checked_at": "2026-11-19T10:34:09Z",
+ "checked_at": "2026-11-20T10:15:30Z",
  "checked": 67,
- "unchanged": 48,
+ "unchanged": 44,
  "baselined": [],
  "changed": [
+  {
+   "id": "tradingview",
+   "name": "TradingView",
+   "url": "https://www.tradingview.com/pricing/",
+   "previous_fetch": "2026-11-13T09:49:15Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
+   "added": [
+    "10 MCP server requests per day",
+    "20 MCP server requests per day",
+    "50 MCP server requests per day",
+    "Unlimited Pine Screener scans",
+    "500 MCP server requests per day"
+   ],
+   "removed": [
+    "AI screener requests",
+    "Try free",
+    "Preset requests only"
+   ]
+  },
+  {
+   "id": "gocharting",
+   "name": "GoCharting",
+   "url": "https://gocharting.com/pricing",
+   "previous_fetch": "2026-11-16T09:59:08Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
+   "added": [
+    "50% off annual plans"
+   ],
+   "removed": []
+  },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-18T10:27:14Z",
-   "fetched_at": "2026-11-19T10:34:09Z",
+   "previous_fetch": "2026-11-19T10:34:09Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
    "added": [
+    "$2.201T",
+    "$85.788B",
+    "Go Ad-free"
+   ],
+   "removed": [
     "$2.236T",
-    "$73.29B",
-    "your first annual or monthly plan"
-   ],
-   "removed": [
-    "$2.258T",
-    "$76.678B",
-    "🎉 Limited offer for your first annual or monthly plan!",
-    "Get 10% OFF Your Plan"
+    "$73.29B"
    ]
   },
   {
-   "id": "santiment",
-   "name": "Santiment (Sanbase)",
-   "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-11-18T10:27:14Z",
-   "fetched_at": "2026-11-19T10:34:09Z",
+   "id": "lunarcrush",
+   "name": "LunarCrush",
+   "url": "https://lunarcrush.com/pricing",
+   "previous_fetch": "2026-11-14T09:11:55Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
    "added": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+    "Monthly",
+    "Yearly",
+    "$90",
+    "$72",
+    "Billed monthly. Cancel anytime.",
+    "$864 billed yearly.",
+    "2,000 requests a day",
+    "$300",
+    "$240",
+    "$15",
+    "$2,880 billed yearly.",
+    "20,000 requests a day",
+    "$900",
+    "$720",
+    "$45",
+    "$8,640 billed yearly.",
+    "100,000 requests a day",
+    "$90/mo",
+    "$300/mo",
+    "$900/mo"
    ],
    "removed": [
-    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-    "Get Free Demo"
+    "$1",
+    "/1,000 requests",
+    "All 37 endpoints through the API, MCP, and CLI. Buy credits, use them when you need them. They never expire.",
+    "Credits never expire",
+    "1 credit",
+    "2K–100K requests/day",
+    "$1 per 1,000 requests",
+    "From $5/day",
+    "From $15/day",
+    "From $45/day",
+    "Pay per request",
+    "What are credits for?",
+    "Do credits expire?",
+    "No. Credits never expire.",
+    "What happens when I run out of credits?",
+    "Turn on Recharge when low and we add $10 in credits when your balance drops under 1,000. You can also add credits anytime from your account."
    ]
   },
   {
-   "id": "messari",
-   "name": "Messari",
-   "url": "https://messari.io/pricing",
-   "previous_fetch": "2026-10-31T08:37:25Z",
-   "fetched_at": "2026-11-19T10:34:09Z",
+   "id": "bitsgap",
+   "name": "Bitsgap",
+   "url": "https://bitsgap.com/pricing",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
    "added": [
-    "Annual",
-    "$0",
-    "Just getting started? Try Blockworks Intel for free and see what's possible.",
-    "Sign Up Free",
-    "$375",
-    "Billed annually",
-    "$4,500",
-    "Everything in Free",
-    "In-app alerts & watchlist digests",
-    "Configure your plan with",
-    "The full dataset as a Snowflake share. BigQuery and Databricks on request.",
-    "Alerts in the channels your team already watches, with the evidence attached.",
-    "The same alerts in Telegram, for desks that live there.",
-    "claim $100 of free API credits",
-    "Pro includes alerts and daily watchlist digests inside the Intel app.",
-    "You can pay via Credit card, Apple Pay, or Google Pay. ACH payments are also available, please",
-    "For the Blockworks API and MCP, yes: free accounts can"
+    "$35",
+    "You save $414 a year",
+    "$75",
+    "You save $894 a year"
+   ],
+   "removed": [
+    "$55",
+    "You save $168 a year",
+    "$119",
+    "You save $360 a year"
+   ]
+  },
+  {
+   "id": "ledger",
+   "name": "Ledger",
+   "url": "https://shop.ledger.com/pages/hardware-wallets-comparison",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
+   "added": [
+    "Get up to $80 in BTC and save big this Black Friday."
    ],
    "removed": []
+  },
+  {
+   "id": "cryptoquant",
+   "name": "CryptoQuant",
+   "url": "https://cryptoquant.com/pricing",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
+   "added": [
+    "$20.30",
+    "$59.40"
+   ],
+   "removed": [
+    "$29",
+    "$99",
+    "$799"
+   ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-18T10:27:14Z",
-   "fetched_at": "2026-11-19T10:34:09Z",
+   "previous_fetch": "2026-11-19T10:34:09Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
    "added": [
-    "Bitcoin ETF outflows hit $2.9B in November as BTC struggles to hold $64,000",
-    "Includes News Alerts",
-    "free"
+    "Create your own custom alerts -"
    ],
    "removed": [
-    "Ripple-backed Evernorth takes massive $505 million XRP hit",
-    "$14.95",
-    "FREE",
-    "$29.95"
-   ]
-  },
-  {
-   "id": "dextools",
-   "name": "DEXTools",
-   "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-18T10:27:14Z",
-   "fetched_at": "2026-11-19T10:34:09Z",
-   "added": [
-    "$12.10M",
-    "$0.0123",
-    "$3.72M",
-    "$16.42M",
-    "$0.0164",
-    "$1.72M"
-   ],
-   "removed": [
-    "$10.12M",
-    "$0.0101",
-    "$1.69M",
-    "$2.83M",
-    "$0.0028",
-    "$1.54M"
+    "Create Your Own Alerts",
+    "Bitcoin ETF outflows hit $2.9B in November as BTC struggles to hold $64,000"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-18T10:27:14Z",
-   "fetched_at": "2026-11-19T10:34:09Z",
+   "previous_fetch": "2026-11-19T10:34:09Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
    "added": [
-    "$2.236T",
-    "$73.29B",
-    "your first annual or monthly plan"
+    "$2.201T",
+    "$85.788B",
+    "Go Ad-free"
    ],
    "removed": [
-    "$2.258T",
-    "$76.678B",
-    "🎉 Limited offer for your first annual or monthly plan!",
-    "Get 10% OFF Your Plan"
+    "$2.236T",
+    "$73.29B"
+   ]
+  },
+  {
+   "id": "birdeye",
+   "name": "Birdeye Data Services",
+   "url": "https://data.birdeye.so/docs/guides/payment/pricing",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-20T10:15:30Z",
+   "added": [
+    "$15",
+    "$12"
+   ],
+   "removed": [
+    "$23",
+    "$19.9"
    ]
   }
  ],
@@ -152,17 +218,17 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpv8c_87z3', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
-  },
-  {
-   "id": "glassnode",
-   "url": "https://studio.glassnode.com/pricing",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmp9qplwt20', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "arkham",
    "url": "https://info.arkm.com/",
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://arkm.com/"
+  },
+  {
+   "id": "dextools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "error": "fetch_http: only 0 pricing lines"
   },
   {
    "id": "rango",
