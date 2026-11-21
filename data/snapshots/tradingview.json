@@ -1,8 +1,8 @@
 {
  "id": "tradingview",
  "url": "https://www.tradingview.com/pricing/",
- "fetched_at": "2026-11-20T10:15:30Z",
- "sha256": "58f91c5ebf5f93787172d229e3fa2bda037921974aa9d3b26b94957da93a1ac5",
+ "fetched_at": "2026-11-21T10:00:24Z",
+ "sha256": "50af20c2131c7905374f605f6bb54b3dacf84a6f390ed8099183c418572d5216",
  "lines": [
   "Free, until you’re ready",
   "No credit card needed",
@@ -38,6 +38,7 @@
   "Unlimited real-time market data subscriptions",
   "Only the Ultimate plan is available for professional users. Learn more about who qualifies as a",
   "Historical annual financial data",
+  "MCP server requests per day",
   "Time limit for making calculations",
   "Transactions per portfolio",
   "Active price alerts",
