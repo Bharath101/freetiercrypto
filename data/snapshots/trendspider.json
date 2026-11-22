@@ -1,8 +1,8 @@
 {
  "id": "trendspider",
  "url": "https://trendspider.com/pricing/",
- "fetched_at": "2026-11-16T09:59:08Z",
- "sha256": "2747328f519ab538f098b7067b0ff7523f4d27d1c95bf673c6c5824370c7e383",
+ "fetched_at": "2026-11-22T10:01:12Z",
+ "sha256": "73fd644abcd973d513767e4e11262845923149a3d7e2ab1bd69a1ed16a6a8b05",
  "lines": [
   "Deploy Alerts & Bots",
   "Automate market monitoring, entries, exits, and execution with cloud-based alerts and no-code bots.",
@@ -45,6 +45,8 @@
   "$129/month",
   "Up to 1,000 messages per month",
   "$349/month",
+  "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
+  "Also, these alerts played out well (Using +3% sell, -2% stop)",
   "Got questions? We've got answers! If you need more help, feel free to",
   "plan descriptions",
   "Does TrendSpider offer a trial?",

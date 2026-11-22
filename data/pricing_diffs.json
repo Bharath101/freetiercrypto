@@ -1,126 +1,87 @@
 {
- "checked_at": "2026-11-21T10:00:24Z",
+ "checked_at": "2026-11-22T10:01:12Z",
  "checked": 67,
- "unchanged": 46,
+ "unchanged": 49,
  "baselined": [],
  "changed": [
   {
-   "id": "tradingview",
-   "name": "TradingView",
-   "url": "https://www.tradingview.com/pricing/",
-   "previous_fetch": "2026-11-20T10:15:30Z",
-   "fetched_at": "2026-11-21T10:00:24Z",
+   "id": "trendspider",
+   "name": "TrendSpider",
+   "url": "https://trendspider.com/pricing/",
+   "previous_fetch": "2026-11-16T09:59:08Z",
+   "fetched_at": "2026-11-22T10:01:12Z",
    "added": [
-    "MCP server requests per day"
+    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
+    "Also, these alerts played out well (Using +3% sell, -2% stop)"
    ],
    "removed": []
-  },
-  {
-   "id": "gocharting",
-   "name": "GoCharting",
-   "url": "https://gocharting.com/pricing",
-   "previous_fetch": "2026-11-20T10:15:30Z",
-   "fetched_at": "2026-11-21T10:00:24Z",
-   "added": [],
-   "removed": [
-    "50% off annual plans"
-   ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-20T10:15:30Z",
-   "fetched_at": "2026-11-21T10:00:24Z",
+   "previous_fetch": "2026-11-21T10:00:24Z",
+   "fetched_at": "2026-11-22T10:01:12Z",
    "added": [
+    "$2.117T",
+    "$71.668B"
+   ],
+   "removed": [
     "$2.077T",
     "$145.05B"
-   ],
-   "removed": [
-    "$2.201T",
-    "$85.788B"
    ]
   },
   {
-   "id": "lunarcrush",
-   "name": "LunarCrush",
-   "url": "https://lunarcrush.com/pricing",
+   "id": "whalealert",
+   "name": "Whale Alert",
+   "url": "https://whale-alert.io/pricing",
    "previous_fetch": "2026-11-20T10:15:30Z",
-   "fetched_at": "2026-11-21T10:00:24Z",
+   "fetched_at": "2026-11-22T10:01:12Z",
    "added": [
-    "Save 40% vs daily. Billed monthly.",
-    "Save 52% vs daily. $864 billed yearly.",
-    "Save 33% vs daily. Billed monthly.",
-    "Save 47% vs daily. $2,880 billed yearly.",
-    "Save 47% vs daily. $8,640 billed yearly.",
-    "$5/day",
-    "$15/day",
-    "$45/day"
+    "Bitcoin rebounds to the $59K–$60K area after $2.7B leveraged crypto liquidation wipeout"
    ],
-   "removed": [
-    "Billed monthly. Cancel anytime.",
-    "$864 billed yearly.",
-    "$2,880 billed yearly.",
-    "$8,640 billed yearly.",
-    "$90/mo",
-    "$300/mo",
-    "$900/mo"
-   ]
-  },
-  {
-   "id": "gunbot",
-   "name": "Gunbot",
-   "url": "https://www.gunbot.com/",
-   "previous_fetch": "2026-11-13T09:49:15Z",
-   "fetched_at": "2026-11-21T10:00:24Z",
-   "added": [],
    "removed": []
   },
   {
    "id": "dextools",
    "name": "DEXTools",
    "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-19T10:34:09Z",
-   "fetched_at": "2026-11-21T10:00:24Z",
+   "previous_fetch": "2026-11-21T10:00:24Z",
+   "fetched_at": "2026-11-22T10:01:12Z",
    "added": [
+    "$13.06M",
+    "$0.0130",
+    "$3.04M",
+    "$2.55M",
+    "$0.0025",
+    "$1.17M"
+   ],
+   "removed": [
     "$9.18M",
     "$0.0093",
     "$1.74M",
     "$7.03M",
     "$0.0070",
     "$1.47M"
-   ],
-   "removed": [
-    "$12.10M",
-    "$0.0123",
-    "$3.72M",
-    "$16.42M",
-    "$0.0164",
-    "$1.72M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-20T10:15:30Z",
-   "fetched_at": "2026-11-21T10:00:24Z",
+   "previous_fetch": "2026-11-21T10:00:24Z",
+   "fetched_at": "2026-11-22T10:01:12Z",
    "added": [
-    "$2.077T",
-    "$145.05B"
+    "$2.117T",
+    "$71.668B"
    ],
    "removed": [
-    "$2.201T",
-    "$85.788B"
+    "$2.077T",
+    "$145.05B"
    ]
   }
  ],
  "failed": [
-  {
-   "id": "trendspider",
-   "url": "https://trendspider.com/pricing/",
-   "error": "fetch_chrome: bot challenge page"
-  },
   {
    "id": "coinigy",
    "url": "https://www.coinigy.com/pricing",
@@ -149,17 +110,17 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpr4w4s7ie', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
-  },
-  {
-   "id": "glassnode",
-   "url": "https://studio.glassnode.com/pricing",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmponrrv4ca', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "arkham",
    "url": "https://info.arkm.com/",
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://arkm.com/"
+  },
+  {
+   "id": "oneinch",
+   "url": "https://business.1inch.com/portal/pricing",
+   "error": "fetch_http: only 0 pricing lines"
   },
   {
    "id": "rango",
@@ -179,7 +140,7 @@
   {
    "id": "axiom",
    "url": "https://docs.axiom.trade/getting-started/fees/axiom-fees",
-   "error": "fetch_http: only 0 pricing lines"
+   "error": "fetch_chrome: bot challenge page"
   },
   {
    "id": "photon",
