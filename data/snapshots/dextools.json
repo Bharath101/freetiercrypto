@@ -1,14 +1,14 @@
 {
  "id": "dextools",
  "url": "https://www.dextools.io/app/en/pricing",
- "fetched_at": "2026-11-22T10:01:12Z",
- "sha256": "0666ad93b1d4cce4571caceb4d493cb2f7fd7b2bf8ed5be27b8941fb82bb3879",
+ "fetched_at": "2026-11-23T10:58:39Z",
+ "sha256": "08a18d53f98428a4a9b333b236d7a232d6b7eee6f811aa7498876f8ff2e4775e",
  "lines": [
-  "$13.06M",
-  "$0.0130",
-  "$3.04M",
-  "$2.55M",
-  "$0.0025",
-  "$1.17M"
+  "$13.18M",
+  "$0.0131",
+  "$2.58M",
+  "$8.65M",
+  "$0.0086",
+  "$3.31M"
  ]
 }

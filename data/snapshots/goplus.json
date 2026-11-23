@@ -1,10 +1,10 @@
 {
  "id": "goplus",
  "url": "https://gopluslabs.io/en/security-api",
- "fetched_at": "2026-10-27T08:07:35Z",
- "sha256": "5df7a9d3c218cc38f422df52738448807cb33d2556a8392271836cf5d4eeda4c",
+ "fetched_at": "2026-11-23T10:58:39Z",
+ "sha256": "4445115d8881ed30dc2223fc98cb0aad5787cb5c565b33d48158c5bd01a2b958",
  "lines": [
-  "Proactively Monitor Every Transaction",
+  "Protect your users with security APIs, from token and NFT risk detection to transaction security.",
   "Transaction Simulation API",
   "Simulate transaction outcomes and detect potential risks",
   "Free Version",

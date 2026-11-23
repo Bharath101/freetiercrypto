@@ -1,83 +1,308 @@
 {
- "checked_at": "2026-11-22T10:01:12Z",
+ "checked_at": "2026-11-23T10:58:39Z",
  "checked": 67,
- "unchanged": 49,
+ "unchanged": 43,
  "baselined": [],
  "changed": [
+  {
+   "id": "tradingview",
+   "name": "TradingView",
+   "url": "https://www.tradingview.com/pricing/",
+   "previous_fetch": "2026-11-21T10:00:24Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
+   "added": [
+    "+1 free month",
+    "Unlimited drawings"
+   ],
+   "removed": [
+    "Free, until you’re ready",
+    "No credit card needed"
+   ]
+  },
   {
    "id": "trendspider",
    "name": "TrendSpider",
    "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-16T09:59:08Z",
-   "fetched_at": "2026-11-22T10:01:12Z",
+   "previous_fetch": "2026-11-22T10:01:12Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
    "added": [
+    "+ Free bonus worth $1,407"
+   ],
+   "removed": [
+    "+ Free bonus worth $1,876",
+    "Discount + free bonus",
+    "worth $1,407",
     "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
     "Also, these alerts played out well (Using +3% sell, -2% stop)"
-   ],
-   "removed": []
+   ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-21T10:00:24Z",
-   "fetched_at": "2026-11-22T10:01:12Z",
+   "previous_fetch": "2026-11-22T10:01:12Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
    "added": [
-    "$2.117T",
-    "$71.668B"
+    "$2.156T",
+    "$59.139B",
+    "$28",
+    "Save $7",
+    "Renews at $35/month",
+    "$103.20",
+    "Save $25.80",
+    "Renews at $129/month",
+    "$399.20",
+    "Save $99.80",
+    "Renews at $499/month",
+    "$799.20",
+    "Save $199.80",
+    "Renews at $999/month",
+    "Yearly −17%",
+    "$23.20",
+    "Save $141.60",
+    "$278.40",
+    "Renews at $348/year",
+    "Yearly −20%",
+    "$82.53",
+    "Save $557.60",
+    "$990.40",
+    "Renews at $1,238/year",
+    "$319.33",
+    "Save $2,156",
+    "$3,832",
+    "Renews at $4,790/year",
+    "$639.33",
+    "Save $4,316",
+    "$7,672",
+    "Renews at $9,590/year",
+    "For crypto tax reporting, priced at exact transaction timestamps with Coingecko data.",
+    "Effortlessly try Coingecko's API with free Demo plan account.",
+    "Why Coingecko API credits give you more",
+    "Is Coingecko API free?",
+    "How does Coingecko API count the API usage credit?",
+    "Coingecko API paid plan",
+    "Get Price Alerts with Coingecko App",
+    "Save up to 36% on Premium & API plans, plus unlock exclusive partner perks with an annual subscription."
    ],
    "removed": [
-    "$2.077T",
-    "$145.05B"
+    "$2.117T",
+    "$71.668B",
+    "Go Ad-free",
+    "your first annual or monthly plan",
+    "$35",
+    "Or billed yearly $29/mo",
+    "$129",
+    "Or billed yearly $103.2/mo",
+    "$499",
+    "Or billed yearly $399.2/mo",
+    "$999",
+    "Or billed yearly $799.2/mo",
+    "$29",
+    "Save $72",
+    "Billed yearly:",
+    "$348/year",
+    "$103.2",
+    "Save $310",
+    "$1,238/year",
+    "$399.2",
+    "Save $1,198",
+    "$4,790/year",
+    "$799.2",
+    "Save $2,398",
+    "$9,590/year",
+    "For crypto tax reporting, priced at exact transaction timestamps with CoinGecko data.",
+    "Effortlessly try CoinGecko's API with free Demo plan account.",
+    "Why CoinGecko API credits give you more",
+    "Is CoinGecko API free?",
+    "How does CoinGecko API count the API usage credit?",
+    "CoinGecko API paid plan",
+    "Get Price Alerts with CoinGecko App"
+   ]
+  },
+  {
+   "id": "coinmarketcap",
+   "name": "CoinMarketCap (API)",
+   "url": "https://coinmarketcap.com/api/pricing/",
+   "previous_fetch": "2026-11-13T09:49:15Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
+   "added": [],
+   "removed": [
+    "🎉 10% off all yearly plans with code at checkout"
+   ]
+  },
+  {
+   "id": "cointracking",
+   "name": "CoinTracking",
+   "url": "https://cointracking.info/pricing/",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
+   "added": [
+    "Ask ChatGPT, Claude or Codex about your portfolio and taxes. Free for every account.",
+    "$41.99/year",
+    "â¬32.99/year",
+    "$124.99/year",
+    "â¬94.99/year",
+    "from $179.99/year",
+    "from â¬149.99/year",
+    "$1,439.20"
+   ],
+   "removed": [
+    "Optimize your crypto taxes with the help of AI â based on your real transaction data."
+   ]
+  },
+  {
+   "id": "santiment",
+   "name": "Santiment (Sanbase)",
+   "url": "https://app.santiment.net/pricing",
+   "previous_fetch": "2026-11-19T10:34:09Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
+   "added": [
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
+   ],
+   "removed": [
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
    ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-20T10:15:30Z",
-   "fetched_at": "2026-11-22T10:01:12Z",
+   "previous_fetch": "2026-11-22T10:01:12Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
    "added": [
-    "Bitcoin rebounds to the $59K–$60K area after $2.7B leveraged crypto liquidation wipeout"
+    "Spot Bitcoin ETFs See $1.79 Billion in Weekly Outflows as Investors Pull Back from Riskier Assets"
    ],
-   "removed": []
+   "removed": [
+    "Bitcoin rebounds to the $59K–$60K area after $2.7B leveraged crypto liquidation wipeout"
+   ]
   },
   {
    "id": "dextools",
    "name": "DEXTools",
    "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-21T10:00:24Z",
-   "fetched_at": "2026-11-22T10:01:12Z",
+   "previous_fetch": "2026-11-22T10:01:12Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
    "added": [
+    "$13.18M",
+    "$0.0131",
+    "$2.58M",
+    "$8.65M",
+    "$0.0086",
+    "$3.31M"
+   ],
+   "removed": [
     "$13.06M",
     "$0.0130",
     "$3.04M",
     "$2.55M",
     "$0.0025",
     "$1.17M"
-   ],
-   "removed": [
-    "$9.18M",
-    "$0.0093",
-    "$1.74M",
-    "$7.03M",
-    "$0.0070",
-    "$1.47M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-21T10:00:24Z",
-   "fetched_at": "2026-11-22T10:01:12Z",
+   "previous_fetch": "2026-11-22T10:01:12Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
    "added": [
-    "$2.117T",
-    "$71.668B"
+    "$2.156T",
+    "$59.139B",
+    "$28",
+    "Save $7",
+    "Renews at $35/month",
+    "$103.20",
+    "Save $25.80",
+    "Renews at $129/month",
+    "$399.20",
+    "Save $99.80",
+    "Renews at $499/month",
+    "$799.20",
+    "Save $199.80",
+    "Renews at $999/month",
+    "Yearly −17%",
+    "$23.20",
+    "Save $141.60",
+    "$278.40",
+    "Renews at $348/year",
+    "Yearly −20%",
+    "$82.53",
+    "Save $557.60",
+    "$990.40",
+    "Renews at $1,238/year",
+    "$319.33",
+    "Save $2,156",
+    "$3,832",
+    "Renews at $4,790/year",
+    "$639.33",
+    "Save $4,316",
+    "$7,672",
+    "Renews at $9,590/year",
+    "For crypto tax reporting, priced at exact transaction timestamps with Coingecko data.",
+    "Effortlessly try Coingecko's API with free Demo plan account.",
+    "Why Coingecko API credits give you more",
+    "Is Coingecko API free?",
+    "How does Coingecko API count the API usage credit?",
+    "Coingecko API paid plan",
+    "Get Price Alerts with Coingecko App",
+    "Save up to 36% on Premium & API plans, plus unlock exclusive partner perks with an annual subscription."
    ],
    "removed": [
-    "$2.077T",
-    "$145.05B"
+    "$2.117T",
+    "$71.668B",
+    "Go Ad-free",
+    "your first annual or monthly plan",
+    "$35",
+    "Or billed yearly $29/mo",
+    "$129",
+    "Or billed yearly $103.2/mo",
+    "$499",
+    "Or billed yearly $399.2/mo",
+    "$999",
+    "Or billed yearly $799.2/mo",
+    "$29",
+    "Save $72",
+    "Billed yearly:",
+    "$348/year",
+    "$103.2",
+    "Save $310",
+    "$1,238/year",
+    "$399.2",
+    "Save $1,198",
+    "$4,790/year",
+    "$799.2",
+    "Save $2,398",
+    "$9,590/year",
+    "For crypto tax reporting, priced at exact transaction timestamps with CoinGecko data.",
+    "Effortlessly try CoinGecko's API with free Demo plan account.",
+    "Why CoinGecko API credits give you more",
+    "Is CoinGecko API free?",
+    "How does CoinGecko API count the API usage credit?",
+    "CoinGecko API paid plan",
+    "Get Price Alerts with CoinGecko App"
+   ]
+  },
+  {
+   "id": "oneinch",
+   "name": "1inch Business (API)",
+   "url": "https://business.1inch.com/portal/pricing",
+   "previous_fetch": "2026-10-29T08:43:50Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
+   "added": [],
+   "removed": []
+  },
+  {
+   "id": "goplus",
+   "name": "GoPlus Security API",
+   "url": "https://gopluslabs.io/en/security-api",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-23T10:58:39Z",
+   "added": [
+    "Protect your users with security APIs, from token and NFT risk detection to transaction security."
+   ],
+   "removed": [
+    "Proactively Monitor Every Transaction"
    ]
   }
  ],
@@ -110,17 +335,17 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmponrrv4ca', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpmjupohgi', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+  },
+  {
+   "id": "glassnode",
+   "url": "https://studio.glassnode.com/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
   },
   {
    "id": "arkham",
    "url": "https://info.arkm.com/",
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://arkm.com/"
-  },
-  {
-   "id": "oneinch",
-   "url": "https://business.1inch.com/portal/pricing",
-   "error": "fetch_http: only 0 pricing lines"
   },
   {
    "id": "rango",

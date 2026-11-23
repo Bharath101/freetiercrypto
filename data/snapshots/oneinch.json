@@ -1,10 +1,11 @@
 {
  "id": "oneinch",
  "url": "https://business.1inch.com/portal/pricing",
- "fetched_at": "2026-10-29T08:43:50Z",
- "sha256": "3f5c07ca63daa3f7287abb223688f72506581ee22198061275331b8282d0ee8b",
+ "fetched_at": "2026-11-23T10:58:39Z",
+ "sha256": "e20151364f28b42c2d69ccd813ec7875342034b00c72f2feae5622ffe39c596b",
  "lines": [
   "Pay per API call.",
+  "Transaction API",
   "Try for free",
   "Free plan",
   "Developer tier to get started",
@@ -27,7 +28,6 @@
   "From $0.00018 per API call.",
   "Pay per API request in USDC on Base, with just a $2 minimum deposit.",
   "Ideal for testing, usage beyond plan limits, and autonomous AI agents.",
-  "Transaction API",
   "$20/mo",
   "Connect your wallet and pre-pay your plan via a USDC transfer on Ethereum.",
   "Pay per API request on Base chain in USDC, with just a $2 minimum deposit. Ideal for testing, topping up and AI agents.",
