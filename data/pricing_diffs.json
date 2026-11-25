@@ -1,137 +1,139 @@
 {
- "checked_at": "2026-11-24T12:45:27Z",
+ "checked_at": "2026-11-25T11:31:48Z",
  "checked": 67,
- "unchanged": 46,
+ "unchanged": 45,
  "baselined": [],
  "changed": [
-  {
-   "id": "tradingview",
-   "name": "TradingView",
-   "url": "https://www.tradingview.com/pricing/",
-   "previous_fetch": "2026-11-23T10:58:39Z",
-   "fetched_at": "2026-11-24T12:45:27Z",
-   "added": [
-    "50 AI alert generations",
-    "100 AI alert generations",
-    "200 AI alert generations",
-    "500 AI alert generations",
-    "AI alert generations",
-    "Suggested alerts only"
-   ],
-   "removed": []
-  },
-  {
-   "id": "trendspider",
-   "name": "TrendSpider",
-   "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-23T10:58:39Z",
-   "fetched_at": "2026-11-24T12:45:27Z",
-   "added": [
-    "your plan, plus",
-    "$1,407 in FREE add-ons",
-    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
-    "Also, these alerts played out well (Using +3% sell, -2% stop)"
-   ],
-   "removed": [
-    "Save up to 65% and get free access to Sidekick AI and SignalStack Order Routing when you sign up now.",
-    "+ Free bonus worth $1,407"
-   ]
-  },
-  {
-   "id": "gocharting",
-   "name": "GoCharting",
-   "url": "https://gocharting.com/pricing",
-   "previous_fetch": "2026-11-21T10:00:24Z",
-   "fetched_at": "2026-11-24T12:45:27Z",
-   "added": [
-    "50% off annual plans"
-   ],
-   "removed": []
-  },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-23T10:58:39Z",
-   "fetched_at": "2026-11-24T12:45:27Z",
+   "previous_fetch": "2026-11-24T12:45:27Z",
+   "fetched_at": "2026-11-25T11:31:48Z",
    "added": [
-    "$2.11T",
-    "$94.903B"
+    "$2.081T",
+    "$70.142B"
    ],
    "removed": [
-    "$2.156T",
-    "$59.139B"
+    "$2.11T",
+    "$94.903B"
    ]
   },
   {
-   "id": "santiment",
-   "name": "Santiment (Sanbase)",
-   "url": "https://app.santiment.net/pricing",
-   "previous_fetch": "2026-11-23T10:58:39Z",
-   "fetched_at": "2026-11-24T12:45:27Z",
+   "id": "lunarcrush",
+   "name": "LunarCrush",
+   "url": "https://lunarcrush.com/pricing",
+   "previous_fetch": "2026-11-21T10:00:24Z",
+   "fetched_at": "2026-11-25T11:31:48Z",
    "added": [
-    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
+    "$2.95",
+    "$2.37",
+    "Save 40% vs daily. $90 billed monthly.",
+    "requests per day",
+    "requests per minute",
+    "$9.84",
+    "$7.89",
+    "Save 33% vs daily. $300 billed monthly.",
+    "$29.51",
+    "$23.67",
+    "Save 33% vs daily. $900 billed monthly.",
+    "Requests per day",
+    "Requests per minute"
    ],
    "removed": [
-    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
-    "Get Free Demo"
+    "$90",
+    "$72",
+    "Save 40% vs daily. Billed monthly.",
+    "2,000 requests a day",
+    "$300",
+    "$240",
+    "Save 33% vs daily. Billed monthly.",
+    "20,000 requests a day",
+    "$900",
+    "$720",
+    "100,000 requests a day",
+    "Requests a day",
+    "Requests a minute",
+    "Every plan includes the API, MCP, and CLI with full history since 2020. Prices in USD."
    ]
+  },
+  {
+   "id": "wundertrading",
+   "name": "WunderTrading",
+   "url": "https://wundertrading.com/en/pricing",
+   "previous_fetch": "2026-11-17T10:55:27Z",
+   "fetched_at": "2026-11-25T11:31:48Z",
+   "added": [
+    "Yearly plans."
+   ],
+   "removed": []
+  },
+  {
+   "id": "summ",
+   "name": "Summ (formerly Crypto Tax Calculator)",
+   "url": "https://summ.com/pricing",
+   "previous_fetch": "2026-11-18T10:27:14Z",
+   "fetched_at": "2026-11-25T11:31:48Z",
+   "added": [
+    "How many transactions do you have in total?"
+   ],
+   "removed": []
+  },
+  {
+   "id": "glassnode",
+   "name": "Glassnode",
+   "url": "https://studio.glassnode.com/pricing",
+   "previous_fetch": "2026-10-28T08:48:12Z",
+   "fetched_at": "2026-11-25T11:31:48Z",
+   "added": [
+    "$34.30",
+    "30% off: $411.60 for the first year, renews at $588/year"
+   ],
+   "removed": []
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-23T10:58:39Z",
-   "fetched_at": "2026-11-24T12:45:27Z",
-   "added": [],
-   "removed": [
-    "Spot Bitcoin ETFs See $1.79 Billion in Weekly Outflows as Investors Pull Back from Riskier Assets"
-   ]
-  },
-  {
-   "id": "dextools",
-   "name": "DEXTools",
-   "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-23T10:58:39Z",
-   "fetched_at": "2026-11-24T12:45:27Z",
+   "previous_fetch": "2026-11-24T12:45:27Z",
+   "fetched_at": "2026-11-25T11:31:48Z",
    "added": [
-    "$5.25M",
-    "$0.0053",
-    "$1.52M",
-    "$3.29M",
-    "$0.0033",
-    "$931.90K"
+    "Kaiko data shows $12B in stablecoin redemptions as Bitcoin ETFs near record monthly outflows"
    ],
-   "removed": [
-    "$13.18M",
-    "$0.0131",
-    "$2.58M",
-    "$8.65M",
-    "$0.0086",
-    "$3.31M"
-   ]
+   "removed": []
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-23T10:58:39Z",
-   "fetched_at": "2026-11-24T12:45:27Z",
+   "previous_fetch": "2026-11-24T12:45:27Z",
+   "fetched_at": "2026-11-25T11:31:48Z",
    "added": [
-    "$2.11T",
-    "$94.903B"
+    "$2.081T",
+    "$70.142B"
    ],
    "removed": [
-    "$2.156T",
-    "$59.139B"
+    "$2.11T",
+    "$94.903B"
    ]
+  },
+  {
+   "id": "birdeye",
+   "name": "Birdeye Data Services",
+   "url": "https://data.birdeye.so/docs/guides/payment/pricing",
+   "previous_fetch": "2026-11-20T10:15:30Z",
+   "fetched_at": "2026-11-25T11:31:48Z",
+   "added": [
+    "$125"
+   ],
+   "removed": []
   }
  ],
  "failed": [
   {
    "id": "coinigy",
    "url": "https://www.coinigy.com/pricing",
-   "error": "fetch_http: HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://www.coinigy.com/pricing"
+   "error": "fetch_http: HTTPError: 404 Client Error: Not Found for url: https://www.coinigy.com/pricing"
   },
   {
    "id": "altfins",
@@ -156,17 +158,22 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmphuu07krx', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
-  },
-  {
-   "id": "glassnode",
-   "url": "https://studio.glassnode.com/pricing",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpw03x8359', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "arkham",
    "url": "https://info.arkm.com/",
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://arkm.com/"
+  },
+  {
+   "id": "bubblemaps",
+   "url": "https://pro.bubblemaps.io/api/plans",
+   "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "dextools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "error": "fetch_http: only 0 pricing lines"
   },
   {
    "id": "rango",

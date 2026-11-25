@@ -1,12 +1,14 @@
 {
  "id": "glassnode",
  "url": "https://studio.glassnode.com/pricing",
- "fetched_at": "2026-10-28T08:48:12Z",
- "sha256": "3c3a879de04f940e59ffa470ce06fee720d0a0385e839fbda8a7366081f5ee0e",
+ "fetched_at": "2026-11-25T11:31:48Z",
+ "sha256": "29cb7aaba46fa9aeabc1de626d6338e4a0ab6f5861aad2b1b51982f820216eb3",
  "lines": [
   "$49",
+  "$34.30",
   "Yearly",
   "Billed annually",
+  "30% off: $411.60 for the first year, renews at $588/year",
   "$584",
   "50 calls/downloads per day",
   "Calls/downloads are credit-based, choose between 50, 5,000, 50,000, 500,000, 5,000,000, and unlimited credits per month",

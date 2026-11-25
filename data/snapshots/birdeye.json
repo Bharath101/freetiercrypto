@@ -1,14 +1,15 @@
 {
  "id": "birdeye",
  "url": "https://data.birdeye.so/docs/guides/payment/pricing",
- "fetched_at": "2026-11-20T10:15:30Z",
- "sha256": "17b2953b543e01545a0b174e7724ecdb164da04f08e0036bb0930c29f5041fba",
+ "fetched_at": "2026-11-25T11:31:48Z",
+ "sha256": "cdf418083b0df5ad9b51f3b5f48f3194594c2a0e58a27dd3bea0b3030ff8a3ef",
  "lines": [
   "Rate Limit (E)",
   "$39",
   "$15",
   "$99",
   "$12",
+  "$125",
   "$199",
   "$9.9",
   "$499",

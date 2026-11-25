@@ -1,8 +1,8 @@
 {
  "id": "whalealert",
  "url": "https://whale-alert.io/pricing",
- "fetched_at": "2026-11-24T12:45:27Z",
- "sha256": "1b6957c1da0f45b20ab87ba23b38c8959f64ee23ed681fe5c11cc4f39347eb1b",
+ "fetched_at": "2026-11-25T11:31:48Z",
+ "sha256": "47590643eb21d81f5581560b7b606748ca2c9ada553650225223fd98bab288f5",
  "lines": [
   "Home | Whale Alert",
   "Alerts",
@@ -14,6 +14,7 @@
   "Create your own custom alerts -",
   "Free Trial",
   "Explore More Alerts",
+  "Kaiko data shows $12B in stablecoin redemptions as Bitcoin ETFs near record monthly outflows",
   "The Whale Alert dashboard is the only tool you need to stay up to date",
   "with important crypto transactions, live analytics and breaking news.",
   "Transactions",

@@ -1,8 +1,8 @@
 {
  "id": "summ",
  "url": "https://summ.com/pricing",
- "fetched_at": "2026-11-18T10:27:14Z",
- "sha256": "a33cfd653ad3729e01e7ccfd6cbedbf6c01bebe6f3a415852a8a6aac3307400f",
+ "fetched_at": "2026-11-25T11:31:48Z",
+ "sha256": "6bd75f6486e401c8ce5a7c9a7c240bf5c251f3e6cb368d2b63db9dbf41ec0290",
  "lines": [
   "Get started for free",
   "Annual subscription.",
@@ -13,6 +13,7 @@
   "Unlimited tax reports for all tax years",
   "No credit card required Â· Read-only access",
   "Handling over 500,000 transactions?",
+  "How many transactions do you have in total?",
   "How do I calculate tax on crypto-to-crypto transactions?",
   "Does Summ support NFT transactions?",
   "How does the free trial work?"

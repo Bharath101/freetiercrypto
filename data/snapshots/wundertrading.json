@@ -1,9 +1,10 @@
 {
  "id": "wundertrading",
  "url": "https://wundertrading.com/en/pricing",
- "fetched_at": "2026-11-17T10:55:27Z",
- "sha256": "d19737532aede1d3ef18d390964a791094ac14cb15f301b93356e22167d2489f",
+ "fetched_at": "2026-11-25T11:31:48Z",
+ "sha256": "f3eceb9e5295f5ba2049404444abad56f07e4de55635a57896120defc5f68560",
  "lines": [
+  "Yearly plans.",
   "Monthly",
   "Free",
   "Free Premium for Hyperliquid Traders",
