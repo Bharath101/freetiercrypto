@@ -1,13 +1,14 @@
 {
  "id": "kubera",
  "url": "https://www.kubera.com/",
- "fetched_at": "2026-11-11T09:40:11Z",
- "sha256": "32b1ccd35790cd274ef933ac6ec9da6a27e004780a9dc5c94791877d926b50f4",
+ "fetched_at": "2026-11-26T11:13:41Z",
+ "sha256": "5b925089251866ac9ade2360e7e924e9ac333c3f3cc1de34439807f78a2bb432",
  "lines": [
   "From $250/year.",
   "$250",
   "Unlimited portfolios",
   "Unlimited users",
+  "Unlimited documents",
   "Unlimited AI agent operations",
   "1:1 Zoom calls with your dedicated expert",
   "$2500",

@@ -1,9 +1,10 @@
 {
  "id": "tokentax",
  "url": "https://tokentax.co/pricing",
- "fetched_at": "2026-10-27T08:07:35Z",
- "sha256": "6803d19a7d3319b4a6d5ab06eea24e99896f6fc1a47afccbbfa3e280999d592c",
+ "fetched_at": "2026-11-26T11:13:41Z",
+ "sha256": "0dbe0038a84e13fba521280c44020c7eaefed4af230f343d06507aa7435bca59",
  "lines": [
+  "Get 15% off any plan with code",
   "$49",
   "/tax year",
   "Up to 100 transactions",

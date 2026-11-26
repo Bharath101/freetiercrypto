@@ -1,93 +1,73 @@
 {
- "checked_at": "2026-11-25T11:31:48Z",
+ "checked_at": "2026-11-26T11:13:41Z",
  "checked": 67,
  "unchanged": 45,
  "baselined": [],
  "changed": [
   {
+   "id": "trendspider",
+   "name": "TrendSpider",
+   "url": "https://trendspider.com/pricing/",
+   "previous_fetch": "2026-11-24T12:45:27Z",
+   "fetched_at": "2026-11-26T11:13:41Z",
+   "added": [],
+   "removed": [
+    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
+    "Also, these alerts played out well (Using +3% sell, -2% stop)"
+   ]
+  },
+  {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-24T12:45:27Z",
-   "fetched_at": "2026-11-25T11:31:48Z",
+   "previous_fetch": "2026-11-25T11:31:48Z",
+   "fetched_at": "2026-11-26T11:13:41Z",
    "added": [
-    "$2.081T",
-    "$70.142B"
+    "$2.141T",
+    "$84.88B"
    ],
    "removed": [
-    "$2.11T",
-    "$94.903B"
+    "$2.081T",
+    "$70.142B"
    ]
   },
   {
    "id": "lunarcrush",
    "name": "LunarCrush",
    "url": "https://lunarcrush.com/pricing",
-   "previous_fetch": "2026-11-21T10:00:24Z",
-   "fetched_at": "2026-11-25T11:31:48Z",
+   "previous_fetch": "2026-11-25T11:31:48Z",
+   "fetched_at": "2026-11-26T11:13:41Z",
    "added": [
-    "$2.95",
-    "$2.37",
-    "Save 40% vs daily. $90 billed monthly.",
-    "requests per day",
-    "requests per minute",
-    "$9.84",
-    "$7.89",
-    "Save 33% vs daily. $300 billed monthly.",
-    "$29.51",
-    "$23.67",
-    "Save 33% vs daily. $900 billed monthly.",
-    "Requests per day",
-    "Requests per minute"
+    "Included in every plan",
+    "API requests per day",
+    "API requests per minute"
    ],
    "removed": [
-    "$90",
-    "$72",
-    "Save 40% vs daily. Billed monthly.",
-    "2,000 requests a day",
-    "$300",
-    "$240",
-    "Save 33% vs daily. Billed monthly.",
-    "20,000 requests a day",
-    "$900",
-    "$720",
-    "100,000 requests a day",
-    "Requests a day",
-    "Requests a minute",
-    "Every plan includes the API, MCP, and CLI with full history since 2020. Prices in USD."
+    "requests per day",
+    "requests per minute",
+    "Requests per day",
+    "Requests per minute"
    ]
   },
   {
-   "id": "wundertrading",
-   "name": "WunderTrading",
-   "url": "https://wundertrading.com/en/pricing",
-   "previous_fetch": "2026-11-17T10:55:27Z",
-   "fetched_at": "2026-11-25T11:31:48Z",
+   "id": "tokentax",
+   "name": "TokenTax",
+   "url": "https://tokentax.co/pricing",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-26T11:13:41Z",
    "added": [
-    "Yearly plans."
+    "Get 15% off any plan with code"
    ],
    "removed": []
   },
   {
-   "id": "summ",
-   "name": "Summ (formerly Crypto Tax Calculator)",
-   "url": "https://summ.com/pricing",
-   "previous_fetch": "2026-11-18T10:27:14Z",
-   "fetched_at": "2026-11-25T11:31:48Z",
+   "id": "kubera",
+   "name": "Kubera",
+   "url": "https://www.kubera.com/",
+   "previous_fetch": "2026-11-11T09:40:11Z",
+   "fetched_at": "2026-11-26T11:13:41Z",
    "added": [
-    "How many transactions do you have in total?"
-   ],
-   "removed": []
-  },
-  {
-   "id": "glassnode",
-   "name": "Glassnode",
-   "url": "https://studio.glassnode.com/pricing",
-   "previous_fetch": "2026-10-28T08:48:12Z",
-   "fetched_at": "2026-11-25T11:31:48Z",
-   "added": [
-    "$34.30",
-    "30% off: $411.60 for the first year, renews at $588/year"
+    "Unlimited documents"
    ],
    "removed": []
   },
@@ -95,38 +75,55 @@
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-24T12:45:27Z",
-   "fetched_at": "2026-11-25T11:31:48Z",
+   "previous_fetch": "2026-11-25T11:31:48Z",
+   "fetched_at": "2026-11-26T11:13:41Z",
    "added": [
-    "Kaiko data shows $12B in stablecoin redemptions as Bitcoin ETFs near record monthly outflows"
+    "Strategic Bitcoin Reserve bill advances as House committee backs reserve plan amid BTC rally",
+    "7-day free trial on all self-serve plans. Enterprise trial keys are available on request.",
+    "Show up to 50 alerts in graphs"
    ],
-   "removed": []
+   "removed": [
+    "Kaiko data shows $12B in stablecoin redemptions as Bitcoin ETFs near record monthly outflows",
+    "7-day free trial on every plan"
+   ]
+  },
+  {
+   "id": "dextools",
+   "name": "DEXTools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "previous_fetch": "2026-11-24T12:45:27Z",
+   "fetched_at": "2026-11-26T11:13:41Z",
+   "added": [
+    "$1.95M",
+    "$0.0019",
+    "$1.13M",
+    "$14.05M",
+    "$0.0140",
+    "$3.03M"
+   ],
+   "removed": [
+    "$5.25M",
+    "$0.0053",
+    "$1.52M",
+    "$3.29M",
+    "$0.0033",
+    "$931.90K"
+   ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-24T12:45:27Z",
-   "fetched_at": "2026-11-25T11:31:48Z",
+   "previous_fetch": "2026-11-25T11:31:48Z",
+   "fetched_at": "2026-11-26T11:13:41Z",
    "added": [
-    "$2.081T",
-    "$70.142B"
+    "$2.141T",
+    "$84.88B"
    ],
    "removed": [
-    "$2.11T",
-    "$94.903B"
+    "$2.081T",
+    "$70.142B"
    ]
-  },
-  {
-   "id": "birdeye",
-   "name": "Birdeye Data Services",
-   "url": "https://data.birdeye.so/docs/guides/payment/pricing",
-   "previous_fetch": "2026-11-20T10:15:30Z",
-   "fetched_at": "2026-11-25T11:31:48Z",
-   "added": [
-    "$125"
-   ],
-   "removed": []
   }
  ],
  "failed": [
@@ -158,7 +155,12 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpw03x8359', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpjpz03rua', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+  },
+  {
+   "id": "glassnode",
+   "url": "https://studio.glassnode.com/pricing",
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
   },
   {
    "id": "arkham",
@@ -166,14 +168,9 @@
    "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://arkm.com/"
   },
   {
-   "id": "bubblemaps",
-   "url": "https://pro.bubblemaps.io/api/plans",
-   "error": "fetch_http: only 0 pricing lines"
-  },
-  {
-   "id": "dextools",
-   "url": "https://www.dextools.io/app/en/pricing",
-   "error": "fetch_http: only 0 pricing lines"
+   "id": "messari",
+   "url": "https://messari.io/pricing",
+   "error": "fetch_http: HTTPError: 429 Client Error: Too Many Requests for url: https://app.blockworks.com/pricing"
   },
   {
    "id": "rango",
