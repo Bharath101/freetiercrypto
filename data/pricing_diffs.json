@@ -1,128 +1,148 @@
 {
- "checked_at": "2026-11-26T11:13:41Z",
+ "checked_at": "2026-11-27T11:07:27Z",
  "checked": 67,
- "unchanged": 45,
+ "unchanged": 43,
  "baselined": [],
  "changed": [
   {
    "id": "trendspider",
    "name": "TrendSpider",
    "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-24T12:45:27Z",
-   "fetched_at": "2026-11-26T11:13:41Z",
-   "added": [],
+   "previous_fetch": "2026-11-26T11:13:41Z",
+   "fetched_at": "2026-11-27T11:07:27Z",
+   "added": [
+    "$1,407 in FREE"
+   ],
    "removed": [
-    "Solid alert system on @TrendSpider Software easy to get to know quickly. Hat tip to the product.",
-    "Also, these alerts played out well (Using +3% sell, -2% stop)"
+    "your plan, plus",
+    "$1,407 in FREE add-ons"
    ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-25T11:31:48Z",
-   "fetched_at": "2026-11-26T11:13:41Z",
+   "previous_fetch": "2026-11-26T11:13:41Z",
+   "fetched_at": "2026-11-27T11:07:27Z",
    "added": [
+    "$2.166T",
+    "$57.825B"
+   ],
+   "removed": [
     "$2.141T",
     "$84.88B"
-   ],
-   "removed": [
-    "$2.081T",
-    "$70.142B"
    ]
   },
   {
-   "id": "lunarcrush",
-   "name": "LunarCrush",
-   "url": "https://lunarcrush.com/pricing",
-   "previous_fetch": "2026-11-25T11:31:48Z",
-   "fetched_at": "2026-11-26T11:13:41Z",
-   "added": [
-    "Included in every plan",
-    "API requests per day",
-    "API requests per minute"
-   ],
-   "removed": [
-    "requests per day",
-    "requests per minute",
-    "Requests per day",
-    "Requests per minute"
-   ]
-  },
-  {
-   "id": "tokentax",
-   "name": "TokenTax",
-   "url": "https://tokentax.co/pricing",
+   "id": "threecommas",
+   "name": "3Commas",
+   "url": "https://3commas.io/pricing",
    "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-11-26T11:13:41Z",
+   "fetched_at": "2026-11-27T11:07:27Z",
    "added": [
-    "Get 15% off any plan with code"
+    "Yearly plans.",
+    "$30",
+    "$240",
+    "4.8 months free",
+    "$84",
+    "$672"
+   ],
+   "removed": [
+    "$38",
+    "$144",
+    "$105",
+    "$420"
+   ]
+  },
+  {
+   "id": "gunbot",
+   "name": "Gunbot",
+   "url": "https://www.gunbot.com/",
+   "previous_fetch": "2026-11-21T10:00:24Z",
+   "fetched_at": "2026-11-27T11:07:27Z",
+   "added": [
+    "OracleAI is a standalone product with a regular lifetime license price of $199 USD. Access is included with a Gunbot Unlimited subscription.",
+    "$199 standalone · Included with your subscription"
    ],
    "removed": []
   },
   {
-   "id": "kubera",
-   "name": "Kubera",
-   "url": "https://www.kubera.com/",
-   "previous_fetch": "2026-11-11T09:40:11Z",
-   "fetched_at": "2026-11-26T11:13:41Z",
+   "id": "ledger",
+   "name": "Ledger",
+   "url": "https://shop.ledger.com/pages/hardware-wallets-comparison",
+   "previous_fetch": "2026-11-20T10:15:30Z",
+   "fetched_at": "2026-11-27T11:07:27Z",
    "added": [
-    "Unlimited documents"
+    "Last 3 days: Get up to $80 in BTC and save big."
    ],
-   "removed": []
+   "removed": [
+    "Get up to $80 in BTC and save big this Black Friday."
+   ]
+  },
+  {
+   "id": "tangem",
+   "name": "Tangem",
+   "url": "https://tangem.com/en/pricing/",
+   "previous_fetch": "2026-11-12T10:00:30Z",
+   "fetched_at": "2026-11-27T11:07:27Z",
+   "added": [],
+   "removed": [
+    "$20 in Bitcoin",
+    "Free BTC on every wallet you order"
+   ]
   },
   {
    "id": "whalealert",
    "name": "Whale Alert",
    "url": "https://whale-alert.io/pricing",
-   "previous_fetch": "2026-11-25T11:31:48Z",
-   "fetched_at": "2026-11-26T11:13:41Z",
-   "added": [
-    "Strategic Bitcoin Reserve bill advances as House committee backs reserve plan amid BTC rally",
-    "7-day free trial on all self-serve plans. Enterprise trial keys are available on request.",
-    "Show up to 50 alerts in graphs"
-   ],
+   "previous_fetch": "2026-11-26T11:13:41Z",
+   "fetched_at": "2026-11-27T11:07:27Z",
+   "added": [],
    "removed": [
-    "Kaiko data shows $12B in stablecoin redemptions as Bitcoin ETFs near record monthly outflows",
-    "7-day free trial on every plan"
-   ]
-  },
-  {
-   "id": "dextools",
-   "name": "DEXTools",
-   "url": "https://www.dextools.io/app/en/pricing",
-   "previous_fetch": "2026-11-24T12:45:27Z",
-   "fetched_at": "2026-11-26T11:13:41Z",
-   "added": [
-    "$1.95M",
-    "$0.0019",
-    "$1.13M",
-    "$14.05M",
-    "$0.0140",
-    "$3.03M"
-   ],
-   "removed": [
-    "$5.25M",
-    "$0.0053",
-    "$1.52M",
-    "$3.29M",
-    "$0.0033",
-    "$931.90K"
+    "Strategic Bitcoin Reserve bill advances as House committee backs reserve plan amid BTC rally"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-25T11:31:48Z",
-   "fetched_at": "2026-11-26T11:13:41Z",
+   "previous_fetch": "2026-11-26T11:13:41Z",
+   "fetched_at": "2026-11-27T11:07:27Z",
    "added": [
-    "$2.141T",
-    "$84.88B"
+    "$2.166T",
+    "$57.825B"
    ],
    "removed": [
-    "$2.081T",
-    "$70.142B"
+    "$2.141T",
+    "$84.88B"
+   ]
+  },
+  {
+   "id": "gmgn",
+   "name": "GMGN",
+   "url": "https://docs.gmgn.ai/index/gmgn-fees-settings",
+   "previous_fetch": "2026-10-27T08:07:35Z",
+   "fetched_at": "2026-11-27T11:07:27Z",
+   "added": [
+    "ERROR: The request could not be satisfied",
+    "The request could not be satisfied.",
+    "Request blocked.",
+    "Request ID: 138TjBCtNqt0tweO4zj0Y5zxVub8B_yTiNoJruLMII6IfbxkMYWTZw=="
+   ],
+   "removed": [
+    "ALERT: Sniper New, Following, Limit Orders",
+    "Transaction/Limit Order failure",
+    "Wallet Alert on Telegram",
+    "GMGN TG Alert Channel＆Bot",
+    "Auto Buy: Auto Buy ＆ Limit buy",
+    "🤝🏻 Cooperation-Referral:💰Refer friends to earn rebate-30% rebates, easily earn over $8000 monthly",
+    "🤝🏻 Cooperation-Referral:📸Share transaction profits",
+    "✅Tips: You can get details of various transaction fees by querying the transaction hash at",
+    "✅ Transaction on-chain fee = Priority fee + Tip fee + Gas",
+    ": transactions sent to all nodes, very fast",
+    ": transactions sent to limited nodes, fast, may be front-run",
+    ": transactions sent to safe nodes, slightly slower, with compensation",
+    ": Transaction submission - Sends transactions to the blockchain for validation and recording"
    ]
   }
  ],
@@ -155,12 +175,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpjpz03rua', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
-  },
-  {
-   "id": "glassnode",
-   "url": "https://studio.glassnode.com/pricing",
-   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://studio.glassnode.com/pricing"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpqotw4xtn', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "arkham",
@@ -171,6 +186,16 @@
    "id": "messari",
    "url": "https://messari.io/pricing",
    "error": "fetch_http: HTTPError: 429 Client Error: Too Many Requests for url: https://app.blockworks.com/pricing"
+  },
+  {
+   "id": "bubblemaps",
+   "url": "https://pro.bubblemaps.io/api/plans",
+   "error": "fetch_http: only 0 pricing lines"
+  },
+  {
+   "id": "dextools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "error": "fetch_http: only 0 pricing lines"
   },
   {
    "id": "rango",

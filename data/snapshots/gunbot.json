@@ -1,8 +1,8 @@
 {
  "id": "gunbot",
  "url": "https://www.gunbot.com/",
- "fetched_at": "2026-11-21T10:00:24Z",
- "sha256": "96db1943b704f841c2252f3ff0350568074c360a9a6d34559ef25e7a5ef9106d",
+ "fetched_at": "2026-11-27T11:07:27Z",
+ "sha256": "32972ff64d2b50075d44db111a6b3aba63d40c2ef37db1e864ab1564588928e6",
  "lines": [
   "Get Gunbot Unlimited",
   "Gunbot Unlimited ·",
@@ -17,6 +17,8 @@
   "$ 29",
   "Unlimited exchange",
   "Trade on all supported exchanges with unlimited API keys and exchange connections.",
+  "OracleAI is a standalone product with a regular lifetime license price of $199 USD. Access is included with a Gunbot Unlimited subscription.",
+  "$199 standalone · Included with your subscription",
   "Choose supported grid, scalping, or limit - order approaches and configure them for your setup.",
   "Get configurable strategies with Gunbot Unlimited",
   "Conditional Alerts",
