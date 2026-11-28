@@ -1,10 +1,10 @@
 {
  "id": "kubera",
  "url": "https://www.kubera.com/",
- "fetched_at": "2026-11-26T11:13:41Z",
- "sha256": "5b925089251866ac9ade2360e7e924e9ac333c3f3cc1de34439807f78a2bb432",
+ "fetched_at": "2026-11-28T10:41:40Z",
+ "sha256": "9b404fc113ad3c77cd5613819ab8216fbbff7eff9c4b0830e6a03db383a1695b",
  "lines": [
-  "From $250/year.",
+  "$2500/year.",
   "$250",
   "Unlimited portfolios",
   "Unlimited users",

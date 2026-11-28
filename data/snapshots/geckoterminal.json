@@ -1,11 +1,11 @@
 {
  "id": "geckoterminal",
  "url": "https://www.coingecko.com/en/api/pricing",
- "fetched_at": "2026-11-27T11:07:27Z",
- "sha256": "cc6a13f02092b82b2b40a1bdd1a0a3c1adc9049c400626acb72fce114554981a",
+ "fetched_at": "2026-11-28T10:41:40Z",
+ "sha256": "76baec1be7d1a219bd31f2b88e27097ba194572794011a4408d58976fe84db6c",
  "lines": [
-  "$2.166T",
-  "$57.825B",
+  "$2.132T",
+  "$66.449B",
   "Free Trial",
   "Same request, fewer credits used",
   "Credit usage for:",

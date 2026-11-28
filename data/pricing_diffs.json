@@ -1,135 +1,110 @@
 {
- "checked_at": "2026-11-27T11:07:27Z",
+ "checked_at": "2026-11-28T10:41:40Z",
  "checked": 67,
- "unchanged": 43,
+ "unchanged": 46,
  "baselined": [],
  "changed": [
   {
    "id": "trendspider",
    "name": "TrendSpider",
    "url": "https://trendspider.com/pricing/",
-   "previous_fetch": "2026-11-26T11:13:41Z",
-   "fetched_at": "2026-11-27T11:07:27Z",
+   "previous_fetch": "2026-11-27T11:07:27Z",
+   "fetched_at": "2026-11-28T10:41:40Z",
    "added": [
-    "$1,407 in FREE"
+    "65% off your plan",
+    "$1,407 in free upgrades"
    ],
    "removed": [
-    "your plan, plus",
-    "$1,407 in FREE add-ons"
+    "$1,407 in FREE"
    ]
   },
   {
    "id": "coingecko",
    "name": "CoinGecko (API)",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-26T11:13:41Z",
-   "fetched_at": "2026-11-27T11:07:27Z",
+   "previous_fetch": "2026-11-27T11:07:27Z",
+   "fetched_at": "2026-11-28T10:41:40Z",
    "added": [
+    "$2.132T",
+    "$66.449B"
+   ],
+   "removed": [
     "$2.166T",
     "$57.825B"
-   ],
-   "removed": [
-    "$2.141T",
-    "$84.88B"
    ]
   },
   {
-   "id": "threecommas",
-   "name": "3Commas",
-   "url": "https://3commas.io/pricing",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-11-27T11:07:27Z",
+   "id": "santiment",
+   "name": "Santiment (Sanbase)",
+   "url": "https://app.santiment.net/pricing",
+   "previous_fetch": "2026-11-24T12:45:27Z",
+   "fetched_at": "2026-11-28T10:41:40Z",
    "added": [
-    "Yearly plans.",
-    "$30",
-    "$240",
-    "4.8 months free",
-    "$84",
-    "$672"
+    "Request a 100% free demo and talk to a product guru to find the Santiment tool(s) perfect for your needs.",
+    "Get Free Demo"
    ],
    "removed": [
-    "$38",
-    "$144",
-    "$105",
-    "$420"
+    "Explore Academy for articles, insights, documentation, an AI guide and more. Tons of crypto wisdom, all for free."
    ]
   },
   {
-   "id": "gunbot",
-   "name": "Gunbot",
-   "url": "https://www.gunbot.com/",
-   "previous_fetch": "2026-11-21T10:00:24Z",
-   "fetched_at": "2026-11-27T11:07:27Z",
-   "added": [
-    "OracleAI is a standalone product with a regular lifetime license price of $199 USD. Access is included with a Gunbot Unlimited subscription.",
-    "$199 standalone · Included with your subscription"
-   ],
-   "removed": []
-  },
-  {
-   "id": "ledger",
-   "name": "Ledger",
-   "url": "https://shop.ledger.com/pages/hardware-wallets-comparison",
-   "previous_fetch": "2026-11-20T10:15:30Z",
-   "fetched_at": "2026-11-27T11:07:27Z",
-   "added": [
-    "Last 3 days: Get up to $80 in BTC and save big."
-   ],
-   "removed": [
-    "Get up to $80 in BTC and save big this Black Friday."
-   ]
-  },
-  {
-   "id": "tangem",
-   "name": "Tangem",
-   "url": "https://tangem.com/en/pricing/",
-   "previous_fetch": "2026-11-12T10:00:30Z",
-   "fetched_at": "2026-11-27T11:07:27Z",
-   "added": [],
-   "removed": [
-    "$20 in Bitcoin",
-    "Free BTC on every wallet you order"
-   ]
-  },
-  {
-   "id": "whalealert",
-   "name": "Whale Alert",
-   "url": "https://whale-alert.io/pricing",
+   "id": "kubera",
+   "name": "Kubera",
+   "url": "https://www.kubera.com/",
    "previous_fetch": "2026-11-26T11:13:41Z",
-   "fetched_at": "2026-11-27T11:07:27Z",
-   "added": [],
+   "fetched_at": "2026-11-28T10:41:40Z",
+   "added": [
+    "$2500/year."
+   ],
    "removed": [
-    "Strategic Bitcoin Reserve bill advances as House committee backs reserve plan amid BTC rally"
+    "From $250/year."
+   ]
+  },
+  {
+   "id": "dextools",
+   "name": "DEXTools",
+   "url": "https://www.dextools.io/app/en/pricing",
+   "previous_fetch": "2026-11-26T11:13:41Z",
+   "fetched_at": "2026-11-28T10:41:40Z",
+   "added": [
+    "$7.97M",
+    "$0.0079",
+    "$527.66K",
+    "$53.11M",
+    "$1.0002",
+    "$96.71M"
+   ],
+   "removed": [
+    "$1.95M",
+    "$0.0019",
+    "$1.13M",
+    "$14.05M",
+    "$0.0140",
+    "$3.03M"
    ]
   },
   {
    "id": "geckoterminal",
    "name": "GeckoTerminal",
    "url": "https://www.coingecko.com/en/api/pricing",
-   "previous_fetch": "2026-11-26T11:13:41Z",
-   "fetched_at": "2026-11-27T11:07:27Z",
+   "previous_fetch": "2026-11-27T11:07:27Z",
+   "fetched_at": "2026-11-28T10:41:40Z",
    "added": [
-    "$2.166T",
-    "$57.825B"
+    "$2.132T",
+    "$66.449B"
    ],
    "removed": [
-    "$2.141T",
-    "$84.88B"
+    "$2.166T",
+    "$57.825B"
    ]
   },
   {
    "id": "gmgn",
    "name": "GMGN",
    "url": "https://docs.gmgn.ai/index/gmgn-fees-settings",
-   "previous_fetch": "2026-10-27T08:07:35Z",
-   "fetched_at": "2026-11-27T11:07:27Z",
+   "previous_fetch": "2026-11-27T11:07:27Z",
+   "fetched_at": "2026-11-28T10:41:40Z",
    "added": [
-    "ERROR: The request could not be satisfied",
-    "The request could not be satisfied.",
-    "Request blocked.",
-    "Request ID: 138TjBCtNqt0tweO4zj0Y5zxVub8B_yTiNoJruLMII6IfbxkMYWTZw=="
-   ],
-   "removed": [
     "ALERT: Sniper New, Following, Limit Orders",
     "Transaction/Limit Order failure",
     "Wallet Alert on Telegram",
@@ -143,6 +118,12 @@
     ": transactions sent to limited nodes, fast, may be front-run",
     ": transactions sent to safe nodes, slightly slower, with compensation",
     ": Transaction submission - Sends transactions to the blockchain for validation and recording"
+   ],
+   "removed": [
+    "ERROR: The request could not be satisfied",
+    "The request could not be satisfied.",
+    "Request blocked.",
+    "Request ID: 138TjBCtNqt0tweO4zj0Y5zxVub8B_yTiNoJruLMII6IfbxkMYWTZw=="
    ]
   }
  ],
@@ -175,7 +156,7 @@
   {
    "id": "nansen",
    "url": "https://www.nansen.ai/plans",
-   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpqotw4xtn', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
+   "error": "fetch_chrome: TimeoutExpired: Command '['google-chrome', '--headless=new', '--no-sandbox', '--disable-gpu', '--user-data-dir=/tmp/tmpcuniosg1', '--virtual-time-budget=15000', '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', '--lang=en-"
   },
   {
    "id": "arkham",
@@ -190,11 +171,6 @@
   {
    "id": "bubblemaps",
    "url": "https://pro.bubblemaps.io/api/plans",
-   "error": "fetch_http: only 0 pricing lines"
-  },
-  {
-   "id": "dextools",
-   "url": "https://www.dextools.io/app/en/pricing",
    "error": "fetch_http: only 0 pricing lines"
   },
   {
@@ -215,7 +191,7 @@
   {
    "id": "axiom",
    "url": "https://docs.axiom.trade/getting-started/fees/axiom-fees",
-   "error": "fetch_chrome: bot challenge page"
+   "error": "fetch_http: HTTPError: 403 Client Error: Forbidden for url: https://docs.axiom.trade/getting-started/fees/axiom-fees"
   },
   {
    "id": "photon",
